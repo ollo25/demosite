@@ -127,9 +127,9 @@ a:focus-visible, .bouton:focus-visible { outline: 3px solid var(--feuille); outl
 
 /* ---------- Accueil ---------- */
 .accueil { padding: 2.5rem 1rem 3rem; text-align: center; max-width: 46rem; margin: 0 auto; }
-.cadre-titre { display: inline-block; padding: 0.4rem 1.2rem 0.2rem; }
+.cadre-titre { display: inline-block; max-width: 100%; padding: 0.4rem 1rem 0.2rem; }
 .accueil h1 {
-  font-size: clamp(2.6rem, 13vw, 5.5rem);
+  font-size: clamp(2.2rem, 10.5vw, 5.5rem);
   text-transform: uppercase;
   letter-spacing: 0.01em;
   animation: tampon 450ms ease-out both; /* seule animation : le titre se pose */
@@ -173,7 +173,7 @@ a:focus-visible, .bouton:focus-visible { outline: 3px solid var(--feuille); outl
 }
 .carte-nom { font-weight: 600; text-transform: uppercase; }
 .carte-prix { font-weight: 600; text-align: right; white-space: nowrap; }
-.carte-desc { grid-column: 1 / -1; color: #5a4632; font-size: 0.95rem; }
+.carte-desc { grid-column: 1 / -1; color: #5a4632; font-size: 1rem; }
 
 .mentions { margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--chene); font-size: 0.95rem; }
 .feuille { display: inline-block; width: 18px; height: 18px; vertical-align: -3px; fill: none; stroke: var(--feuille); stroke-width: 2; }

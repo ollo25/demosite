@@ -265,7 +265,7 @@ a:focus-visible {
 }
 .carte-desc {
   grid-column: 1 / -1;
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: #5a4a3e;
 }
 .mention {

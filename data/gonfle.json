@@ -1,0 +1,41 @@
+{
+  "slug": "gonfle",
+  "date_releve": "2026-10-16",
+  "nom": { "valeur": "Gonflé", "affiche_google": "Gonflé - Boulangerie (avec deux emojis)", "source": "google_maps" },
+  "categorie": { "valeur": "Boulangerie", "source": "google_maps" },
+  "adresse": { "valeur": "6 Rue de Belzunce, 75010 Paris", "source": "google_maps" },
+  "telephone": { "valeur": "", "source": "google_maps (« Ajouter le numéro de téléphone du lieu »)" },
+  "site": { "valeur": "", "source": "google_maps (« Ajouter un site Web »)" },
+  "note": { "valeur": "4,6", "nb_avis": 484, "source": "google_maps" },
+  "statut_google": { "valeur": "Ouvert, aucune mention de fermeture", "source": "google_maps" },
+  "horaires": {
+    "valeur": { "lundi": "07:00-19:00", "mardi": "07:00-19:00", "mercredi": "07:00-19:00", "jeudi": "07:00-19:00", "vendredi": "07:00-18:00", "samedi": "07:00-19:00", "dimanche": "fermé" },
+    "source": "google_maps (relevé du 16/10/2026, vendredi 7h-18h confirmé)"
+  },
+  "liens": { "instagram": "", "facebook": "", "reservation": "", "source": "google_maps (aucun lien)" },
+  "plus_code": { "valeur": "V9H3+P3 Paris", "source": "google_maps" },
+  "acces": { "valeur": "Gare du Nord (métro 4 et 5, RER B et D) à 3 min à pied ; Poissonnière (ligne 7) à 6 min", "source": "deduit (plan Google Maps)" },
+  "themes_avis": {
+    "valeur": ["viennoiseries (58)", "pain au chocolat (44)", "gare du nord (35)", "vanille (32)", "madeleines (26)", "flan (23)", "kouign-amann (16)", "praliné (16)", "croissant au charbon (14)", "cruffin (9)"],
+    "source": "avis (chips de thèmes Google Maps)"
+  },
+  "synthese_avis": { "valeur": "Viennoiseries très feuilletées citées en premier (pain au chocolat, croissant noir au charbon, kouign-amann, cruffin praliné), flan et madeleines vanille ; adresse pratique avant un train à Gare du Nord.", "source": "avis" },
+  "carte": { "source": "photos (étiquettes noires en vitrine, en partie lisibles) ; aucune carte complète avec prix", "releve": ["Étiquettes visibles : Fekir/Calabria (?) 4,50, Tiramisu tarte 5,50, dôme citron (prix illisible)"], "conclusion": "prix d'exemple, sauf mentions « à vérifier » dans config.js" },
+  "observations_visuelles": [
+    { "photo": "01 (client, juin 2025)", "vu": "Façade : store blanc avec « GONFLÉ » en capitales sans empattement gris anthracite, accent aigu marqué ; vigne vierge très dense sur l'immeuble ; grande porte cochère bordeaux à gauche ; vitrine et cadre en chêne clair ; petites tables rondes à plateau blanc et chaises bistrot en bois sur le trottoir.", "confiance": "élevée" },
+    { "photo": "02 (vidéo client)", "vu": "Comptoir vitré sur meuble en chêne clair, carrelage blanc derrière, inox.", "confiance": "moyenne" },
+    { "photo": "03 (client, oct. 2026)", "vu": "Vitrine : cookies, cakes, tarte, étiquettes noires écrites à la craie blanche, montants en verre et chêne.", "confiance": "élevée" },
+    { "photo": "04 (déc. 2025)", "vu": "Croissant bicolore rouge framboise sur fond blanc, très feuilleté.", "confiance": "élevée" },
+    { "photo": "05 (oct. 2026)", "vu": "Gros croissant doré posé sur une balance (85 g), illustre le côté « gonflé ».", "confiance": "élevée" },
+    { "photo": "07 (août 2026)", "vu": "Intérieur : plafond bois clair, suspensions à ampoule nue, étagères inox, vitrine de cakes et madeleines, store visible depuis l'intérieur.", "confiance": "élevée" },
+    { "photo": "08 (vidéo juin 2025)", "vu": "Madeleines/financiers jaunes, cakes marbrés sur planche bois.", "confiance": "moyenne" },
+    { "photo": "09 (déc. 2025)", "vu": "Pain au chocolat, croissant, viennoiserie à la pistache, sur assiette bleue.", "confiance": "élevée" },
+    { "photo": "10 (oct. 2023)", "vu": "Vitrine pâtisserie : éclairs chocolat, tartelettes, étiquettes ardoise manuscrites (craie).", "confiance": "élevée" }
+  ],
+  "direction_artistique": "Store blanc et lettrage GONFLÉ en capitales rondes anthracite, cadre chêne clair de la vitrine, étiquettes noires à la craie, vert de la vigne vierge, bordeaux de la porte cochère (voir style.css).",
+  "argument_de_vente": "Aucun site, aucun téléphone, aucun réseau social sur Google malgré 484 avis ; seul le nom avec des emojis.",
+  "a_verifier": ["Numéro de téléphone (absent de Google : bouton Appeler masqué)", "Tous les prix (prix d'exemple, étiquettes en partie illisibles)", "Instagram éventuel", "Horaire du vendredi (18h) différent des autres jours", "Présence de tables en terrasse"],
+  "confiance": "photos nombreuses",
+  "carte_reelle": false,
+  "horaires_verifies": true
+}

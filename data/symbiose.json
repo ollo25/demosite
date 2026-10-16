@@ -1,0 +1,38 @@
+{
+  "slug": "symbiose",
+  "date_releve": "2026-10-16",
+  "nom": { "valeur": "Symbiose", "source": "google_maps" },
+  "categorie": { "valeur": "Bar à tapas", "source": "google_maps" },
+  "adresse": { "valeur": "11 Rue de Paradis, 75010 Paris", "source": "google_maps" },
+  "telephone": { "valeur": "09 74 64 07 08", "source": "google_maps" },
+  "site": { "valeur": "https://www.privateaser.com/lieu/51369-symbiose", "source": "google_maps (site Web : privateaser.com)" },
+  "note": { "valeur": "5,0", "nb_avis": 184, "source": "google_maps" },
+  "statut_google": { "valeur": "Fermé au moment du relevé (avant 17h), aucune mention de fermeture définitive", "source": "google_maps" },
+  "horaires": {
+    "valeur": { "lundi": "fermé", "mardi": "fermé", "mercredi": "fermé", "jeudi": "17:00-02:00", "vendredi": "17:00-02:00", "samedi": "17:00-02:00", "dimanche": "fermé" },
+    "source": "google_maps (relevé du 16/10/2026)"
+  },
+  "attributs": { "valeur": ["LGBTQ+ friendly", "Réserver une table (Google, via partenaire)"], "source": "google_maps" },
+  "liens": { "reservation": "https://www.privateaser.com/lieu/51369-symbiose", "instagram": "https://www.instagram.com/symbiose.paradis", "facebook": "https://www.facebook.com/profile.php?id=61554842908383", "source": "google_maps (réservation, site) ; instagram et facebook : relevés lors de la session précédente, à vérifier" },
+  "acces": { "valeur": "Gare de l'Est (4, 5, 7) ou Château d'Eau (4), environ 5 min à pied", "source": "deduit (plan Google Maps)" },
+  "themes_avis": { "valeur": ["entrecôte (10)", "marinade (7)", "service (7)", "bistro (6)", "tartare (6)", "poulet au curry (5)", "cookies (5)", "ingrédients (4)", "générosité (3)"], "source": "avis (chips de thèmes Google Maps)" },
+  "synthese_avis": { "valeur": "Cuisine de bistro généreuse (entrecôte marinée, tartares, poulet au curry, cookies maison), service souvent salué ; soirées animées.", "source": "avis" },
+  "carte": { "source": "photo_carte / carte PDF relevée lors de la session précédente", "conclusion": "carte réelle, marquée « carte en ligne, à vérifier » dans config.js" },
+  "observations_visuelles": [
+    { "photo": "01 (mai 2024)", "vu": "Façade : bandeau anthracite, « Symbiose » en serif blanche à empattements ; grandes baies vitrées à menuiseries anthracite ; cartes affichées sur la vitre ; immeuble haussmannien en pierre claire.", "confiance": "élevée" },
+    { "photo": "02 (vidéo mai 2024)", "vu": "Salle : comptoir noir, étagères de bouteilles rétroéclairées, mur de briques, tables en bois clair, chaises grises.", "confiance": "moyenne" },
+    { "photo": "03 (janv. 2025)", "vu": "Photo produit soignée : salade et crêpe dans un bol, épices, fond bois.", "confiance": "élevée" },
+    { "photo": "04 (févr. 2025)", "vu": "Tartare de saumon, citron vert, assiette gris bleu.", "confiance": "élevée" },
+    { "photo": "05 (avr. 2025)", "vu": "Entrecôte sur ardoise noire, frites en pot bleu, table en bois.", "confiance": "élevée" },
+    { "photo": "06 (juil. 2024)", "vu": "Bar : éclairage violet et néons manuscrits (« Cheers »), mur de briques, bouteilles sur étagères.", "confiance": "élevée" },
+    { "photo": "07 (mai 2024)", "vu": "Burger, frites, salade.", "confiance": "élevée" },
+    { "photo": "08 (juin 2024)", "vu": "Cheesecake nappé de coulis rouge en zigzag.", "confiance": "élevée" },
+    { "photo": "10 (sept. 2024)", "vu": "Tartare de bœuf, jaune d'œuf, assiette gris bleu.", "confiance": "élevée" }
+  ],
+  "direction_artistique": "Carte imprimée du lieu : papier blanc, titres serif brun chocolat, plats en chasse fixe ; bandeau anthracite de la devanture avec le nom en serif blanche (voir style.css). Le violet des néons du bar n'est pas repris volontairement (couleur d'ambiance, pas d'identité).",
+  "argument_de_vente": "Fiche Privateaser seulement en guise de site ; réservation de groupe à mettre en avant sur un vrai site.",
+  "a_verifier": ["Liens Instagram et Facebook", "Prix de la carte (relevés en ligne)", "Horaires : ouvert seulement jeudi, vendredi, samedi d'après Google", "Animations (karaoké, fléchettes, blind test) et capacité de privatisation"],
+  "confiance": "photos nombreuses",
+  "carte_reelle": true,
+  "horaires_verifies": true
+}
