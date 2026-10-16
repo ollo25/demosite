@@ -1,24 +1,85 @@
 {
   "slug": "la-cave-des-quais",
   "date_releve": "2026-10-16",
-  "nom": { "valeur": "La Cave des Quais", "source": "google_maps" },
-  "categorie": { "valeur": "Caviste (cave à vins et à manger, d'après la vitrine)", "source": "google_maps + photo (vitrine déc. 2024)" },
-  "adresse": { "valeur": "15 Rue Alibert, 75010 Paris", "source": "google_maps" },
-  "telephone": { "valeur": "09 53 37 33 12", "source": "google_maps" },
-  "note": { "valeur": "4,7", "nb_avis": 162, "source": "google_maps" },
-  "fourchette_prix": { "valeur": "", "source": "google_maps (non affichée)" },
-  "description_google": { "valeur": "", "source": "google_maps (aucune)" },
-  "statut_google": { "valeur": "Ouvert, pas de mention de fermeture", "source": "google_maps" },
-  "horaires": {
-    "valeur": { "lundi": "16:00-23:00", "mardi": "16:00-23:00", "mercredi": "16:00-23:00", "jeudi": "16:00-23:00", "vendredi": "16:00-23:00", "samedi": "16:00-23:00", "dimanche": "fermé" },
+  "nom": {
+    "valeur": "La Cave des Quais",
     "source": "google_maps"
   },
-  "attributs": { "valeur": ["Entrée accessible en fauteuil roulant", "Parking accessible en fauteuil roulant"], "source": "google_maps (onglet À propos)" },
-  "liens": { "instagram": "https://www.instagram.com/lacavedesquais/", "site": "", "reservation": "", "facebook": "", "source": "google_maps" },
-  "plus_code": { "valeur": "V9C8+JW Paris", "source": "google_maps" },
-  "acces": { "valeur": "Métro Goncourt (ligne 11) ou Jacques Bonsergent (ligne 5), environ 5 min à pied ; canal Saint-Martin tout proche", "source": "deduit (plan)" },
+  "categorie": {
+    "valeur": "Caviste (cave à vins et à manger, d'après la vitrine)",
+    "source": "google_maps + photo (vitrine déc. 2024)"
+  },
+  "adresse": {
+    "valeur": "15 Rue Alibert, 75010 Paris",
+    "source": "google_maps"
+  },
+  "telephone": {
+    "valeur": "09 53 37 33 12",
+    "source": "google_maps"
+  },
+  "note": {
+    "valeur": "4,7",
+    "nb_avis": 162,
+    "source": "google_maps"
+  },
+  "fourchette_prix": {
+    "valeur": "",
+    "source": "google_maps (non affichée)"
+  },
+  "description_google": {
+    "valeur": "",
+    "source": "google_maps (aucune)"
+  },
+  "statut_google": {
+    "valeur": "Ouvert, pas de mention de fermeture",
+    "source": "google_maps"
+  },
+  "horaires": {
+    "valeur": {
+      "lundi": "16:00-23:00",
+      "mardi": "16:00-23:00",
+      "mercredi": "16:00-23:00",
+      "jeudi": "16:00-23:00",
+      "vendredi": "16:00-23:00",
+      "samedi": "16:00-23:00",
+      "dimanche": "fermé"
+    },
+    "source": "google_maps"
+  },
+  "attributs": {
+    "valeur": [
+      "Entrée accessible en fauteuil roulant",
+      "Parking accessible en fauteuil roulant"
+    ],
+    "source": "google_maps (onglet À propos)"
+  },
+  "liens": {
+    "instagram": "https://www.instagram.com/lacavedesquais/",
+    "site": "",
+    "reservation": "",
+    "facebook": "",
+    "source": "google_maps"
+  },
+  "plus_code": {
+    "valeur": "V9C8+JW Paris",
+    "source": "google_maps"
+  },
+  "acces": {
+    "valeur": "Métro Goncourt (ligne 11) ou Jacques Bonsergent (ligne 5), environ 5 min à pied ; canal Saint-Martin tout proche",
+    "source": "deduit (plan)"
+  },
   "themes_avis": {
-    "valeur": ["vins natures (18)", "prix (16)", "fromages (6)", "saucisson (5)", "serveur (5)", "anniversaire (3)", "petites assiettes (2)", "charcuterie (2)", "sommelier (2)"],
+    "valeur": [
+      "vins natures (18)",
+      "prix (16)",
+      "fromages (6)",
+      "saucisson (5)",
+      "serveur (5)",
+      "anniversaire (3)",
+      "petites assiettes (2)",
+      "charcuterie (2)",
+      "sommelier (2)"
+    ],
     "source": "google_maps"
   },
   "synthese_avis": {
@@ -35,16 +96,56 @@
     ]
   },
   "observations_visuelles": [
-    { "photo": "Façade (propriétaire, mai 2026)", "vu": "Store banne vert olive avec « LA CAVE » et « DES QUAIS » en capitales blanches géométriques de part et d'autre d'une passerelle en arc dessinée au trait (rappel des passerelles du canal) ; menuiserie noire, façade en pierre claire haussmannienne, numéro 15, porte voisine bordeaux ; terrasse sur plancher en bois avec garde-corps, tables et chaises pliantes bois et métal noir.", "confiance": "élevée" },
-    { "photo": "Vitrine de nuit (propriétaire, déc. 2024)", "vu": "Vitrines en menuiserie noire, rideau de guirlandes lumineuses dorées, suspensions globes en verre, lettrage blanc sur la vitre : « Cave à vins et à manger, Cuisine spontanée », « LA CAVE DES QUAIS », passerelle au trait ; ardoise « Huîtres » ; tables bistrot et tabourets hauts noirs sur le trottoir ; l'ancien store était prune.", "confiance": "élevée" },
-    { "photo": "Salle du fond (propriétaire, oct. 2024)", "vu": "Lumière chaude, ampoules à filament, grand miroir à cadre argenté, étagère en bois avec livres et bocaux, plantes vertes, verre de vin blanc au premier plan.", "confiance": "élevée" },
-    { "photo": "Bouteilles au comptoir (client, nov. 2025)", "vu": "Étagère peinte vert olive avec verres à pied suspendus, bouteilles de vins naturels aux étiquettes illustrées (bourgogne blanc 2022, vouvray, vin de France), comptoir en bois clair.", "confiance": "élevée" },
-    { "photo": "Rangée de bouteilles (client, nov. 2025)", "vu": "Longue rangée de bouteilles sur le comptoir, étagères vert olive et verres suspendus.", "confiance": "élevée" },
-    { "photo": "Table (client, nov. 2024)", "vu": "Vin rouge en verres à pied, bouteille à étiquette manuscrite, salade, fromages, noix.", "confiance": "élevée" },
-    { "photo": "Planches (client, mai 2026)", "vu": "Grande table de planches en bois : fromages, charcuteries, terrine, cornichons, betteraves, tapenade, pain, raisins.", "confiance": "élevée" },
-    { "photo": "Ancienne façade (client, mars 2022)", "vu": "Store rose framboise « AU QUAI WINE SHOP » à la même adresse : ancienne enseigne.", "confiance": "élevée (ancien, non repris)" },
-    { "photo": "Saucissons (client, avr. 2022)", "vu": "Pile de saucissons secs sur papier, bouteilles en arrière-plan.", "confiance": "élevée" },
-    { "photo": "Carte imprimée (client, juil. 2019)", "vu": "Feuille blanche dactylographiée, plats et prix alignés à droite : document ancien, non repris.", "confiance": "élevée (ancien)" }
+    {
+      "photo": "Façade (propriétaire, mai 2026)",
+      "vu": "Store banne vert olive avec « LA CAVE » et « DES QUAIS » en capitales blanches géométriques de part et d'autre d'une passerelle en arc dessinée au trait (rappel des passerelles du canal) ; menuiserie noire, façade en pierre claire haussmannienne, numéro 15, porte voisine bordeaux ; terrasse sur plancher en bois avec garde-corps, tables et chaises pliantes bois et métal noir.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "Vitrine de nuit (propriétaire, déc. 2024)",
+      "vu": "Vitrines en menuiserie noire, rideau de guirlandes lumineuses dorées, suspensions globes en verre, lettrage blanc sur la vitre : « Cave à vins et à manger, Cuisine spontanée », « LA CAVE DES QUAIS », passerelle au trait ; ardoise « Huîtres » ; tables bistrot et tabourets hauts noirs sur le trottoir ; l'ancien store était prune.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "Salle du fond (propriétaire, oct. 2024)",
+      "vu": "Lumière chaude, ampoules à filament, grand miroir à cadre argenté, étagère en bois avec livres et bocaux, plantes vertes, verre de vin blanc au premier plan.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "Bouteilles au comptoir (client, nov. 2025)",
+      "vu": "Étagère peinte vert olive avec verres à pied suspendus, bouteilles de vins naturels aux étiquettes illustrées (bourgogne blanc 2022, vouvray, vin de France), comptoir en bois clair.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "Rangée de bouteilles (client, nov. 2025)",
+      "vu": "Longue rangée de bouteilles sur le comptoir, étagères vert olive et verres suspendus.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "Table (client, nov. 2024)",
+      "vu": "Vin rouge en verres à pied, bouteille à étiquette manuscrite, salade, fromages, noix.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "Planches (client, mai 2026)",
+      "vu": "Grande table de planches en bois : fromages, charcuteries, terrine, cornichons, betteraves, tapenade, pain, raisins.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "Ancienne façade (client, mars 2022)",
+      "vu": "Store rose framboise « AU QUAI WINE SHOP » à la même adresse : ancienne enseigne.",
+      "confiance": "élevée (ancien, non repris)"
+    },
+    {
+      "photo": "Saucissons (client, avr. 2022)",
+      "vu": "Pile de saucissons secs sur papier, bouteilles en arrière-plan.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "Carte imprimée (client, juil. 2019)",
+      "vu": "Feuille blanche dactylographiée, plats et prix alignés à droite : document ancien, non repris.",
+      "confiance": "élevée (ancien)"
+    }
   ],
   "direction_artistique": "La façade du soir : fond nuit des menuiseries noires, bandeau vert olive du store avec le nom en capitales blanches géométriques (Urbanist), une passerelle en arc tracée au trait et une guirlande de petites lumières ambrées ; la carte sur papier pierre (Spectral), l'ardoise des huîtres mise en avant, étagères vert olive pour la cave.",
   "argument_de_vente": "Instagram seulement : aucun site ; ouvert de 16h à 23h avec terrasse, 4,7 sur 162 avis : une page avec horaires du soir, huîtres et planches, et un bouton d'appel pour réserver les anniversaires.",
@@ -57,5 +158,7 @@
   ],
   "confiance": "photos nombreuses",
   "carte_reelle": false,
-  "horaires_verifies": true
+  "horaires_verifies": true,
+  "concept_court": "Store olive et passerelle du canal",
+  "elements_reels_repris": "store vert olive à capitales blanches et passerelle en arc, menuiserie noire, guirlandes dorées, étagères vert olive, ardoise des huîtres"
 }

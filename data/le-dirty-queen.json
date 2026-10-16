@@ -1,24 +1,77 @@
 {
   "slug": "le-dirty-queen",
   "date_releve": "2026-10-16",
-  "nom": { "valeur": "Le Dirty Queen", "source": "google_maps" },
-  "categorie": { "valeur": "Bar (bar à gin, cocktails et bières craft)", "source": "google_maps ; web:https://linktr.ee/dirtyqueen" },
-  "adresse": { "valeur": "12 Rue de Paradis, 75010 Paris", "source": "google_maps" },
-  "telephone": { "valeur": "09 74 64 02 93", "source": "google_maps" },
-  "note": { "valeur": "4,7", "nb_avis": 261, "source": "google_maps (non affichée sur la démo)" },
-  "statut_google": { "valeur": "Ouvert, aucune mention de fermeture", "source": "google_maps" },
-  "fourchette_prix": { "valeur": "€ - Économique", "source": "web:https://www.privateaser.com/lieu/40207-le-dirty-queen" },
+  "nom": {
+    "valeur": "Le Dirty Queen",
+    "source": "google_maps"
+  },
+  "categorie": {
+    "valeur": "Bar (bar à gin, cocktails et bières craft)",
+    "source": "google_maps ; web:https://linktr.ee/dirtyqueen"
+  },
+  "adresse": {
+    "valeur": "12 Rue de Paradis, 75010 Paris",
+    "source": "google_maps"
+  },
+  "telephone": {
+    "valeur": "09 74 64 02 93",
+    "source": "google_maps"
+  },
+  "note": {
+    "valeur": "4,7",
+    "nb_avis": 261,
+    "source": "google_maps (non affichée sur la démo)"
+  },
+  "statut_google": {
+    "valeur": "Ouvert, aucune mention de fermeture",
+    "source": "google_maps"
+  },
+  "fourchette_prix": {
+    "valeur": "€ - Économique",
+    "source": "web:https://www.privateaser.com/lieu/40207-le-dirty-queen"
+  },
   "horaires": {
-    "valeur": { "lundi": "17:00-02:00", "mardi": "17:00-02:00", "mercredi": "17:00-02:00", "jeudi": "17:00-02:00", "vendredi": "17:00-02:00", "samedi": "19:00-02:00", "dimanche": "fermé" },
+    "valeur": {
+      "lundi": "17:00-02:00",
+      "mardi": "17:00-02:00",
+      "mercredi": "17:00-02:00",
+      "jeudi": "17:00-02:00",
+      "vendredi": "17:00-02:00",
+      "samedi": "19:00-02:00",
+      "dimanche": "fermé"
+    },
     "source": "google_maps (panneau Horaires) ; cohérent avec Privateaser (horaires de réservation)"
   },
   "happy_hour": {
-    "valeur": { "lundi": "aucune", "mardi": "17:00-20:00", "mercredi": "17:00-20:00", "jeudi": "17:00-20:00", "vendredi": "17:00-20:00", "samedi": "19:00-21:00" },
+    "valeur": {
+      "lundi": "aucune",
+      "mardi": "17:00-20:00",
+      "mercredi": "17:00-20:00",
+      "jeudi": "17:00-20:00",
+      "vendredi": "17:00-20:00",
+      "samedi": "19:00-21:00"
+    },
     "source": "google_maps (horaires « Happy hours »)",
     "note": "Privateaser indique « happy hour du lundi au samedi : 17h – 20h » : contradiction"
   },
-  "attributs": { "valeur": ["S'identifie comme géré par une femme", "Parking accessible en fauteuil roulant", "Réservation (Google via Joy)"], "source": "google_maps" },
-  "services_web": { "valeur": ["Karaoké et baby-foot gratuits", "Trois espaces : entrée (~20), salle du fond (~30), sous-sol voûté (~30)", "Privatisation partielle, jusqu'à 100 personnes", "Gâteau d'anniversaire accepté sur demande", "Matériel de sonorisation, micro, projection, wifi, jeux de société"], "source": "web:https://www.privateaser.com/lieu/40207-le-dirty-queen" },
+  "attributs": {
+    "valeur": [
+      "S'identifie comme géré par une femme",
+      "Parking accessible en fauteuil roulant",
+      "Réservation (Google via Joy)"
+    ],
+    "source": "google_maps"
+  },
+  "services_web": {
+    "valeur": [
+      "Karaoké et baby-foot gratuits",
+      "Trois espaces : entrée (~20), salle du fond (~30), sous-sol voûté (~30)",
+      "Privatisation partielle, jusqu'à 100 personnes",
+      "Gâteau d'anniversaire accepté sur demande",
+      "Matériel de sonorisation, micro, projection, wifi, jeux de société"
+    ],
+    "source": "web:https://www.privateaser.com/lieu/40207-le-dirty-queen"
+  },
   "liens": {
     "linktree": "http://linktr.ee/dirtyqueen",
     "instagram": "https://www.instagram.com/ledirtyqueen/",
@@ -26,11 +79,37 @@
     "reservation_google": "https://www.google.com/maps/reserve/v/dine/c/KzXU3bfZra4?source=pa&hl=fr-FR",
     "source": "google_maps ; web:https://linktr.ee/dirtyqueen"
   },
-  "plus_code": { "valeur": "V9F3+WM Paris", "source": "google_maps" },
-  "acces": { "valeur": "Métro Château d'Eau (ligne 4) ou Gare de l'Est (4, 5, 7), environ 5 min à pied", "source": "deduit (plan) ; web:privateaser (Gare de l'Est, 5 min)" },
-  "description": { "valeur": "Bar à gin, cocktails et bières craft, ambiance années 80, néons et boule à facettes.", "source": "web:https://linktr.ee/dirtyqueen" },
-  "themes_avis": { "valeur": ["cocktails (58)", "anniversaire (18)", "soirée (15)", "baby-foot (14)", "sous-sol (12)", "karaoké (12)", "salle (11)", "hot-dog (6)", "gin (6)", "choix (5)"], "source": "google_maps" },
-  "synthese_avis": { "valeur": "Cocktails très cités, lieu choisi pour les anniversaires et les soirées de groupe, sous-sol avec karaoké, baby-foot, fauteuils confortables, happy hour et bières pression ; petite restauration (hot-dogs, nachos).", "source": "avis" },
+  "plus_code": {
+    "valeur": "V9F3+WM Paris",
+    "source": "google_maps"
+  },
+  "acces": {
+    "valeur": "Métro Château d'Eau (ligne 4) ou Gare de l'Est (4, 5, 7), environ 5 min à pied",
+    "source": "deduit (plan) ; web:privateaser (Gare de l'Est, 5 min)"
+  },
+  "description": {
+    "valeur": "Bar à gin, cocktails et bières craft, ambiance années 80, néons et boule à facettes.",
+    "source": "web:https://linktr.ee/dirtyqueen"
+  },
+  "themes_avis": {
+    "valeur": [
+      "cocktails (58)",
+      "anniversaire (18)",
+      "soirée (15)",
+      "baby-foot (14)",
+      "sous-sol (12)",
+      "karaoké (12)",
+      "salle (11)",
+      "hot-dog (6)",
+      "gin (6)",
+      "choix (5)"
+    ],
+    "source": "google_maps"
+  },
+  "synthese_avis": {
+    "valeur": "Cocktails très cités, lieu choisi pour les anniversaires et les soirées de groupe, sous-sol avec karaoké, baby-foot, fauteuils confortables, happy hour et bières pression ; petite restauration (hot-dogs, nachos).",
+    "source": "avis"
+  },
   "carte": {
     "source": "web:https://www.privateaser.com/lieu/40207-le-dirty-queen (tarifs normal / happy hour) ; photo_carte (mai 2024) pour les gin tonics et les bières",
     "releve": [
@@ -43,17 +122,61 @@
     ]
   },
   "observations_visuelles": [
-    { "photo": "01 / photo principale : sous-sol", "vu": "Cave voûtée en pierre apparente, lumières de boule disco colorées, écran de projection, fauteuils cabriolet en rotin et tables bistrot en bois, panneaux vert et blanc vintage.", "confiance": "élevée" },
-    { "photo": "02 (oct. 2022)", "vu": "Cocktail rouge en verre ciselé et cocktail orangé en coupe à pied, rondelle d'agrume séchée ; boule à facettes, points lumineux au plafond, banquette violette, plantes.", "confiance": "élevée" },
-    { "photo": "03 (sept. 2022)", "vu": "Néon « Le Dirty Queen » en écriture script : « Le Dirty » vert vif, « Queen » rose, feuilles vertes en néon, éclairs jaunes.", "confiance": "élevée" },
-    { "photo": "04 (mai 2024)", "vu": "Salle de jour : murs vert sapin, tables bistrot rondes en bois, chaises bistrot, bière et cocktail rose ; sets de table carte verte à pois ; portrait encadré en arche.", "confiance": "élevée" },
-    { "photo": "05 (oct. 2025)", "vu": "Cocktail vert-jaune avec pipette seringue rose, bar éclairé de rose fuchsia, étagères de bouteilles.", "confiance": "élevée" },
-    { "photo": "06 (mai 2025)", "vu": "Le néon en blanc/rose au-dessus d'un mur de feuillages et guirlandes, rideau de lamelles argentées, ballons dorés, salle pleine.", "confiance": "élevée" },
-    { "photo": "07 (fév. 2023)", "vu": "Gros cœur rouge brillant suspendu, boule à facettes, jardinière de fleurs orange, banquettes bleu canard et rouges, murs gris-vert.", "confiance": "élevée" },
-    { "photo": "08 (mai 2024) carte", "vu": "Carte : fond vert à pois blancs, « Le Dirty Queen » en script, « CARTE » en capitales noires sur carrés rose et jaune alternés, feuille lilas, titres en sans grasse condensée, « Service au bar » en script, feuilles de palmier.", "confiance": "élevée" },
-    { "photo": "09 (juil. 2025)", "vu": "Deux cocktails en coupe, bord rouge sucré et blanc mousseux ; décor de feuillages rouges et guirlandes.", "confiance": "élevée" },
-    { "photo": "10-12 (avr. 2025)", "vu": "Cocktail mousseux ambré, zeste d'orange en étoile.", "confiance": "élevée" },
-    { "photo": "Façade", "vu": "Non observée (aucune photo de façade dans la visionneuse).", "confiance": "faible" }
+    {
+      "photo": "01 / photo principale : sous-sol",
+      "vu": "Cave voûtée en pierre apparente, lumières de boule disco colorées, écran de projection, fauteuils cabriolet en rotin et tables bistrot en bois, panneaux vert et blanc vintage.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "02 (oct. 2022)",
+      "vu": "Cocktail rouge en verre ciselé et cocktail orangé en coupe à pied, rondelle d'agrume séchée ; boule à facettes, points lumineux au plafond, banquette violette, plantes.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "03 (sept. 2022)",
+      "vu": "Néon « Le Dirty Queen » en écriture script : « Le Dirty » vert vif, « Queen » rose, feuilles vertes en néon, éclairs jaunes.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "04 (mai 2024)",
+      "vu": "Salle de jour : murs vert sapin, tables bistrot rondes en bois, chaises bistrot, bière et cocktail rose ; sets de table carte verte à pois ; portrait encadré en arche.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "05 (oct. 2025)",
+      "vu": "Cocktail vert-jaune avec pipette seringue rose, bar éclairé de rose fuchsia, étagères de bouteilles.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "06 (mai 2025)",
+      "vu": "Le néon en blanc/rose au-dessus d'un mur de feuillages et guirlandes, rideau de lamelles argentées, ballons dorés, salle pleine.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "07 (fév. 2023)",
+      "vu": "Gros cœur rouge brillant suspendu, boule à facettes, jardinière de fleurs orange, banquettes bleu canard et rouges, murs gris-vert.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "08 (mai 2024) carte",
+      "vu": "Carte : fond vert à pois blancs, « Le Dirty Queen » en script, « CARTE » en capitales noires sur carrés rose et jaune alternés, feuille lilas, titres en sans grasse condensée, « Service au bar » en script, feuilles de palmier.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "09 (juil. 2025)",
+      "vu": "Deux cocktails en coupe, bord rouge sucré et blanc mousseux ; décor de feuillages rouges et guirlandes.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "10-12 (avr. 2025)",
+      "vu": "Cocktail mousseux ambré, zeste d'orange en étoile.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "Façade",
+      "vu": "Non observée (aucune photo de façade dans la visionneuse).",
+      "confiance": "faible"
+    }
   ],
   "direction_artistique": "Nuit vert sapin des murs, néon script « Le Dirty Queen » vert et rose avec feuilles et éclairs (Pacifico, lueur néon) ; la carte reprend le plateau vert à pois blancs, le titre en carrés rose et jaune et la feuille lilas de la carte réelle (Archivo 800). Rien à voir avec Symbiose en face (papier blanc, serif brune).",
   "argument_de_vente": "Sur Google, seul un Linktree (4,7 sur 261 avis) : la carte n'y est qu'en PDF, les horaires et la réservation sont éparpillés entre Google, Joy et Privateaser. Une page unique avec carte, happy hour, soirées et réservation.",
@@ -65,9 +188,12 @@
     "Don de 5 % des bénéfices à Amnesty International (carte 2024) : toujours d'actualité ?",
     "DQ Cabaret (soirées drag et burlesque) : rythme des soirées",
     "Façade non observée",
-    "Accès métro déduit du plan"
+    "Accès métro déduit du plan",
+    "Le lien Privateaser du Linktree porte l'identifiant « ginette-et-georgette » (ancien nom de l'établissement dans Privateaser ?) : vérifier avec le patron qu'il réserve bien au Dirty Queen, sinon le retirer de config.js (liens.reservation)."
   ],
   "confiance": "photos nombreuses",
   "carte_reelle": true,
-  "horaires_verifies": true
+  "horaires_verifies": true,
+  "concept_court": "Néon vert et rose, carte à pois",
+  "elements_reels_repris": "enseigne néon « Le Dirty » vert / « Queen » rose, murs vert sapin, plateau vert à pois, lettres CARTE rose et jaune, feuille lilas"
 }

@@ -1,25 +1,97 @@
 {
   "slug": "fruity-cafe",
   "date_releve": "2026-10-16",
-  "nom": { "valeur": "Fruity Café", "source": "google_maps" },
-  "categorie": { "valeur": "Café", "source": "google_maps" },
-  "adresse": { "valeur": "69 Rue de Chabrol, 75010 Paris", "source": "google_maps" },
-  "telephone": { "valeur": "", "source": "google_maps (aucun numéro, Google propose « Ajouter le numéro de téléphone du lieu »)" },
-  "note": { "valeur": "5,0", "nb_avis": 601, "source": "google_maps (non affichée sur la démo)" },
-  "statut_google": { "valeur": "Pas de mention de fermeture définitive, MAIS la fiche affiche « Fermé » pour les 7 jours de la semaine", "source": "google_maps" },
-  "activite_recente": { "valeur": "Photo client datée de septembre 2026 sur Google ; reel Instagram du 24 août 2026 présentant le café", "source": "google_maps ; web:https://www.instagram.com/reel/Dca3DWUubcd/ (extrait via recherche)" },
+  "nom": {
+    "valeur": "Fruity Café",
+    "source": "google_maps"
+  },
+  "categorie": {
+    "valeur": "Café",
+    "source": "google_maps"
+  },
+  "adresse": {
+    "valeur": "69 Rue de Chabrol, 75010 Paris",
+    "source": "google_maps"
+  },
+  "telephone": {
+    "valeur": "",
+    "source": "google_maps (aucun numéro, Google propose « Ajouter le numéro de téléphone du lieu »)"
+  },
+  "note": {
+    "valeur": "5,0",
+    "nb_avis": 601,
+    "source": "google_maps (non affichée sur la démo)"
+  },
+  "statut_google": {
+    "valeur": "Pas de mention de fermeture définitive, MAIS la fiche affiche « Fermé » pour les 7 jours de la semaine",
+    "source": "google_maps"
+  },
+  "activite_recente": {
+    "valeur": "Photo client datée de septembre 2026 sur Google ; reel Instagram du 24 août 2026 présentant le café",
+    "source": "google_maps ; web:https://www.instagram.com/reel/Dca3DWUubcd/ (extrait via recherche)"
+  },
   "horaires": {
-    "valeur": { "lundi": "08:00-18:00", "mardi": "08:00-18:00", "mercredi": "08:00-18:00", "jeudi": "08:00-18:00", "vendredi": "08:00-18:00", "samedi": "08:30-18:00", "dimanche": "08:30-18:00" },
+    "valeur": {
+      "lundi": "08:00-18:00",
+      "mardi": "08:00-18:00",
+      "mercredi": "08:00-18:00",
+      "jeudi": "08:00-18:00",
+      "vendredi": "08:00-18:00",
+      "samedi": "08:30-18:00",
+      "dimanche": "08:30-18:00"
+    },
     "source": "deduit : Google affiche fermé tous les jours ; web:https://fr.restaurantguru.com/Fruity-Cafe-Paris donne seulement vendredi 08:00-18:00 et « ouvre à 08:30 demain » (samedi) ; le reste est supposé"
   },
-  "attributs": { "valeur": ["Terrasse extérieure", "Wifi", "Cartes de crédit acceptées", "Pas accessible en fauteuil roulant"], "source": "web:https://fr.restaurantguru.com/Fruity-Cafe-Paris ; avis (petite terrasse)" },
-  "liens": { "instagram": "https://instagram.com/fruitycafe.paris", "site": "", "reservation": "", "source": "google_maps" },
-  "plus_code": { "valeur": "V9G2+V2 Paris", "source": "google_maps" },
-  "acces": { "valeur": "Métro Poissonnière (ligne 7), à 2 minutes ; Gare du Nord et Gare de l'Est à pied", "source": "deduit (plan Google Maps) ; bio Instagram (Poissonnière / Gare du Nord / Gare de l'Est)" },
-  "description": { "valeur": "Boissons, cookies, gâteaux inspirés de voyages, faits maison ; café, matcha, jus frais à l'extracteur, eau de coco.", "source": "web:instagram (bio et reel, via résultats de recherche)" },
-  "societe": { "valeur": "SAS FRUITY CAFE, créée le 14 novembre 2022, 69 rue de Chabrol", "source": "web:https://annuaire-entreprises.data.gouv.fr/etablissement/92223190700010" },
-  "themes_avis": { "valeur": ["matcha (50)", "smoothie (27)", "sésame (25)", "cookies (17)", "nacho (14)", "cuit (14)", "gare du nord (13)", "fondants (12)", "train (8)", "gemme (7)"], "source": "google_maps" },
-  "synthese_avis": { "valeur": "Accueil très chaleureux, matcha de qualité, black sesame latte, chaï latte, smoothies, cookies et fondants (dont sans gluten) très cités ; lieu petit avec un étal de fruits, gâteaux en vitrine et petite terrasse ; pratique avant un train à Gare du Nord.", "source": "avis" },
+  "attributs": {
+    "valeur": [
+      "Terrasse extérieure",
+      "Wifi",
+      "Cartes de crédit acceptées",
+      "Pas accessible en fauteuil roulant"
+    ],
+    "source": "web:https://fr.restaurantguru.com/Fruity-Cafe-Paris ; avis (petite terrasse)"
+  },
+  "liens": {
+    "instagram": "https://instagram.com/fruitycafe.paris",
+    "site": "",
+    "reservation": "",
+    "source": "google_maps"
+  },
+  "plus_code": {
+    "valeur": "V9G2+V2 Paris",
+    "source": "google_maps"
+  },
+  "acces": {
+    "valeur": "Métro Poissonnière (ligne 7), à 2 minutes ; Gare du Nord et Gare de l'Est à pied",
+    "source": "deduit (plan Google Maps) ; bio Instagram (Poissonnière / Gare du Nord / Gare de l'Est)"
+  },
+  "description": {
+    "valeur": "Boissons, cookies, gâteaux inspirés de voyages, faits maison ; café, matcha, jus frais à l'extracteur, eau de coco.",
+    "source": "web:instagram (bio et reel, via résultats de recherche)"
+  },
+  "societe": {
+    "valeur": "SAS FRUITY CAFE, créée le 14 novembre 2022, 69 rue de Chabrol",
+    "source": "web:https://annuaire-entreprises.data.gouv.fr/etablissement/92223190700010"
+  },
+  "themes_avis": {
+    "valeur": [
+      "matcha (50)",
+      "smoothie (27)",
+      "sésame (25)",
+      "cookies (17)",
+      "nacho (14)",
+      "cuit (14)",
+      "gare du nord (13)",
+      "fondants (12)",
+      "train (8)",
+      "gemme (7)"
+    ],
+    "source": "google_maps"
+  },
+  "synthese_avis": {
+    "valeur": "Accueil très chaleureux, matcha de qualité, black sesame latte, chaï latte, smoothies, cookies et fondants (dont sans gluten) très cités ; lieu petit avec un étal de fruits, gâteaux en vitrine et petite terrasse ; pratique avant un train à Gare du Nord.",
+    "source": "avis"
+  },
   "carte": {
     "source": "photo_carte (février 2024, carte « À boire » encadrée ; colonne de droite en partie coupée)",
     "releve": [
@@ -31,16 +103,56 @@
     ]
   },
   "observations_visuelles": [
-    { "photo": "01 Façade (juin 2026)", "vu": "Devanture peinte vert pistache pâle (patine), guirlande d'eucalyptus avec petites oranges au-dessus de la vitrine, « Fruity » en script blanc fin collé sur la vitre avec « CAFE » en petites capitales, lanternes boules jaune orangé, plantes, carte encadrée en vitrine, ardoise, chaises en corde rose poudré, table bistrot.", "confiance": "élevée" },
-    { "photo": "02 vidéo (oct. 2025)", "vu": "Matcha latte chaud vert clair dans un bol, pétales bleus, table bois clair.", "confiance": "élevée" },
-    { "photo": "03 (mars 2023)", "vu": "Coupe en verre pleine de cookies aux pépites de chocolat.", "confiance": "élevée" },
-    { "photo": "04 (mai 2026)", "vu": "Deux boissons chaudes dans des tasses en céramique beige avec petit décor doré en forme de feuille, muffins/fondants au chocolat en caissettes kraft, soucoupes en grès rose et gris.", "confiance": "élevée" },
-    { "photo": "05 (sept. 2026)", "vu": "Matcha latte glacé en couches vert/blanc, sésame noir parsemé, cookie sur assiette en grès, serviette kraft, paille papier.", "confiance": "élevée" },
-    { "photo": "06 vidéo (fév. 2026)", "vu": "Comptoir près de la vitrine : cloches à gâteaux en verre, bouquet de fleurs séchées, plantes.", "confiance": "moyenne" },
-    { "photo": "07 carte (fév. 2024)", "vu": "Carte « À boire » encadrée bois clair : « Fruity » en script brun, titres en serif brun rosé (Cafés, Infusions, Boissons au lait), intitulés en capitales espacées, prix 30 cl / 60 cl, cœurs rouges et petites flammes rouge/bleu en marge.", "confiance": "élevée" },
-    { "photo": "08 vidéo (juil. 2025)", "vu": "Boisson glacée verte en couches (matcha) en verre, table claire.", "confiance": "élevée" },
-    { "photo": "09 (mars 2026)", "vu": "Chocolat chaud cacao poudré, décor doré feuille, serviette kraft.", "confiance": "élevée" },
-    { "photo": "10-12 (juin 2023)", "vu": "Boîte de muffins et fondants à emporter, gobelet carton, vitrine sur rue, fleurs séchées.", "confiance": "élevée" }
+    {
+      "photo": "01 Façade (juin 2026)",
+      "vu": "Devanture peinte vert pistache pâle (patine), guirlande d'eucalyptus avec petites oranges au-dessus de la vitrine, « Fruity » en script blanc fin collé sur la vitre avec « CAFE » en petites capitales, lanternes boules jaune orangé, plantes, carte encadrée en vitrine, ardoise, chaises en corde rose poudré, table bistrot.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "02 vidéo (oct. 2025)",
+      "vu": "Matcha latte chaud vert clair dans un bol, pétales bleus, table bois clair.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "03 (mars 2023)",
+      "vu": "Coupe en verre pleine de cookies aux pépites de chocolat.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "04 (mai 2026)",
+      "vu": "Deux boissons chaudes dans des tasses en céramique beige avec petit décor doré en forme de feuille, muffins/fondants au chocolat en caissettes kraft, soucoupes en grès rose et gris.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "05 (sept. 2026)",
+      "vu": "Matcha latte glacé en couches vert/blanc, sésame noir parsemé, cookie sur assiette en grès, serviette kraft, paille papier.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "06 vidéo (fév. 2026)",
+      "vu": "Comptoir près de la vitrine : cloches à gâteaux en verre, bouquet de fleurs séchées, plantes.",
+      "confiance": "moyenne"
+    },
+    {
+      "photo": "07 carte (fév. 2024)",
+      "vu": "Carte « À boire » encadrée bois clair : « Fruity » en script brun, titres en serif brun rosé (Cafés, Infusions, Boissons au lait), intitulés en capitales espacées, prix 30 cl / 60 cl, cœurs rouges et petites flammes rouge/bleu en marge.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "08 vidéo (juil. 2025)",
+      "vu": "Boisson glacée verte en couches (matcha) en verre, table claire.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "09 (mars 2026)",
+      "vu": "Chocolat chaud cacao poudré, décor doré feuille, serviette kraft.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "10-12 (juin 2023)",
+      "vu": "Boîte de muffins et fondants à emporter, gobelet carton, vitrine sur rue, fleurs séchées.",
+      "confiance": "élevée"
+    }
   ],
   "direction_artistique": "La vitrine du 69 rue de Chabrol : cadre vert pistache patiné, guirlande d'eucalyptus et d'oranges dessinée en SVG, lanternes boules jaunes, « Fruity » en script blanc fin (Sacramento) sur la vitre sombre ; la carte reprend la feuille « À boire » : papier crème, titres brun rosé, capitales espacées, prix 30 cl / 60 cl alignés.",
   "argument_de_vente": "5,0 sur 601 avis, Instagram seulement, aucun téléphone, et Google affiche « Fermé » tous les jours : des passants de Gare du Nord pensent que le café est fermé. Corriger la fiche et lui donner un vrai site avec horaires et carte.",
@@ -51,9 +163,12 @@
     "Carte des boissons relevée sur une photo de février 2024 : prix à confirmer, chiffres coupés pour macchiato, cappuccino, latte, flat white",
     "Pâtisseries, smoothies, jus : prix d'exemple",
     "Sandwichs et nachos cités dans les avis : à confirmer",
-    "Accès métro déduit du plan"
+    "Accès métro déduit du plan",
+    "Aucune source web indépendante trouvée le 16/10/2026 pour confirmer les horaires : à demander en priorité."
   ],
   "confiance": "photos nombreuses",
   "carte_reelle": true,
-  "horaires_verifies": false
+  "horaires_verifies": false,
+  "concept_court": "Vitrine pistache et script blanc",
+  "elements_reels_repris": "cadre vert pistache, guirlande d'eucalyptus et oranges, lanternes jaunes, « Fruity » en script blanc, carte encadrée de bois clair"
 }

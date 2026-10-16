@@ -1,27 +1,87 @@
 {
   "slug": "amulette",
   "date_releve": "2026-10-16",
-  "nom": { "valeur": "Amulette", "source": "google_maps" },
-  "categorie": { "valeur": "Café", "source": "google_maps" },
-  "adresse": { "valeur": "8 Rue Sainte-Marthe, 75010 Paris", "source": "google_maps" },
-  "telephone": { "valeur": "", "source": "google_maps (aucun numéro, la fiche propose « Ajouter le numéro de téléphone du lieu »)" },
-  "note": { "valeur": "5,0", "nb_avis": 79, "source": "google_maps" },
-  "fourchette_prix": { "valeur": "", "source": "google_maps (non affichée)" },
-  "description_google": { "valeur": "", "source": "google_maps (aucune description)" },
-  "statut_google": { "valeur": "Ouvert, pas de mention de fermeture", "source": "google_maps" },
-  "horaires": {
-    "valeur": { "lundi": "fermé", "mardi": "fermé", "mercredi": "08:30-17:00", "jeudi": "08:30-17:00", "vendredi": "08:30-17:00", "samedi": "09:30-17:30", "dimanche": "09:30-17:30" },
+  "nom": {
+    "valeur": "Amulette",
     "source": "google_maps"
   },
-  "liens": { "instagram": "https://www.instagram.com/amulette.cafe/", "site": "", "reservation": "", "facebook": "", "source": "google_maps" },
-  "plus_code": { "valeur": "V9FC+CG Paris", "source": "google_maps" },
-  "acces": { "valeur": "Métro Colonel Fabien (ligne 2) ou Belleville (lignes 2 et 11), environ 7 min à pied", "source": "deduit (plan)" },
+  "categorie": {
+    "valeur": "Café",
+    "source": "google_maps"
+  },
+  "adresse": {
+    "valeur": "8 Rue Sainte-Marthe, 75010 Paris",
+    "source": "google_maps"
+  },
+  "telephone": {
+    "valeur": "",
+    "source": "google_maps (aucun numéro, la fiche propose « Ajouter le numéro de téléphone du lieu »)"
+  },
+  "note": {
+    "valeur": "5,0",
+    "nb_avis": 79,
+    "source": "google_maps"
+  },
+  "fourchette_prix": {
+    "valeur": "",
+    "source": "google_maps (non affichée)"
+  },
+  "description_google": {
+    "valeur": "",
+    "source": "google_maps (aucune description)"
+  },
+  "statut_google": {
+    "valeur": "Ouvert, pas de mention de fermeture",
+    "source": "google_maps"
+  },
+  "horaires": {
+    "valeur": {
+      "lundi": "fermé",
+      "mardi": "fermé",
+      "mercredi": "08:30-17:00",
+      "jeudi": "08:30-17:00",
+      "vendredi": "08:30-17:00",
+      "samedi": "09:30-17:30",
+      "dimanche": "09:30-17:30"
+    },
+    "source": "google_maps"
+  },
+  "liens": {
+    "instagram": "https://www.instagram.com/amulette.cafe/",
+    "site": "",
+    "reservation": "",
+    "facebook": "",
+    "source": "google_maps"
+  },
+  "plus_code": {
+    "valeur": "V9FC+CG Paris",
+    "source": "google_maps"
+  },
+  "acces": {
+    "valeur": "Métro Colonel Fabien (ligne 2) ou Belleville (lignes 2 et 11), environ 7 min à pied",
+    "source": "deduit (plan)"
+  },
   "services": {
-    "valeur": ["Chiens bienvenus (avis, et réponse du propriétaire évoquant une gamelle)", "Sur place", "À emporter (déduit)"],
+    "valeur": [
+      "Chiens bienvenus (avis, et réponse du propriétaire évoquant une gamelle)",
+      "Sur place",
+      "À emporter (déduit)"
+    ],
     "source": "avis / deduit"
   },
   "themes_avis": {
-    "valeur": ["chiens (6)", "pâtisseries (6)", "matcha (6)", "granola (5)", "latte (5)", "œufs brouillés (3)", "théière (3)", "noix (2)", "infusion (2)", "fleurs (2)"],
+    "valeur": [
+      "chiens (6)",
+      "pâtisseries (6)",
+      "matcha (6)",
+      "granola (5)",
+      "latte (5)",
+      "œufs brouillés (3)",
+      "théière (3)",
+      "noix (2)",
+      "infusion (2)",
+      "fleurs (2)"
+    ],
     "source": "google_maps"
   },
   "synthese_avis": {
@@ -38,16 +98,56 @@
     ]
   },
   "observations_visuelles": [
-    { "photo": "Façade (propriétaire, oct. 2025)", "vu": "Devanture menuisée bleu roi soutenu, enseigne peinte en blanc : « Amulette » en capitale A à boucle et bas-de-casse serif espacées, petit fleuron à quatre lobes au-dessus du A et après le dernier e. Grandes vitrines, abat-jour en tissu froncé jaune pâle allumés, banc en bois rose vif aux éclats ocre devant la vitrine, potée de buis, potelet blanc écaillé.", "confiance": "élevée" },
-    { "photo": "Façade en hiver (client, janv. 2026)", "vu": "Même devanture bleue encadrée d'une guirlande de sapin, petits fleurons blancs peints sur les panneaux bas, maison voisine rouge sang-de-bœuf.", "confiance": "élevée" },
-    { "photo": "Comptoir (propriétaire, oct. 2025)", "vu": "Présentoir en céramique blanche bosselée en forme de fontaine à étages avec citrons et pommes, cakes sur planches en bois (cake glacé aux noix de pécan, cake marbré), croissants, cookie sur coupelle en étain, sacs kraft avec notes manuscrites, moulin à café blanc, mur de carrelage blanc, étagères avec verres et petites maisons en céramique, portes bleu ciel de la rue en face.", "confiance": "élevée" },
-    { "photo": "Salle (propriétaire, oct. 2025)", "vu": "Murs bleu ciel très pâle, encadrements de fenêtres rouges, étagères blanches avec torchons rayés, bocaux et pichets en terre, tabourets Tolix blancs, chaises d'école blanches écaillées, chaise noire à barreaux, tables bois, petite ardoise manuscrite « Amulette », lampe en céramique.", "confiance": "élevée" },
-    { "photo": "Table, cake et lattes (client, mars 2026)", "vu": "Assiettes blanches à gros motifs noirs (style fleurs Marimekko), tasses blanches à pois ovales noirs, latte art, golden latte jaune, cake aux noix avec crème, verres Duralex.", "confiance": "élevée" },
-    { "photo": "Latte en main (client, févr. 2026)", "vu": "Grande tasse à pois noirs, latte au lait d'avoine ou chaï, mur bleu pâle.", "confiance": "élevée" },
-    { "photo": "Matcha et granola (client, janv. 2026)", "vu": "Matcha latte vert vif dans tasse à pois noirs, granola maison aux noix et noisettes, yaourt, beurre de noisette et compote, pétales de fleurs.", "confiance": "élevée" },
-    { "photo": "Granola sur le banc rose (propriétaire, oct. 2025)", "vu": "Assiette creuse blanche à motifs noirs, granola, yaourt, myrtilles, fleurs comestibles jaunes ; banc rose aux éclats ocre, devanture bleue en fond.", "confiance": "élevée" },
-    { "photo": "Vitrine côté rue (propriétaire, oct. 2025)", "vu": "Carte imprimée sur papier crème affichée en vitrine (voir rubrique carte), collection de théières en forme de maisons, citrouille, bougeoir noir, fleurs séchées.", "confiance": "élevée" },
-    { "photo": "Coin fenêtre (propriétaire, oct. 2025)", "vu": "Abat-jour froncé en lin allumé, sweat-shirt blanc imprimé « amulette » suspendu à un crochet, bouquet de fleurs, bougie, tasses blanches.", "confiance": "élevée" }
+    {
+      "photo": "Façade (propriétaire, oct. 2025)",
+      "vu": "Devanture menuisée bleu roi soutenu, enseigne peinte en blanc : « Amulette » en capitale A à boucle et bas-de-casse serif espacées, petit fleuron à quatre lobes au-dessus du A et après le dernier e. Grandes vitrines, abat-jour en tissu froncé jaune pâle allumés, banc en bois rose vif aux éclats ocre devant la vitrine, potée de buis, potelet blanc écaillé.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "Façade en hiver (client, janv. 2026)",
+      "vu": "Même devanture bleue encadrée d'une guirlande de sapin, petits fleurons blancs peints sur les panneaux bas, maison voisine rouge sang-de-bœuf.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "Comptoir (propriétaire, oct. 2025)",
+      "vu": "Présentoir en céramique blanche bosselée en forme de fontaine à étages avec citrons et pommes, cakes sur planches en bois (cake glacé aux noix de pécan, cake marbré), croissants, cookie sur coupelle en étain, sacs kraft avec notes manuscrites, moulin à café blanc, mur de carrelage blanc, étagères avec verres et petites maisons en céramique, portes bleu ciel de la rue en face.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "Salle (propriétaire, oct. 2025)",
+      "vu": "Murs bleu ciel très pâle, encadrements de fenêtres rouges, étagères blanches avec torchons rayés, bocaux et pichets en terre, tabourets Tolix blancs, chaises d'école blanches écaillées, chaise noire à barreaux, tables bois, petite ardoise manuscrite « Amulette », lampe en céramique.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "Table, cake et lattes (client, mars 2026)",
+      "vu": "Assiettes blanches à gros motifs noirs (style fleurs Marimekko), tasses blanches à pois ovales noirs, latte art, golden latte jaune, cake aux noix avec crème, verres Duralex.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "Latte en main (client, févr. 2026)",
+      "vu": "Grande tasse à pois noirs, latte au lait d'avoine ou chaï, mur bleu pâle.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "Matcha et granola (client, janv. 2026)",
+      "vu": "Matcha latte vert vif dans tasse à pois noirs, granola maison aux noix et noisettes, yaourt, beurre de noisette et compote, pétales de fleurs.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "Granola sur le banc rose (propriétaire, oct. 2025)",
+      "vu": "Assiette creuse blanche à motifs noirs, granola, yaourt, myrtilles, fleurs comestibles jaunes ; banc rose aux éclats ocre, devanture bleue en fond.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "Vitrine côté rue (propriétaire, oct. 2025)",
+      "vu": "Carte imprimée sur papier crème affichée en vitrine (voir rubrique carte), collection de théières en forme de maisons, citrouille, bougeoir noir, fleurs séchées.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "Coin fenêtre (propriétaire, oct. 2025)",
+      "vu": "Abat-jour froncé en lin allumé, sweat-shirt blanc imprimé « amulette » suspendu à un crochet, bouquet de fleurs, bougie, tasses blanches.",
+      "confiance": "élevée"
+    }
   ],
   "direction_artistique": "La devanture bleu roi et son enseigne blanche en serif espacé à fleurons : accueil bleu avec le nom en EB Garamond blanc espacé et des fleurons à quatre lobes en SVG, une bande rose « banc » aux éclats ocre, la carte présentée comme la feuille crème affichée en vitrine (mêmes rubriques, losanges), un liseré de pois ovales noirs repris des tasses.",
   "argument_de_vente": "Instagram seulement : aucun site, aucun téléphone sur Google, carte visible uniquement en vitrine ; 5,0 sur 79 avis et fermé lundi et mardi, des horaires clairs en ligne éviteraient les portes closes.",
@@ -61,5 +161,7 @@
   ],
   "confiance": "photos nombreuses",
   "carte_reelle": false,
-  "horaires_verifies": true
+  "horaires_verifies": true,
+  "concept_court": "Devanture bleu roi et carte en vitrine",
+  "elements_reels_repris": "bandeau bleu roi et enseigne serif blanche à fleurons, abat-jour froncé, banc rose, carte crème en vitrine, pois des tasses"
 }

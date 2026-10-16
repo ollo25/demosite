@@ -1,23 +1,79 @@
 {
   "slug": "la-pampara",
   "date_releve": "2026-10-16",
-  "nom": { "valeur": "La Pampara Épicerie et Glaces Artisanales", "source": "google_maps" },
-  "categorie": { "valeur": "Épicerie fine", "source": "google_maps" },
-  "adresse": { "valeur": "9 Rue Alibert, 75010 Paris", "source": "google_maps" },
-  "telephone": { "valeur": "01 42 06 88 18", "source": "google_maps" },
-  "note": { "valeur": "4,6", "nb_avis": 105, "source": "google_maps" },
-  "fourchette_prix": { "valeur": "", "source": "google_maps (non affichée)" },
-  "description_google": { "valeur": "", "source": "google_maps (aucune)" },
-  "statut_google": { "valeur": "Ouvert (« Ferme bientôt » au moment du relevé), pas de mention de fermeture définitive", "source": "google_maps" },
-  "horaires": {
-    "valeur": { "lundi": "11:00-19:00", "mardi": "11:00-19:00", "mercredi": "11:00-19:00", "jeudi": "11:00-19:00", "vendredi": "11:00-19:00", "samedi": "14:00-19:00", "dimanche": "14:00-19:00" },
+  "nom": {
+    "valeur": "La Pampara Épicerie et Glaces Artisanales",
     "source": "google_maps"
   },
-  "liens": { "instagram": "", "site": "", "reservation": "", "facebook": "", "source": "google_maps (aucun lien ; la fiche propose « Ajouter un site Web »)" },
-  "plus_code": { "valeur": "V9C8+HM Paris", "source": "google_maps" },
-  "acces": { "valeur": "Métro Goncourt (ligne 11) ou Jacques Bonsergent (ligne 5), environ 5 min à pied", "source": "deduit (plan Google Maps : Goncourt et Bonsergent visibles sur la mini-carte)" },
+  "categorie": {
+    "valeur": "Épicerie fine",
+    "source": "google_maps"
+  },
+  "adresse": {
+    "valeur": "9 Rue Alibert, 75010 Paris",
+    "source": "google_maps"
+  },
+  "telephone": {
+    "valeur": "01 42 06 88 18",
+    "source": "google_maps"
+  },
+  "note": {
+    "valeur": "4,6",
+    "nb_avis": 105,
+    "source": "google_maps"
+  },
+  "fourchette_prix": {
+    "valeur": "",
+    "source": "google_maps (non affichée)"
+  },
+  "description_google": {
+    "valeur": "",
+    "source": "google_maps (aucune)"
+  },
+  "statut_google": {
+    "valeur": "Ouvert (« Ferme bientôt » au moment du relevé), pas de mention de fermeture définitive",
+    "source": "google_maps"
+  },
+  "horaires": {
+    "valeur": {
+      "lundi": "11:00-19:00",
+      "mardi": "11:00-19:00",
+      "mercredi": "11:00-19:00",
+      "jeudi": "11:00-19:00",
+      "vendredi": "11:00-19:00",
+      "samedi": "14:00-19:00",
+      "dimanche": "14:00-19:00"
+    },
+    "source": "google_maps"
+  },
+  "liens": {
+    "instagram": "",
+    "site": "",
+    "reservation": "",
+    "facebook": "",
+    "source": "google_maps (aucun lien ; la fiche propose « Ajouter un site Web »)"
+  },
+  "plus_code": {
+    "valeur": "V9C8+HM Paris",
+    "source": "google_maps"
+  },
+  "acces": {
+    "valeur": "Métro Goncourt (ligne 11) ou Jacques Bonsergent (ligne 5), environ 5 min à pied",
+    "source": "deduit (plan Google Maps : Goncourt et Bonsergent visibles sur la mini-carte)"
+  },
   "themes_avis": {
-    "valeur": ["sandwichs (23)", "charcuterie (7)", "boutique (5)", "vin (4)", "sésame (3)", "épices (3)", "coriandre (2)", "amandes (2)", "tartes (2)", "fondant (2)"],
+    "valeur": [
+      "sandwichs (23)",
+      "charcuterie (7)",
+      "boutique (5)",
+      "vin (4)",
+      "sésame (3)",
+      "épices (3)",
+      "coriandre (2)",
+      "amandes (2)",
+      "tartes (2)",
+      "fondant (2)"
+    ],
     "source": "google_maps"
   },
   "synthese_avis": {
@@ -36,16 +92,56 @@
     ]
   },
   "observations_visuelles": [
-    { "photo": "Façade (client, mai 2020)", "vu": "Devanture peinte en rouge vif, store banne rayé rouge et blanc à lambrequin festonné, « EPICERIE GOURMANDE » en grandes capitales à empattements gris anthracite sur le store, médaillon noir rond sur le côté du store, ardoise sur pied, congélateur à glaces sur le trottoir.", "confiance": "élevée (photo ancienne)" },
-    { "photo": "Façade (sept. 2022)", "vu": "Menuiserie en bois naturel couleur miel (plus de rouge), même store rayé, énorme cornet de glace en piñata frangée (boule rose, magenta et orange, cornet jaune d'or) suspendu devant la vitrine, paniers de fruits, ardoises à la craie colorée : « Glaces Sorbets Milkshakes », « Formule », « Fruits et légumes ».", "confiance": "élevée" },
-    { "photo": "Étagères (sept. 2022)", "vu": "Étagères en bois clair du sol au plafond : sachets de biscuits blancs étiquetés, bocaux, bouteilles de vin et d'huile, suspensions en métal blanc, plante en pot rouge.", "confiance": "élevée" },
-    { "photo": "Intérieur (client, avr. 2025)", "vu": "Plafond en tôle emboutie gris argent, guirlandes lumineuses, comptoir carrelé vert bouteille, sachets de biscuits et boîte rose enrubannée, frise jaune et rouge sous le plafond, store rayé vu de l'intérieur.", "confiance": "élevée" },
-    { "photo": "Intérieur décoré (client, oct. 2023)", "vu": "Décor d'Halloween (chauves-souris, toiles), mur jaune, sachets de biscuits, tabouret rouge, vitrine réfrigérée.", "confiance": "élevée" },
-    { "photo": "Cornet de glace (client, juin 2025)", "vu": "Cornet gaufré trois boules (vanille, café, chocolat) devant le bac à glaces aux parfums colorés (jaune, rose, vert).", "confiance": "élevée" },
-    { "photo": "Formule à emporter (client, janv. 2019)", "vu": "Baguette garnie (crudités, poulet, concombre, coriandre), grand cookie aux pépites de chocolat, limonade italienne en bouteille bleu ciel, assiette à motifs floraux noirs.", "confiance": "élevée" },
-    { "photo": "Fond de boutique (août 2022)", "vu": "Rayonnages bois miel, bocaux et bouteilles, réfrigérateur à boissons, portes vitrées en bois sur la rue, sol en béton.", "confiance": "élevée" },
-    { "photo": "Vitrine à glaces (juin 2022)", "vu": "Vitrine réfrigérée bordée d'un tissu rayé rouge et blanc, cornets gaufrés en présentoir, pots à emporter colorés.", "confiance": "élevée" },
-    { "photo": "Entrée (client, avr. 2025)", "vu": "Cagettes en bois de légumes (poivrons, aubergines, oignons, carottes, poires) devant la vitrine, deux cornets piñata à paillettes rose et or, étoiles en métal, ardoise « Glaces, Sorbets, Milkshakes ».", "confiance": "élevée" }
+    {
+      "photo": "Façade (client, mai 2020)",
+      "vu": "Devanture peinte en rouge vif, store banne rayé rouge et blanc à lambrequin festonné, « EPICERIE GOURMANDE » en grandes capitales à empattements gris anthracite sur le store, médaillon noir rond sur le côté du store, ardoise sur pied, congélateur à glaces sur le trottoir.",
+      "confiance": "élevée (photo ancienne)"
+    },
+    {
+      "photo": "Façade (sept. 2022)",
+      "vu": "Menuiserie en bois naturel couleur miel (plus de rouge), même store rayé, énorme cornet de glace en piñata frangée (boule rose, magenta et orange, cornet jaune d'or) suspendu devant la vitrine, paniers de fruits, ardoises à la craie colorée : « Glaces Sorbets Milkshakes », « Formule », « Fruits et légumes ».",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "Étagères (sept. 2022)",
+      "vu": "Étagères en bois clair du sol au plafond : sachets de biscuits blancs étiquetés, bocaux, bouteilles de vin et d'huile, suspensions en métal blanc, plante en pot rouge.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "Intérieur (client, avr. 2025)",
+      "vu": "Plafond en tôle emboutie gris argent, guirlandes lumineuses, comptoir carrelé vert bouteille, sachets de biscuits et boîte rose enrubannée, frise jaune et rouge sous le plafond, store rayé vu de l'intérieur.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "Intérieur décoré (client, oct. 2023)",
+      "vu": "Décor d'Halloween (chauves-souris, toiles), mur jaune, sachets de biscuits, tabouret rouge, vitrine réfrigérée.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "Cornet de glace (client, juin 2025)",
+      "vu": "Cornet gaufré trois boules (vanille, café, chocolat) devant le bac à glaces aux parfums colorés (jaune, rose, vert).",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "Formule à emporter (client, janv. 2019)",
+      "vu": "Baguette garnie (crudités, poulet, concombre, coriandre), grand cookie aux pépites de chocolat, limonade italienne en bouteille bleu ciel, assiette à motifs floraux noirs.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "Fond de boutique (août 2022)",
+      "vu": "Rayonnages bois miel, bocaux et bouteilles, réfrigérateur à boissons, portes vitrées en bois sur la rue, sol en béton.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "Vitrine à glaces (juin 2022)",
+      "vu": "Vitrine réfrigérée bordée d'un tissu rayé rouge et blanc, cornets gaufrés en présentoir, pots à emporter colorés.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "Entrée (client, avr. 2025)",
+      "vu": "Cagettes en bois de légumes (poivrons, aubergines, oignons, carottes, poires) devant la vitrine, deux cornets piñata à paillettes rose et or, étoiles en métal, ardoise « Glaces, Sorbets, Milkshakes ».",
+      "confiance": "élevée"
+    }
   ],
   "direction_artistique": "Le store rayé rouge et blanc à lambrequin festonné, avec « Épicerie gourmande » en capitales à empattements (Prata), sur une devanture en bois miel ; le grand cornet piñata frangé dessiné en SVG ; la carte du midi et des glaces écrite comme les ardoises à la craie colorée ; le plafond en tôle emboutie et le carrelage vert du comptoir en motifs ; texte en Libre Franklin.",
   "argument_de_vente": "Aucun site, aucun réseau social sur Google (la fiche propose « Ajouter un site Web ») ; 4,6 sur 105 avis et des horaires différents le week-end (14h-19h) : une page avec horaires, formule du midi et glaces lèverait les doutes.",
@@ -60,5 +156,7 @@
   ],
   "confiance": "photos nombreuses",
   "carte_reelle": false,
-  "horaires_verifies": true
+  "horaires_verifies": true,
+  "concept_court": "Store rayé et cornet piñata",
+  "elements_reels_repris": "store rayé rouge et blanc à festons, « Épicerie gourmande » peint, bois miel, cornet de glace frangé, tôle emboutie, comptoir vert bouteille"
 }

@@ -146,9 +146,14 @@ a:focus-visible, .bouton:focus-visible {
   position: relative;
   text-transform: uppercase;
   text-align: center;
-  font-size: clamp(1.6rem, 8.5vw, 4.4rem);
+  font-size: clamp(1.15rem, 5.6vw, 3rem);
   letter-spacing: 0.08em;
   color: var(--anthracite);
+  /* bandeau blanc cassé derrière l'inscription : lisible sur les rayures */
+  background: var(--toile);
+  padding: 0.3em 0.7em;
+  border: 2px solid var(--anthracite);
+  white-space: nowrap;
 }
 .lambrequin { display: block; background: var(--miel); }
 
