@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Démos — liste interne</title>
+  <meta name="description" content="Liste interne des maquettes de sites vitrines (usage privé).">
+  <meta property="og:title" content="Démos — liste interne">
+  <meta property="og:description" content="Liste interne des maquettes de sites vitrines.">
+  <link rel="stylesheet" href="assets/commun/reset.css">
+  <style>
+    /* Page interne : volontairement sobre, polices système */
+    :root { --encre: #1b1b1b; --gris: #5c5c5c; --ligne: #dcdcd6; --fond: #fafaf7; --lien: #0b5394; }
+    body { font: 16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; color: var(--encre); background: var(--fond); padding: 1.5rem 1rem 3rem; }
+    main { max-width: 60rem; margin: 0 auto; }
+    h1 { font-size: 1.5rem; }
+    h2 { font-size: 1.05rem; margin: 2rem 0 .5rem; color: var(--gris); font-weight: 600; }
+    p.intro { color: var(--gris); margin-top: .25rem; }
+    ol { padding: 0; list-style: none; border-top: 1px solid var(--ligne); }
+    li { border-bottom: 1px solid var(--ligne); }
+    li a { display: grid; grid-template-columns: 2rem 1fr auto; gap: .25rem .75rem; padding: .75rem .25rem; text-decoration: none; min-height: 44px; align-items: baseline; }
+    li a:hover .nom, li a:focus-visible .nom { text-decoration: underline; }
+    a:focus-visible { outline: 3px solid var(--lien); outline-offset: 2px; }
+    .num { color: var(--gris); font-variant-numeric: tabular-nums; }
+    .nom { font-weight: 600; color: var(--lien); }
+    .type { grid-column: 2; color: var(--gris); font-size: .95rem; }
+    .arr { grid-row: 1; grid-column: 3; color: var(--gris); font-variant-numeric: tabular-nums; }
+    .absent .nom { color: var(--gris); text-decoration: line-through; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Démos de sites vitrines</h1>
+  <p class="intro">Page interne, non référencée. Chaque lien ouvre la maquette telle qu'on la montre au patron.</p>
+
+  <h2>Canal Saint-Martin (10e et 11e)</h2>
+  <ol>
+    <li><a href="demo/the-sunny-side/"><span class="num">1</span><span class="nom">The Sunny Side</span><span class="type">Café</span><span class="arr">10e</span></a></li>
+    <li><a href="demo/parisette/"><span class="num">2</span><span class="nom">Parisette Fleurs</span><span class="type">Fleuriste</span><span class="arr">10e</span></a></li>
+    <li><a href="demo/di-giu/"><span class="num">3</span><span class="nom">Di Giú</span><span class="type">Pâtisserie</span><span class="arr">10e</span></a></li>
+    <li><a href="demo/amulette/"><span class="num">4</span><span class="nom">Amulette</span><span class="type">Café</span><span class="arr">10e</span></a></li>
+    <li><a href="demo/lemme-lemme/"><span class="num">5</span><span class="nom">Lemme Lemme</span><span class="type">Épicerie fine et restauration</span><span class="arr">10e</span></a></li>
+    <li><a href="demo/mana-leon/"><span class="num">6</span><span class="nom">Mana Léon</span><span class="type">Restaurant thaï</span><span class="arr">10e</span></a></li>
+    <li><a href="demo/la-pampara/"><span class="num">7</span><span class="nom">La Pampara</span><span class="type">Épicerie fine et glaces</span><span class="arr">10e</span></a></li>
+    <li><a href="demo/la-cave-des-quais/"><span class="num">8</span><span class="nom">La Cave des Quais</span><span class="type">Caviste</span><span class="arr">10e</span></a></li>
+    <li><a href="demo/generoso/"><span class="num">9</span><span class="nom">Generoso</span><span class="type">Restaurant italien</span><span class="arr">10e</span></a></li>
+    <li><a href="demo/carburant/"><span class="num">10</span><span class="nom">Carburant</span><span class="type">Bar</span><span class="arr">10e</span></a></li>
+    <li><a href="demo/desordre/"><span class="num">11</span><span class="nom">désordre</span><span class="type">Bar</span><span class="arr">11e</span></a></li>
+    <li><a href="demo/au-bon-endroit/"><span class="num">12</span><span class="nom">Au Bon Endroit Bar</span><span class="type">Bar</span><span class="arr">11e</span></a></li>
+  </ol>
+
+  <h2>Chabrol, Hauteville, Poissonnière (9e et 10e)</h2>
+  <ol>
+    <li><a href="demo/gonfle/"><span class="num">13</span><span class="nom">Gonflé</span><span class="type">Boulangerie</span><span class="arr">10e</span></a></li>
+    <li><a href="demo/ika/"><span class="num">14</span><span class="nom">IKA</span><span class="type">Curry japonais</span><span class="arr">10e</span></a></li>
+    <li><a href="demo/cafe-de-l-eglise/"><span class="num">15</span><span class="nom">Café de l'Église</span><span class="type">Café-restaurant</span><span class="arr">10e</span></a></li>
+    <li><a href="demo/lightea/"><span class="num">16</span><span class="nom">Lightea</span><span class="type">Bubble tea</span><span class="arr">10e</span></a></li>
+    <li><a href="demo/aurelie-ribay/"><span class="num">17</span><span class="nom">Aurélie Ribay Boulangère</span><span class="type">Boulangerie</span><span class="arr">10e</span></a></li>
+    <li><a href="demo/cave-petillance/"><span class="num">18</span><span class="nom">Cave Pétillance</span><span class="type">Caviste, champagnes</span><span class="arr">9e</span></a></li>
+    <li><a href="demo/missia/"><span class="num">19</span><span class="nom">Missià</span><span class="type">Épicerie corse</span><span class="arr">9e</span></a></li>
+    <li><a href="demo/symbiose/"><span class="num">20</span><span class="nom">Symbiose</span><span class="type">Bar à tapas</span><span class="arr">10e</span></a></li>
+    <li><a href="demo/le-dirty-queen/"><span class="num">21</span><span class="nom">Le Dirty Queen</span><span class="type">Bar</span><span class="arr">10e</span></a></li>
+    <li><a href="demo/fruity-cafe/"><span class="num">22</span><span class="nom">Fruity Café</span><span class="type">Café</span><span class="arr">10e</span></a></li>
+  </ol>
+</main>
+</body>
+</html>

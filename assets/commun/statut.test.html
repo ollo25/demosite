@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Tests statut.js</title>
+  <style>
+    body { font: 16px/1.5 system-ui, sans-serif; margin: 1.5rem; color: #1a1a1a; background: #fff; }
+    li { margin: .3rem 0; }
+    .ok { color: #116b2e; }
+    .ko { color: #b00020; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h1>Tests de statut.js</h1>
+  <p id="resume">Tests en cours…</p>
+  <ul id="resultats"></ul>
+
+  <script src="statut.js"></script>
+  <script>
+    // Horaires de test : pause de midi en semaine, fermeture après minuit
+    // le vendredi et le samedi, fermé le lundi.
+    var horaires = {
+      lundi: [],
+      mardi: [["12:00", "14:30"], ["19:00", "23:00"]],
+      mercredi: [["12:00", "14:30"], ["19:00", "23:00"]],
+      jeudi: [["12:00", "14:30"], ["19:00", "23:00"]],
+      vendredi: [["12:00", "14:30"], ["18:00", "02:00"]],
+      samedi: [["18:00", "02:00"]],
+      dimanche: [["11:00", "16:00"]]
+    };
+
+    // Les dates sont données avec le décalage de Paris (+02:00 en octobre 2026)
+    // Vendredi 16/10/2026, samedi 17, dimanche 18, lundi 19, mardi 20.
+    var cas = [
+      ["Ouvert le midi",                 "2026-10-16T13:00:00+02:00", true,  "Ouvert · jusqu'à 14h30"],
+      ["Pause de midi",                  "2026-10-16T15:00:00+02:00", false, "Fermé · ouvre à 18h"],
+      ["Ouvert le soir",                 "2026-10-16T22:00:00+02:00", true,  "Ouvert · jusqu'à 2h"],
+      ["Après minuit (samedi 1h)",       "2026-10-17T01:00:00+02:00", true,  "Ouvert · jusqu'à 2h"],
+      ["Après la fermeture de nuit",     "2026-10-17T02:30:00+02:00", false, "Fermé · ouvre à 18h"],
+      ["Samedi soir après minuit (dim.)", "2026-10-18T01:30:00+02:00", true, "Ouvert · jusqu'à 2h"],
+      ["Dimanche soir",                  "2026-10-18T20:00:00+02:00", false, "Fermé · ouvre mardi à 12h"],
+      ["Jour fermé (lundi)",             "2026-10-19T12:00:00+02:00", false, "Fermé · ouvre demain à 12h"],
+      ["Avant l'ouverture",              "2026-10-20T09:00:00+02:00", false, "Fermé · ouvre à 12h"],
+      ["Heure de l'appareil ignorée (UTC 11h = Paris 13h)", "2026-10-16T11:00:00Z", true, "Ouvert · jusqu'à 14h30"],
+      ["Heure d'hiver (mardi 3/11 19h30)", "2026-11-03T19:30:00+01:00", true, "Ouvert · jusqu'à 23h"]
+    ];
+
+    var echecs = 0;
+    var liste = document.getElementById("resultats");
+    cas.forEach(function (c) {
+      var r = Statut.calculer(horaires, new Date(c[1]));
+      var ok = r.ouvert === c[2] && r.texte === c[3];
+      if (!ok) echecs++;
+      var li = document.createElement("li");
+      li.className = ok ? "ok" : "ko";
+      li.textContent = (ok ? "OK — " : "ÉCHEC — ") + c[0] + " : « " + r.texte + " »" +
+        (ok ? "" : " (attendu « " + c[3] + " »)");
+      liste.appendChild(li);
+    });
+
+    // Cas sans aucun horaire
+    var vide = Statut.calculer({ lundi: [], mardi: [] }, new Date());
+    var okVide = vide.texte === "Fermé" && vide.ouvert === false;
+    if (!okVide) echecs++;
+    var li = document.createElement("li");
+    li.className = okVide ? "ok" : "ko";
+    li.textContent = (okVide ? "OK" : "ÉCHEC") + " — Aucun horaire : « " + vide.texte + " »";
+    liste.appendChild(li);
+
+    var total = cas.length + 1;
+    var resume = document.getElementById("resume");
+    resume.textContent = echecs ? echecs + " échec(s) sur " + total : "Tous les tests passent (" + total + "/" + total + ").";
+    resume.className = echecs ? "ko" : "ok";
+    document.body.setAttribute("data-resultat", echecs ? "echec" : "ok");
+  </script>
+</body>
+</html>
