@@ -1,0 +1,349 @@
+/*
+ * Generoso — direction artistique
+ *
+ * Concept : la page reprend la salle du 46 quai de Jemmapes. En haut, le mur
+ * rouge brique du bar avec le nom en capitales condensées dorées, comme le
+ * logo « GENEROSO vino & itinerari di gusto » imprimé sur la carte et sur la
+ * vitrine ; puis une frise du mur à vins (casiers en bois, filet de lumière
+ * rouge) ; la carte est accrochée au mur crème comme les photographies
+ * encadrées de blanc de la salle.
+ *
+ * Palette (relevée sur les photos Google Maps) :
+ *   --brique  #8E3434  mur rouge du bar, fond du logo (assombri pour le contraste du texte)
+ *   --or      #F5CE7E  lettrage doré du logo
+ *   --creme   #EFE6D2  murs de la salle
+ *   --papier  #FBF8F1  passe-partout blanc des cadres photo
+ *   --bois    #5A3A22  casiers du mur à vins, chaises de bistrot
+ *   --encre   #2A2321  assiettes noires carrées, cadres de la vitrine (texte courant)
+ *   --neon    #E2453C  filet LED rouge en haut du mur à vins (décor uniquement)
+ *
+ * Polices (2, licence SIL OFL) :
+ *   Anton — capitales très condensées et grasses, au plus près du lettrage du
+ *           logo et de la vitrine.
+ *   Lora  — serif calligraphique douce (400 et italique) pour le texte et la
+ *           devise « vino & itinerari di gusto », ton de trattoria soignée.
+ *
+ * Mise en page : accueil rouge plein écran sur mobile, alignement à gauche,
+ * carte en une colonne sur téléphone (deux au-delà de 768 px), prix alignés
+ * à droite. Ton : direct et chaleureux, intitulés italiens de la carte.
+ */
+
+/* ---------- Polices ---------- */
+@font-face {
+  font-family: "Anton";
+  src: url("fonts/anton-latin-400-normal.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lora";
+  src: url("fonts/lora-latin-400-normal.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lora";
+  src: url("fonts/lora-latin-400-italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* ---------- Couleurs et réglages ---------- */
+:root {
+  --brique: #8E3434;
+  --brique-vif: #A34444;
+  --or: #F5CE7E;
+  --creme: #EFE6D2;
+  --creme-fonce: #E4D7BC;
+  --papier: #FBF8F1;
+  --bois: #5A3A22;
+  --bois-fonce: #2E1F15;
+  --encre: #2A2321;
+  --neon: #E2453C;
+  --largeur: 70rem;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 4.5rem; }
+
+body {
+  background: var(--creme);
+  color: var(--encre);
+  font-family: "Lora", Georgia, serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+}
+
+h1, h2, h3, .entete-nom, .pied-nom {
+  font-family: "Anton", "Impact", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: clamp(2.6rem, 11vw, 4.2rem);
+  color: var(--brique);
+  letter-spacing: 0.01em;
+  margin-bottom: 1.25rem;
+}
+
+a:focus-visible, .bouton:focus-visible {
+  outline: 3px solid var(--or);
+  outline-offset: 3px;
+}
+.carte a:focus-visible, .infos a:focus-visible, .lieu a:focus-visible { outline-color: var(--brique); }
+
+/* ---------- Boutons ---------- */
+.bouton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 1.3rem;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  font-family: "Anton", "Impact", sans-serif;
+  font-size: 1.05rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.bouton-or { background: var(--or); color: var(--brique); }
+.bouton-or:hover { background: var(--papier); }
+.bouton-ligne { border-color: var(--or); color: var(--or); }
+.bouton-ligne:hover { background: var(--or); color: var(--brique); }
+.bouton-petit {
+  min-height: 44px;
+  padding: 0 1rem;
+  background: var(--or);
+  color: var(--brique);
+  font-size: 0.95rem;
+}
+
+.lien { color: var(--brique); text-underline-offset: 3px; }
+
+/* ---------- En-tête collant ---------- */
+.entete {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  background: var(--brique);
+  border-bottom: 1px solid rgba(245, 206, 126, 0.35);
+}
+.entete-nom {
+  margin-right: auto;
+  font-size: 1.6rem;
+  letter-spacing: 0.03em;
+  color: var(--or);
+  text-decoration: none;
+  padding: 0.5rem 0;
+}
+.entete-nav { display: none; gap: 1.6rem; }
+.entete-nav a {
+  color: var(--creme);
+  text-decoration: none;
+  padding: 0.6rem 0;
+}
+.entete-nav a:hover { color: var(--or); text-decoration: underline; }
+
+/* ---------- Accueil ---------- */
+.accueil {
+  background: var(--brique);
+  color: var(--creme);
+  padding: 2.5rem 1.25rem 3rem;
+}
+.accueil-type { font-style: italic; margin-bottom: 0.5rem; }
+.accueil-nom {
+  font-size: clamp(4.2rem, 22vw, 12rem);
+  color: var(--or);
+  letter-spacing: 0.01em;
+  line-height: 0.92;
+  animation: monter 500ms ease-out both;
+}
+@keyframes monter {
+  from { opacity: 0; transform: translateY(0.15em); }
+  to { opacity: 1; transform: none; }
+}
+.accueil-devise {
+  font-style: italic;
+  font-size: clamp(1.35rem, 6vw, 2rem);
+  color: var(--or);
+  margin: 0.4rem 0 1.5rem;
+}
+.accueil-accroche {
+  font-size: 1.2rem;
+  max-width: 34ch;
+  margin-bottom: 1.25rem;
+}
+
+/* Badge ouvert / fermé */
+.statut {
+  display: inline-block;
+  padding: 0.3rem 0.85rem;
+  border: 1px solid var(--creme);
+  border-radius: 3px;
+  margin-bottom: 1.75rem;
+}
+.statut[data-ouvert="oui"] { background: var(--or); border-color: var(--or); color: var(--brique); }
+
+.accueil-boutons { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+
+/* ---------- Frise du mur à vins ---------- */
+.cave { height: 120px; background: var(--bois-fonce); }
+.cave svg { display: block; }
+
+/* Plaque d'adresse : seulement sur grand écran, comme le lettrage de la vitrine */
+.accueil-plaque { display: none; }
+
+/* ---------- La carte, accrochée au mur comme un cadre ---------- */
+.carte { padding: 3rem 1rem; }
+.carte-cadre {
+  max-width: var(--largeur);
+  margin: 0 auto;
+  background: var(--papier);
+  border: 10px solid #fff;
+  outline: 1px solid #CFC3A8;
+  padding: 2rem 1.25rem 1.5rem;
+  box-shadow: 0 10px 24px -14px rgba(42, 35, 33, 0.45);
+}
+.carte-intro { max-width: 52ch; font-size: 1rem; font-style: italic; margin-bottom: 2rem; }
+
+.carte-section { margin-bottom: 2.25rem; break-inside: avoid; }
+.carte-titre {
+  font-size: 1.7rem;
+  color: var(--brique);
+  letter-spacing: 0.03em;
+  padding-bottom: 0.35rem;
+  border-bottom: 3px solid var(--brique);
+}
+.carte-note { font-size: 0.95rem; font-style: italic; margin-top: 0.4rem; }
+.carte-ligne {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 1rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--creme-fonce);
+}
+.carte-nom { font-size: 1.125rem; }
+.carte-prix {
+  font-family: "Anton", "Impact", sans-serif;
+  font-size: 1.15rem;
+  letter-spacing: 0.03em;
+  color: var(--brique);
+  text-align: right;
+  white-space: nowrap;
+}
+.carte-desc { grid-column: 1 / -1; font-size: 1rem; font-style: italic; color: #5A4E47; }
+.carte-pied { font-size: 0.95rem; margin-top: 0.5rem; }
+
+/* ---------- La salle ---------- */
+.lieu {
+  padding: 1rem 1.25rem 3.5rem;
+  display: grid;
+  gap: 2.5rem;
+  max-width: var(--largeur);
+  margin: 0 auto;
+}
+.lieu-texte { max-width: 38rem; }
+.lieu-texte p + p { margin-top: 1rem; }
+/* Cadres blancs au passe-partout, accrochés de travers comme dans la salle */
+.lieu-cadres { position: relative; display: flex; align-items: flex-start; gap: 1rem; }
+.cadre {
+  margin: 0;
+  background: #fff;
+  padding: 0.7rem;
+  border: 1px solid #CFC3A8;
+}
+.cadre span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background: var(--brique-vif);
+  color: var(--or);
+  font-style: italic;
+  text-align: center;
+}
+.cadre-grand { flex: 2; aspect-ratio: 4 / 3; }
+.cadre-petit { flex: 1; aspect-ratio: 3 / 4; margin-top: 2.5rem; }
+.cadre-petit span { background: var(--bois); }
+
+/* ---------- Horaires et accès ---------- */
+.infos {
+  background: var(--creme-fonce);
+  padding: 3rem 1.25rem;
+}
+.infos > * { max-width: var(--largeur); margin-left: auto; margin-right: auto; }
+.infos h3 {
+  font-size: 1.35rem;
+  color: var(--bois);
+  letter-spacing: 0.03em;
+  margin: 0 0 0.6rem;
+}
+.infos-grille { display: grid; gap: 2rem; }
+.infos-grille p { margin-bottom: 1rem; }
+.horaire {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.6rem 0.75rem;
+  border-bottom: 1px solid #CFC3A8;
+}
+.horaire-heures { text-align: right; }
+.horaire.aujourdhui {
+  background: var(--brique);
+  color: var(--or);
+  border-bottom-color: var(--brique);
+}
+.services { padding-left: 1.2rem; list-style: square; }
+.services li::marker { color: var(--brique); }
+
+/* ---------- Réserver ---------- */
+.reserver {
+  background: var(--brique);
+  color: var(--creme);
+  padding: 3rem 1.25rem;
+}
+.reserver > * { max-width: var(--largeur); margin-left: auto; margin-right: auto; }
+.reserver h2 { color: var(--or); }
+.reserver p { margin-bottom: 1.5rem; }
+
+/* ---------- Pied de page ---------- */
+.pied {
+  background: var(--bois-fonce);
+  color: var(--creme);
+  padding: 2.5rem 1.25rem 1.5rem;
+  border-top: 5px solid var(--neon);
+}
+.pied p { margin-bottom: 0.4rem; }
+.pied .lien { color: var(--or); display: inline-block; padding: 0.6rem 0; }
+.pied-nom { font-size: 2.4rem; color: var(--or); }
+.mention { font-size: 0.75rem; opacity: 0.8; margin-top: 1.5rem; }
+
+/* ---------- Tablette et grand écran ---------- */
+@media (min-width: 768px) {
+  .entete { padding: 0.6rem 2rem; }
+  .entete-nav { display: flex; }
+  .accueil { padding: 5rem max(2rem, calc((100vw - var(--largeur)) / 2)); }
+  .accueil { display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 3rem; }
+  .accueil-plaque {
+    display: block;
+    border-left: 3px solid var(--or);
+    padding: 0.25rem 0 0.25rem 1.25rem;
+    font-style: italic;
+    font-size: 1.15rem;
+    line-height: 1.8;
+  }
+  .carte { padding: 4.5rem 2rem; }
+  .carte-cadre { padding: 3rem 3rem 2rem; border-width: 16px; }
+  .carte-contenu { columns: 2; column-gap: 4rem; }
+  .lieu { grid-template-columns: 1.1fr 1fr; align-items: center; padding: 1rem 2rem 4.5rem; }
+  .infos-grille { grid-template-columns: 1fr 1fr; gap: 4rem; }
+  .infos, .reserver { padding: 4rem 2rem; }
+}

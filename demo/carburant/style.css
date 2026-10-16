@@ -1,0 +1,305 @@
+/*
+ * Carburant — direction artistique
+ *
+ * Concept : la page reprend la façade du 60 rue de Lancry, son store bleu
+ * marine où « CARBURANT » est écrit en capitales condensées blanches entre
+ * « bar » et « cave » en écriture penchée, et ses quatre vitres peintes
+ * (Craft beer, Sur place et à emporter, Vin nature, Fromage et charcuterie)
+ * dans une devanture en bois ; puis l'ardoise noire au-dessus des tireuses,
+ * craie blanche, noms en rose, prix en vert ; et le bleu électrique des
+ * étagères du bar.
+ *
+ * Palette (relevée sur les photos Google Maps) :
+ *   --store    #23357A  store bleu marine de la façade
+ *   --bleu     #1F3BD6  étagères bleu électrique derrière le comptoir
+ *   --vert     #7E9A2E  mur vert éclairé sous les tireuses (décor)
+ *   --bois     #6B4423  devanture en bois verni
+ *   --chene    #C99A5B  comptoir en chêne brut
+ *   --ardoise  #1D1F1C  ardoise au-dessus des tireuses
+ *   --craie-rose #F49AC1, --craie-verte #B8E07A  craies de l'ardoise
+ *   --papier   #F4EBDD  fond clair (murs blancs de l'immeuble)
+ *
+ * Polices (2, licence SIL OFL) :
+ *   Barlow Condensed — capitales condensées et droites, comme le lettrage
+ *                      blanc du store et des vitres (500 et 700).
+ *   Caveat           — écriture à la main, pour « bar » / « cave » du store
+ *                      et la craie de l'ardoise (600).
+ *
+ * Mise en page : alignement à gauche, accueil = store + vitres en grille 2×2
+ * dans un cadre en bois, ardoise pleine largeur, prix alignés à droite.
+ * Ton : court, direct, un peu brut comme le lieu.
+ */
+
+/* ---------- Polices ---------- */
+@font-face {
+  font-family: "Barlow Condensed";
+  src: url("fonts/barlow-condensed-latin-500-normal.woff2") format("woff2");
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Barlow Condensed";
+  src: url("fonts/barlow-condensed-latin-700-normal.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Caveat";
+  src: url("fonts/caveat-latin-600-normal.woff2") format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+
+/* ---------- Couleurs et réglages ---------- */
+:root {
+  --store: #23357A;
+  --bleu: #1F3BD6;
+  --vert: #7E9A2E;
+  --bois: #6B4423;
+  --bois-fonce: #4A2E17;
+  --chene: #C99A5B;
+  --ardoise: #1D1F1C;
+  --craie: #F3F3EE;
+  --craie-rose: #F49AC1;
+  --craie-verte: #B8E07A;
+  --papier: #F4EBDD;
+  --encre: #1D1F1C;
+  --largeur: 68rem;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 4.5rem; }
+
+body {
+  background: var(--papier);
+  color: var(--encre);
+  font-family: "Barlow Condensed", "Arial Narrow", sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+h1, h2, h3 { font-weight: 700; line-height: 1; text-transform: uppercase; }
+h2 { font-size: clamp(2.6rem, 12vw, 4.5rem); letter-spacing: 0.02em; margin-bottom: 1rem; }
+
+.script { font-family: "Caveat", "Comic Sans MS", cursive; font-weight: 600; text-transform: none; }
+
+a:focus-visible, .bouton:focus-visible { outline: 3px solid var(--craie-verte); outline-offset: 3px; }
+.infos a:focus-visible, .lieu a:focus-visible { outline-color: var(--bleu); }
+
+/* ---------- Boutons ---------- */
+.bouton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 1.3rem;
+  border: 2px solid transparent;
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.bouton-plein { background: var(--craie); color: var(--store); }
+.bouton-plein:hover { background: var(--craie-verte); }
+.bouton-ligne { border-color: var(--craie); color: var(--craie); }
+.bouton-ligne:hover { background: var(--craie); color: var(--ardoise); }
+.bouton-petit { min-height: 44px; padding: 0 0.9rem; background: var(--craie); color: var(--store); font-size: 1rem; }
+
+.lien { color: var(--bleu); font-weight: 700; text-underline-offset: 3px; }
+
+/* ---------- En-tête collant (le store) ---------- */
+.entete {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  background: var(--store);
+  color: var(--craie);
+}
+.entete-nom {
+  margin-right: auto;
+  padding: 0.4rem 0;
+  color: var(--craie);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.entete-nom .script { font-size: 1.3rem; letter-spacing: 0; margin-right: 0.2rem; }
+.entete-nav { display: none; gap: 1.75rem; }
+.entete-nav a { color: var(--craie); text-decoration: none; font-size: 1.15rem; padding: 0.6rem 0.3rem; }
+.entete-nav a:hover { text-decoration: underline; }
+
+/* ---------- Accueil : store + devanture en bois ---------- */
+.accueil { background: var(--bois); color: var(--craie); padding-bottom: 2.75rem; }
+
+.store {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem;
+  background: var(--store);
+  padding: 1.75rem 1rem 1.5rem;
+  border-bottom: 8px solid var(--bois-fonce);
+}
+.store .script { font-size: clamp(1.4rem, 6vw, 3rem); }
+.accueil-nom {
+  font-size: clamp(2.6rem, 12.5vw, 9rem);
+  letter-spacing: 0.06em;
+  animation: store 450ms ease-out both;
+}
+@keyframes store {
+  from { opacity: 0; letter-spacing: 0.14em; }
+  to { opacity: 1; letter-spacing: 0.06em; }
+}
+
+/* Les vitres : verre sombre, lettrage blanc peint, montants en bois */
+.devanture {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 10px;
+  background: var(--bois-fonce);
+  margin: 1.25rem 1rem 1.75rem;
+}
+.vitre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 6.5rem;
+  padding: 0.75rem;
+  background: var(--ardoise);
+  border: 3px solid var(--chene);
+  font-weight: 700;
+  font-size: 1.15rem;
+  line-height: 1.1;
+  letter-spacing: 0.05em;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* une lumière bleue au fond de deux vitres, comme les néons dans la salle */
+.vitre:nth-child(2), .vitre:nth-child(3) { border-bottom: 6px solid var(--bleu); }
+
+.accueil-texte { padding: 0 1rem; max-width: 40rem; }
+.accueil-accroche { font-size: 1.3rem; margin-bottom: 1.25rem; }
+
+.statut {
+  display: inline-block;
+  padding: 0.3rem 0.9rem;
+  border: 2px solid var(--craie);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  margin-bottom: 1.5rem;
+}
+.statut[data-ouvert="oui"] { background: var(--craie-verte); border-color: var(--craie-verte); color: var(--ardoise); }
+
+.accueil-boutons { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+
+/* ---------- L'ardoise ---------- */
+.ardoise { background: var(--ardoise); color: var(--craie); padding: 3rem 1rem; border-top: 10px solid var(--chene); }
+.ardoise-cadre { max-width: var(--largeur); margin: 0 auto; }
+.ardoise h2 { font-family: "Caveat", cursive; font-weight: 600; text-transform: none; font-size: clamp(3rem, 14vw, 5rem); }
+.ardoise-intro { max-width: 46ch; margin-bottom: 2rem; }
+
+.carte-section { margin-bottom: 2.25rem; break-inside: avoid; }
+.carte-titre {
+  font-family: "Caveat", cursive;
+  font-weight: 600;
+  text-transform: none;
+  font-size: 2.1rem;
+  color: var(--craie-rose);
+}
+.carte-note { font-size: 1.05rem; color: #CFCAC0; margin-bottom: 0.4rem; }
+.carte-liste { border-top: 2px solid rgba(244, 241, 234, 0.6); }
+.carte-ligne {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 1rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px dashed rgba(244, 241, 234, 0.35);
+}
+.carte-nom { font-weight: 700; text-transform: uppercase; letter-spacing: 0.03em; }
+.carte-prix { font-weight: 700; color: var(--craie-verte); text-align: right; white-space: nowrap; }
+.carte-desc { grid-column: 1 / -1; color: #CFCAC0; font-size: 1.1rem; }
+.ardoise-pied { font-size: 1.05rem; color: #CFCAC0; }
+
+/* ---------- Le bar ---------- */
+.lieu {
+  display: grid;
+  gap: 1.75rem;
+  padding: 3rem 1rem;
+  max-width: var(--largeur);
+  margin: 0 auto;
+}
+.lieu h2 { color: var(--store); }
+.lieu-texte p + p { margin-top: 1rem; }
+.tireuses { width: 100%; height: auto; border: 6px solid var(--bois); }
+.photo-vide {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 16 / 9;
+  background: var(--bleu);
+  border: 6px solid var(--bois);
+}
+.photo-vide figcaption {
+  font-family: "Caveat", cursive;
+  font-size: 1.8rem;
+  color: var(--craie);
+}
+
+/* ---------- Horaires et accès ---------- */
+.infos { background: var(--craie); padding: 3rem 1rem; border-top: 8px solid var(--store); }
+.infos > * { max-width: var(--largeur); margin-left: auto; margin-right: auto; }
+.infos h2 { color: var(--store); }
+.infos h3 { font-size: 1.4rem; color: var(--bois); letter-spacing: 0.04em; margin-bottom: 0.5rem; }
+.infos-grille { display: grid; gap: 2rem; }
+.infos-grille p { margin-bottom: 1rem; }
+.horaire {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.55rem 0.75rem;
+  border-bottom: 1px solid #D9CFBF;
+}
+.horaire.aujourdhui { background: var(--store); color: var(--craie); font-weight: 700; border-bottom-color: var(--store); }
+.services { padding-left: 1.2rem; list-style: square; }
+.services li::marker { color: var(--bleu); }
+
+/* ---------- Pied de page ---------- */
+.pied { background: var(--store); color: var(--craie); padding: 2.5rem 1rem 1.5rem; }
+.pied p { margin-bottom: 0.4rem; }
+.pied .lien { color: var(--craie); display: inline-block; padding: 0.6rem 0; }
+.pied-nom { font-weight: 700; font-size: 2.4rem; letter-spacing: 0.08em; text-transform: uppercase; }
+.mention { font-size: 0.8rem; opacity: 0.85; margin-top: 1.5rem; }
+
+/* ---------- Tablette et grand écran ---------- */
+@media (min-width: 768px) {
+  .entete { padding: 0.6rem 2rem; }
+  .entete-nav { display: flex; }
+  .store { padding: 2.5rem max(2rem, calc((100vw - var(--largeur)) / 2)); }
+  .devanture {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: var(--largeur);
+    margin: 2rem auto 2.5rem;
+  }
+  .vitre { min-height: 12rem; font-size: 1.5rem; }
+  .accueil { padding-bottom: 4rem; }
+  .accueil-texte { max-width: var(--largeur); margin: 0 auto; padding: 0; }
+  .accueil-accroche { max-width: 40ch; font-size: 1.45rem; }
+  .ardoise { padding: 4.5rem 2rem; }
+  .carte-contenu { columns: 2; column-gap: 4rem; }
+  .lieu { grid-template-columns: 1.2fr 1fr; padding: 4.5rem 2rem; align-items: start; }
+  .lieu-texte { grid-row: span 2; }
+  .infos { padding: 4rem 2rem; }
+  .infos-grille { grid-template-columns: 1fr 1fr; gap: 4rem; }
+}
+@media (min-width: 768px) and (max-width: 1100px) {
+  .devanture { margin-left: 2rem; margin-right: 2rem; }
+  .accueil-texte { padding: 0 2rem; }
+}

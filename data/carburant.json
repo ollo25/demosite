@@ -1,0 +1,51 @@
+{
+  "slug": "carburant",
+  "date_releve": "2026-10-16",
+  "nom": { "valeur": "Carburant", "source": "google_maps" },
+  "categorie": { "valeur": "Bar", "source": "google_maps" },
+  "adresse": { "valeur": "60 Rue de Lancry, 75010 Paris", "source": "google_maps" },
+  "telephone": { "valeur": "", "source": "google_maps (aucun numéro sur la fiche)" },
+  "note": { "valeur": "4,5", "nb_avis": 165, "source": "google_maps" },
+  "statut_google": { "valeur": "Ouvert (aucune mention de fermeture)", "source": "google_maps" },
+  "horaires": {
+    "valeur": { "lundi": "fermé", "mardi": "18:00-00:00", "mercredi": "18:00-00:00", "jeudi": "18:00-00:00", "vendredi": "18:00-02:00", "samedi": "18:00-02:00", "dimanche": "fermé" },
+    "source": "google_maps"
+  },
+  "attributs": { "valeur": ["Sur place et à emporter (vitrine)", "Craft beer, vin nature, fromage et charcuterie (vitrine)", "Retransmission de matchs (avis)"], "source": "photo / avis" },
+  "liens": { "facebook": "https://www.facebook.com/Carburantbar", "instagram": "", "site": "", "reservation": "", "source": "google_maps" },
+  "plus_code": { "valeur": "V9F7+3C Paris", "source": "google_maps" },
+  "acces": { "valeur": "Métro Jacques Bonsergent (ligne 5), environ 3 min à pied", "source": "deduit (plan Google Maps)" },
+  "themes_avis": { "valeur": ["choix (13)", "bières artisanales (10)", "vin (5)", "mezcal (4)", "playlist (4)", "canettes (3)", "tenancier (2)", "merch (2)", "insulter (2)", "ivre (2)"], "source": "google_maps" },
+  "synthese_avis": { "valeur": "Grand choix de bières artisanales (pression et canettes), mezcal et vin cités, playlist appréciée, bar petit et bruyant, foule sur le trottoir ; quelques avis négatifs sur l'accueil du tenancier (non repris).", "source": "avis" },
+  "carte": {
+    "source": "photo_carte (ardoise au-dessus des tireuses, photo client oct. 2024, lecture partielle)",
+    "releve": ["Tireuses numérotées #1 à #10, noms de bières en craie blanche, brasseries en rose (lisibles : Brasserie du Mont Salève, Fauve), styles lisibles : imperial black / coffee stout, IPA 9 %, cidre 6 %, fruit wine", "Tarifs lisibles en vert : 4,5/8,5 ; 5,5/10,5 ; 6/11,5 (deux formats)", "Ardoise basse : Larmes de liqueur de chipotle 2 €"],
+    "remarque": "Association tarif/catégorie déduite ; canettes, vin, mezcal, planche : prix d'exemple"
+  },
+  "observations_visuelles": [
+    { "photo": "Façade de nuit (propriétaire, juil. 2021)", "vu": "Store bleu marine, CARBURANT en capitales condensées blanches, « cave » en écriture penchée à droite ; devanture bois, foule sur le trottoir, lampes globes.", "confiance": "élevée" },
+    { "photo": "Façade de jour (client, oct. 2024)", "vu": "Devanture en bois verni à portes vitrées ; store bleu « bar · CARBURANT · cave » ; vitres peintes en blanc : CRAFT BEER, SUR PLACE ET À EMPORTER, VIN NATURE, FROMAGE ET CHARCUTERIE ; enseigne potence « CARBURANT craft beer » ; immeuble haussmannien blanc.", "confiance": "élevée" },
+    { "photo": "Comptoir (propriétaire, juil. 2021)", "vu": "Comptoir en chêne brut épais, bouteilles à bouchon mécanique, cendrier Pico.", "confiance": "élevée" },
+    { "photo": "Bar (propriétaire, juil. 2021)", "vu": "Étagères bleu électrique remplies de canettes et verres, ardoise noire écrite à la craie, rangée de tireuses chromées, suspension émaillée blanche.", "confiance": "élevée" },
+    { "photo": "Pinte (client, nov. 2025)", "vu": "Bière trouble blonde en verre conique sur comptoir bois.", "confiance": "élevée" },
+    { "photo": "Tireuses et ardoise (client, oct. 2024)", "vu": "Dix tireuses sur fond bleu, mur vert éclairé, ardoise numérotée (blanc / rose / vert), frigos couverts d'autocollants de brasseries, serviette de bar ; « Larmes de liqueur de chipotle 2 € ».", "confiance": "élevée" },
+    { "photo": "Stout (client, oct. 2024)", "vu": "Bière noire en verre à pied gradué 0,25 L.", "confiance": "élevée" },
+    { "photo": "Bière et verre (client, oct. 2024)", "vu": "Verre à pied, bière ambrée, lumière chaude, ardoise floue au fond.", "confiance": "élevée" },
+    { "photo": "Canette Black Sour (client, oct. 2024)", "vu": "Canette noire « Black sour raspberry » à motif néon rose, verre de bière rouge sombre.", "confiance": "élevée" },
+    { "photo": "Canette Outer Range (client, oct. 2024)", "vu": "Canette blanche Outer Range « Way down » double IPA, verre à pied.", "confiance": "élevée" }
+  ],
+  "direction_artistique": "Store bleu marine avec CARBURANT en Barlow Condensed blanc entre « bar » et « cave » en Caveat, quatre vitres peintes dans une devanture en bois, ardoise noire à la craie (rose/vert) pour la carte, tireuses en SVG sur le bleu électrique des étagères.",
+  "argument_de_vente": "Facebook seulement, aucun site ni téléphone sur Google ; l'offre change chaque semaine sur l'ardoise : une page simple avec horaires et ardoise à jour.",
+  "a_verifier": [
+    "Téléphone : aucun numéro sur Google, boutons Appeler masqués (Itinéraire à la place)",
+    "Tarifs de pression lus sur l'ardoise (oct. 2024), associés aux styles par déduction",
+    "Prix d'exemple : canettes, vin nature, mezcal, planche fromage et charcuterie, cidre",
+    "Nombre de tireuses (10 comptées sur la photo)",
+    "Retransmission des matchs : citée dans un avis",
+    "Merch (t-shirts ?) cité dans les avis, non repris",
+    "Accès métro déduit du plan"
+  ],
+  "confiance": "photos nombreuses",
+  "carte_reelle": false,
+  "horaires_verifies": true
+}

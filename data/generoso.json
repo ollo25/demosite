@@ -1,0 +1,62 @@
+{
+  "slug": "generoso",
+  "date_releve": "2026-10-16",
+  "nom": { "valeur": "Generoso", "source": "google_maps" },
+  "categorie": { "valeur": "Restaurant italien", "source": "google_maps" },
+  "adresse": { "valeur": "46 Quai de Jemmapes, 75010 Paris", "source": "google_maps" },
+  "telephone": { "valeur": "01 80 06 39 47", "source": "google_maps" },
+  "note": { "valeur": "4,9", "nb_avis": 260, "source": "google_maps" },
+  "statut_google": { "valeur": "Ouvert (aucune mention de fermeture)", "source": "google_maps" },
+  "horaires": {
+    "valeur": { "lundi": "fermé", "mardi": "12:00-14:00, 18:30-23:00", "mercredi": "12:00-14:00, 18:30-23:00", "jeudi": "12:00-14:00, 18:30-23:00", "vendredi": "12:00-14:00, 18:30-23:00", "samedi": "12:00-14:00, 18:30-23:00", "dimanche": "fermé" },
+    "source": "google_maps"
+  },
+  "fourchette_prix": { "valeur": "prix moyen 30 € (entrée/plat ou plat/dessert, hors boissons)", "source": "web:https://www.thefork.fr/restaurant/generoso-r805906/menu" },
+  "attributs": { "valeur": ["LGBTQ+ friendly", "Accès fauteuil roulant (pictogramme)", "Réserver une table (Google, partenaire CoverManager)", "Quelques tables en terrasse (avis)", "Options végétariennes (TheFork)"], "source": "google_maps / avis / web" },
+  "liens": {
+    "instagram": "https://www.instagram.com/generoso_paris",
+    "reservation": "https://restaurante.covermanager.com/generoso/",
+    "reservation_google": "https://www.google.com/maps/reserve/v/dine/c/zA7SNCCSqdk",
+    "site": "",
+    "source": "google_maps (bouton « Réserver une table » : horaires fournis en partenariat avec CoverManager) ; page CoverManager vérifiée : même adresse, même téléphone"
+  },
+  "plus_code": { "valeur": "V998+VV Paris", "source": "google_maps" },
+  "acces": { "valeur": "Métro Goncourt (ligne 11) ou Jacques Bonsergent (ligne 5), environ 7 min à pied", "source": "deduit (plan Google Maps, bonjour-ratp cite Goncourt)" },
+  "themes_avis": {
+    "valeur": ["carbonara (10)", "hasard (8)", "spritz (8)", "truffe (8)", "vins italiens (7)", "service (7)", "concert (5)", "propriétaire (5)", "restaurateurs (5)", "parmigiana (5)"],
+    "source": "google_maps"
+  },
+  "synthese_avis": { "valeur": "Patrons très accueillants (ambiance « à la maison »), carbonara et pâtes à la truffe souvent citées, spritz, vins italiens, parmigiana, burrata ; lieu découvert par hasard ; concerts évoqués ; calme, quelques tables en terrasse sur le quai.", "source": "avis" },
+  "carte": {
+    "source": "web:https://www.thefork.fr/restaurant/generoso-r805906/menu (mise à jour 24 juillet 2024)",
+    "releve": ["Antipasto : Burrata Caprese 14 €", "Planche mixte charcuterie, fromages, légumes 28 €", "Planche veg fromages & légumes 20 €", "Carbonara di Michele 24 €"],
+    "complements_prix_exemple": ["Parmigiana (avis)", "Tagliatelle à la truffe (photo, avis)", "Risotto safran burrata (photo)", "Gnocchi tomate basilic (photo)", "Tiramisu (description TheFork)", "Spritz (avis, bouteilles Aperol/Select au bar)", "Vin italien au verre"]
+  },
+  "observations_visuelles": [
+    { "photo": "Vitrine de nuit (propriétaire, déc. 2025)", "vu": "Grandes vitres à cadres sombres, lettrage gris condensé « GENEROSO vino & itinerari di gusto » sur la vitre haute ; à l'intérieur mur rouge vif derrière le bar, murs crème couverts de photos encadrées blanc, globes blancs, chaises bistrot bois, rideaux rouges ; table ronde rose-rouge en terrasse.", "confiance": "élevée" },
+    { "photo": "Vidéo du mur (propriétaire, déc. 2025)", "vu": "Photographies encadrées blanc avec passe-partout, scènes de rue (Maroc ?), grand tirage sur fond rouge ; mur beige crème.", "confiance": "élevée" },
+    { "photo": "Risotto (propriétaire, mars 2026)", "vu": "Risotto jaune safran, burrata, basilic, parmesan râpé sur assiette noire carrée.", "confiance": "élevée" },
+    { "photo": "Tagliatelle (client, sept. 2026)", "vu": "Tagliatelle crème et truffe noire, lamelles de speck/jambon croustillant, assiette noire carrée, set de table noir, serviette rouge, verre à vin.", "confiance": "élevée" },
+    { "photo": "Bar (propriétaire, fév. 2024)", "vu": "Étagère bois : Cynar, Aperol, Select, Campari ; verres à vin suspendus ; panneau rouge brique (#A34444) avec logo : GENEROSO en capitales condensées dorées, « vino & itinerari di gusto », cercle doré tracé au pinceau.", "confiance": "élevée" },
+    { "photo": "Terrasse (client, juin 2026)", "vu": "Table ronde rouge sur le quai, bresaola/carpaccio parmesan roquette tomates, burrata sur assiette noire, spritz, verre de blanc, lampe de table, bornes et canal en arrière-plan.", "confiance": "élevée" },
+    { "photo": "Entrée (propriétaire, oct. 2023)", "vu": "Boiseries chêne clair, sculpture de bronze, lampe, carte « Generoso vino & itinerari di gusto – La carte » sur présentoir, affiche d'événement, porte rouge bordeaux.", "confiance": "moyenne" },
+    { "photo": "Salle de jour (vidéo client, sept. 2024)", "vu": "Salle longue, murs crème, rangée de photos encadrées, globes, rideaux bordeaux, tables bois clair, chaises bistrot rouges et bois.", "confiance": "élevée" },
+    { "photo": "Gnocchi (client, juin 2026)", "vu": "Gnocchi sauce tomate, basilic, parmesan, assiette blanche creuse à bord strié, bol de parmesan.", "confiance": "élevée" },
+    { "photo": "Mur à vins (client, juil. 2026)", "vu": "Casiers bois du sol au plafond remplis de bouteilles, échelle de bibliothèque, ruban LED rouge en haut, faïences, tables bois avec sets noirs et serviettes rouges en pointe, lampes de table.", "confiance": "élevée" },
+    { "photo": "Page CoverManager (observation seulement)", "vu": "Fond rouge brique, logo doré, enseigne néon blanche manuscrite « Generoso » au-dessus du bar rouge.", "confiance": "élevée" }
+  ],
+  "direction_artistique": "Mur rouge brique du bar et capitales condensées dorées du logo (Anton) en accueil, devise « vino & itinerari di gusto » en Lora italique, frise SVG du mur à vins (casiers bois, filet LED rouge), carte présentée comme un tirage encadré blanc accroché au mur crème, cadres « Vos photos ici ».",
+  "argument_de_vente": "Instagram seulement, aucun site : la réservation passe par Google/CoverManager mais aucune carte ni horaires lisibles hors Google ; 4,9 sur 260 avis.",
+  "a_verifier": [
+    "Carte relevée sur TheFork (mise à jour juillet 2024) : burrata 14 €, planches 28 € / 20 €, carbonara 24 € à confirmer",
+    "Prix d'exemple : parmigiana, tagliatelle à la truffe, risotto safran burrata, gnocchi, tiramisu, spritz, vin au verre",
+    "Descriptions courtes des plats déduites des photos",
+    "Lien de réservation : page CoverManager restaurante.covermanager.com/generoso/ (partenaire du bouton Google) ; garder ou remplacer par le lien Google",
+    "Concerts : thème cité dans 5 avis, fréquence non connue",
+    "Accès métro déduit du plan",
+    "Phrase « mieux vaut réserver le week-end » : déduite (petite salle)"
+  ],
+  "confiance": "photos nombreuses",
+  "carte_reelle": false,
+  "horaires_verifies": true
+}

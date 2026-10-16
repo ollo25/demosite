@@ -1,0 +1,53 @@
+{
+  "slug": "ika",
+  "date_releve": "2026-10-16",
+  "nom": { "valeur": "IKA (fiche Google : « IKA - Restaurant Curry Japonais Paris 10 »)", "source": "google_maps" },
+  "categorie": { "valeur": "Restaurant japonais", "source": "google_maps" },
+  "adresse": { "valeur": "26 Rue de Chabrol, 75010 Paris", "source": "google_maps" },
+  "telephone": { "valeur": "09 83 30 13 01", "source": "google_maps" },
+  "note": { "valeur": "4,9", "nb_avis": 165, "source": "google_maps (165 au relevé, 164 dans la consigne)" },
+  "statut_google": { "valeur": "Ouvert (aucune mention de fermeture définitive)", "source": "google_maps" },
+  "horaires": {
+    "valeur": { "lundi": "12:15-18:00", "mardi": "12:15-18:00", "mercredi": "12:15-18:00", "jeudi": "12:15-18:00", "vendredi": "12:15-18:00", "samedi": "12:30-15:00", "dimanche": "fermé" },
+    "source": "google_maps, bloc « Vente à emporter » ; le bloc principal « IKA - Restaurant… » n'indique que vendredi 12:15-18:00 (autres jours fermés), probablement incomplet",
+    "ardoise": "Menu déjeuner 12h00-15h00 (photo janv. 2026)"
+  },
+  "attributs": { "valeur": ["Sur place / Eat in", "Vente à emporter / Take out", "Fait maison / Home made"], "source": "photo_carte (ardoise) / google_maps" },
+  "liens": { "instagram": "https://www.instagram.com/ika.restaurant/", "site": "", "reservation": "", "source": "google_maps" },
+  "plus_code": { "valeur": "V9G3+R7 Paris", "source": "google_maps" },
+  "acces": { "valeur": "Métro Gare de l'Est (lignes 4, 5, 7), environ 5 min à pied ; gare du Nord proche", "source": "deduit (plan Google Maps)" },
+  "themes_avis": { "valeur": ["patronne (12)", "mochi (12)", "poulpe (8)", "déjeuner (8)", "cuisinière (6)", "minuscule (6)", "entrée (6)", "poulet curry (5)", "gare du nord (4)", "gérant (4)"], "source": "google_maps" },
+  "synthese_avis": { "valeur": "Curry japonais traditionnel fait maison (poulpe et poulet souvent cités), entrées d'aubergine, mochi ; patronne très chaleureuse qui cuisine et sert ; salle minuscule décorée comme un cabinet de curiosités (peluche de poulpe, origamis, verres Disney) ; liqueur de prune citée.", "source": "avis" },
+  "carte": {
+    "source": "photo_carte (ardoise sur le trottoir, photo client janv. 2026, lecture partielle, bilingue FR/EN)",
+    "releve": ["Les entrées (prix lu « 5 € », peu net) : Shiitake farci / Stuffed shiitake ; Aubergine marinée / Pickled egg plant ; Entrée du jour / Today's special", "Les plats (prix lu « 14 € », peu net) : Curry légumes ; Curry poulet ; Curry boulettes de bœuf (beef meat balls) ; Curry poulpe (octopus) ; Brochette de poulet (grilled chicken, choix de sauces illisible) ; Plat du jour", "Les desserts (prix lu « 4 € », peu net) : Mochi … (parfum illisible) ; Mochi de saison ; Dessert du jour", "Menu déjeuner / Lunch menu 12h00-15h00 : deux prix illisibles", "Sur place / Eat in — Vente à emporter / Take out"],
+    "complements": ["Mochi matcha et chocolat (légende d'une photo)", "Boissons : prix d'exemple (umeshu cité dans un avis)"]
+  },
+  "observations_visuelles": [
+    { "photo": "Entrée (propriétaire, sept. 2022)", "vu": "Deux noren blanc-gris imprimés de poissons-globes au-dessus de la porte, menuiseries noires.", "confiance": "élevée" },
+    { "photo": "Salle (client, oct. 2026)", "vu": "Petite salle, comptoir et façade de bar en bois, affiches japonaises (chat), grues en papier suspendues, ardoises, étagères de bouteilles, suspensions.", "confiance": "élevée" },
+    { "photo": "Curry (août 2024)", "vu": "Curry brun, poulet et carottes, riz blanc, pickles (chou rouge, radis, gingembre, chou chinois), assiette creuse blanche, chemin de table indigo.", "confiance": "élevée" },
+    { "photo": "Deux currys (déc. 2025)", "vu": "Curry boulettes de bœuf et curry légumes (potiron), wakamé, chou rouge, carotte ; nappe indigo à motif de triangles blancs.", "confiance": "élevée" },
+    { "photo": "Rouleaux (août 2024)", "vu": "Rouleaux d'épinards et nori sur assiette blanche.", "confiance": "moyenne" },
+    { "photo": "Brochettes (août 2024)", "vu": "Brochettes de poulet au sésame, riz, crudités, ardoise noire.", "confiance": "élevée" },
+    { "photo": "Mochi (mars 2024)", "vu": "Mochi matcha et chocolat coupé, sur assiette dorée à vagues.", "confiance": "élevée" },
+    { "photo": "Façade (client, janv. 2026)", "vu": "Façade anthracite, bandeau rouge-rose au-dessus, disque blanc d'enseigne avec un petit calmar souriant en trait vert-de-gris, parasol gris, tabourets d'atelier, tables pliantes en bois ; pilier peint vert et jaune pâle ; ardoise bilingue sur chevalet avec « IKA » en lettres rouges anguleuses.", "confiance": "élevée" },
+    { "photo": "Salle (oct. 2025)", "vu": "Tabourets blancs et bois, chemins de table indigo, bouilloire vert d'eau, lanternes rouges, ventilateur, objets de collection.", "confiance": "élevée" },
+    { "photo": "Daifuku (sept. 2026)", "vu": "Mochi blanc dans une caissette verte sur assiette laquée noire à filets rouges.", "confiance": "élevée" }
+  ],
+  "direction_artistique": "Façade anthracite et bandeau rouge, accueil en deux noren blancs (nom en Dela Gothic One rouge, calmar dessiné en SVG rappelant le disque d'enseigne), bande de chemin de table indigo à triangles, carte bilingue FR/EN en Zen Maru Gothic comme l'ardoise.",
+  "argument_de_vente": "Instagram seulement, aucun site ; horaires Google contradictoires (le restaurant n'apparaît ouvert que le vendredi) : une page claire avec horaires et carte rassurerait les clients du quartier des gares.",
+  "a_verifier": [
+    "Horaires : la démo reprend le bloc « Vente à emporter » (lun-ven 12h15-18h, sam 12h30-15h) ; le bloc principal Google n'affiche que le vendredi, à corriger avec la patronne",
+    "Prix de l'ardoise peu lisibles : entrées 5 €, currys 14 €, desserts 4 € à confirmer",
+    "Menu déjeuner : composition et prix illisibles",
+    "Sauces de la brochette de poulet illisibles",
+    "Parfums des mochi selon la saison",
+    "Boissons (thé vert, umeshu) : prix d'exemple",
+    "« La patronne cuisine et sert elle-même » : déduit des avis",
+    "Accès métro déduit du plan"
+  ],
+  "confiance": "photos nombreuses",
+  "carte_reelle": false,
+  "horaires_verifies": false
+}
