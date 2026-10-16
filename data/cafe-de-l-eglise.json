@@ -1,24 +1,67 @@
 {
   "slug": "cafe-de-l-eglise",
   "releve_le": "2026-10-16",
-  "nom": { "valeur": "Café de l'Église", "source": "google_maps" },
-  "categorie": { "valeur": "Restaurant (café-restaurant, bar à cocktails)", "source": "google_maps" },
-  "adresse": { "valeur": "2 place Franz Liszt, 75010 Paris", "source": "google_maps" },
-  "telephone": { "valeur": "01 42 47 01 23", "source": "google_maps" },
-  "note": { "valeur": "4,4 / 5 (1 063 avis)", "source": "google_maps" },
+  "nom": {
+    "valeur": "Café de l'Église",
+    "source": "google_maps"
+  },
+  "categorie": {
+    "valeur": "Restaurant (café-restaurant, bar à cocktails)",
+    "source": "google_maps"
+  },
+  "adresse": {
+    "valeur": "2 place Franz Liszt, 75010 Paris",
+    "source": "google_maps"
+  },
+  "telephone": {
+    "valeur": "01 42 47 01 23",
+    "source": "google_maps"
+  },
+  "note": {
+    "valeur": "4,4 / 5 (1 063 avis)",
+    "source": "google_maps"
+  },
   "repartition_notes": "5★ 675, 4★ 235, 3★ 78, 2★ 23, 1★ 52",
   "horaires": {
     "valeur": "Lundi à samedi 7h–2h, dimanche 8h–minuit",
     "source": "google_maps",
     "remarque": "Le site eatbu indique lundi–samedi 8h–2h et dimanche 9h–1h ; la carte PDF indique aussi 8h–2h / 9h–1h. Horaires Google retenus."
   },
-  "acces": { "valeur": "Métro Poissonnière (ligne 7), Gare du Nord à proximité", "source": "deduit" },
-  "site_existant": { "valeur": "http://cafedelegliseparis.eatbu.com/ (page modèle DISH, carte en PDF)", "source": "google_maps" },
-  "reservation": { "valeur": "https://reserve.dish.co/287467", "source": "google_maps" },
-  "instagram": { "valeur": "https://www.instagram.com/cafedelegliseparis", "source": "web:https://cafedelegliseparis.eatbu.com/" },
-  "email": { "valeur": "contact.eglise.10@gmail.com", "source": "web:https://cafedelegliseparis.eatbu.com/", "remarque": "non affiché sur la démo" },
+  "acces": {
+    "valeur": "Métro Poissonnière (ligne 7), Gare du Nord à proximité",
+    "source": "deduit"
+  },
+  "site_existant": {
+    "valeur": "http://cafedelegliseparis.eatbu.com/ (page modèle DISH, carte en PDF)",
+    "source": "google_maps"
+  },
+  "reservation": {
+    "valeur": "https://reserve.dish.co/287467",
+    "source": "google_maps"
+  },
+  "instagram": {
+    "valeur": "https://www.instagram.com/cafedelegliseparis",
+    "source": "web:https://cafedelegliseparis.eatbu.com/"
+  },
+  "email": {
+    "valeur": "contact.eglise.10@gmail.com",
+    "source": "web:https://cafedelegliseparis.eatbu.com/",
+    "remarque": "non affiché sur la démo"
+  },
   "services": {
-    "valeur": ["Accessible PMR", "Terrasse", "Terrasse chauffée", "Événements privés", "Coin fumeurs", "À emporter", "Réceptions de mariage", "Wi-Fi gratuit", "Animaux autorisés", "AMEX, Visa, Mastercard, sans contact, Diners", "Pas de chèques"],
+    "valeur": [
+      "Accessible PMR",
+      "Terrasse",
+      "Terrasse chauffée",
+      "Événements privés",
+      "Coin fumeurs",
+      "À emporter",
+      "Réceptions de mariage",
+      "Wi-Fi gratuit",
+      "Animaux autorisés",
+      "AMEX, Visa, Mastercard, sans contact, Diners",
+      "Pas de chèques"
+    ],
     "source": "web:https://cafedelegliseparis.eatbu.com/ + carte PDF"
   },
   "description_site_existant": "Terrasse avec vue sur l'église Saint-Vincent-de-Paul ; du café matinal au dîner tardif, tous les jours (source eatbu, texte non repris).",
@@ -30,16 +73,51 @@
   },
   "themes_avis": {
     "source": "avis",
-    "valeur": ["serveur (40)", "terrasse (39)", "service (28)", "cocktails (20)", "gare du Nord (15)", "apéro (10)", "église (9)", "bistrot (8)", "croissant (6)", "mac & cheese (6)"],
+    "valeur": [
+      "serveur (40)",
+      "terrasse (39)",
+      "service (28)",
+      "cocktails (20)",
+      "gare du Nord (15)",
+      "apéro (10)",
+      "église (9)",
+      "bistrot (8)",
+      "croissant (6)",
+      "mac & cheese (6)"
+    ],
     "synthese": "Service et terrasse cités en premier, ambiance bistrot, cocktails à l'apéro, proximité de la gare du Nord ; un avis récent négatif sur l'accueil d'un groupe d'habitués (réponse du propriétaire). Le mac & cheese cité dans les avis n'apparaît pas sur la carte PDF actuelle."
   },
   "observations_visuelles": [
-    { "photo": "Intérieur, bar (propriétaire, mai 2026)", "vu": "Murs enduits pêche/saumon, guirlandes d'ampoules, fleurs roses et feuillages suspendus au-dessus du bar, comptoir en bois clair, tabourets à assise rouge, miroirs à cadre doré.", "confiance": "élevée" },
-    { "photo": "Vidéo plafond (nov. 2025)", "vu": "Lustre en étoile à ampoules nues, boule à facettes, miroir doré, murs ocre.", "confiance": "élevée" },
-    { "photo": "Plat (2012)", "vu": "Viande et gratin sur assiette blanche, verre de vin rouge.", "confiance": "moyenne (photo ancienne)" },
-    { "photo": "Façade (juil. 2026)", "vu": "Store bleu marine à bord festonné, lettrage manuscrit blanc en minuscules « le café de l'église », massif de fleurs artificielles roses, blanches et mauves posé au-dessus du store, immeuble haussmannien en pierre.", "confiance": "élevée" },
-    { "photo": "Burrata (juil. 2026)", "vu": "Burrata, tomates cerises, pesto dans assiette creuse blanche, serviette rose.", "confiance": "élevée" },
-    { "photo": "Vidéo salle (déc. 2024)", "vu": "Plafond peint en ciel bleu avec nuages, suspensions en papier blanc, feuillages, chaises bistrot en rotin, tables en marbre, grandes baies vitrées à châssis noirs.", "confiance": "élevée" }
+    {
+      "photo": "Intérieur, bar (propriétaire, mai 2026)",
+      "vu": "Murs enduits pêche/saumon, guirlandes d'ampoules, fleurs roses et feuillages suspendus au-dessus du bar, comptoir en bois clair, tabourets à assise rouge, miroirs à cadre doré.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "Vidéo plafond (nov. 2025)",
+      "vu": "Lustre en étoile à ampoules nues, boule à facettes, miroir doré, murs ocre.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "Plat (2012)",
+      "vu": "Viande et gratin sur assiette blanche, verre de vin rouge.",
+      "confiance": "moyenne (photo ancienne)"
+    },
+    {
+      "photo": "Façade (juil. 2026)",
+      "vu": "Store bleu marine à bord festonné, lettrage manuscrit blanc en minuscules « le café de l'église », massif de fleurs artificielles roses, blanches et mauves posé au-dessus du store, immeuble haussmannien en pierre.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "Burrata (juil. 2026)",
+      "vu": "Burrata, tomates cerises, pesto dans assiette creuse blanche, serviette rose.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "Vidéo salle (déc. 2024)",
+      "vu": "Plafond peint en ciel bleu avec nuages, suspensions en papier blanc, feuillages, chaises bistrot en rotin, tables en marbre, grandes baies vitrées à châssis noirs.",
+      "confiance": "élevée"
+    }
   ],
   "direction_artistique": "Store bleu marine festonné avec lettrage script blanc minuscule (Allura) et massif de fleurs dessiné en SVG ; corps de page couleur enduit pêche, carte sur fond blanc encadrée de doubles filets laiton (miroirs dorés), bloc « le lieu » bleu ciel (plafond peint). Texte en Gelasio.",
   "argument_de_vente": "Le site actuel est une page modèle DISH/eatbu avec la carte en PDF de 9 Mo (illisible sur téléphone) ; la démo met la vraie carte en HTML, la réservation et l'horaire en un coup d'œil.",
@@ -51,5 +129,10 @@
     "Accès métro (déduit : Poissonnière ligne 7, gare du Nord)",
     "Souhaitent-ils afficher l'email et la mention des fromages Marie Quatrehomme ?",
     "Lien de réservation DISH toujours actif"
-  ]
+  ],
+  "confiance": "photos nombreuses",
+  "carte_reelle": true,
+  "horaires_verifies": true,
+  "concept_court": "Store marine script et miroirs laiton",
+  "elements_reels_repris": "store bleu marine festonné au lettrage script, massif de fleurs, enduit pêche, miroirs dorés, plafond bleu ciel"
 }

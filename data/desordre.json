@@ -1,55 +1,192 @@
 {
   "slug": "desordre",
   "date_releve": "2026-10-16",
-  "nom": { "valeur": "désordre", "source": "google_maps" },
-  "categorie": { "valeur": "Bar", "source": "google_maps" },
-  "adresse": { "valeur": "103 Rue de la Folie Méricourt, 75011 Paris", "source": "google_maps" },
-  "telephone": { "valeur": "09 74 64 19 91", "source": "google_maps" },
-  "note": { "valeur": "4,8 / 5 (103 avis)", "source": "google_maps" },
-  "statut_google": { "valeur": "ouvert (pas de mention « définitivement fermé »)", "source": "google_maps" },
+  "nom": {
+    "valeur": "désordre",
+    "source": "google_maps"
+  },
+  "categorie": {
+    "valeur": "Bar",
+    "source": "google_maps"
+  },
+  "adresse": {
+    "valeur": "103 Rue de la Folie Méricourt, 75011 Paris",
+    "source": "google_maps"
+  },
+  "telephone": {
+    "valeur": "09 74 64 19 91",
+    "source": "google_maps"
+  },
+  "note": {
+    "valeur": "4,8 / 5 (103 avis)",
+    "source": "google_maps"
+  },
+  "statut_google": {
+    "valeur": "ouvert (pas de mention « définitivement fermé »)",
+    "source": "google_maps"
+  },
   "horaires": {
-    "valeur": { "lundi": "Fermé", "mardi": "18:00-02:00", "mercredi": "18:00-02:00", "jeudi": "18:00-02:00", "vendredi": "18:00-02:00", "samedi": "18:00-02:00", "dimanche": "Fermé" },
+    "valeur": {
+      "lundi": "Fermé",
+      "mardi": "18:00-02:00",
+      "mercredi": "18:00-02:00",
+      "jeudi": "18:00-02:00",
+      "vendredi": "18:00-02:00",
+      "samedi": "18:00-02:00",
+      "dimanche": "Fermé"
+    },
     "source": "google_maps"
   },
   "liens": {
-    "instagram": { "valeur": "https://www.instagram.com/desordre.bar/", "source": "google_maps (champ site Web + bouton « Trouver une table »)" },
-    "reservation": { "valeur": "aucun lien dédié : le bouton « Trouver une table » de Google renvoie vers Instagram", "source": "google_maps" }
+    "instagram": {
+      "valeur": "https://www.instagram.com/desordre.bar/",
+      "source": "google_maps (champ site Web + bouton « Trouver une table »)"
+    },
+    "reservation": {
+      "valeur": "aucun lien dédié : le bouton « Trouver une table » de Google renvoie vers Instagram",
+      "source": "google_maps"
+    }
   },
-  "attributs": [ { "valeur": "LGBTQ+ friendly", "source": "google_maps" }, { "valeur": "Pas d'entrée accessible en fauteuil roulant", "source": "google_maps" } ],
-  "acces": { "valeur": "Métro Goncourt (ligne 11) à 3 min, République à 8 min", "source": "deduit" },
+  "attributs": [
+    {
+      "valeur": "LGBTQ+ friendly",
+      "source": "google_maps"
+    },
+    {
+      "valeur": "Pas d'entrée accessible en fauteuil roulant",
+      "source": "google_maps"
+    }
+  ],
+  "acces": {
+    "valeur": "Métro Goncourt (ligne 11) à 3 min, République à 8 min",
+    "source": "deduit"
+  },
   "carte": {
     "source": "photo_carte (photo Google Maps, mai 2025)",
     "cocktails": [
-      ["Negroni (gin, vermouth rouge, Campari)", "9 €"],
-      ["Bramble (gin, citron, liqueur de mûre, sucre)", "10 €"],
-      ["Anna's (gin, citron, orgeat, Angostura)", "10 €"],
-      ["Mai Tai (rhums, orgeat, triple sec, citron)", "10 €"],
-      ["Bloody Mary (vodka, tomate, Worcester, citron, Tabasco…)", "10 €"],
-      ["Dark & Stormy (rhum, ginger beer, citron vert, Angostura)", "10 €"],
-      ["Apricot Hill (vodka, liqueur d'abricot, orgeat, citron)", "11 €"],
-      ["Dragon Punch (mezcal, Chartreuse jaune, citron, orgeat, Tabasco)", "12 €"],
-      ["Gin tonic, mules (Moscow, London, Irish…), Hard+Soft", "9 €"]
+      [
+        "Negroni (gin, vermouth rouge, Campari)",
+        "9 €"
+      ],
+      [
+        "Bramble (gin, citron, liqueur de mûre, sucre)",
+        "10 €"
+      ],
+      [
+        "Anna's (gin, citron, orgeat, Angostura)",
+        "10 €"
+      ],
+      [
+        "Mai Tai (rhums, orgeat, triple sec, citron)",
+        "10 €"
+      ],
+      [
+        "Bloody Mary (vodka, tomate, Worcester, citron, Tabasco…)",
+        "10 €"
+      ],
+      [
+        "Dark & Stormy (rhum, ginger beer, citron vert, Angostura)",
+        "10 €"
+      ],
+      [
+        "Apricot Hill (vodka, liqueur d'abricot, orgeat, citron)",
+        "11 €"
+      ],
+      [
+        "Dragon Punch (mezcal, Chartreuse jaune, citron, orgeat, Tabasco)",
+        "12 €"
+      ],
+      [
+        "Gin tonic, mules (Moscow, London, Irish…), Hard+Soft",
+        "9 €"
+      ]
     ],
     "sans_alcool": [
-      ["Athletic IPA ou Golden Lager (<0,5 %) 33 cl", "6 €"],
-      ["Archipel Kombucha 33 cl", "6 €"],
-      ["Club Maté 33 cl", "6 €"],
-      ["Coca-Cola, Perrier, limonade 33 cl", "4,5 €"],
-      ["Ginger beer 20 cl", "3,5 €"],
-      ["Sirop 33 cl", "2,5 €"],
-      ["Jus de fruits 20 cl", "3,5 € (chiffre partiellement masqué par un reflet)"]
+      [
+        "Athletic IPA ou Golden Lager (<0,5 %) 33 cl",
+        "6 €"
+      ],
+      [
+        "Archipel Kombucha 33 cl",
+        "6 €"
+      ],
+      [
+        "Club Maté 33 cl",
+        "6 €"
+      ],
+      [
+        "Coca-Cola, Perrier, limonade 33 cl",
+        "4,5 €"
+      ],
+      [
+        "Ginger beer 20 cl",
+        "3,5 €"
+      ],
+      [
+        "Sirop 33 cl",
+        "2,5 €"
+      ],
+      [
+        "Jus de fruits 20 cl",
+        "3,5 € (chiffre partiellement masqué par un reflet)"
+      ]
     ],
-    "pression_cidre": { "valeur": "cités dans les avis (pression, cidre), aucun prix lisible : prix d'exemple dans la démo", "source": "avis" }
+    "pression_cidre": {
+      "valeur": "cités dans les avis (pression, cidre), aucun prix lisible : prix d'exemple dans la démo",
+      "source": "avis"
+    }
   },
-  "themes_avis": { "valeur": ["cocktails (10)", "rock (9)", "dj set (3)", "années 60 (2)", "pression (2)", "cidre (2)", "soir (2)", "ambiance tamisée", "équipe appréciée", "un avis négatif sur une erreur d'addition"], "source": "avis" },
+  "themes_avis": {
+    "valeur": [
+      "cocktails (10)",
+      "rock (9)",
+      "dj set (3)",
+      "années 60 (2)",
+      "pression (2)",
+      "cidre (2)",
+      "soir (2)",
+      "ambiance tamisée",
+      "équipe appréciée",
+      "un avis négatif sur une erreur d'addition"
+    ],
+    "source": "avis"
+  },
   "observations_visuelles": [
-    { "photo": "façade de nuit (juil. 2025)", "vu": "devanture en bois teinté brun, bandeau noir au-dessus, deux grandes vitrines et une porte vitrée centrale éclairées en ambre, affiches à l'intérieur, plaque « 103 » blanche à droite", "confiance": "haute" },
-    { "photo": "porte de nuit (mai 2025)", "vu": "« désordre » en lettres blanches minuscules, serif avec un petit ornement, peint sur la vitre de la porte", "confiance": "moyenne (photo sombre)" },
-    { "photo": "salle (juil. 2025)", "vu": "comptoir en carrelage métro noir avec plateau bois, tabourets bois, suspensions globes blancs, ardoises, mur de briques, rideaux moutarde, mur du fond vert bouteille, « désordre » en blanc derrière le bar", "confiance": "haute" },
-    { "photo": "carte (mai 2025)", "vu": "feuille blanche plastifiée, texte en police machine à écrire, titres « Cocktails » / « Sans Alcool » en serif, pied « Service au bar » et « @desordre.bar »", "confiance": "haute" },
-    { "photo": "coin salon", "vu": "deux fauteuils et une banquette en moumoute moutarde/beige", "confiance": "haute" },
-    { "photo": "bar de nuit", "vu": "« SERVICE AU BAR » en capitales blanches sur bandeau noir au-dessus des bouteilles", "confiance": "moyenne" },
-    { "photo": "vitrine avec clients", "vu": "montants bois doré, clients assis en vitrine", "confiance": "moyenne" }
+    {
+      "photo": "façade de nuit (juil. 2025)",
+      "vu": "devanture en bois teinté brun, bandeau noir au-dessus, deux grandes vitrines et une porte vitrée centrale éclairées en ambre, affiches à l'intérieur, plaque « 103 » blanche à droite",
+      "confiance": "haute"
+    },
+    {
+      "photo": "porte de nuit (mai 2025)",
+      "vu": "« désordre » en lettres blanches minuscules, serif avec un petit ornement, peint sur la vitre de la porte",
+      "confiance": "moyenne (photo sombre)"
+    },
+    {
+      "photo": "salle (juil. 2025)",
+      "vu": "comptoir en carrelage métro noir avec plateau bois, tabourets bois, suspensions globes blancs, ardoises, mur de briques, rideaux moutarde, mur du fond vert bouteille, « désordre » en blanc derrière le bar",
+      "confiance": "haute"
+    },
+    {
+      "photo": "carte (mai 2025)",
+      "vu": "feuille blanche plastifiée, texte en police machine à écrire, titres « Cocktails » / « Sans Alcool » en serif, pied « Service au bar » et « @desordre.bar »",
+      "confiance": "haute"
+    },
+    {
+      "photo": "coin salon",
+      "vu": "deux fauteuils et une banquette en moumoute moutarde/beige",
+      "confiance": "haute"
+    },
+    {
+      "photo": "bar de nuit",
+      "vu": "« SERVICE AU BAR » en capitales blanches sur bandeau noir au-dessus des bouteilles",
+      "confiance": "moyenne"
+    },
+    {
+      "photo": "vitrine avec clients",
+      "vu": "montants bois doré, clients assis en vitrine",
+      "confiance": "moyenne"
+    }
   ],
   "direction_artistique": "La devanture de nuit : bandeau noir + bois teinté + vitrines ambrées dessinés en CSS pour l'accueil ; la carte recopiée comme la feuille plastifiée réelle (machine à écrire Courier Prime + serif Gloock) ; section ambiance sur le vert bouteille du mur avec les globes suspendus en SVG.",
   "argument_de_vente": "Instagram seulement, aucun site : la carte des cocktails n'est visible nulle part en ligne hors photos de clients ; un site affiche horaires, carte et numéro.",
@@ -61,5 +198,10 @@
     "Fréquence des DJ sets",
     "Accès métro (déduit)",
     "Graphie du nom : tout en minuscules « désordre » (comme sur Google et la porte)"
-  ]
+  ],
+  "confiance": "photos nombreuses",
+  "carte_reelle": true,
+  "horaires_verifies": true,
+  "concept_court": "Devanture de nuit et carte machine à écrire",
+  "elements_reels_repris": "bandeau noir et bois teinté de la devanture, carte plastifiée tapée à la machine, mur vert bouteille, globes suspendus"
 }

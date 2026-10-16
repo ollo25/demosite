@@ -102,5 +102,10 @@
     "Accès métro déduit de la position (Anvers / Poissonnière).",
     "Le patron souhaite-t-il afficher la tête de Maure ou son logo ?",
     "Vendredi : un relevé Google du 16 octobre 2026 affichait 16h30–19h30 (au lieu de 15h–19h30) ; horaire exceptionnel probable, à confirmer avec le patron."
-  ]
+  ],
+  "confiance": "photos rares",
+  "carte_reelle": false,
+  "horaires_verifies": true,
+  "concept_court": "Façade bleu pervenche et carte de Corse",
+  "elements_reels_repris": "mur bleu pervenche, nom fin espacé blanc, vitrine bleu nuit à inscription en arc, rouge des étiquettes"
 }

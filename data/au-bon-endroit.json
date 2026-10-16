@@ -1,19 +1,54 @@
 {
   "slug": "au-bon-endroit",
   "date_releve": "2026-10-16",
-  "nom": { "valeur": "Au Bon Endroit Bar", "source": "google_maps" },
-  "categorie": { "valeur": "Bar", "source": "google_maps" },
-  "adresse": { "valeur": "12 Rue des Goncourt, 75011 Paris", "source": "google_maps" },
-  "telephone": { "valeur": "07 49 72 83 72", "source": "google_maps" },
-  "note": { "valeur": "4,7 / 5 (312 avis) ; Privateaser 4,9 / 5 (159 avis)", "source": "google_maps ; web:https://www.privateaser.com/lieu/39463-au-bon-endroit-bar" },
-  "statut_google": { "valeur": "ouvert", "source": "google_maps" },
+  "nom": {
+    "valeur": "Au Bon Endroit Bar",
+    "source": "google_maps"
+  },
+  "categorie": {
+    "valeur": "Bar",
+    "source": "google_maps"
+  },
+  "adresse": {
+    "valeur": "12 Rue des Goncourt, 75011 Paris",
+    "source": "google_maps"
+  },
+  "telephone": {
+    "valeur": "07 49 72 83 72",
+    "source": "google_maps"
+  },
+  "note": {
+    "valeur": "4,7 / 5 (312 avis) ; Privateaser 4,9 / 5 (159 avis)",
+    "source": "google_maps ; web:https://www.privateaser.com/lieu/39463-au-bon-endroit-bar"
+  },
+  "statut_google": {
+    "valeur": "ouvert",
+    "source": "google_maps"
+  },
   "horaires": {
-    "valeur": { "lundi": "Fermé", "mardi": "18:00-01:00", "mercredi": "18:00-01:00", "jeudi": "18:00-02:00", "vendredi": "18:00-02:00", "samedi": "18:00-02:00", "dimanche": "Fermé" },
+    "valeur": {
+      "lundi": "Fermé",
+      "mardi": "18:00-01:00",
+      "mercredi": "18:00-01:00",
+      "jeudi": "18:00-02:00",
+      "vendredi": "18:00-02:00",
+      "samedi": "18:00-02:00",
+      "dimanche": "Fermé"
+    },
     "source": "google_maps (identiques aux horaires de réservation Privateaser)"
   },
-  "accroche_privateaser": { "valeur": "Bar de quartier — Jeux, bières & mauvaise foi", "source": "web:https://www.privateaser.com/lieu/39463-au-bon-endroit-bar" },
-  "happy_hour": { "valeur": "mardi au samedi 18h-20h (le texte bas de page Privateaser dit 17h-20h, contradictoire)", "source": "web:privateaser" },
-  "reservation": { "valeur": "https://www.privateaser.com/lieu/39463-au-bon-endroit-bar", "source": "google_maps (site Web + Trouver une table)" },
+  "accroche_privateaser": {
+    "valeur": "Bar de quartier — Jeux, bières & mauvaise foi",
+    "source": "web:https://www.privateaser.com/lieu/39463-au-bon-endroit-bar"
+  },
+  "happy_hour": {
+    "valeur": "mardi au samedi 18h-20h (le texte bas de page Privateaser dit 17h-20h, contradictoire)",
+    "source": "web:privateaser"
+  },
+  "reservation": {
+    "valeur": "https://www.privateaser.com/lieu/39463-au-bon-endroit-bar",
+    "source": "google_maps (site Web + Trouver une table)"
+  },
   "privatisation": {
     "valeur": [
       "Quelques tables : 1-80 pers., réservation gratuite, minimum 15 € / pers.",
@@ -24,33 +59,153 @@
     ],
     "source": "web:privateaser"
   },
-  "instagram": { "valeur": "https://www.instagram.com/aubonendroitbar/ (déduit du texte « notre Instagram : aubonendroitbar » et du hashtag sur le store)", "source": "web:privateaser + photo façade" },
-  "acces": { "valeur": "Métro Goncourt (ligne 11), 110 m ; Belleville, République", "source": "web:privateaser" },
+  "instagram": {
+    "valeur": "https://www.instagram.com/aubonendroitbar/ (déduit du texte « notre Instagram : aubonendroitbar » et du hashtag sur le store)",
+    "source": "web:privateaser + photo façade"
+  },
+  "acces": {
+    "valeur": "Métro Goncourt (ligne 11), 110 m ; Belleville, République",
+    "source": "web:privateaser"
+  },
   "carte": {
     "source": "web:privateaser (rubrique « Carte du Bon Endroit Bar »)",
     "boissons_happy_hour_puis_tarif": [
-      ["Pinte ABE Beer", "4,5 €", "5,5 €"],
-      ["Pinte de cidre", "7 €", "8 €"],
-      ["Pinte de blanche", "7 €", "8 €"],
-      ["Pinte IPA", "7 €", "8 €"],
-      ["Pinte de Chouffe", "8 €", "9 €"],
-      ["Cocktails classiques", "6,5 €", "8 €"],
-      ["Verre de vin", "", "4,5 €"],
-      ["Bouteille de vin", "", "25 €"],
-      ["Shooter", "", "3,5 €"],
-      ["Punch 1 L (promotion Privateaser, à précommander)", "", "35 €"]
+      [
+        "Pinte ABE Beer",
+        "4,5 €",
+        "5,5 €"
+      ],
+      [
+        "Pinte de cidre",
+        "7 €",
+        "8 €"
+      ],
+      [
+        "Pinte de blanche",
+        "7 €",
+        "8 €"
+      ],
+      [
+        "Pinte IPA",
+        "7 €",
+        "8 €"
+      ],
+      [
+        "Pinte de Chouffe",
+        "8 €",
+        "9 €"
+      ],
+      [
+        "Cocktails classiques",
+        "6,5 €",
+        "8 €"
+      ],
+      [
+        "Verre de vin",
+        "",
+        "4,5 €"
+      ],
+      [
+        "Bouteille de vin",
+        "",
+        "25 €"
+      ],
+      [
+        "Shooter",
+        "",
+        "3,5 €"
+      ],
+      [
+        "Punch 1 L (promotion Privateaser, à précommander)",
+        "",
+        "35 €"
+      ]
     ],
-    "restauration": [["Planches mixtes", "14 €"], ["Saucisson", "7,5 €"], ["Croque", "6 €"], ["Tartinade de légumes", "6 €"]]
+    "restauration": [
+      [
+        "Planches mixtes",
+        "14 €"
+      ],
+      [
+        "Saucisson",
+        "7,5 €"
+      ],
+      [
+        "Croque",
+        "6 €"
+      ],
+      [
+        "Tartinade de légumes",
+        "6 €"
+      ]
+    ]
   },
-  "agenda": { "valeur": ["20/10/2026 21h : Ligue des champions PSG - Barcelone", "27/10/2026 20h : blind test musical (réservation obligatoire)", "10/11/2026 20h : blind test musical"], "source": "web:privateaser" },
-  "equipements": { "valeur": ["projection", "sono", "possibilité de diffuser sa musique", "wifi", "climatisation", "jeux de cartes", "jeux de société", "beer pong", "fléchettes", "terrasse éphémère"], "source": "web:privateaser" },
-  "themes_avis": { "valeur": ["fléchettes (20)", "match (12)", "blind test (10)", "anniversaire (10)", "beer pong (8)", "jeux de société (8)", "foot (8)", "planches (6)", "écran (5)", "soirée (5)", "accueil de la gérante souvent salué", "un avis négatif sur l'insistance à consommer"], "source": "avis" },
+  "agenda": {
+    "valeur": [
+      "20/10/2026 21h : Ligue des champions PSG - Barcelone",
+      "27/10/2026 20h : blind test musical (réservation obligatoire)",
+      "10/11/2026 20h : blind test musical"
+    ],
+    "source": "web:privateaser"
+  },
+  "equipements": {
+    "valeur": [
+      "projection",
+      "sono",
+      "possibilité de diffuser sa musique",
+      "wifi",
+      "climatisation",
+      "jeux de cartes",
+      "jeux de société",
+      "beer pong",
+      "fléchettes",
+      "terrasse éphémère"
+    ],
+    "source": "web:privateaser"
+  },
+  "themes_avis": {
+    "valeur": [
+      "fléchettes (20)",
+      "match (12)",
+      "blind test (10)",
+      "anniversaire (10)",
+      "beer pong (8)",
+      "jeux de société (8)",
+      "foot (8)",
+      "planches (6)",
+      "écran (5)",
+      "soirée (5)",
+      "accueil de la gérante souvent salué",
+      "un avis négatif sur l'insistance à consommer"
+    ],
+    "source": "avis"
+  },
   "observations_visuelles": [
-    { "photo": "façade de nuit (nov. 2019, « Nouveau store »)", "vu": "store rouge bordeaux à festons, lettrage blanc en capitales « AU BON ENDROIT BAR » (lettres géométriques, i minuscule), lambrequin « COCKTAILS, BIÈRES & FUN » à gauche et « #AUBONENDROITBAR » à droite, soubassement en briques rouges, néon rose visible dans la porte", "confiance": "haute" },
-    { "photo": "salle anniversaire", "vu": "néon rose « AU BON ENDROIT » sur mur végétal sombre, mur violet, canapé chesterfield rouge, ballons", "confiance": "haute" },
-    { "photo": "bar", "vu": "étagères de bouteilles éclairées en rouge, piles de verres", "confiance": "haute" },
-    { "photo": "salle match", "vu": "écran géant de projection avec match de foot, murs patinés avec affiches, suspension industrielle", "confiance": "haute" },
-    { "photo": "table", "vu": "pintes de blonde, cocktails, confettis", "confiance": "moyenne" }
+    {
+      "photo": "façade de nuit (nov. 2019, « Nouveau store »)",
+      "vu": "store rouge bordeaux à festons, lettrage blanc en capitales « AU BON ENDROIT BAR » (lettres géométriques, i minuscule), lambrequin « COCKTAILS, BIÈRES & FUN » à gauche et « #AUBONENDROITBAR » à droite, soubassement en briques rouges, néon rose visible dans la porte",
+      "confiance": "haute"
+    },
+    {
+      "photo": "salle anniversaire",
+      "vu": "néon rose « AU BON ENDROIT » sur mur végétal sombre, mur violet, canapé chesterfield rouge, ballons",
+      "confiance": "haute"
+    },
+    {
+      "photo": "bar",
+      "vu": "étagères de bouteilles éclairées en rouge, piles de verres",
+      "confiance": "haute"
+    },
+    {
+      "photo": "salle match",
+      "vu": "écran géant de projection avec match de foot, murs patinés avec affiches, suspension industrielle",
+      "confiance": "haute"
+    },
+    {
+      "photo": "table",
+      "vu": "pintes de blonde, cocktails, confettis",
+      "confiance": "moyenne"
+    }
   ],
   "direction_artistique": "Le store rouge à festons en en-tête collant, la salle de nuit avec le néon rose (Righteous + halo), une cible de fléchettes SVG comme élément fort, la carte sur le rouge brique, la privatisation sur le rouge du store.",
   "argument_de_vente": "Seulement une fiche Privateaser : pas de site à eux pour annoncer blind tests, matchs et happy hour, ni pour présenter la privatisation sans passer par une plateforme.",
@@ -62,5 +217,10 @@
     "Agenda « Prochainement » à tenir à jour (dates relevées sur Privateaser le 16/10/2026)",
     "Terrasse (éphémère selon Privateaser) : non mentionnée dans la démo",
     "Fréquence des soirées stand-up"
-  ]
+  ],
+  "confiance": "photos nombreuses",
+  "carte_reelle": true,
+  "horaires_verifies": true,
+  "concept_court": "Néon rose et cible de fléchettes",
+  "elements_reels_repris": "store rouge à festons, néon rose, mur violet, fléchettes"
 }

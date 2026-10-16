@@ -1,22 +1,78 @@
 {
   "slug": "the-sunny-side",
   "date_releve": "2026-10-16",
-  "nom": { "valeur": "The Sunny Side", "source": "google_maps" },
-  "categorie": { "valeur": "Café", "source": "google_maps" },
-  "adresse": { "valeur": "79 Quai de Valmy, 75010 Paris", "source": "google_maps" },
-  "telephone": { "valeur": "", "source": "google_maps (aucun numéro sur la fiche)" },
-  "note": { "valeur": "5,0", "nb_avis": 190, "repartition": "186 x 5, 1 x 4, 1 x 3, 2 x 2", "source": "google_maps" },
-  "statut_google": { "valeur": "Ouvert (pas de mention de fermeture définitive)", "source": "google_maps" },
-  "horaires": {
-    "valeur": { "lundi": "09:00-17:30", "mardi": "09:00-17:30", "mercredi": "09:00-17:30", "jeudi": "09:00-17:30", "vendredi": "09:00-17:30", "samedi": "09:30-18:00", "dimanche": "09:30-18:00" },
+  "nom": {
+    "valeur": "The Sunny Side",
     "source": "google_maps"
   },
-  "attributs": { "valeur": ["LGBTQ+ friendly", "S'identifie comme géré par une femme"], "source": "google_maps" },
-  "liens": { "instagram": "https://www.instagram.com/thesunnysideparis/", "site": "", "reservation": "", "source": "google_maps" },
-  "plus_code": { "valeur": "V9C7+XH Paris", "source": "google_maps" },
-  "acces": { "valeur": "Métro Jacques Bonsergent (ligne 5), environ 4 min à pied", "source": "deduit (plan Google Maps)" },
+  "categorie": {
+    "valeur": "Café",
+    "source": "google_maps"
+  },
+  "adresse": {
+    "valeur": "79 Quai de Valmy, 75010 Paris",
+    "source": "google_maps"
+  },
+  "telephone": {
+    "valeur": "",
+    "source": "google_maps (aucun numéro sur la fiche)"
+  },
+  "note": {
+    "valeur": "5,0",
+    "nb_avis": 190,
+    "repartition": "186 x 5, 1 x 4, 1 x 3, 2 x 2",
+    "source": "google_maps"
+  },
+  "statut_google": {
+    "valeur": "Ouvert (pas de mention de fermeture définitive)",
+    "source": "google_maps"
+  },
+  "horaires": {
+    "valeur": {
+      "lundi": "09:00-17:30",
+      "mardi": "09:00-17:30",
+      "mercredi": "09:00-17:30",
+      "jeudi": "09:00-17:30",
+      "vendredi": "09:00-17:30",
+      "samedi": "09:30-18:00",
+      "dimanche": "09:30-18:00"
+    },
+    "source": "google_maps"
+  },
+  "attributs": {
+    "valeur": [
+      "LGBTQ+ friendly",
+      "S'identifie comme géré par une femme"
+    ],
+    "source": "google_maps"
+  },
+  "liens": {
+    "instagram": "https://www.instagram.com/thesunnysideparis/",
+    "site": "",
+    "reservation": "",
+    "source": "google_maps"
+  },
+  "plus_code": {
+    "valeur": "V9C7+XH Paris",
+    "source": "google_maps"
+  },
+  "acces": {
+    "valeur": "Métro Jacques Bonsergent (ligne 5), environ 4 min à pied",
+    "source": "deduit (plan Google Maps)"
+  },
   "themes_avis": {
-    "valeur": ["sandwiches (24)", "latte (14)", "pan bagnat (8)", "dattes (7)", "banana bread (7)", "méditerranéenne (6)", "matcha (6)", "sorgo (5)", "harissa (5)", "tunisien (3)"],
+    "valeur": [
+      "sandwiches (24)",
+      "latte (14)",
+      "pan bagnat (8)",
+      "dattes (7)",
+      "banana bread (7)",
+      "méditerranéenne (6)",
+      "matcha (6)",
+      "sorgo (5)",
+      "harissa (5)",
+      "tunisien (3)"
+    ],
     "source": "google_maps"
   },
   "synthese_avis": {
@@ -37,15 +93,51 @@
     ]
   },
   "observations_visuelles": [
-    { "photo": "Comptoir (photo du propriétaire, sept. 2026)", "vu": "Comptoir habillé de carreaux de ciment bleu marine, fleurs crème à 8 pétales, cœur et coins moutarde ; plan de travail bordé de carreaux ocre ; machine à espresso blanche ; murs crème, poutres claires, grandes fenêtres sur le quai ; tabourets orange.", "confiance": "élevée" },
-    { "photo": "Cookies sur plateau bois", "vu": "Cookies chocolat-noix de pécan portés par une personne en tablier bordeaux.", "confiance": "élevée" },
-    { "photo": "Cookies noisette, cloches à gâteaux", "vu": "Cloches en verre sur présentoirs, socle rouge-orangé.", "confiance": "moyenne" },
-    { "photo": "Bagnat dans bol bleu", "vu": "Bagnat dans bol émaillé bleu marine, papier vichy rouge et blanc ; carreaux jaunes et blancs en damier en arrière-plan.", "confiance": "élevée" },
-    { "photo": "Comptoir vu de face", "vu": "Étagères bois, mur orangé derrière le comptoir, branches de bois décoratives, tasses empilées.", "confiance": "moyenne" },
-    { "photo": "Granola bowl", "vu": "Bol blanc, granola, latte mousseux sur soucoupe.", "confiance": "élevée" },
-    { "photo": "Dip labneh", "vu": "Assiette rose à rayures vert anis, labneh et harissa, herbes.", "confiance": "élevée" },
-    { "photo": "Cake citron", "vu": "Cake au citron, thym et huile d'olive (étiquette manuscrite) sur plat vert canard ; pots de confiture/sweet harissa étiquetés en arrière-plan.", "confiance": "élevée" },
-    { "photo": "Vue du dessus, table (août 2026)", "vu": "Carte imprimée : logo 'the sunny side' en lettres grasses arrondies moutarde, fleur jaune pâle derrière, intitulés en capitales, noms des plats en rouge brique, pastilles V/VG rouges ; assiettes blanches à bord de touches bleues, soucoupes en forme de soleil jaune, banquette moutarde, tabourets orange, carreaux de ciment au sol.", "confiance": "élevée" }
+    {
+      "photo": "Comptoir (photo du propriétaire, sept. 2026)",
+      "vu": "Comptoir habillé de carreaux de ciment bleu marine, fleurs crème à 8 pétales, cœur et coins moutarde ; plan de travail bordé de carreaux ocre ; machine à espresso blanche ; murs crème, poutres claires, grandes fenêtres sur le quai ; tabourets orange.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "Cookies sur plateau bois",
+      "vu": "Cookies chocolat-noix de pécan portés par une personne en tablier bordeaux.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "Cookies noisette, cloches à gâteaux",
+      "vu": "Cloches en verre sur présentoirs, socle rouge-orangé.",
+      "confiance": "moyenne"
+    },
+    {
+      "photo": "Bagnat dans bol bleu",
+      "vu": "Bagnat dans bol émaillé bleu marine, papier vichy rouge et blanc ; carreaux jaunes et blancs en damier en arrière-plan.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "Comptoir vu de face",
+      "vu": "Étagères bois, mur orangé derrière le comptoir, branches de bois décoratives, tasses empilées.",
+      "confiance": "moyenne"
+    },
+    {
+      "photo": "Granola bowl",
+      "vu": "Bol blanc, granola, latte mousseux sur soucoupe.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "Dip labneh",
+      "vu": "Assiette rose à rayures vert anis, labneh et harissa, herbes.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "Cake citron",
+      "vu": "Cake au citron, thym et huile d'olive (étiquette manuscrite) sur plat vert canard ; pots de confiture/sweet harissa étiquetés en arrière-plan.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "Vue du dessus, table (août 2026)",
+      "vu": "Carte imprimée : logo 'the sunny side' en lettres grasses arrondies moutarde, fleur jaune pâle derrière, intitulés en capitales, noms des plats en rouge brique, pastilles V/VG rouges ; assiettes blanches à bord de touches bleues, soucoupes en forme de soleil jaune, banquette moutarde, tabourets orange, carreaux de ciment au sol.",
+      "confiance": "élevée"
+    }
   ],
   "direction_artistique": "Fond bleu marine des carreaux de ciment, logo en lettres grasses arrondies moutarde (Titan One), texte en Quicksand comme la carte imprimée ; frise de carreaux dessinée en SVG en séparation, soleil inspiré des soucoupes, carte présentée comme la feuille posée sur la table avec noms des plats en rouge brique.",
   "argument_de_vente": "Instagram seulement, aucun site ni téléphone sur Google ; 5,0 sur 190 avis : une carte en ligne lisible et les horaires suffiraient à convertir les passants du canal.",
@@ -57,5 +149,10 @@
     "Carte relevée sur une photo d'août 2026 : vérifier qu'elle est à jour",
     "Vente de pots à emporter (dukkah, sweet harissa, granola) : déduite de la carte et d'une photo",
     "Accès métro déduit du plan"
-  ]
+  ],
+  "confiance": "photos nombreuses",
+  "carte_reelle": true,
+  "horaires_verifies": true,
+  "concept_court": "Carreaux de ciment et soleil moutarde",
+  "elements_reels_repris": "carreaux de ciment bleu marine du comptoir, logo arrondi moutarde de la carte, soucoupes soleil, noms de plats rouge brique"
 }

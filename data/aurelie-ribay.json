@@ -1,15 +1,40 @@
 {
   "slug": "aurelie-ribay",
   "releve_le": "2026-10-16",
-  "nom": { "valeur": "Aurélie Ribay Boulangère", "source": "google_maps" },
-  "categorie": { "valeur": "Boulangerie", "source": "google_maps" },
-  "adresse": { "valeur": "36 bis rue de Dunkerque, 75010 Paris (angle rue de Maubeuge)", "source": "google_maps + photo façade" },
-  "telephone": { "valeur": "01 48 78 73 56", "source": "google_maps" },
-  "note": { "valeur": "4,5 / 5 (206 avis)", "source": "google_maps" },
+  "nom": {
+    "valeur": "Aurélie Ribay Boulangère",
+    "source": "google_maps"
+  },
+  "categorie": {
+    "valeur": "Boulangerie",
+    "source": "google_maps"
+  },
+  "adresse": {
+    "valeur": "36 bis rue de Dunkerque, 75010 Paris (angle rue de Maubeuge)",
+    "source": "google_maps + photo façade"
+  },
+  "telephone": {
+    "valeur": "01 48 78 73 56",
+    "source": "google_maps"
+  },
+  "note": {
+    "valeur": "4,5 / 5 (206 avis)",
+    "source": "google_maps"
+  },
   "repartition_notes": "5★ 160, 4★ 19, 3★ 7, 2★ 7, 1★ 13",
-  "horaires": { "valeur": "Mardi à vendredi 7h30–19h30, samedi 7h30–19h, fermé dimanche et lundi", "source": "google_maps", "remarque": "Dimanche et lundi absents de la fiche : interprétés comme fermés" },
-  "acces": { "valeur": "Gare du Nord (4, 5, RER B/D/E) et Poissonnière (7) à pied", "source": "deduit" },
-  "site_existant": { "valeur": "aucun (Google propose « Ajouter un site Web »)", "source": "google_maps" },
+  "horaires": {
+    "valeur": "Mardi à vendredi 7h30–19h30, samedi 7h30–19h, fermé dimanche et lundi",
+    "source": "google_maps",
+    "remarque": "Dimanche et lundi absents de la fiche : interprétés comme fermés"
+  },
+  "acces": {
+    "valeur": "Gare du Nord (4, 5, RER B/D/E) et Poissonnière (7) à pied",
+    "source": "deduit"
+  },
+  "site_existant": {
+    "valeur": "aucun (Google propose « Ajouter un site Web »)",
+    "source": "google_maps"
+  },
   "produits_prix": {
     "source": "photo_carte (étiquettes de vitrine, photo client janv. 2026 ; ardoise nov. 2023)",
     "valeur": "Croissant 1,50 ; pain au chocolat 1,80 ; triskell 2 ; tartelette aux pommes 2,70 ; moelleux pommes pécans 2,70 ; bonbons 2 ; galette 4/6/8 pers. 18/27/36 ; couronne des rois 15 ; pain de mie 10 €/kg ; formules (ardoise) sandwich 5,80→9,60 et 5,40→9,20, quiche 7,90, pizza 8,60, salade scone café 14,50 ; soupe maison",
@@ -17,18 +42,61 @@
   },
   "themes_avis": {
     "source": "avis",
-    "valeur": ["viennoiseries (23)", "baguette (17)", "pain au chocolat (10)", "sandwich (9)", "flan (8)", "qualité (7)", "brioche (7)", "pistache (6)", "farines (6)", "cookies (5)"],
+    "valeur": [
+      "viennoiseries (23)",
+      "baguette (17)",
+      "pain au chocolat (10)",
+      "sandwich (9)",
+      "flan (8)",
+      "qualité (7)",
+      "brioche (7)",
+      "pistache (6)",
+      "farines (6)",
+      "cookies (5)"
+    ],
     "synthese": "Viennoiseries et pains spéciaux appréciés, accueil chaleureux et explications sur les produits ; commandes de viennoiseries pour événements professionnels citées ; quelques avis négatifs sur la cuisson d'un pain au chocolat et le rapport prix/taille."
   },
   "observations_visuelles": [
-    { "photo": "Façade d'angle (janv. 2026 / avr. 2024)", "vu": "Stores bordeaux sur les deux rues, « Aurélie Ribay » et « Boulangère » en serif blanc ; devanture bordeaux, immeuble haussmannien.", "confiance": "élevée" },
-    { "photo": "Kouign-amann (janv. 2022)", "vu": "Trois kouign-amann très caramélisés sur assiette.", "confiance": "élevée" },
-    { "photo": "Vitrine (janv. 2026)", "vu": "Étiquettes blanches tapées à la machine (capitales + prix), monogramme « AR » en coin, posées sur porte-étiquettes noirs ; claies en bambou ; galettes, tartelettes aux pommes, triskells, moelleux, pains au chocolat ; bocaux ; comptoir bordeaux.", "confiance": "élevée" },
-    { "photo": "Croissant et flan (avr. 2024)", "vu": "Croissant bien doré et part de flan, rue en fond.", "confiance": "élevée" },
-    { "photo": "Pain au chocolat en sac (août 2025)", "vu": "Sac papier blanc avec lettrage brun-rouge.", "confiance": "moyenne" },
-    { "photo": "Pâtisseries (nov. 2022)", "vu": "Éclairs, entremets blancs, tartelettes en vitrine réfrigérée.", "confiance": "moyenne" },
-    { "photo": "Intérieur (nov. 2023)", "vu": "Papier peint jungle avec toucans, étagères vert d'eau, comptoir bordeaux, ardoises « Nos formules » et « Soupe maison » à la craie, ventilateur à pales en bois, pain de mie 10 €/kg.", "confiance": "élevée" },
-    { "photo": "Vitrine adhésive (mars 2019)", "vu": "Grand monogramme « AR », « Aurélie Ribay » en arc et « Boulangère » en capitales fines blanches.", "confiance": "moyenne (ancienne)" }
+    {
+      "photo": "Façade d'angle (janv. 2026 / avr. 2024)",
+      "vu": "Stores bordeaux sur les deux rues, « Aurélie Ribay » et « Boulangère » en serif blanc ; devanture bordeaux, immeuble haussmannien.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "Kouign-amann (janv. 2022)",
+      "vu": "Trois kouign-amann très caramélisés sur assiette.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "Vitrine (janv. 2026)",
+      "vu": "Étiquettes blanches tapées à la machine (capitales + prix), monogramme « AR » en coin, posées sur porte-étiquettes noirs ; claies en bambou ; galettes, tartelettes aux pommes, triskells, moelleux, pains au chocolat ; bocaux ; comptoir bordeaux.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "Croissant et flan (avr. 2024)",
+      "vu": "Croissant bien doré et part de flan, rue en fond.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "Pain au chocolat en sac (août 2025)",
+      "vu": "Sac papier blanc avec lettrage brun-rouge.",
+      "confiance": "moyenne"
+    },
+    {
+      "photo": "Pâtisseries (nov. 2022)",
+      "vu": "Éclairs, entremets blancs, tartelettes en vitrine réfrigérée.",
+      "confiance": "moyenne"
+    },
+    {
+      "photo": "Intérieur (nov. 2023)",
+      "vu": "Papier peint jungle avec toucans, étagères vert d'eau, comptoir bordeaux, ardoises « Nos formules » et « Soupe maison » à la craie, ventilateur à pales en bois, pain de mie 10 €/kg.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "Vitrine adhésive (mars 2019)",
+      "vu": "Grand monogramme « AR », « Aurélie Ribay » en arc et « Boulangère » en capitales fines blanches.",
+      "confiance": "moyenne (ancienne)"
+    }
   ],
   "direction_artistique": "Store bordeaux et lettrage serif blanc (Libre Caslon), frise SVG de feuillages et toucan d'après le papier peint, vitrine en étiquettes blanches tapées à la machine (Courier Prime) sur fond vert d'eau, bloc boutique vert jungle. Diffère d'une boulangerie « crème et doré » : bordeaux, vert jungle, machine à écrire.",
   "argument_de_vente": "Aucun site web : la fiche Google affiche « Ajouter un site Web ». Les formules du midi et les galettes ne sont visibles que sur place.",
@@ -40,5 +108,10 @@
     "Commandes pour événements : délai et modalités",
     "Accès métro (déduit)",
     "Compte Instagram éventuel"
-  ]
+  ],
+  "confiance": "photos nombreuses",
+  "carte_reelle": true,
+  "horaires_verifies": true,
+  "concept_court": "Store bordeaux, toucan et machine à écrire",
+  "elements_reels_repris": "store bordeaux à serif blanche, papier peint jungle au toucan, étiquettes tapées à la machine, vert d'eau"
 }

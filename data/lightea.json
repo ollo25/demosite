@@ -1,17 +1,47 @@
 {
   "slug": "lightea",
   "releve_le": "2026-10-16",
-  "nom": { "valeur": "LIGHTEA", "source": "google_maps" },
-  "categorie": { "valeur": "Magasin de thé aux perles (bubble tea)", "source": "google_maps" },
-  "adresse": { "valeur": "98 rue du Faubourg-Poissonnière, 75010 Paris", "source": "google_maps" },
-  "telephone": { "valeur": "01 42 96 16 34", "source": "google_maps" },
-  "note": { "valeur": "4,7 / 5 (334 avis)", "source": "google_maps" },
+  "nom": {
+    "valeur": "LIGHTEA",
+    "source": "google_maps"
+  },
+  "categorie": {
+    "valeur": "Magasin de thé aux perles (bubble tea)",
+    "source": "google_maps"
+  },
+  "adresse": {
+    "valeur": "98 rue du Faubourg-Poissonnière, 75010 Paris",
+    "source": "google_maps"
+  },
+  "telephone": {
+    "valeur": "01 42 96 16 34",
+    "source": "google_maps"
+  },
+  "note": {
+    "valeur": "4,7 / 5 (334 avis)",
+    "source": "google_maps"
+  },
   "repartition_notes": "5★ 284, 4★ 25, 3★ 8, 2★ 3, 1★ 14",
-  "horaires": { "valeur": "Lundi à vendredi 12h–21h, samedi et dimanche 12h–20h", "source": "google_maps" },
-  "acces": { "valeur": "Métro Poissonnière (ligne 7) ; gare du Nord à pied", "source": "deduit" },
-  "site_existant": { "valeur": "aucun (Google propose « Ajouter un site Web »)", "source": "google_maps" },
-  "commande": { "valeur": "Bouton « Commander » (retrait ou livraison) sur Google Maps, plateforme non identifiée", "source": "google_maps" },
-  "accessibilite": { "valeur": "Parking accessible en fauteuil roulant", "source": "google_maps" },
+  "horaires": {
+    "valeur": "Lundi à vendredi 12h–21h, samedi et dimanche 12h–20h",
+    "source": "google_maps"
+  },
+  "acces": {
+    "valeur": "Métro Poissonnière (ligne 7) ; gare du Nord à pied",
+    "source": "deduit"
+  },
+  "site_existant": {
+    "valeur": "aucun (Google propose « Ajouter un site Web »)",
+    "source": "google_maps"
+  },
+  "commande": {
+    "valeur": "Bouton « Commander » (retrait ou livraison) sur Google Maps, plateforme non identifiée",
+    "source": "google_maps"
+  },
+  "accessibilite": {
+    "valeur": "Parking accessible en fauteuil roulant",
+    "source": "google_maps"
+  },
   "carte": {
     "source": "photo_carte (tableau en vitrine, photo client sept. 2025)",
     "contenu": "Rubriques TOP, Fruit Tea, Taro, Matcha, Brown Sugar, Crème Cheese, Special (avec café), Ice Cream, Milk Tea ; prix M/L de 3,29/3,99 à 5,29/5,99 ; toppings 0,60 € (popping boba fraise/mangue/passion/litchi/pêche, tapioca, gelée de coco, perle konjac, Oréo) et 1 € (crème cheese, crème brûlée, café, purée de taro) ; changement de lait (soja, coco) 0,60 € ; taux de sucre 0/25/50/75/100 % ; température glaçons/moins de glaçons/sans glaçons/tiède/chaud. Mise en avant : Matcha Mangue Smoothie 4,99 €.",
@@ -19,16 +49,51 @@
   },
   "themes_avis": {
     "source": "avis",
-    "valeur": ["prix (36)", "crème brûlée (11)", "matcha (8)", "glaçons (6)", "oreo (6)", "lait de coco (5)", "toilettes (5)", "taro (5)", "vendeuses (3)", "décoration (3)"],
+    "valeur": [
+      "prix (36)",
+      "crème brûlée (11)",
+      "matcha (8)",
+      "glaçons (6)",
+      "oreo (6)",
+      "lait de coco (5)",
+      "toilettes (5)",
+      "taro (5)",
+      "vendeuses (3)",
+      "décoration (3)"
+    ],
     "synthese": "Avis très positifs : thé au lait, perles moelleuses, sucre bien dosé, service rapide, équipe sympathique, lieu propre et cosy. Brown sugar crème brûlée cité."
   },
   "observations_visuelles": [
-    { "photo": "Salle (propriétaire ? janv. 2025)", "vu": "Murs et soubassement jaune citron, mur de pierre apparente, enseigne néon blanc « LIGHTEA » en capitales larges sur caisson noir, plantes vertes et fleurs de paradis autour, fauteuils jaunes, tables rondes en bois clair, coussins fleurs roses.", "confiance": "élevée" },
-    { "photo": "Vidéo (févr. 2025)", "vu": "Sapin de Noël, mur crème, banquette jaune.", "confiance": "moyenne" },
-    { "photo": "Salle avec clients (sept. 2026)", "vu": "Même décor : enseigne néon, pierre, jaune, spots au plafond.", "confiance": "élevée" },
-    { "photo": "Boisson (août 2025)", "vu": "Gobelet transparent avec logo blanc, thé au lait et perles, petit vase de fleurs.", "confiance": "élevée" },
-    { "photo": "Trois boissons (juin 2026)", "vu": "Fruit teas, smoothie mangue, crème cheese.", "confiance": "élevée" },
-    { "photo": "Tableau-menu en vitrine (sept. 2025)", "vu": "Fond jaune pâle, onglets jaune d'or en biseau, prix dans des ovales dorés, typographie géométrique grasse, bloc vert matcha avec logo blanc.", "confiance": "élevée" }
+    {
+      "photo": "Salle (propriétaire ? janv. 2025)",
+      "vu": "Murs et soubassement jaune citron, mur de pierre apparente, enseigne néon blanc « LIGHTEA » en capitales larges sur caisson noir, plantes vertes et fleurs de paradis autour, fauteuils jaunes, tables rondes en bois clair, coussins fleurs roses.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "Vidéo (févr. 2025)",
+      "vu": "Sapin de Noël, mur crème, banquette jaune.",
+      "confiance": "moyenne"
+    },
+    {
+      "photo": "Salle avec clients (sept. 2026)",
+      "vu": "Même décor : enseigne néon, pierre, jaune, spots au plafond.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "Boisson (août 2025)",
+      "vu": "Gobelet transparent avec logo blanc, thé au lait et perles, petit vase de fleurs.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "Trois boissons (juin 2026)",
+      "vu": "Fruit teas, smoothie mangue, crème cheese.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "Tableau-menu en vitrine (sept. 2025)",
+      "vu": "Fond jaune pâle, onglets jaune d'or en biseau, prix dans des ovales dorés, typographie géométrique grasse, bloc vert matcha avec logo blanc.",
+      "confiance": "élevée"
+    }
   ],
   "direction_artistique": "Mur jaune citron + enseigne néon blanc à halo bleuté sur caisson noir, feuillages SVG ; étapes « composer » en noir ; carte en tableau jaune pâle avec onglets dorés en biseau et prix dans des ovales comme sur le menu en vitrine. Police unique Outfit.",
   "argument_de_vente": "Aucun site web : la fiche Google affiche « Ajouter un site Web ». La carte n'existe qu'en tableau photographié par les clients.",
@@ -39,5 +104,10 @@
     "Accès métro (déduit)",
     "Orthographe souhaitée du nom : LIGHTEA (enseigne) ou Lightea",
     "Les perles sont-elles préparées sur place ? (non affirmé sur la démo)"
-  ]
+  ],
+  "confiance": "photos nombreuses",
+  "carte_reelle": true,
+  "horaires_verifies": true,
+  "concept_court": "Mur citron et néon blanc",
+  "elements_reels_repris": "mur jaune citron, enseigne néon blanc sur caisson noir, feuillages, menu en vitrine à prix dans des ovales"
 }
