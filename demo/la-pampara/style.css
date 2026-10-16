@@ -1,0 +1,331 @@
+/*
+ * La Pampara — direction artistique
+ *
+ * Concept : on arrive sous le store banne rayé rouge et blanc à lambrequin
+ * festonné, où « Épicerie gourmande » est peint en capitales à empattements
+ * anthracite ; dessous, la devanture en bois miel et le grand cornet de glace
+ * en piñata frangée (boule magenta et rouge-orangé, cornet jaune d'or) qui
+ * pend devant la vitrine. La carte est écrite comme les ardoises à la craie
+ * colorée posées sur le trottoir ; le plafond en tôle emboutie et le comptoir
+ * carrelé vert bouteille ferment la page.
+ *
+ * Palette (relevée sur les photos Google Maps) :
+ *   --rouge      #C8202A  rayures du store, devanture d'origine
+ *   --toile      #FBF5EA  rayures blanc cassé du store
+ *   --anthracite #2F2F35  lettrage peint sur le store
+ *   --miel       #D4A766  menuiserie et étagères en bois naturel
+ *   --bois       #8A5A2B  bois foncé des encadrements (filets)
+ *   --ardoise    #232723  ardoises à la craie
+ *   --carreau    #2E6B4F  carrelage vert du comptoir
+ *   craies : rose #F49AC1, jaune #F7CF4D, vert #9BD58E (sur ardoise uniquement)
+ *   piñata : #E0307A, #EE4A2C, #F7B52C (dessin uniquement)
+ *
+ * Polices (2, licence SIL OFL) :
+ *   Prata          — didone à empattements marqués, proche des capitales peintes
+ *                    sur le store ; nom, titres et inscription du store.
+ *   Libre Franklin — grotesque franche et lisible pour tout le texte (400, 600).
+ *
+ * Mise en page : store et lambrequin en haut de page, devanture en bois avec le
+ * cornet à droite, ardoise encadrée de bois pour la carte, rayons en liste,
+ * bande de tôle emboutie, infos sur le vert du comptoir. Ton : simple, concret.
+ * Contrastes vérifiés : anthracite sur miel 6,6:1 ; blanc sur rouge 5,3:1 ;
+ * craies sur ardoise > 9:1 ; blanc sur vert 6,4:1.
+ */
+
+/* ---------- Polices ---------- */
+@font-face {
+  font-family: "Prata";
+  src: url("fonts/prata-latin-400-normal.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Libre Franklin";
+  src: url("fonts/libre-franklin-latin-400-normal.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Libre Franklin";
+  src: url("fonts/libre-franklin-latin-600-normal.woff2") format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+
+/* ---------- Couleurs et réglages ---------- */
+:root {
+  --rouge: #C8202A;
+  --rouge-fonce: #A3161E;
+  --toile: #FBF5EA;
+  --anthracite: #2F2F35;
+  --miel: #D4A766;
+  --bois: #8A5A2B;
+  --ardoise: #232723;
+  --craie: #F2EFE6;
+  --rose: #F49AC1;
+  --jaune: #F7CF4D;
+  --vert-craie: #9BD58E;
+  --carreau: #2E6B4F;
+  --largeur: 66rem;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 4.5rem; }
+
+body {
+  background: var(--toile);
+  color: var(--anthracite);
+  font-family: "Libre Franklin", system-ui, sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+}
+
+h1, h2, .barre-nom, .pied-nom, .store-texte {
+  font-family: "Prata", Georgia, serif;
+  font-weight: 400;
+  line-height: 1.1;
+}
+h2 { font-size: clamp(2rem, 8vw, 3rem); margin-bottom: 1.25rem; }
+
+a:focus-visible, .bouton:focus-visible {
+  outline: 3px solid var(--jaune);
+  outline-offset: 3px;
+}
+
+/* ---------- Boutons ---------- */
+.bouton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 1.4rem;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.bouton-rouge { background: var(--rouge); color: #fff; }
+.bouton-rouge:hover { background: var(--rouge-fonce); }
+.bouton-contour { border-color: var(--anthracite); color: var(--anthracite); }
+.bouton-contour:hover { background: var(--anthracite); color: var(--toile); }
+.bouton-petit { min-height: 44px; padding: 0 1rem; background: var(--rouge); color: #fff; }
+.bouton-petit:hover { background: var(--rouge-fonce); }
+
+.lien { color: #fff; font-weight: 600; }
+
+/* ---------- En-tête collant ---------- */
+.barre {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  background: var(--toile);
+  border-bottom: 3px solid var(--rouge);
+}
+.barre-nom {
+  margin-right: auto;
+  font-size: 1.5rem;
+  color: var(--rouge-fonce);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  min-height: 48px;
+}
+.barre-nav { display: none; gap: 1.75rem; }
+.barre-nav a { color: var(--anthracite); text-decoration: none; font-weight: 600; padding: 0.6rem 0; }
+.barre-nav a:hover { color: var(--rouge); }
+
+/* ---------- Accueil : store + devanture ---------- */
+.accueil { background: var(--miel); }
+
+.store { position: relative; display: grid; place-items: center; padding: 1.5rem 0.75rem; }
+.store-toile { position: absolute; inset: 0; }
+.store-texte {
+  position: relative;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: clamp(1.6rem, 8.5vw, 4.4rem);
+  letter-spacing: 0.08em;
+  color: var(--anthracite);
+}
+.lambrequin { display: block; background: var(--miel); }
+
+.devanture {
+  position: relative;
+  max-width: var(--largeur);
+  margin: 0 auto;
+  padding: 2rem 1.25rem 2.75rem;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.5rem;
+  align-items: start;
+  /* encadrement en bois foncé, comme les montants de la vitrine */
+  border-left: 10px solid var(--bois);
+  border-right: 10px solid var(--bois);
+}
+.nom {
+  font-size: clamp(2.8rem, 13vw, 6.5rem);
+  color: var(--anthracite);
+  margin-bottom: 0.4rem;
+}
+.sous-titre { font-family: "Prata", Georgia, serif; font-size: 1.25rem; color: var(--anthracite); margin-bottom: 1.25rem; }
+.accroche { font-size: 1.15rem; max-width: 30ch; margin-bottom: 1.25rem; }
+
+/* Badge ouvert / fermé */
+.statut {
+  display: inline-block;
+  padding: 0.3rem 0.9rem;
+  border: 2px solid var(--anthracite);
+  border-radius: 999px;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+.statut[data-ouvert="oui"] { background: var(--carreau); border-color: var(--carreau); color: #fff; }
+.statut[data-ouvert="non"] { background: var(--toile); }
+
+.boutons { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+
+/* Le cornet piñata : léger balancement à l'arrivée, une seule fois */
+.cornet {
+  width: 5.5rem;
+  margin-top: -2rem;
+  transform-origin: 50% 0;
+  animation: balance 550ms ease-out both;
+}
+@keyframes balance {
+  0% { transform: rotate(6deg); }
+  60% { transform: rotate(-3deg); }
+  100% { transform: none; }
+}
+
+/* ---------- Au comptoir : l'ardoise ---------- */
+.carte { padding: 3rem 1rem; background: var(--toile); }
+.ardoise {
+  max-width: 46rem;
+  margin: 0 auto;
+  background: var(--ardoise);
+  color: var(--craie);
+  border: 12px solid var(--miel);
+  outline: 2px solid var(--bois);
+  padding: 2rem 1.25rem 1.5rem;
+}
+.ardoise h2 { color: var(--craie); text-align: center; margin-bottom: 0.5rem; }
+.ardoise-note { font-size: 1rem; text-align: center; color: #D9D5CA; margin: 0 auto 2rem; max-width: 40ch; }
+.ardoise-note:last-child { margin: 1rem auto 0; }
+
+.carte-section { margin-bottom: 2rem; break-inside: avoid; }
+.carte-titre {
+  font-family: "Prata", Georgia, serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  margin-bottom: 0.25rem;
+  color: var(--rose);
+}
+/* une couleur de craie par rubrique, comme sur les ardoises */
+.carte-section:nth-child(3n+2) .carte-titre { color: var(--jaune); }
+.carte-section:nth-child(3n+3) .carte-titre { color: var(--vert-craie); }
+.carte-note { font-size: 1rem; color: #D9D5CA; margin-bottom: 0.25rem; }
+.carte-liste { border-top: 2px dashed #6B6F68; }
+.carte-ligne {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 1rem;
+  padding: 0.65rem 0;
+  border-bottom: 1px dashed #4A4E48;
+}
+.carte-nom { font-weight: 600; }
+.carte-prix { font-weight: 600; text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.carte-desc { grid-column: 1 / -1; font-size: 1rem; color: #D9D5CA; }
+
+/* ---------- En rayon ---------- */
+.epicerie { max-width: var(--largeur); margin: 0 auto; padding: 1rem 1.25rem 3rem; }
+.epicerie h2 { color: var(--rouge-fonce); }
+.rayons { display: grid; }
+.rayons li { padding: 0.9rem 0; border-bottom: 2px solid var(--miel); }
+.rayons strong {
+  display: block;
+  font-family: "Prata", Georgia, serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: var(--rouge-fonce);
+}
+.mention-alcool { margin-top: 1.5rem; font-size: 1rem; }
+
+/* ---------- La boutique ---------- */
+.lieu { background: #fff; }
+.plafond { height: 80px; border-bottom: 6px solid var(--jaune); /* frise jaune sous le plafond */ }
+.plafond svg { display: block; }
+.lieu-contenu {
+  max-width: var(--largeur);
+  margin: 0 auto;
+  padding: 3rem 1.25rem;
+  display: grid;
+  gap: 2rem;
+}
+.lieu h2 { color: var(--anthracite); }
+.lieu-texte { max-width: 38rem; }
+.lieu-texte p + p { margin-top: 1rem; }
+.photo-cadre {
+  margin: 0;
+  aspect-ratio: 4 / 3;
+  display: grid;
+  place-items: center;
+  background: var(--miel);
+  border: 10px solid var(--bois);
+}
+.photo-cadre figcaption {
+  background: var(--toile);
+  font-weight: 600;
+  padding: 0.45rem 1rem;
+  border-radius: 3px;
+}
+
+/* ---------- Infos pratiques sur le vert du comptoir ---------- */
+.infos { background: var(--carreau); color: #fff; padding: 3rem 1.25rem; }
+.infos h2 { color: #fff; max-width: var(--largeur); margin: 0 auto 1.25rem; }
+.infos h3 { font-size: 1.15rem; font-weight: 600; color: var(--jaune); margin: 0 0 0.5rem; }
+.infos-grille { display: grid; gap: 2rem; max-width: var(--largeur); margin: 0 auto; }
+.infos-grille p { margin-bottom: 1rem; }
+.horaire {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid #4F8A6D;
+}
+.horaire.aujourdhui { background: var(--toile); color: var(--anthracite); font-weight: 600; border-radius: 3px; }
+.services { padding-left: 1.2rem; }
+.services li::marker { color: var(--jaune); }
+
+/* ---------- Pied de page ---------- */
+.pied {
+  background: var(--rouge);
+  color: #fff;
+  text-align: center;
+  padding: 2.5rem 1.25rem 1.5rem;
+}
+.pied p { margin-bottom: 0.3rem; }
+.pied-nom { font-size: 2.2rem; }
+.lien-pied { color: #fff; font-weight: 600; display: inline-block; padding: 0.6rem 0; }
+.pied-maquette { font-size: 0.8rem; margin-top: 1.5rem; }
+
+/* ---------- Grand écran ---------- */
+@media (min-width: 768px) {
+  .barre { padding: 0.5rem 2rem; }
+  .barre-nav { display: flex; }
+  .store { padding: 2.75rem 2rem; }
+  .devanture { padding: 3.5rem 3rem 4rem; gap: 2rem; }
+  .accroche { font-size: 1.3rem; }
+  .cornet { width: 9rem; margin-right: 2rem; }
+  .ardoise { padding: 3rem; }
+  .rayons { grid-template-columns: 1fr 1fr; column-gap: 3rem; }
+  .lieu-contenu { grid-template-columns: 1.1fr 1fr; align-items: center; gap: 4rem; }
+  .infos-grille { grid-template-columns: 1fr 1fr; gap: 4rem; }
+}
+@media (min-width: 1100px) {
+  .ardoise { max-width: 64rem; }
+  .carte-contenu { columns: 2; column-gap: 3.5rem; }
+}

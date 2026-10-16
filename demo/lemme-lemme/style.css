@@ -1,0 +1,356 @@
+/*
+ * Lemme Lemme — direction artistique
+ *
+ * Concept : la devanture céladon à panneaux moulurés de la rue Sainte-Marthe,
+ * son enseigne « lemme lemme » en script blanc monoligne et bouclé, la vitrine
+ * où sont peints au trait blanc un oignon et « Boutique gastronomique
+ * italienne » en capitales fines ; à l'intérieur, carrelage métro blanc,
+ * étagères en bois clair, comptoir en carreaux bleu marine et assiettes
+ * émaillées bleu profond.
+ *
+ * Palette (relevée sur les photos Google Maps) :
+ *   --celadon      #B4C8C2  menuiserie de la devanture (panneaux)
+ *   --celadon-fonce #6F8D86 la même dans l'ombre (bandeau de l'enseigne)
+ *   --sapin        #4E6E67  en-tête, texte vert sur fonds clairs
+ *   --marine       #1F2D44  carreaux du comptoir, verre sombre de la vitrine
+ *   --emaille      #2C5B73  assiettes bleu profond (prix)
+ *   --bois         #B98552  étagères (filets décoratifs uniquement)
+ *   --moutarde     #E2B33C  assiette festonnée jaune (petite touche, jamais en texte)
+ *   --carrelage    #F7F8F6  carrelage métro blanc
+ *
+ * Polices (2, licence SIL OFL) :
+ *   Ms Madi     — script monoligne bouclé, proche des lettres en relief de l'enseigne.
+ *   Albert Sans — sans-serif nette ; en capitales très espacées une seule fois,
+ *                 pour reprendre l'inscription de la vitrine ; 400 et 600.
+ *
+ * Mise en page : bandeau d'enseigne, puis vitrine encadrée de panneaux à
+ * moulures (doubles filets), bande de carreaux marine, carte sur fond de
+ * carrelage métro, étagères à filets de bois pour l'épicerie.
+ * Ton : direct, gourmand sans emphase, vocabulaire italien de la maison.
+ * Contrastes : blanc sur --celadon-fonce 3,6:1 (enseigne, très grand texte
+ * seulement) ; blanc sur --sapin 5,4:1 ; --marine sur --celadon 8:1.
+ */
+
+/* ---------- Polices ---------- */
+@font-face {
+  font-family: "Ms Madi";
+  src: url("fonts/ms-madi-latin-400-normal.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Albert Sans";
+  src: url("fonts/albert-sans-latin-400-normal.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Albert Sans";
+  src: url("fonts/albert-sans-latin-600-normal.woff2") format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+
+/* ---------- Couleurs et réglages ---------- */
+:root {
+  --celadon: #B4C8C2;
+  --celadon-fonce: #6F8D86;
+  --sapin: #4E6E67;
+  --marine: #1F2D44;
+  --emaille: #2C5B73;
+  --bois: #B98552;
+  --moutarde: #E2B33C;
+  --carrelage: #F7F8F6;
+  --encre: #1C2328;
+  --largeur: 66rem;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 4.5rem; }
+
+body {
+  background: var(--carrelage);
+  color: var(--encre);
+  font-family: "Albert Sans", system-ui, sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+}
+
+h2 {
+  font-family: "Ms Madi", cursive;
+  font-weight: 400;
+  font-size: clamp(3rem, 13vw, 4.5rem);
+  line-height: 1;
+  color: var(--sapin);
+  margin-bottom: 1rem;
+}
+
+a:focus-visible, .bouton:focus-visible {
+  outline: 3px solid var(--moutarde);
+  outline-offset: 3px;
+}
+
+/* ---------- Boutons ---------- */
+.bouton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 1.4rem;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.bouton-plein { background: var(--marine); color: #fff; }
+.bouton-plein:hover { background: var(--emaille); }
+.bouton-ligne { border-color: #fff; color: #fff; }
+.bouton-ligne:hover { background: #fff; color: var(--marine); }
+.bouton-petit {
+  min-height: 44px;
+  padding: 0 1.1rem;
+  background: #fff;
+  color: var(--marine);
+}
+.bouton-petit:hover { background: var(--celadon); }
+
+.lien { color: var(--emaille); font-weight: 600; }
+
+/* ---------- En-tête collant ---------- */
+.entete {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.4rem 1rem;
+  background: var(--sapin);
+  color: #fff;
+}
+.entete-logo {
+  margin-right: auto;
+  font-family: "Ms Madi", cursive;
+  font-size: 2.1rem;
+  line-height: 1.2;
+  color: #fff;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  min-height: 48px;
+}
+.entete-nav { display: none; gap: 1.75rem; }
+.entete-nav a { color: #fff; text-decoration: none; padding: 0.6rem 0; }
+.entete-nav a:hover { text-decoration: underline; text-underline-offset: 4px; }
+
+/* ---------- Accueil : la devanture ---------- */
+.accueil { background: var(--celadon); padding-bottom: 1.25rem; }
+
+/* Bandeau de l'enseigne, avec sa moulure (double filet clair) */
+.bandeau {
+  background: var(--celadon-fonce);
+  padding: 2.25rem 1rem 2rem;
+  text-align: center;
+  outline: 2px solid var(--celadon);
+  outline-offset: -10px;
+}
+.enseigne {
+  font-family: "Ms Madi", cursive;
+  font-weight: 400;
+  font-size: clamp(3.4rem, 16vw, 10rem);
+  white-space: nowrap;
+  line-height: 1.05;
+  color: #fff;
+  animation: pose 500ms ease-out both;
+}
+@keyframes pose {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: none; }
+}
+
+/* Panneau mouluré qui encadre la vitrine */
+.devanture {
+  max-width: var(--largeur);
+  margin: 1.25rem auto 0;
+  padding: 0 1rem;
+}
+.vitrine {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  align-items: start;
+  background: var(--marine);
+  color: #fff;
+  padding: 1.75rem 1.25rem 2rem 0.75rem;
+  border: 10px solid #A3B9B2;
+  outline: 2px solid var(--sapin);
+  outline-offset: 4px;
+}
+.oignon { width: 3rem; color: #fff; margin-top: 0.5rem; }
+.vitrine-mention {
+  font-size: 1rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+.accroche { font-size: 1.3rem; line-height: 1.4; max-width: 26ch; margin-bottom: 1.25rem; }
+
+/* Badge ouvert / fermé */
+.statut {
+  display: inline-block;
+  padding: 0.3rem 0.9rem;
+  border: 2px solid #fff;
+  border-radius: 999px;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+.statut[data-ouvert="oui"] { background: var(--celadon); border-color: var(--celadon); color: var(--marine); }
+
+.boutons { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+.vitrine .bouton-plein { background: #fff; color: var(--marine); }
+.vitrine .bouton-plein:hover { background: var(--celadon); }
+
+/* ---------- Frise de carreaux marine ---------- */
+.frise { height: 72px; border-top: 6px solid #9AA3A0; /* plan en granit */ }
+.frise svg { display: block; }
+
+/* ---------- La carte, sur carrelage métro ---------- */
+.carte {
+  padding: 3rem 1rem;
+  /* carrelage métro blanc en motif SVG (joints gris clair) */
+  background-color: var(--carrelage);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='30'%3E%3Cpath d='M0 .5h60M0 15.5h60M.5 0v15M30.5 15v15' stroke='%23DCE1DE' fill='none'/%3E%3C/svg%3E");
+}
+.carte-cadre {
+  max-width: 44rem;
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid #DCE1DE;
+  border-top: 8px solid var(--emaille);
+  padding: 2rem 1.25rem 1.5rem;
+}
+.carte-intro { max-width: 46ch; margin-bottom: 2rem; }
+
+.carte-section { margin-bottom: 2rem; break-inside: avoid; }
+.carte-titre {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--sapin);
+  margin-bottom: 0.15rem;
+}
+.carte-note { font-size: 1rem; color: #4A5752; margin-bottom: 0.4rem; }
+.carte-liste { border-top: 2px solid var(--marine); }
+.carte-ligne {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 1rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #E1E5E2;
+}
+.carte-nom { font-weight: 600; }
+.carte-prix {
+  font-weight: 600;
+  color: var(--emaille);
+  text-align: right;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+.carte-desc { grid-column: 1 / -1; color: #4A5752; font-size: 1rem; }
+.carte-mentions { font-size: 1rem; color: #3D4844; }
+.carte-mentions p + p { margin-top: 0.3rem; }
+
+/* ---------- L'épicerie : étagères à filet de bois ---------- */
+.epicerie {
+  max-width: var(--largeur);
+  margin: 0 auto;
+  padding: 3rem 1.25rem;
+}
+.epicerie-intro { max-width: 46ch; margin-bottom: 1.5rem; }
+.etageres { display: grid; gap: 0; }
+.etageres li {
+  padding: 1rem 0 0.85rem;
+  border-bottom: 6px solid var(--bois);
+}
+.etageres strong {
+  display: block;
+  font-size: 1.15rem;
+  color: var(--marine);
+}
+
+/* ---------- Le lieu ---------- */
+.lieu {
+  background: var(--celadon);
+  color: var(--marine);
+  padding: 3rem 1.25rem;
+  display: grid;
+  gap: 2rem;
+}
+.lieu h2 { color: var(--marine); }
+.lieu-texte { max-width: 38rem; }
+.lieu-texte p + p { margin-top: 1rem; }
+.photo-vide {
+  margin: 0;
+  aspect-ratio: 4 / 3;
+  display: grid;
+  place-items: center;
+  background: var(--carrelage);
+  border: 10px solid #A3B9B2;
+  outline: 2px solid var(--sapin);
+  outline-offset: 4px;
+}
+.photo-vide figcaption {
+  background: var(--marine);
+  color: #fff;
+  font-weight: 600;
+  padding: 0.45rem 1rem;
+  border-radius: 4px;
+}
+
+/* ---------- Infos pratiques ---------- */
+.infos { padding: 3rem 1.25rem; max-width: var(--largeur); margin: 0 auto; }
+.infos h3 { font-size: 1.15rem; font-weight: 600; color: var(--sapin); margin: 0 0 0.5rem; }
+.infos-grille { display: grid; gap: 2rem; }
+.infos-grille p { margin-bottom: 1rem; }
+.horaire {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid #DCE1DE;
+}
+.horaire.aujourdhui { background: var(--marine); color: #fff; font-weight: 600; border-radius: 4px; }
+.cuisine { margin-top: 0.75rem; font-weight: 600; }
+.services { padding-left: 1.2rem; margin-bottom: 1.5rem; }
+.services li::marker { color: var(--bois); }
+
+/* ---------- Pied de page ---------- */
+.pied {
+  background: var(--sapin);
+  color: #fff;
+  text-align: center;
+  padding: 2.5rem 1.25rem 1.5rem;
+}
+.pied p { margin-bottom: 0.3rem; }
+.pied .lien { color: #fff; display: inline-block; padding: 0.6rem 0; }
+.pied-nom { font-family: "Ms Madi", cursive; font-size: 3.2rem; line-height: 1.2; }
+.mention { font-size: 0.8rem; opacity: 0.9; margin-top: 1.5rem; }
+
+/* ---------- Grand écran ---------- */
+@media (min-width: 768px) {
+  .entete { padding: 0.4rem 2rem; }
+  .entete-nav { display: flex; }
+  .bandeau { padding: 3rem 2rem 2.5rem; }
+  .devanture { padding: 0 2rem; }
+  .vitrine { padding: 3rem 3rem 3rem 2rem; gap: 2.5rem; }
+  .oignon { width: 5.5rem; }
+  .accroche { font-size: 1.6rem; }
+  .frise { height: 108px; }
+  .carte-cadre { padding: 3rem; }
+  .etageres { grid-template-columns: 1fr 1fr; column-gap: 3rem; }
+  .lieu { grid-template-columns: 1.1fr 1fr; align-items: center; padding: 4rem max(2rem, calc((100vw - var(--largeur)) / 2)); }
+  .infos-grille { grid-template-columns: 1fr 1fr; gap: 4rem; }
+}
+@media (min-width: 1100px) {
+  .carte-cadre { max-width: 60rem; }
+  .carte-contenu { columns: 2; column-gap: 3.5rem; }
+}

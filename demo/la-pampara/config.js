@@ -2,9 +2,9 @@
 window.CONFIG = {
   nom: "La Pampara",
   type: "Épicerie fine et glaces artisanales",
-  accroche: "Épicerie gourmande rue Alibert : sandwichs faits maison le midi, glaces artisanales, biscuits, charcuterie et vins.",
+  accroche: "Sandwichs à emporter le midi, glaces et sorbets, biscuits, charcuterie et vins, sous le store rayé de la rue Alibert.",
   adresse: "9 rue Alibert, 75010 Paris",
-  acces: "Métro Goncourt (ligne 11) ou Jacques Bonsergent (ligne 5), à deux pas du canal Saint-Martin.",
+  acces: "Métro Goncourt (ligne 11) ou Jacques Bonsergent (ligne 5), à 5 minutes à pied",
   telephone: "01 42 06 88 18",
   telephoneLien: "+33142068818",
   horaires: {
@@ -16,45 +16,38 @@ window.CONFIG = {
     samedi: [["14:00", "19:00"]],
     dimanche: [["14:00", "19:00"]]
   },
-  services: ["À emporter", "Sandwichs le midi", "Idées cadeaux"],
-  carteSource: "Prix d'exemple",
+  services: ["À emporter", "Formule du midi", "Glaces et sorbets", "Idées cadeaux"],
+  carteSource: "Prix d'exemple, sauf formule (avis, à vérifier)",
   carte: [
     {
-      titre: "Le midi",
-      note: "Préparations faites maison",
+      titre: "Le midi, à emporter",
+      note: "",
       produits: [
-        { nom: "Sandwich du jour", desc: "Pain croustillant, charcuterie de la boutique, crudités", prix: 8.5, source: "Prix d'exemple" },
-        { nom: "Sandwich végétarien", desc: "Légumes, fromage, herbes fraîches", prix: 8, source: "Prix d'exemple" },
-        { nom: "Boisson fraîche", desc: "", prix: 3, source: "Prix d'exemple" }
+        { nom: "Formule", desc: "Sandwich, panini ou salade, une boisson et un dessert", prix: 8.5, source: "avis, à vérifier" },
+        { nom: "Sandwich vietnamien", desc: "Poulet mariné, crudités, coriandre", prix: 6.5, source: "Prix d'exemple" },
+        { nom: "Sandwich charcuterie italienne", desc: "", prix: 6.5, source: "Prix d'exemple" },
+        { nom: "Sandwich végétarien", desc: "", prix: 6, source: "Prix d'exemple" }
       ]
     },
     {
-      titre: "Glaces artisanales",
+      titre: "Glaces, sorbets, milkshakes",
       note: "Parfums selon la saison",
       produits: [
-        { nom: "Cornet ou pot, 1 boule", desc: "", prix: 3.5, source: "Prix d'exemple" },
-        { nom: "Cornet ou pot, 2 boules", desc: "", prix: 6, source: "Prix d'exemple" },
-        { nom: "Pot à emporter, 500 ml", desc: "", prix: 12, source: "Prix d'exemple" }
+        { nom: "Une boule", desc: "Cornet ou pot", prix: 3.5, source: "Prix d'exemple" },
+        { nom: "Deux boules", desc: "", prix: 5.5, source: "Prix d'exemple" },
+        { nom: "Trois boules", desc: "", prix: 7, source: "Prix d'exemple" },
+        { nom: "Milkshake", desc: "", prix: 6.5, source: "Prix d'exemple" }
       ]
     },
     {
-      titre: "Le sucré",
+      titre: "À boire, à grignoter",
       note: "",
       produits: [
-        { nom: "Cookie", desc: "", prix: 3, source: "Prix d'exemple" },
-        { nom: "Part de tarte", desc: "", prix: 4.5, source: "Prix d'exemple" },
-        { nom: "Fondant", desc: "", prix: 4, source: "Prix d'exemple" },
-        { nom: "Biscuits en sachet", desc: "Amandes, sésame…", prix: "selon le sachet", source: "Prix d'exemple" }
-      ]
-    },
-    {
-      titre: "L'épicerie",
-      note: "",
-      produits: [
-        { nom: "Charcuterie à la coupe", desc: "", prix: "au poids", source: "Prix d'exemple" },
-        { nom: "Vins", desc: "Sélection en rayon", prix: "dès 9 €", source: "Prix d'exemple" },
-        { nom: "Épices, condiments, conserves", desc: "", prix: "en rayon", source: "Prix d'exemple" },
-        { nom: "Fruits et légumes", desc: "Cagettes devant la boutique", prix: "au poids", source: "Prix d'exemple" }
+        { nom: "Expresso", desc: "Noisette ou café au lait", prix: 2, source: "Prix d'exemple" },
+        { nom: "Citronnade", desc: "", prix: 4, source: "Prix d'exemple" },
+        { nom: "Limonade italienne", desc: "", prix: 3.5, source: "Prix d'exemple" },
+        { nom: "Cookie maison", desc: "", prix: 3, source: "Prix d'exemple" },
+        { nom: "Part de tarte", desc: "", prix: 4.5, source: "Prix d'exemple" }
       ]
     }
   ],

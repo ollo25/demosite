@@ -4,143 +4,195 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow">
-  <title>La Pampara · Épicerie fine et glaces artisanales, rue Alibert, Paris 10e</title>
-  <meta name="description" content="La Pampara, épicerie gourmande au 9 rue Alibert (Paris 10e) : sandwichs faits maison le midi, glaces artisanales, biscuits, charcuterie et vins. Horaires et téléphone.">
-  <meta property="og:title" content="La Pampara · Épicerie gourmande, Paris 10e">
-  <meta property="og:description" content="Sandwichs maison, glaces artisanales, charcuterie et vins au 9 rue Alibert.">
+  <title>La Pampara · Épicerie et glaces artisanales, rue Alibert, Paris 10e</title>
+  <meta name="description" content="La Pampara, épicerie gourmande au 9 rue Alibert (Paris 10e) : formule sandwich du midi à emporter, glaces et sorbets, biscuits, charcuterie et vins. Horaires et téléphone.">
+  <meta property="og:title" content="La Pampara, épicerie et glaces artisanales">
+  <meta property="og:description" content="Formule du midi, glaces et sorbets, biscuits et charcuterie au 9 rue Alibert.">
   <meta property="og:type" content="website">
+  <link rel="icon" href="data:,">
   <link rel="stylesheet" href="../../assets/commun/reset.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- En-tête collant avec le bouton Appeler -->
+  <!-- Motifs réutilisés -->
+  <svg width="0" height="0" class="sr-only" aria-hidden="true" focusable="false">
+    <defs>
+      <!-- rayures du store : rouge et blanc cassé -->
+      <pattern id="raies" width="56" height="10" patternUnits="userSpaceOnUse">
+        <rect width="28" height="10" fill="#C8202A"/>
+        <rect x="28" width="28" height="10" fill="#FBF5EA"/>
+      </pattern>
+      <!-- festons du lambrequin, une couleur par feston -->
+      <pattern id="festons" width="56" height="22" patternUnits="userSpaceOnUse">
+        <path d="M0 0h28v8a14 14 0 0 1-28 0z" fill="#C8202A"/>
+        <path d="M28 0h28v8a14 14 0 0 1-28 0z" fill="#FBF5EA"/>
+      </pattern>
+      <!-- plafond en tôle emboutie -->
+      <pattern id="tole" width="40" height="40" patternUnits="userSpaceOnUse">
+        <rect width="40" height="40" fill="#D9DAD6"/>
+        <rect x="3" y="3" width="34" height="34" fill="none" stroke="#A8AAA4" stroke-width="1.5"/>
+        <path d="M20 9l11 11-11 11-11-11z" fill="none" stroke="#A8AAA4" stroke-width="1.5"/>
+        <circle cx="20" cy="20" r="2.5" fill="#A8AAA4"/>
+      </pattern>
+    </defs>
+  </svg>
+
   <header class="barre">
-    <a class="barre-nom" href="#haut" data-champ="nom">La Pampara</a>
+    <a class="barre-nom" href="#accueil" data-champ="nom">La Pampara</a>
     <nav class="barre-nav" aria-label="Sections">
-      <a href="#boutique">La boutique</a>
-      <a href="#lieu">Le lieu</a>
+      <a href="#carte">Le comptoir</a>
+      <a href="#epicerie">L'épicerie</a>
       <a href="#infos">Horaires</a>
     </nav>
-    <a class="bouton bouton-rouge barre-appel" data-lien="tel" href="tel:+33142068818">Appeler</a>
+    <a class="bouton bouton-petit" data-lien="tel" href="tel:+33142068818">Appeler</a>
   </header>
 
-  <main id="haut">
-
-    <!-- Accueil : le store rayé rouge et blanc, puis la devanture rouge -->
-    <section class="devanture" aria-labelledby="titre">
-      <svg class="store" width="100%" height="84" aria-hidden="true" focusable="false">
-        <defs>
-          <!-- rayures du store : 24 px rouge, 24 px blanc -->
-          <pattern id="raies" width="48" height="84" patternUnits="userSpaceOnUse">
-            <rect width="24" height="84" fill="#b3141c"/>
-            <rect x="24" width="24" height="84" fill="#fbf7f1"/>
-          </pattern>
-          <!-- festons du lambrequin -->
-          <pattern id="festons" x="0" y="60" width="48" height="24" patternUnits="userSpaceOnUse">
-            <path d="M0 0 A12 12 0 0 0 24 0 Z" fill="#b3141c"/>
-            <path d="M24 0 A12 12 0 0 0 48 0 Z" fill="#fbf7f1"/>
-          </pattern>
-        </defs>
-        <rect width="100%" height="60" fill="url(#raies)"/>
-        <rect y="60" width="100%" height="24" fill="url(#festons)"/>
+  <main>
+    <!-- Accueil : le store rayé, puis la devanture en bois -->
+    <section class="accueil" id="accueil">
+      <div class="store" aria-hidden="true">
+        <svg class="store-toile" width="100%" height="100%" preserveAspectRatio="none" focusable="false">
+          <rect width="100%" height="100%" fill="url(#raies)"/>
+        </svg>
+        <!-- l'inscription peinte sur le store -->
+        <p class="store-texte">Épicerie gourmande</p>
+      </div>
+      <svg class="lambrequin" width="100%" height="22" aria-hidden="true" focusable="false">
+        <rect width="100%" height="22" fill="url(#festons)"/>
       </svg>
 
-      <div class="devanture-panneau">
-        <h1 id="titre" class="nom" data-champ="nom">La Pampara</h1>
-        <p class="enseigne">Épicerie gourmande</p>
-        <p class="sous-titre">et glaces artisanales</p>
-      </div>
-
-      <div class="accueil">
-        <p class="accroche" data-champ="accroche">Épicerie gourmande rue Alibert : sandwichs faits maison le midi, glaces artisanales, biscuits, charcuterie et vins.</p>
-        <p class="statut" data-statut>Ouvert tous les jours</p>
-        <div class="boutons">
-          <a class="bouton bouton-rouge" data-lien="tel" href="tel:+33142068818">Appeler le 01 42 06 88 18</a>
-          <a class="bouton bouton-contour" data-lien="itineraire" href="https://www.google.com/maps/search/?api=1&amp;query=9%20rue%20Alibert%2C%2075010%20Paris">Itinéraire</a>
+      <div class="devanture">
+        <div class="devanture-texte">
+          <h1 class="nom" data-champ="nom">La Pampara</h1>
+          <p class="sous-titre">Épicerie et glaces artisanales</p>
+          <p class="accroche" data-champ="accroche">Sandwichs à emporter le midi, glaces et sorbets, biscuits, charcuterie et vins, sous le store rayé de la rue Alibert.</p>
+          <p class="statut" data-statut>Ouvert tous les jours</p>
+          <div class="boutons">
+            <a class="bouton bouton-rouge" data-lien="tel" href="tel:+33142068818">Appeler</a>
+            <a class="bouton bouton-contour" data-lien="itineraire"
+               href="https://www.google.com/maps/search/?api=1&amp;query=9%20rue%20Alibert%2C%2075010%20Paris">Itinéraire</a>
+          </div>
         </div>
+
+        <!-- Le grand cornet en piñata frangée suspendu devant la vitrine -->
+        <svg class="cornet" viewBox="0 0 120 230" aria-hidden="true" focusable="false">
+          <line x1="60" y1="0" x2="60" y2="14" stroke="#5B3A1C" stroke-width="2"/>
+          <!-- boule : bandes de franges magenta, rouge-orangé, rose -->
+          <path d="M60 14c28 0 46 18 46 40H14c0-22 18-40 46-40z" fill="#E0307A"/>
+          <path d="M14 54h92v16l-6 6-6-6-6 6-6-6-6 6-6-6-6 6-6-6-6 6-6-6-6 6-6-6-6 6-6-6-6 6-6-6-6 6z" fill="#EE4A2C"/>
+          <path d="M24 38l6 6 6-6 6 6 6-6 6 6 6-6 6 6 6-6 6 6 6-6 6 6 6-6" fill="none" stroke="#F49AC1" stroke-width="3"/>
+          <!-- cornet jaune d'or, rangées de franges -->
+          <path d="M16 74h88L60 228z" fill="#F7B52C"/>
+          <g fill="none" stroke="#D88E12" stroke-width="2">
+            <path d="M22 96l5 5 5-5 5 5 5-5 5 5 5-5 5 5 5-5 5 5 5-5 5 5 5-5 5 5 5-5"/>
+            <path d="M30 122l5 5 5-5 5 5 5-5 5 5 5-5 5 5 5-5 5 5 5-5 5 5"/>
+            <path d="M38 148l5 5 5-5 5 5 5-5 5 5 5-5 5 5 5-5"/>
+            <path d="M46 174l5 5 5-5 5 5 5-5 5 5"/>
+            <path d="M53 198l4 4 4-4 4 4"/>
+          </g>
+        </svg>
       </div>
     </section>
 
-    <!-- Les produits, présentés comme des étagères -->
-    <section id="boutique" class="boutique" aria-labelledby="titre-boutique">
-      <div class="boutique-tete">
-        <div>
-          <h2 id="titre-boutique" class="titre-section">À la boutique</h2>
-          <p class="boutique-intro">Ce que l'on trouve en rayon et au comptoir. <strong>Prix d'exemple</strong>, à titre indicatif.</p>
+    <!-- Le comptoir : écrit comme les ardoises à la craie de la boutique -->
+    <section class="carte" id="carte" aria-labelledby="titre-carte">
+      <div class="ardoise">
+        <h2 id="titre-carte">Au comptoir</h2>
+        <p class="ardoise-note">Prix d'exemple, sauf la formule (relevée dans un avis, à vérifier).</p>
+
+        <div class="carte-contenu" data-carte data-carte-titre="h3">
+          <section class="carte-section">
+            <h3 class="carte-titre">Le midi, à emporter</h3>
+            <ul class="carte-liste">
+              <li class="carte-ligne"><span class="carte-nom">Formule</span><span class="carte-prix">8,50 €</span><span class="carte-desc">Sandwich, panini ou salade, une boisson et un dessert</span></li>
+              <li class="carte-ligne"><span class="carte-nom">Sandwich vietnamien</span><span class="carte-prix">6,50 €</span><span class="carte-desc">Poulet mariné, crudités, coriandre</span></li>
+              <li class="carte-ligne"><span class="carte-nom">Sandwich charcuterie italienne</span><span class="carte-prix">6,50 €</span></li>
+              <li class="carte-ligne"><span class="carte-nom">Sandwich végétarien</span><span class="carte-prix">6 €</span></li>
+            </ul>
+          </section>
+          <section class="carte-section">
+            <h3 class="carte-titre">Glaces, sorbets, milkshakes</h3>
+            <p class="carte-note">Parfums selon la saison</p>
+            <ul class="carte-liste">
+              <li class="carte-ligne"><span class="carte-nom">Une boule</span><span class="carte-prix">3,50 €</span><span class="carte-desc">Cornet ou pot</span></li>
+              <li class="carte-ligne"><span class="carte-nom">Deux boules</span><span class="carte-prix">5,50 €</span></li>
+              <li class="carte-ligne"><span class="carte-nom">Trois boules</span><span class="carte-prix">7 €</span></li>
+              <li class="carte-ligne"><span class="carte-nom">Milkshake</span><span class="carte-prix">6,50 €</span></li>
+            </ul>
+          </section>
+          <section class="carte-section">
+            <h3 class="carte-titre">À boire, à grignoter</h3>
+            <ul class="carte-liste">
+              <li class="carte-ligne"><span class="carte-nom">Expresso</span><span class="carte-prix">2 €</span><span class="carte-desc">Noisette ou café au lait</span></li>
+              <li class="carte-ligne"><span class="carte-nom">Citronnade</span><span class="carte-prix">4 €</span></li>
+              <li class="carte-ligne"><span class="carte-nom">Limonade italienne</span><span class="carte-prix">3,50 €</span></li>
+              <li class="carte-ligne"><span class="carte-nom">Cookie maison</span><span class="carte-prix">3 €</span></li>
+              <li class="carte-ligne"><span class="carte-nom">Part de tarte</span><span class="carte-prix">4,50 €</span></li>
+            </ul>
+          </section>
         </div>
-        <!-- Le grand cornet de glace accroché à la façade -->
-        <svg class="cornet" viewBox="0 0 120 200" aria-hidden="true" focusable="false">
-          <circle cx="60" cy="52" r="38" fill="#ef8aa0"/>
-          <circle cx="38" cy="70" r="20" fill="#ef8aa0"/>
-          <circle cx="82" cy="70" r="20" fill="#ef8aa0"/>
-          <path d="M22 78 L60 196 L98 78 Z" fill="#e59a3b"/>
-          <g stroke="#b9711f" stroke-width="2">
-            <line x1="30" y1="96" x2="88" y2="150"/><line x1="36" y1="80" x2="94" y2="132"/>
-            <line x1="26" y1="112" x2="76" y2="160"/><line x1="90" y1="96" x2="32" y2="150"/>
-            <line x1="84" y1="80" x2="26" y2="132"/><line x1="94" y1="112" x2="44" y2="160"/>
-          </g>
-          <path d="M22 78 Q40 90 60 80 Q80 92 98 78" fill="none" stroke="#d96b84" stroke-width="3"/>
-        </svg>
+        <p class="ardoise-note">Informations sur les allergènes disponibles sur demande.</p>
       </div>
+    </section>
 
-      <div class="etageres" data-carte data-carte-titre="h3">
-<!-- carte:debut -->
-<!-- carte:fin -->
-      </div>
-
-      <p class="mention">Informations sur les allergènes disponibles sur demande.</p>
-      <p class="mention">L'abus d'alcool est dangereux pour la santé, à consommer avec modération.</p>
+    <!-- L'épicerie : les rayons en bois -->
+    <section class="epicerie" id="epicerie" aria-labelledby="titre-epicerie">
+      <h2 id="titre-epicerie">En rayon</h2>
+      <ul class="rayons">
+        <li><strong>Biscuits</strong> En sachets, aux amandes, au sésame, aux épices</li>
+        <li><strong>Charcuterie</strong> Italienne, pour les sandwichs ou à emporter</li>
+        <li><strong>Bocaux et condiments</strong> Confitures, conserves, épices, huiles</li>
+        <li><strong>Vins</strong> Bouteilles à emporter</li>
+        <li><strong>Fruits, légumes, herbes fraîches</strong> En cagettes devant la boutique : basilic, menthe, persil, coriandre</li>
+        <li><strong>À offrir</strong> Boîtes et paniers garnis</li>
+      </ul>
+      <p class="mention-alcool">L'abus d'alcool est dangereux pour la santé, à consommer avec modération.</p>
     </section>
 
     <!-- Le lieu -->
-    <section id="lieu" class="lieu" aria-labelledby="titre-lieu">
-      <!-- Motif du plafond en tôle emboutie -->
-      <svg class="plafond" width="100%" height="64" aria-hidden="true" focusable="false">
-        <defs>
-          <pattern id="tole" width="32" height="32" patternUnits="userSpaceOnUse">
-            <rect width="32" height="32" fill="#d9dad6"/>
-            <rect x="2" y="2" width="28" height="28" fill="none" stroke="#a9aba6" stroke-width="1.5"/>
-            <circle cx="16" cy="16" r="6" fill="none" stroke="#a9aba6" stroke-width="1.5"/>
-            <circle cx="16" cy="16" r="1.8" fill="#a9aba6"/>
-          </pattern>
-        </defs>
-        <rect width="100%" height="64" fill="url(#tole)"/>
-      </svg>
-
+    <section class="lieu" id="lieu" aria-labelledby="titre-lieu">
+      <div class="plafond" aria-hidden="true">
+        <svg width="100%" height="100%" focusable="false"><rect width="100%" height="100%" fill="url(#tole)"/></svg>
+      </div>
       <div class="lieu-contenu">
         <div class="lieu-texte">
-          <h2 id="titre-lieu" class="titre-section">Le lieu</h2>
-          <p>Une devanture rouge sous un store rayé rouge et blanc, un grand cornet de glace accroché à la façade et des cagettes de fruits et légumes sur le trottoir.</p>
-          <p>Dedans : des étagères en bois du sol au plafond, un plafond en tôle emboutie, le comptoir carrelé de vert et la vitrine des glaces. On y passe pour un sandwich le midi, une glace l'été, un cadeau à offrir le reste de l'année.</p>
+          <h2 id="titre-lieu">La boutique</h2>
+          <p>Un store rayé rouge et blanc, une devanture en bois, des cagettes de légumes sur le trottoir et un grand cornet de glace en papier frangé suspendu devant la vitrine.</p>
+          <p>Dedans, des étagères en bois du sol au plafond, un plafond en tôle emboutie, le comptoir carrelé de vert et la vitrine des glaces. On passe pour un sandwich le midi, une glace l'été, un sachet de biscuits ou un cadeau le reste de l'année.</p>
         </div>
         <figure class="photo-cadre">
-          <span>Vos photos ici</span>
-          <figcaption class="sr-only">Emplacement réservé à une photo de la boutique</figcaption>
+          <figcaption>Vos photos ici</figcaption>
         </figure>
       </div>
     </section>
 
     <!-- Infos pratiques, sur le vert du comptoir -->
-    <section id="infos" class="infos" aria-labelledby="titre-infos">
-      <h2 id="titre-infos" class="titre-section">Horaires et accès</h2>
+    <section class="infos" id="infos" aria-labelledby="titre-infos">
+      <h2 id="titre-infos">Horaires et accès</h2>
       <div class="infos-grille">
         <div>
-          <h3 class="infos-titre">Horaires</h3>
+          <h3>Horaires</h3>
           <ul class="horaires" data-horaires>
-<!-- horaires:debut -->
-<!-- horaires:fin -->
+            <li class="horaire" data-jour="lundi"><span class="horaire-jour">Lundi</span><span class="horaire-heures">11h – 19h</span></li>
+            <li class="horaire" data-jour="mardi"><span class="horaire-jour">Mardi</span><span class="horaire-heures">11h – 19h</span></li>
+            <li class="horaire" data-jour="mercredi"><span class="horaire-jour">Mercredi</span><span class="horaire-heures">11h – 19h</span></li>
+            <li class="horaire" data-jour="jeudi"><span class="horaire-jour">Jeudi</span><span class="horaire-heures">11h – 19h</span></li>
+            <li class="horaire" data-jour="vendredi"><span class="horaire-jour">Vendredi</span><span class="horaire-heures">11h – 19h</span></li>
+            <li class="horaire" data-jour="samedi"><span class="horaire-jour">Samedi</span><span class="horaire-heures">14h – 19h</span></li>
+            <li class="horaire" data-jour="dimanche"><span class="horaire-jour">Dimanche</span><span class="horaire-heures">14h – 19h</span></li>
           </ul>
         </div>
         <div>
-          <h3 class="infos-titre">Adresse</h3>
-          <p class="infos-adresse" data-champ="adresse">9 rue Alibert, 75010 Paris</p>
-          <p data-champ="acces">Métro Goncourt (ligne 11) ou Jacques Bonsergent (ligne 5), à deux pas du canal Saint-Martin.</p>
-          <p><a class="lien" data-lien="itineraire" href="https://www.google.com/maps/search/?api=1&amp;query=9%20rue%20Alibert%2C%2075010%20Paris">Ouvrir l'itinéraire</a></p>
-          <h3 class="infos-titre">Services</h3>
+          <h3>Adresse</h3>
+          <p><span data-champ="adresse">9 rue Alibert, 75010 Paris</span><br>
+             <span data-champ="acces">Métro Goncourt (ligne 11) ou Jacques Bonsergent (ligne 5), à 5 minutes à pied</span></p>
+          <p><a class="lien" data-lien="itineraire"
+             href="https://www.google.com/maps/search/?api=1&amp;query=9%20rue%20Alibert%2C%2075010%20Paris">Ouvrir l'itinéraire</a></p>
+          <h3>Pratique</h3>
           <ul class="services">
-            <li>À emporter</li>
-            <li>Sandwichs le midi</li>
+            <li>Tout est à emporter</li>
+            <li>Formule du midi</li>
             <li>Idées cadeaux</li>
           </ul>
         </div>
@@ -150,7 +202,7 @@
 
   <footer class="pied">
     <p class="pied-nom" data-champ="nom">La Pampara</p>
-    <p data-champ="adresse">9 rue Alibert, 75010 Paris</p>
+    <p>9 rue Alibert, 75010 Paris</p>
     <p><a class="lien-pied" data-lien="tel" href="tel:+33142068818" data-champ="telephone">01 42 06 88 18</a></p>
     <p class="pied-maquette">Maquette, site non officiel</p>
   </footer>

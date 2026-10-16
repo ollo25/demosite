@@ -1,0 +1,411 @@
+/*
+ * Amulette — direction artistique
+ *
+ * Concept : la page est la devanture du café. Bandeau bleu roi avec l'enseigne
+ * peinte en blanc (serif espacé, fleurons à quatre lobes au-dessus du A et
+ * après le dernier e), vitrine éclairée par un abat-jour froncé, le banc rose
+ * écaillé d'ocre posé devant ; puis la carte imprimée sur papier crème
+ * affichée en vitrine (rubriques à losange, petite théière dessinée) et un
+ * liseré de pois ovales noirs repris des tasses.
+ *
+ * Palette (relevée sur les photos Google Maps) :
+ *   --bleu      #2D5797  menuiserie de la devanture
+ *   --nuit      #1E3A66  ombre de la devanture, texte sur fonds clairs
+ *   --papier    #F4EAD3  papier crème de la carte en vitrine
+ *   --ciel      #D6E2E5  murs bleu pâle de la salle
+ *   --rose      #E68DB9  banc devant la vitrine (décor seulement)
+ *   --ocre      #D9A441  éclats de peinture du banc, lumière des abat-jour (décor)
+ *   --bordeaux  #7E2A2E  encre de la carte, encadrements rouges des fenêtres
+ *   --encre     #231F1D  texte courant, pois des tasses
+ *
+ * Police (1 famille, licence SIL OFL) :
+ *   EB Garamond — garalde classique, proche de l'enseigne peinte et du texte
+ *   de la carte imprimée ; romain 400 et 600, italique 400 pour les rubriques
+ *   (italiques sur la carte réelle). Le nom est composé en bas de casse très
+ *   espacé, comme sur la devanture.
+ *
+ * Mise en page : bandeau d'enseigne centré, vitrine encadrée de menuiserie,
+ * banc en bas de l'accueil ; carte sur une feuille centrée sur fond bleu pâle ;
+ * textes alignés à gauche. Ton : simple, chaleureux, descriptif.
+ */
+
+/* ---------- Polices ---------- */
+@font-face {
+  font-family: "EB Garamond";
+  src: url("fonts/eb-garamond-latin-400-normal.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "EB Garamond";
+  src: url("fonts/eb-garamond-latin-400-italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "EB Garamond";
+  src: url("fonts/eb-garamond-latin-600-normal.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ---------- Couleurs et réglages ---------- */
+:root {
+  --bleu: #2D5797;
+  --nuit: #1E3A66;
+  --papier: #F4EAD3;
+  --verre: #FBF4E2;
+  --ciel: #D6E2E5;
+  --rose: #E68DB9;
+  --ocre: #D9A441;
+  --bordeaux: #7E2A2E;
+  --encre: #231F1D;
+  --largeur: 66rem;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 4.5rem; }
+
+body {
+  background: var(--verre);
+  color: var(--encre);
+  font-family: "EB Garamond", Georgia, serif;
+  font-size: 1.1875rem; /* 19 px : le Garamond est petit à l'œil */
+  line-height: 1.6;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: clamp(2.1rem, 8vw, 3rem);
+  line-height: 1.1;
+  letter-spacing: 0.04em;
+  color: var(--nuit);
+  margin-bottom: 1.25rem;
+}
+
+a:focus-visible, .bouton:focus-visible {
+  outline: 3px solid var(--ocre);
+  outline-offset: 3px;
+}
+
+.fl { fill: currentColor; }
+
+/* ---------- Boutons ---------- */
+.bouton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 1.4rem;
+  border: 2px solid var(--bleu);
+  border-radius: 2px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.bouton-plein { background: var(--bleu); color: #fff; }
+.bouton-plein:hover { background: var(--nuit); border-color: var(--nuit); }
+.bouton-ligne { background: transparent; color: var(--nuit); }
+.bouton-ligne:hover { background: var(--ciel); }
+.bouton-petit {
+  min-height: 44px;
+  padding: 0 1rem;
+  font-size: 1rem;
+  background: #fff;
+  color: var(--nuit);
+  border-color: #fff;
+}
+.bouton-petit:hover { background: var(--papier); }
+
+.lien { color: var(--bordeaux); font-weight: 600; }
+
+/* ---------- En-tête collant ---------- */
+.entete {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  background: var(--nuit);
+  color: #fff;
+}
+.entete-logo {
+  margin-right: auto;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.4rem;
+  letter-spacing: 0.14em;
+  padding: 0.4rem 0;
+}
+.entete-nav { display: none; gap: 1.75rem; }
+.entete-nav a { color: #fff; text-decoration: none; padding: 0.6rem 0; }
+.entete-nav a:hover { text-decoration: underline; text-underline-offset: 4px; }
+
+/* ---------- Accueil : la devanture ---------- */
+.accueil {
+  background: var(--bleu);
+  color: #fff;
+  padding: 0 1rem;
+  /* filet sombre du haut de la menuiserie */
+  border-top: 6px solid var(--nuit);
+}
+
+/* Le bandeau de l'enseigne */
+.enseigne {
+  max-width: var(--largeur);
+  margin: 0 auto;
+  padding: 2.75rem 0 2.25rem;
+  border-bottom: 3px solid var(--nuit);
+  text-align: center;
+}
+.enseigne-nom {
+  position: relative;
+  display: inline-block;
+  font-weight: 400;
+  font-size: clamp(3.4rem, 17vw, 8.5rem);
+  line-height: 1;
+  letter-spacing: 0.12em;
+  padding: 0 0.35em 0 0.12em;
+}
+.enseigne-nom .fl { position: absolute; width: 0.17em; height: 0.17em; }
+.fl-haut { left: 0.36em; top: -0.1em; }
+.fl-fin { right: 0.12em; top: 0.12em; }
+
+/* La vitrine : menuiserie bleue, verre éclairé de l'intérieur */
+.vitrine {
+  position: relative;
+  max-width: var(--largeur);
+  margin: 1.5rem auto 0;
+  background: var(--verre);
+  color: var(--encre);
+  border: 10px solid var(--nuit);
+  border-bottom-width: 14px;
+  padding: 5.5rem 1.25rem 2rem;
+}
+.abat-jour {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  width: 7.5rem;
+  animation: allumage 500ms ease-out both;
+}
+@keyframes allumage {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: none; }
+}
+.accueil-type { font-style: italic; color: var(--bordeaux); margin-bottom: 0.5rem; }
+.accueil-accroche {
+  font-size: 1.5rem;
+  line-height: 1.35;
+  max-width: 24ch;
+  color: var(--nuit);
+  margin-bottom: 1.25rem;
+}
+
+/* Badge ouvert / fermé */
+.statut {
+  display: inline-block;
+  padding: 0.3rem 0.9rem;
+  border: 2px solid var(--nuit);
+  border-radius: 999px;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: var(--nuit);
+}
+.statut[data-ouvert="oui"] { background: var(--nuit); color: #fff; }
+.statut[data-ouvert="non"] { border-color: var(--bordeaux); color: var(--bordeaux); }
+
+.accueil-boutons { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+
+/* Le banc rose posé sur le trottoir */
+.banc {
+  display: block;
+  width: min(100%, 30rem);
+  height: 40px;
+  margin: 0 0 0 1rem;
+}
+
+/* ---------- La carte ---------- */
+.carte {
+  background: var(--ciel);
+  padding: 3rem 1rem;
+}
+.feuille {
+  max-width: 44rem;
+  margin: 0 auto;
+  background: var(--papier);
+  border: 1px solid #DCCCA6;
+  padding: 2rem 1.25rem 1.5rem;
+  color: var(--encre);
+}
+.feuille-marque {
+  text-align: center;
+  color: var(--bordeaux);
+  font-size: 1.6rem;
+  letter-spacing: 0.14em;
+  margin-bottom: 0.25rem;
+}
+.feuille-marque .fl { display: block; width: 0.5em; height: 0.5em; margin: 0 auto 0.3rem; }
+.feuille h2 { text-align: center; color: var(--bordeaux); }
+.feuille-note {
+  font-size: 1rem;
+  text-align: center;
+  max-width: 34ch;
+  margin: 0 auto 2rem;
+  color: #5A4B40;
+}
+
+.carte-section { margin-bottom: 2rem; break-inside: avoid; }
+.carte-titre {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: var(--bordeaux);
+  margin-bottom: 0.25rem;
+}
+/* Losange devant chaque rubrique, comme sur la carte imprimée */
+.carte-titre::before {
+  content: "";
+  display: inline-block;
+  width: 0.45em;
+  height: 0.45em;
+  margin-right: 0.5em;
+  background: var(--bordeaux);
+  transform: rotate(45deg) translateY(-0.12em);
+}
+.carte-note { font-size: 1rem; font-style: italic; color: #5A4B40; margin-bottom: 0.25rem; }
+.carte-liste { border-top: 1px solid var(--bordeaux); }
+.carte-ligne {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 1rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #E2D3B1;
+}
+.carte-nom { font-weight: 600; }
+.carte-prix {
+  font-weight: 600;
+  color: var(--bordeaux);
+  text-align: right;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+.carte-desc { grid-column: 1 / -1; font-size: 1.05rem; font-style: italic; color: #4A3F37; }
+
+.feuille-pied {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+.theiere { width: 4rem; flex: none; }
+
+/* ---------- Le lieu ---------- */
+.lieu { background: #fff; padding: 0 0 3rem; }
+/* Liseré de pois ovales noirs, comme les tasses du café */
+.pois {
+  height: 22px;
+}
+.pois svg { display: block; width: 100%; height: 100%; }
+.lieu-grille {
+  display: grid;
+  gap: 2rem;
+  max-width: var(--largeur);
+  margin: 0 auto;
+  padding: 3rem 1.25rem 0;
+}
+.lieu-texte { max-width: 36rem; }
+.lieu-texte p + p { margin-top: 1rem; }
+.photo-vide {
+  margin: 0;
+  aspect-ratio: 4 / 3;
+  display: grid;
+  place-items: center;
+  background: var(--ciel);
+  border: 10px solid var(--nuit);
+  outline: 2px solid var(--bordeaux);
+  outline-offset: -16px;
+}
+.photo-vide figcaption {
+  background: #fff;
+  color: var(--nuit);
+  font-weight: 600;
+  padding: 0.4rem 1rem;
+}
+
+/* ---------- Infos pratiques ---------- */
+.infos { padding: 3rem 1.25rem; max-width: var(--largeur); margin: 0 auto; }
+.infos h3 {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: var(--bordeaux);
+  margin: 0 0 0.5rem;
+}
+.infos-grille { display: grid; gap: 2rem; }
+.infos-grille p { margin-bottom: 1rem; }
+.horaire {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid #E2D3B1;
+}
+.horaire.aujourdhui { background: var(--bleu); color: #fff; font-weight: 600; }
+.services { padding-left: 1.2rem; }
+.services li::marker { color: var(--bordeaux); }
+
+/* ---------- Pied de page ---------- */
+.pied {
+  background: var(--bleu);
+  color: #fff;
+  text-align: center;
+  padding: 2.5rem 1.25rem 1.5rem;
+  border-top: 14px solid var(--nuit);
+}
+.pied p { margin-bottom: 0.4rem; }
+.pied .lien { color: #fff; display: inline-block; padding: 0.6rem 0; }
+.pied-nom { font-size: 2.2rem; letter-spacing: 0.14em; }
+.mention { font-size: 0.8rem; opacity: 0.85; margin-top: 1.5rem; }
+
+/* ---------- Grand écran ---------- */
+@media (min-width: 768px) {
+  .entete { padding: 0.6rem 2rem; }
+  .entete-nav { display: flex; }
+  .accueil { padding: 0 2rem; }
+  .vitrine {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 3rem 2.5rem;
+    border-width: 14px;
+    border-bottom-width: 18px;
+  }
+  /* meneau central de la vitrine */
+  .vitrine::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 62%;
+    width: 14px;
+    background: var(--nuit);
+  }
+  .vitrine-texte { grid-column: 1; }
+  .abat-jour { right: 10%; width: 15rem; }
+  .accueil-accroche { font-size: 1.8rem; }
+  .banc { margin-left: max(1rem, calc((100vw - var(--largeur)) / 2 + 1rem)); }
+  .feuille { padding: 3rem 3rem 2rem; }
+  .lieu-grille { grid-template-columns: 1.1fr 1fr; align-items: center; gap: 4rem; padding-top: 4rem; }
+  .infos-grille { grid-template-columns: 1fr 1fr; gap: 4rem; }
+}
+@media (min-width: 1100px) {
+  .feuille { max-width: 60rem; }
+  .carte-contenu { columns: 2; column-gap: 3.5rem; }
+}

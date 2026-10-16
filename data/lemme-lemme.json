@@ -1,0 +1,61 @@
+{
+  "slug": "lemme-lemme",
+  "date_releve": "2026-10-16",
+  "nom": { "valeur": "Lemme Lemme (écrit « Lemme lemme » sur Google, « lemme lemme » sur l'enseigne)", "source": "google_maps" },
+  "categorie": { "valeur": "Restaurant (épicerie fine italienne, cave à vin, déjeuner)", "source": "google_maps + web:https://www.instagram.com/lemmelemme_paris/ (bio vue dans un moteur de recherche)" },
+  "adresse": { "valeur": "12 Rue Sainte-Marthe, 75010 Paris", "source": "google_maps" },
+  "telephone": { "valeur": "09 82 63 10 10", "source": "google_maps" },
+  "note": { "valeur": "5,0", "nb_avis": 85, "source": "google_maps" },
+  "fourchette_prix": { "valeur": "", "source": "google_maps (non affichée)" },
+  "description_google": { "valeur": "", "source": "google_maps (aucune)" },
+  "description_web": { "valeur": "Bio Instagram : « Boutique Gastronomique Italienne. Épicerie, Cave à Vin, Déjeuner, Aperitivo, Ateliers » ; Privateaser : épicerie fine et cave à vin avec petite restauration sur place, apéritifs en groupe et afterworks.", "source": "web:https://html.duckduckgo.com (extraits Instagram et privateaser.com/lieu/60120-lemme-lemme)" },
+  "statut_google": { "valeur": "Ouvert, pas de mention de fermeture", "source": "google_maps" },
+  "horaires": {
+    "valeur": { "lundi": "11:00-15:00", "mardi": "11:00-19:30", "mercredi": "11:00-19:30", "jeudi": "11:00-19:30", "vendredi": "11:00-19:30", "samedi": "11:00-19:30", "dimanche": "fermé" },
+    "cuisine": { "lundi": "12:00-14:30", "mardi": "12:00-14:30", "mercredi": "12:00-14:30", "jeudi": "12:00-14:30", "vendredi": "12:00-14:30", "samedi": "12:00-14:30", "dimanche": "fermé" },
+    "source": "google_maps (horaires + rubrique « Cuisine »)"
+  },
+  "liens": { "instagram": "https://www.instagram.com/lemmelemme_paris/", "site": "", "reservation": "", "facebook": "", "source": "google_maps" },
+  "plus_code": { "valeur": "V9FC+FJ Paris", "source": "google_maps" },
+  "acces": { "valeur": "Métro Colonel Fabien (ligne 2) ou Belleville (lignes 2 et 11), environ 7 min à pied", "source": "deduit (plan)" },
+  "themes_avis": {
+    "valeur": ["italiens (24)", "vin (13)", "épicerie (10)", "charcuterie (8)", "produit (5)", "apéro (5)", "parmigiana (4)", "tiramisu (3)"],
+    "source": "google_maps"
+  },
+  "synthese_avis": {
+    "valeur": "Cuisine italienne traditionnelle faite maison, produits importés de qualité, accueil chaleureux des deux gérants, ambiance « comme en Italie », sans chichis ; épicerie appréciée, vin et apéro, parmigiana et tiramisu cités. Aucun reproche récurrent.",
+    "source": "avis"
+  },
+  "carte": {
+    "source": "aucune photo de carte lisible",
+    "releve": [
+      "Plats vus en photo : ravioli aux épinards et parmesan, mozzarella ou burrata, tomates cerises et basilic, vitello tonnato aux câpres, charcuterie (jambon cru, mortadelle), carpaccio, pain",
+      "Thèmes des avis : parmigiana, tiramisu, charcuterie, vin, apéro",
+      "Intitulés génériques cohérents et prix d'exemple dans la démo"
+    ]
+  },
+  "observations_visuelles": [
+    { "photo": "Façade (client, juil. 2026)", "vu": "Devanture menuisée vert céladon pâle à panneaux moulurés, enseigne « lemme lemme » en lettres scriptes blanches en relief, monolignes et bouclées ; en vitrine, un oignon dessiné au trait blanc et « BOUTIQUE GASTRONOMIQUE ITALIENNE » en capitales blanches fines ; bouteilles de vin et épis séchés en vitrine.", "confiance": "élevée" },
+    { "photo": "Façade de nuit (client, sept. 2026)", "vu": "Même devanture, qui paraît bleu clair sous la lumière ; intérieur éclairé, étagères de bouteilles.", "confiance": "élevée (couleur exacte entre céladon et bleu clair : moyenne)" },
+    { "photo": "Table (client, mai 2025)", "vu": "Table en bois clair, mozzarella tomates basilic dans une assiette bleu profond émaillée, jambon dans une assiette jaune moutarde festonnée, petits pains, bouteille d'eau.", "confiance": "élevée" },
+    { "photo": "Ravioli (client, janv. 2026)", "vu": "Ravioli aux épinards et parmesan dans une assiette creuse bleu nuit émaillée, verres de vin blanc et rouge.", "confiance": "élevée" },
+    { "photo": "Comptoir (client, sept. 2026)", "vu": "Trancheuse et balance au comptoir, carrelage métro blanc, étagères en bois clair avec bocaux, bouteilles et verres, vitrine réfrigérée, dessin encadré d'un chien noir et rouge.", "confiance": "élevée" },
+    { "photo": "Salle et comptoir (client, avr. 2026)", "vu": "Devant du comptoir en carreaux bleu marine, plan en granit, étagères bois, murs blancs, bouteilles d'apéritif rouge.", "confiance": "élevée" },
+    { "photo": "Rue un soir d'été (client, juil. 2023)", "vu": "Groupe debout devant la devanture céladon avec des verres, rue Sainte-Marthe animée.", "confiance": "élevée" },
+    { "photo": "Assiettes à partager (client, sept. 2024)", "vu": "Vitello tonnato aux câpres, poivrons rôtis, serviettes bleu marine, assiettes bleu-vert émaillées, vin blanc.", "confiance": "moyenne (plat identifié à l'œil)" },
+    { "photo": "Mozzarella (client, mai 2025)", "vu": "Mozzarella, tomates cerises, basilic, huile d'olive ; assiette bleue tachetée ; carpaccio ou bresaola en arrière-plan.", "confiance": "élevée" },
+    { "photo": "Comptoir animé (client, juil. 2023)", "vu": "Gérant en tablier de cuir derrière la vitrine réfrigérée, clients avec verres de vin, étagères de pâtes et bocaux, bouquet de fleurs.", "confiance": "élevée" }
+  ],
+  "direction_artistique": "La devanture céladon à panneaux moulurés : accueil céladon soutenu avec « lemme lemme » en script monoligne blanc (Ms Madi), sous-titre en capitales fines espacées comme la vitrine, oignon dessiné au trait en SVG ; corps en Albert Sans ; carte sur fond blanc carrelé façon métro, prix en bleu des assiettes émaillées, bande de carreaux bleu marine du comptoir et touche jaune de l'assiette festonnée.",
+  "argument_de_vente": "Instagram seulement, aucun site : 5,0 sur 85 avis mais rien en ligne pour savoir que l'on peut déjeuner (12h-14h30) et pas seulement acheter ; une page claire avec horaires de cuisine, carte et bouton d'appel.",
+  "a_verifier": [
+    "Carte du déjeuner et de l'aperitivo : intitulés déduits des photos et des avis, tous les prix sont des prix d'exemple",
+    "Ateliers et apéritifs de groupe : mentionnés sur Instagram et Privateaser, modalités à confirmer",
+    "Couleur exacte de la façade (céladon de jour, bleu clair de nuit)",
+    "Réservation : aucun lien propre trouvé, la démo renvoie au téléphone",
+    "Accès métro déduit du plan"
+  ],
+  "confiance": "photos nombreuses",
+  "carte_reelle": false,
+  "horaires_verifies": true
+}
