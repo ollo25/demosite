@@ -1,0 +1,251 @@
+/*
+ * Gonflé — 6 rue de Belzunce
+ *
+ * CONCEPT : le store blanc de la boutique avec son nom en grosses
+ * capitales arrondies gris anthracite, puis la grande vitrine encadrée de
+ * chêne clair où chaque produit porte une petite étiquette noire, comme
+ * sur les présentoirs. La vigne vierge de la façade donne le vert de la
+ * section « le lieu », la porte bordeaux voisine celui du pied de page.
+ *
+ * PALETTE (relevée sur les photos Google Maps) :
+ *   --store     #f8f7f3  toile blanche du store, pierre claire
+ *   --anthracite #2f2d2c lettrage du store, étiquettes noires
+ *   --chene     #c79d68  cadre de la vitrine, porte en chêne clair
+ *   --dore      #d6993c  croûte des viennoiseries
+ *   --vigne     #355c2b  vigne vierge sur l'immeuble
+ *   --bordeaux  #7b2230  porte cochère voisine
+ *
+ * POLICES (2, licence SIL OFL) :
+ *   Fredoka (600)        capitales rondes et épaisses, proches du lettrage
+ *                        « GONFLÉ » peint sur le store (et le nom s'y prête).
+ *   Literata (400, 600)  serif de lecture, chaleureux, pour les textes et prix.
+ *
+ * MISE EN PAGE : nom en très grand sur une bande blanche bordée d'anthracite,
+ * texte aligné à gauche, vitrine dans un cadre de bois, étiquettes en flux.
+ * Ton : simple, concret, celui d'une boulangerie de quartier.
+ */
+
+@font-face {
+  font-family: "Fredoka";
+  src: url("fonts/fredoka-latin-600-normal.woff2") format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Literata";
+  src: url("fonts/literata-latin-400-normal.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Literata";
+  src: url("fonts/literata-latin-600-normal.woff2") format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+
+:root {
+  --store: #f8f7f3;
+  --anthracite: #2f2d2c;
+  --chene: #c79d68;
+  --chene-fonce: #8a6236;
+  --dore: #d6993c;
+  --vigne: #355c2b;
+  --bordeaux: #7b2230;
+  --lumiere: #f6ead5;   /* intérieur éclairé de la vitrine */
+
+  --rond: "Fredoka", "Arial Rounded MT Bold", sans-serif;
+  --serif: "Literata", Georgia, serif;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 76px; }
+
+body {
+  background: var(--store);
+  color: var(--anthracite);
+  font-family: var(--serif);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+}
+
+a:focus-visible { outline: 3px solid var(--dore); outline-offset: 3px; }
+
+/* ---------- Boutons ---------- */
+.bouton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 1.3rem;
+  font-family: var(--rond);
+  font-weight: 600;
+  font-size: 1.05rem;
+  text-decoration: none;
+  border: 2px solid var(--anthracite);
+  border-radius: 10px;
+}
+.bouton-plein { background: var(--anthracite); color: var(--store); }
+.bouton-contour { color: var(--anthracite); }
+.bouton:hover { text-decoration: underline; }
+
+/* ---------- En-tête collant ---------- */
+.entete {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.55rem 1rem;
+  background: var(--store);
+  border-bottom: 4px solid var(--anthracite);
+}
+.entete-nom {
+  margin-right: auto;
+  font-family: var(--rond);
+  font-weight: 600;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+.entete-nav { display: none; gap: 1.5rem; }
+.entete-nav a { text-decoration: none; padding: 0.7rem 0; }
+.entete-nav a:hover { text-decoration: underline; }
+.entete-bouton { min-height: 44px; padding: 0 1rem; }
+
+/* ---------- Accueil : le store ---------- */
+.store {
+  padding: 2.2rem 1rem 1.6rem;
+  border-bottom: 10px solid var(--anthracite);   /* le liseré sombre sous la toile */
+}
+.enseigne {
+  font-family: var(--rond);
+  font-weight: 600;
+  font-size: clamp(3.4rem, 21vw, 13rem);
+  line-height: 0.9;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  animation: gonfler 450ms ease-out both;
+}
+/* Une seule animation : le nom qui « gonfle » légèrement à l'arrivée */
+@keyframes gonfler {
+  from { transform: scale(0.94); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+.accueil-texte { padding: 1.8rem 1rem 3rem; }
+.accroche { font-size: 1.25rem; line-height: 1.5; max-width: 32ch; }
+.statut {
+  display: inline-block;
+  margin-top: 1.2rem;
+  padding: 0.25rem 0.8rem;
+  font-family: var(--rond);
+  font-weight: 600;
+  background: var(--lumiere);
+  border: 2px solid var(--chene);
+  border-radius: 10px;
+}
+.statut[data-ouvert="oui"] { background: var(--vigne); color: #fff; border-color: var(--vigne); }
+.actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.5rem; }
+
+/* ---------- Titres ---------- */
+.titre {
+  font-family: var(--rond);
+  font-weight: 600;
+  font-size: clamp(2rem, 8vw, 3rem);
+  line-height: 1.05;
+  margin-bottom: 0.8rem;
+}
+
+/* ---------- La vitrine ---------- */
+.vitrine { padding: 3rem 1rem; background: var(--store); }
+.mention-prix { font-style: italic; margin-bottom: 1.2rem; }
+.cadre {
+  background: var(--lumiere);
+  border: 14px solid var(--chene);
+  outline: 2px solid var(--chene-fonce);
+  padding: 1.6rem 1rem;
+}
+.carte-section + .carte-section { margin-top: 2rem; padding-top: 1.6rem; border-top: 6px solid var(--chene); }
+.carte-titre {
+  font-family: var(--rond);
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 0.9rem;
+}
+/* les produits : petites étiquettes noires posées dans la vitrine */
+.carte-liste { display: flex; flex-wrap: wrap; gap: 0.7rem; }
+.carte-ligne {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 0.9rem;
+  flex: 1 1 15rem;
+  padding: 0.65rem 0.9rem;
+  background: var(--anthracite);
+  color: var(--store);
+  border-radius: 4px;
+}
+.carte-nom { font-weight: 600; }
+.carte-prix { font-family: var(--rond); font-weight: 600; text-align: right; white-space: nowrap; color: #f2c47c; }
+.carte-desc { grid-column: 1 / -1; font-size: 1rem; color: #dcd6cc; }
+.allergenes { margin-top: 1.2rem; }
+
+/* ---------- Le lieu : vert vigne ---------- */
+.lieu {
+  background: var(--vigne);
+  color: #fff;
+  padding: 2.5rem 1rem 3rem;
+}
+.feuilles { width: 100%; max-width: 20rem; height: auto; margin-bottom: 1rem; }
+.feuilles use { fill: #8fbf6a; }
+.feuilles .tige { fill: none; stroke: #6f9c52; stroke-width: 2; }
+.lieu p { max-width: 38rem; }
+.lieu p + p { margin-top: 1rem; }
+.photo-vide {
+  margin-top: 2rem;
+  max-width: 38rem;
+  aspect-ratio: 4 / 3;
+  display: grid;
+  place-items: center;
+  border: 2px dashed #b9d9a0;
+  font-family: var(--rond);
+}
+
+/* ---------- Infos ---------- */
+.infos { padding: 3rem 1rem; }
+.infos-grille { display: grid; gap: 2rem; }
+.horaires { padding: 0; list-style: none; border-top: 4px solid var(--anthracite); }
+.horaire {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6rem 0.6rem;
+  border-bottom: 1px solid #d9d4c9;
+}
+.horaire.aujourdhui { background: var(--anthracite); color: var(--store); font-weight: 600; }
+.adresse { font-family: var(--rond); font-weight: 600; font-size: 1.35rem; }
+.discret { color: #575250; margin-top: 0.4rem; }
+.services { margin-top: 1rem; padding-left: 1.2rem; list-style: disc; }
+.services li::marker { color: var(--chene-fonce); }
+
+/* ---------- Pied : bordeaux de la porte voisine ---------- */
+.pied {
+  background: var(--bordeaux);
+  color: #fff;
+  padding: 2.5rem 1rem 1.5rem;
+  text-align: center;
+}
+.pied p + p { margin-top: 0.6rem; }
+.pied-nom { font-family: var(--rond); font-weight: 600; font-size: 2.2rem; text-transform: uppercase; }
+.pied .maquette { margin-top: 1.8rem; font-size: 0.75rem; color: #f0d3d8; }
+
+/* ---------- Écrans plus larges ---------- */
+@media (min-width: 768px) {
+  .entete { padding: 0.55rem 2rem; }
+  .entete-nav { display: flex; }
+  .store, .accueil-texte, .vitrine, .lieu, .infos { padding-left: max(2rem, calc((100% - 68rem) / 2)); padding-right: max(2rem, calc((100% - 68rem) / 2)); }
+  .accueil-texte { display: grid; grid-template-columns: 1.3fr 1fr; gap: 0 3rem; align-items: start; }
+  .accueil-texte .statut, .accueil-texte .actions { grid-column: 2; }
+  .accueil-texte .accroche { grid-row: span 2; }
+  .cadre { padding: 2.2rem 2rem; }
+  .infos-grille { grid-template-columns: 1fr 1fr; gap: 4rem; }
+}

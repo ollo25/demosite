@@ -1,0 +1,185 @@
+/*
+ * Café de l'Église — direction artistique
+ *
+ * Concept : la page reprend le store bleu marine festonné de la façade, son
+ * lettrage manuscrit blanc en minuscules (« le café de l'église ») et le massif
+ * de fleurs roses et blanches posé dessus ; dessous, le mur enduit couleur pêche
+ * de la salle, puis le plafond peint en ciel bleu pour la partie « le lieu ».
+ *
+ * Palette (relevée sur les photos Google Maps) :
+ *   --marine  #1d2a55  toile du store
+ *   --blanc   #ffffff  lettrage du store
+ *   --enduit  #f4dcc8  murs pêche de la salle
+ *   --ciel    #c3d6e8  plafond peint en ciel
+ *   --rose    #d9839b  fleurs du store (décor uniquement, jamais pour du texte)
+ *   --laiton  #8a6a2c  cadres de miroirs dorés (filets, texte foncé : contraste 4,6 sur l'enduit)
+ *
+ * Polices (SIL OFL) :
+ *   Allura   — script fin et penché, proche du lettrage peint sur le store ; seulement pour les grands titres.
+ *   Gelasio  — serif de texte aux formes rondes, pour une carte de bistrot lisible (400, 400 italique, 600).
+ *
+ * Mise en page : un bandeau-store en tête, bord festonné ; la carte en deux colonnes sur grand écran,
+ * prix alignés à droite avec pointillés ; un bloc « ciel » pour le lieu. Ton : simple, concret, de bistrot.
+ */
+
+@font-face { font-family: "Allura"; src: url("fonts/allura-latin-400-normal.woff2") format("woff2"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Gelasio"; src: url("fonts/gelasio-latin-400-normal.woff2") format("woff2"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Gelasio"; src: url("fonts/gelasio-latin-400-italic.woff2") format("woff2"); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: "Gelasio"; src: url("fonts/gelasio-latin-600-normal.woff2") format("woff2"); font-weight: 600; font-display: swap; }
+
+:root {
+  --marine: #1d2a55;
+  --blanc: #ffffff;
+  --enduit: #f4dcc8;
+  --ciel: #c3d6e8;
+  --rose: #d9839b;
+  --laiton: #8a6a2c;
+  --script: "Allura", "Brush Script MT", cursive;
+  --texte: "Gelasio", Georgia, serif;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 4.5rem; }
+body {
+  background: var(--enduit);
+  color: var(--marine);
+  font-family: var(--texte);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+}
+
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--marine); outline-offset: 3px; }
+.store :focus-visible, .entete :focus-visible, .resa :focus-visible, .pied :focus-visible { outline-color: var(--blanc); }
+
+/* ---------- En-tête collant ---------- */
+.entete {
+  position: sticky; top: 0; z-index: 10;
+  display: flex; align-items: center; gap: 1rem;
+  padding: .5rem 1rem;
+  background: var(--marine); color: var(--blanc);
+}
+.entete-nom { font-family: var(--script); font-size: 1.9rem; line-height: 1; padding: .45rem 0; text-decoration: none; white-space: nowrap; }
+.entete-nav { display: none; gap: 1.5rem; margin-left: auto; }
+.entete-nav a { text-decoration: none; padding: .7rem 0; }
+.entete-nav a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.entete-appel { margin-left: auto; }
+@media (min-width: 720px) {
+  .entete { padding: .5rem 2rem; }
+  .entete-nav { display: flex; }
+  .entete-appel { margin-left: 0; }
+}
+
+/* ---------- Boutons ---------- */
+.bouton {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 44px; padding: .55rem 1.2rem;
+  border-radius: 999px; text-decoration: none; font-weight: 600; font-size: 1rem;
+  border: 2px solid transparent;
+}
+.bouton-plein { background: var(--marine); color: var(--blanc); }
+.bouton-plein:hover { background: #2c3d78; }
+.bouton-trait { border-color: var(--marine); color: var(--marine); }
+.bouton-trait:hover { background: var(--marine); color: var(--blanc); }
+.bouton-clair { background: var(--blanc); color: var(--marine); }
+.bouton-clair:hover { background: var(--ciel); }
+.bouton-contour-clair { border-color: var(--blanc); color: var(--blanc); }
+.bouton-contour-clair:hover { background: var(--blanc); color: var(--marine); }
+
+/* ---------- Le store (accueil) ---------- */
+.store { position: relative; background: var(--enduit); padding-top: 1.5rem; }
+.fleurs { display: block; width: 100%; height: 56px; }
+.store-toile {
+  background: var(--marine); color: var(--blanc);
+  text-align: center; padding: 1.6rem 1rem 1.2rem;
+}
+.store-nom {
+  font-family: var(--script); font-weight: 400;
+  font-size: clamp(3.9rem, 18vw, 9rem); line-height: 1.05;
+  text-transform: lowercase;            /* comme sur le store : « le café de l'église » */
+  animation: deroule .5s ease-out both; /* seule animation de la page */
+}
+.store-lieu { margin-top: .6rem; font-style: italic; letter-spacing: .02em; }
+.feston { display: block; width: 100%; height: 22px; }
+@keyframes deroule { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: none; } }
+
+/* ---------- Accueil ---------- */
+.accueil { max-width: 46rem; margin: 0 auto; padding: 1.8rem 1rem 3rem; text-align: center; }
+.accroche { font-size: 1.25rem; line-height: 1.5; }
+.badge {
+  display: inline-block; margin: 1.2rem 0;
+  padding: .3rem .9rem; border: 1.5px solid var(--marine); border-radius: 999px;
+  font-size: 1rem;
+}
+.badge[data-ouvert="oui"]::before { content: ""; display: inline-block; width: .6rem; height: .6rem; margin-right: .5rem; border-radius: 50%; background: #2e6b3a; }
+.badge[data-ouvert="non"]::before { content: ""; display: inline-block; width: .6rem; height: .6rem; margin-right: .5rem; border-radius: 50%; background: #8e2a2a; }
+.actions { display: flex; flex-wrap: wrap; gap: .7rem; justify-content: center; }
+
+/* ---------- La carte ---------- */
+.carte { background: var(--blanc); padding: 3rem 1rem; border-top: 6px double var(--laiton); border-bottom: 6px double var(--laiton); }
+.carte-tete { max-width: 40rem; margin: 0 auto 2rem; text-align: center; }
+.carte-tete h2 { font-family: var(--script); font-weight: 400; font-size: 4rem; line-height: 1; }
+.carte-tete p { margin-top: .6rem; font-style: italic; }
+.carte-corps { max-width: 68rem; margin: 0 auto; }
+.carte-section { break-inside: avoid; margin-bottom: 2.2rem; }
+.carte-titre {
+  font-family: var(--script); font-weight: 400; font-size: 2.6rem; line-height: 1.1;
+  border-bottom: 1px solid var(--laiton); padding-bottom: .2rem; margin-bottom: .2rem;
+}
+.carte-note { font-style: italic; color: var(--laiton); font-size: 1rem; margin-bottom: .4rem; }
+.carte-ligne {
+  display: grid; grid-template-columns: 1fr auto; column-gap: .8rem;
+  padding: .55rem 0; border-bottom: 1px dotted #c9b9a0;
+}
+.carte-nom { font-weight: 600; }
+.carte-prix { font-weight: 600; text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.carte-desc { grid-column: 1 / -1; font-size: 1rem; font-style: italic; line-height: 1.45; }
+.mentions { max-width: 68rem; margin: 1rem auto 0; font-size: 1rem; text-align: center; }
+@media (min-width: 860px) {
+  .carte { padding: 4rem 2rem; }
+  .carte-corps { columns: 2; column-gap: 4rem; }
+}
+
+/* ---------- Le lieu : bloc « ciel peint » ---------- */
+.lieu {
+  background: var(--ciel);
+  display: grid; gap: 2rem; padding: 3rem 1rem;
+}
+.lieu-texte { max-width: 36rem; }
+.lieu h2 { font-family: var(--script); font-weight: 400; font-size: 3.4rem; line-height: 1.05; margin-bottom: .8rem; }
+.lieu p + p { margin-top: 1rem; }
+.cadre-photo {
+  min-height: 15rem; border: 3px solid var(--laiton); outline: 1px solid var(--laiton); outline-offset: 6px;
+  display: grid; place-items: center; background: var(--enduit);
+}
+.cadre-photo span { font-family: var(--script); font-size: 2.2rem; }
+@media (min-width: 860px) {
+  .lieu { grid-template-columns: 1.1fr .9fr; align-items: center; padding: 4.5rem max(2rem, calc((100% - 68rem) / 2)); }
+  .cadre-photo { min-height: 22rem; }
+}
+
+/* ---------- Infos pratiques ---------- */
+.infos { max-width: 68rem; margin: 0 auto; padding: 3rem 1rem; }
+.infos h2 { font-family: var(--script); font-weight: 400; font-size: 3.4rem; line-height: 1; margin-bottom: 1.2rem; }
+.infos h3 { font-size: 1.15rem; font-weight: 600; margin: 1.4rem 0 .5rem; }
+.infos-grille > div > h3:first-child { margin-top: 0; }
+.horaire { display: flex; justify-content: space-between; gap: 1rem; padding: .45rem .6rem; border-bottom: 1px solid #dcbfa6; }
+.horaire.aujourdhui { background: var(--marine); color: var(--blanc); border-radius: 4px; font-weight: 600; }
+.services { display: flex; flex-wrap: wrap; gap: .5rem; }
+.services li { border: 1px solid var(--marine); border-radius: 999px; padding: .15rem .75rem; font-size: 1rem; }
+.lien { display: inline-block; padding: .65rem 0; font-weight: 600; text-underline-offset: 4px; }
+@media (min-width: 860px) {
+  .infos { padding: 4rem 2rem; }
+  .infos-grille { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; }
+}
+
+/* ---------- Réservation ---------- */
+.resa { background: var(--marine); color: var(--blanc); text-align: center; padding: 3rem 1rem; }
+.resa h2 { font-family: var(--script); font-weight: 400; font-size: 3.2rem; line-height: 1.05; }
+.resa p { margin: .6rem auto 1.4rem; max-width: 32rem; }
+
+/* ---------- Pied de page ---------- */
+.pied { background: var(--marine); color: var(--blanc); text-align: center; padding: 1rem 1rem 1.5rem; border-top: 1px solid #3a4a80; }
+.pied p { margin-top: .3rem; }
+.pied a { display: inline-block; padding: .65rem .2rem; }
+.pied-nom { font-family: var(--script); font-size: 2.2rem; }
+.maquette { font-size: .75rem; opacity: .85; margin-top: 1rem; }

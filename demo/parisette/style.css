@@ -1,0 +1,275 @@
+/*
+ * Parisette — direction artistique
+ *
+ * Concept : la page reprend la devanture du 46 rue de Lancry : façade peinte
+ * corail-terre cuite, store rayé beige et taupe à festons avec « FLEURS »
+ * peint en lettres blanches, et la porte cochère vert sapin juste à côté.
+ * À l'intérieur : osier, rotin, pots en terre cuite, vases de brocante.
+ *
+ * Palette (relevée sur les photos Google Maps) :
+ *   --terre    #B5532F  façade corail-terre cuite (assombrie pour le contraste)
+ *   --store    #EFE5D2  rayure claire du store
+ *   --taupe    #BFA486  rayure foncée du store, osier
+ *   --sapin    #1F4D3A  porte cochère voisine, feuillages
+ *   --pivoine  #E8889C  pivoines des bouquets (décor uniquement)
+ *   --papier   #F6EFE4  mur crème de la boutique
+ *
+ * Polices (2, licence SIL OFL) :
+ *   Young Serif — sérif ancien et chaleureux, pour l'esprit artisan et brocante.
+ *   Karla       — sans-sérif simple et lisible pour le texte (400 et 700).
+ *
+ * Mise en page : le store à festons coiffe l'accueil comme la devanture,
+ * l'offre est une liste aérée façon étiquettes de prix écrites à la main.
+ * Ton : doux, concret, sans superlatifs.
+ */
+
+@font-face {
+  font-family: "Young Serif";
+  src: url("fonts/young-serif-latin-400-normal.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Karla";
+  src: url("fonts/karla-latin-400-normal.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Karla";
+  src: url("fonts/karla-latin-700-normal.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+
+:root {
+  --terre: #B5532F;
+  --terre-texte: #A84B2A;
+  --store: #EFE5D2;
+  --taupe: #BFA486;
+  --sapin: #1F4D3A;
+  --pivoine: #E8889C;
+  --papier: #F6EFE4;
+  --encre: #2B2420;
+  --creme: #FBF6EE;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 4rem; }
+
+body {
+  background: var(--papier);
+  color: var(--encre);
+  font-family: "Karla", "Gill Sans", sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+}
+
+h1, h2, h3, .entete-nom, .pied-nom {
+  font-family: "Young Serif", Georgia, serif;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+a:focus-visible, .bouton:focus-visible {
+  outline: 3px solid var(--sapin);
+  outline-offset: 3px;
+}
+
+.contenu { max-width: 62rem; margin: 0 auto; padding: 0 1.25rem; }
+
+/* ---------- Boutons ---------- */
+.bouton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 1.3rem;
+  border-radius: 3px;
+  font-weight: 700;
+  text-decoration: none;
+  border: 2px solid transparent;
+}
+.bouton-appel { background: var(--sapin); color: var(--creme); min-height: 44px; }
+.bouton-appel:hover { background: var(--encre); }
+.bouton-clair { background: var(--creme); color: var(--terre-texte); }
+.bouton-clair:hover { background: var(--store); }
+.bouton-ligne { border-color: var(--creme); color: var(--creme); }
+.bouton-ligne:hover { background: var(--creme); color: var(--terre-texte); }
+.accueil .bouton:focus-visible { outline-color: var(--creme); }
+
+.lien { color: var(--terre-texte); font-weight: 700; }
+
+/* ---------- En-tête collant ---------- */
+.entete {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  background: var(--papier);
+  border-bottom: 1px solid var(--taupe);
+}
+.entete-nom {
+  font-size: 1.5rem;
+  color: var(--terre-texte);
+  text-decoration: none;
+  margin-right: auto;
+}
+.entete-nav { display: none; gap: 1.5rem; }
+.entete-nav a { text-decoration: none; font-weight: 700; padding: 0.6rem 0; }
+.entete-nav a:hover { color: var(--terre-texte); }
+
+/* ---------- Accueil : la devanture ---------- */
+.accueil { background: var(--terre); color: var(--creme); }
+.store { display: block; width: 100%; height: 78px; background: var(--terre); }
+.store-texte {
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 6px;
+  fill: #fff;
+  /* contour brun pour que les lettres blanches restent visibles sur les rayures claires */
+  stroke: #8C6A4C;
+  stroke-width: 3px;
+  paint-order: stroke;
+}
+.accueil-contenu {
+  max-width: 62rem;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 3.5rem;
+  display: grid;
+  gap: 2.5rem;
+}
+.accueil-type { font-weight: 700; margin-bottom: 0.25rem; }
+.accueil-nom {
+  font-size: clamp(3.5rem, 17vw, 7.5rem);
+  margin-bottom: 1rem;
+  letter-spacing: -0.01em;
+}
+.accueil-accroche { font-size: 1.25rem; max-width: 30ch; margin-bottom: 1.25rem; }
+.statut {
+  display: inline-block;
+  font-weight: 700;
+  padding: 0.3rem 0.8rem;
+  border: 2px solid var(--creme);
+  border-radius: 3px;
+  margin-bottom: 1.5rem;
+}
+.statut[data-ouvert="oui"] { background: var(--creme); color: var(--sapin); }
+.accueil-boutons { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+
+/* Vitrine : emplacement photo */
+.vitrine {
+  margin: 0;
+  background: var(--sapin);
+  border: 6px solid var(--creme);
+  aspect-ratio: 16 / 9;
+  display: grid;
+  place-items: center;
+  position: relative;
+  animation: eclore 500ms ease-out both;
+}
+.vitrine svg { width: auto; height: 60%; }
+.vitrine figcaption {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  background: var(--creme);
+  color: var(--sapin);
+  font-weight: 700;
+  padding: 0.3rem 0.7rem;
+  border-radius: 3px;
+}
+@keyframes eclore {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .vitrine { animation: none; }
+}
+
+/* ---------- Les fleurs ---------- */
+.fleurs { padding: 3.5rem 0; }
+.fleurs h2, .boutique h2, .infos h2 { font-size: clamp(2.2rem, 8vw, 3.2rem); margin-bottom: 0.75rem; }
+.fleurs h2 { color: var(--terre-texte); }
+.intro { max-width: 46ch; margin-bottom: 2rem; }
+.carte-section { margin-bottom: 2.25rem; }
+.carte-titre {
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--sapin);
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid var(--sapin);
+}
+.carte-ligne {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 1rem;
+  padding: 1.1rem 0;
+  border-bottom: 1px solid var(--taupe);
+}
+.carte-nom { font-family: "Young Serif", Georgia, serif; font-size: 1.35rem; line-height: 1.2; }
+/* Le prix est présenté comme une petite étiquette */
+.carte-prix {
+  align-self: start;
+  font-weight: 700;
+  color: var(--terre-texte);
+  border: 1.5px solid var(--terre-texte);
+  border-radius: 2px 10px 10px 2px;
+  padding: 0.1rem 0.6rem;
+  white-space: nowrap;
+}
+.carte-desc { grid-column: 1 / -1; margin-top: 0.3rem; max-width: 52ch; }
+.mention-prix { font-size: 0.95rem; color: #5E544B; }
+
+/* ---------- La boutique ---------- */
+.boutique { background: var(--sapin); color: var(--creme); padding: 3.5rem 0; }
+.boutique p { max-width: 54ch; }
+.boutique p + p { margin-top: 1rem; }
+
+/* ---------- Infos ---------- */
+.infos { padding: 3.5rem 0; }
+.infos h2 { color: var(--sapin); }
+.infos h3 { font-size: 1.4rem; margin: 1.75rem 0 0.5rem; color: var(--sapin); }
+.infos-grille { display: grid; gap: 2.5rem; }
+.horaire {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6rem 0.5rem;
+  border-bottom: 1px solid var(--taupe);
+}
+.horaire.aujourdhui {
+  background: var(--terre);
+  color: var(--creme);
+  font-weight: 700;
+  border-bottom-color: var(--terre);
+}
+.adresse { margin-bottom: 0.75rem; }
+.services { margin-top: 1rem; padding-left: 1.2rem; }
+.services li { list-style: disc; }
+.services li::marker { color: var(--terre); }
+
+/* ---------- Pied de page ---------- */
+.pied {
+  background: var(--terre);
+  color: var(--creme);
+  text-align: center;
+  padding: 2.5rem 1.25rem 1.5rem;
+}
+.pied a { color: var(--creme); font-weight: 700; display: inline-block; padding: 0.6rem 0.4rem; }
+.pied-nom { font-size: 2rem; margin-bottom: 0.5rem; }
+.pied-liens a { margin: 0 0.5rem; }
+.mention { font-size: 0.75rem; margin-top: 1.5rem; }
+
+/* ---------- Grand écran ---------- */
+@media (min-width: 768px) {
+  .entete { padding: 0.6rem 2rem; }
+  .entete-nav { display: flex; }
+  .vitrine { aspect-ratio: 4 / 5; max-height: 28rem; }
+  .accueil-contenu { grid-template-columns: 1.3fr 1fr; align-items: center; padding: 3rem 2rem 4.5rem; }
+  .offre { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; }
+  .infos-grille { grid-template-columns: 1fr 1fr; gap: 4rem; }
+}

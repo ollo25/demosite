@@ -1,0 +1,52 @@
+{
+  "slug": "parisette",
+  "date_releve": "2026-10-16",
+  "nom": { "valeur": "Parisette Fleurs", "source": "google_maps", "nom_utilise_sur_le_blog": "Parisette, artisan fleuriste" },
+  "categorie": { "valeur": "Fleuriste", "source": "google_maps" },
+  "adresse": { "valeur": "46 Rue de Lancry, 75010 Paris", "source": "google_maps" },
+  "telephone": { "valeur": "01 74 64 23 39", "source": "google_maps + web:https://parisettefleurs.wordpress.com/" },
+  "email": { "valeur": "parisette.fleurs@gmail.com", "source": "web:https://parisettefleurs.wordpress.com/" },
+  "note": { "valeur": "4,6", "nb_avis": 59, "repartition": "52 x 5, 0 x 4, 0 x 3, 4 x 2, 3 x 1", "source": "google_maps" },
+  "statut_google": { "valeur": "Ouvert", "source": "google_maps" },
+  "horaires": {
+    "valeur": { "lundi": "fermé", "mardi": "11:00-19:00", "mercredi": "11:00-19:00", "jeudi": "11:00-19:00", "vendredi": "11:00-20:00", "samedi": "11:00-20:00", "dimanche": "fermé" },
+    "source": "google_maps"
+  },
+  "liens": {
+    "site": "https://parisettefleurs.wordpress.com/",
+    "instagram": "https://www.instagram.com/parisette.fleurs/",
+    "source": "google_maps (site) ; instagram : identifiant 'parisette.fleurs' cité sur le blog, URL reconstituée"
+  },
+  "prestations": {
+    "valeur": ["Fleurs fraîches", "Fleurs séchées (bouquets de fleurs des champs séchées)", "Événements", "Ateliers (couronne, herbier, guirlande de feuillage, bouquet frais ou séché)", "Abonnements hebdomadaires ou mensuels pour restaurants, hôtels, entreprises, particuliers, vases chinés en brocante, sur devis"],
+    "prix": "aucun prix publié",
+    "source": "web:https://parisettefleurs.wordpress.com/ (pages abonnements, ateliers, fleurs-sechees)"
+  },
+  "acces": { "valeur": "Métro Jacques Bonsergent (ligne 5), environ 3 min à pied", "source": "deduit (plan)" },
+  "themes_avis": { "valeur": ["boutique (16)", "saison (6)", "bouquets (4)", "changerai (3)", "prix (3)", "créative (2)", "vendeur (2)"], "source": "google_maps" },
+  "synthese_avis": {
+    "valeur": "Avis visibles positifs : belles fleurs, propositions étonnantes, équipe chaleureuse. 7 avis à 1-2 étoiles et les thèmes 'prix' et 'changerai' suggèrent quelques mécontentements (non lus en détail, vue limitée).",
+    "source": "avis"
+  },
+  "observations_visuelles": [
+    { "photo": "Façade", "vu": "Devanture peinte corail / terre cuite, store rayé beige et taupe à festons avec 'FLEURS' en capitales blanches, fleurs séchées suspendues sous le store, seaux et pots sur le trottoir, tabouret vert d'eau ; porte cochère vert sapin du n°46 à côté, immeuble en pierre avec balcons en fer forgé.", "confiance": "élevée" },
+    { "photo": "Intérieur", "vu": "Mur crème, grands paniers plats en osier accrochés, meuble en rotin, cache-pots en terre cuite, vases en faïence peinte, sol en tomettes rouges ; asters mauves, dahlias orangés, feuillages.", "confiance": "élevée" },
+    { "photo": "Bouquet orangé", "vu": "Bouquet champêtre pois de senteur orange, roses, fleurs rouges, tenu à la main.", "confiance": "élevée" },
+    { "photo": "Bouquet devant rideau métallique", "vu": "Lys, dahlias saumon, chrysanthème rose, delphinium, style jardin.", "confiance": "élevée" },
+    { "photo": "Composition sur table basse", "vu": "Grande composition rose et vert, ambiance intérieur client.", "confiance": "moyenne" },
+    { "photo": "Bouquet de pivoines", "vu": "Pivoines roses vif devant une porte vert sombre.", "confiance": "élevée" },
+    { "photo": "Intérieur, lys", "vu": "Lys blancs, feuillages, mur clair.", "confiance": "moyenne" },
+    { "photo": "Petit pin en pot, rue", "vu": "Conifère en pot emballé de papier, devant la rue.", "confiance": "moyenne" },
+    { "photo": "Clématite", "vu": "Gros plan clématite rose et blanche.", "confiance": "élevée" }
+  ],
+  "direction_artistique": "Accueil couleur terre cuite de la façade, coiffé d'un store rayé à festons dessiné en SVG avec 'FLEURS' en capitales blanches ; vert sapin de la porte voisine pour les contrastes ; Young Serif (esprit artisan, brocante) + Karla ; prix présentés comme de petites étiquettes.",
+  "argument_de_vente": "Seulement un blog WordPress gratuit (sans horaires, sans prix, adresse wordpress.com) : un vrai site avec horaires, offre et bouton Appeler.",
+  "a_verifier": [
+    "Tous les prix (bouquets dès 35 €, fleurs séchées dès 30 €, plantes dès 15 €) sont des prix d'exemple",
+    "Plantes en pot : déduites des photos (pots sur le trottoir, conifère en pot)",
+    "URL Instagram reconstituée à partir de l'identifiant cité sur le blog",
+    "Nom à afficher : 'Parisette' (blog) ou 'Parisette Fleurs' (Google)",
+    "Livraison : non mentionnée, non affichée",
+    "Accès métro déduit du plan"
+  ]
+}

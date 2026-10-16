@@ -1,0 +1,296 @@
+/*
+ * Au Bon Endroit Bar — 12 rue des Goncourt
+ *
+ * CONCEPT : le store rouge à festons de la devanture (lettres blanches
+ * « AU BON ENDROIT BAR », « Cocktails, bières & fun » sur le lambrequin)
+ * sert d'en-tête ; dessous, la salle de nuit avec le néon rose
+ * « AU BON ENDROIT » du mur du fond. L'élément fort : une cible de
+ * fléchettes dessinée, la fléchette un peu à côté du centre.
+ *
+ * PALETTE (relevée sur les photos Google Maps) :
+ *   --store   #a11f37  toile rouge du store
+ *   --brique  #7d3326  briques rouges de la façade
+ *   --nuit    #1c1222  salle sombre, mur du néon
+ *   --violet  #4b1f5e  mur violet des soirées anniversaire
+ *   --neon    #ff7cc0  néon rose
+ *   --blanc   #fff4f6  lettrage du store
+ *
+ * POLICES (2, licence SIL OFL) :
+ *   Righteous (400)               capitales géométriques arrondies, proches du
+ *                                 lettrage du store et du néon.
+ *   Bricolage Grotesque (400, 700) texte courant, un peu de caractère, lisible.
+ *
+ * MISE EN PAGE : une colonne sur mobile, le store collé en haut. Ton
+ * familier et direct, comme au comptoir. Pas d'emphase.
+ */
+
+@font-face {
+  font-family: "Righteous";
+  src: url("fonts/righteous-latin-400-normal.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Bricolage Grotesque";
+  src: url("fonts/bricolage-grotesque-latin-400-normal.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Bricolage Grotesque";
+  src: url("fonts/bricolage-grotesque-latin-700-normal.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+
+:root {
+  --store: #a11f37;
+  --brique: #7d3326;
+  --nuit: #1c1222;
+  --violet: #4b1f5e;
+  --neon: #ff7cc0;
+  --blanc: #fff4f6;
+  --vert-cible: #1f6b45;
+  --creme-cible: #f3e3c3;
+
+  --titre: "Righteous", "Trebuchet MS", sans-serif;
+  --texte: "Bricolage Grotesque", "Segoe UI", sans-serif;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+
+body {
+  background: var(--nuit);
+  color: var(--blanc);
+  font-family: var(--texte);
+  font-size: 1.0625rem;
+  line-height: 1.55;
+}
+
+a:focus-visible { outline: 3px solid var(--neon); outline-offset: 3px; }
+
+/* ---------- Boutons ---------- */
+.bouton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 1.3rem;
+  font-family: var(--titre);
+  font-size: 1.05rem;
+  text-decoration: none;
+  border: 2px solid transparent;
+  border-radius: 999px;   /* arrondis comme les tubes du néon */
+}
+.bouton-rose { background: var(--neon); color: var(--nuit); }
+.bouton-blanc { background: var(--blanc); color: var(--store); }
+.bouton-contour { border-color: var(--blanc); color: var(--blanc); }
+.bouton:hover { text-decoration: underline; }
+
+/* ---------- Le store (en-tête collant) ---------- */
+.store { position: sticky; top: 0; z-index: 10; }
+.store-bande {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.55rem 1rem;
+  background: var(--store);
+}
+.store-nom {
+  margin-right: auto;
+  font-family: var(--titre);
+  font-size: 1.15rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;   /* le lettrage du store est en capitales */
+  color: var(--blanc);
+  text-decoration: none;
+}
+.store-nav { display: none; gap: 1.4rem; }
+.store-nav a { color: var(--blanc); text-decoration: none; padding: 0.7rem 0; }
+.store-nav a:hover { text-decoration: underline; }
+.store-appel { min-height: 44px; padding: 0 1rem; font-size: 1rem; }
+.festons {
+  display: block;
+  width: 100%;
+  height: 14px;
+  margin-top: -1px;
+}
+.festons path { fill: var(--store); }
+
+/* ---------- Accueil : le néon ---------- */
+.accueil {
+  padding: 2.5rem 1rem 3.5rem;
+  background: var(--nuit);
+}
+.lambrequin {
+  font-family: var(--titre);
+  font-size: 1rem;
+  color: var(--creme-cible);
+  margin-bottom: 1.2rem;
+}
+.neon {
+  font-family: var(--titre);
+  font-weight: 400;
+  font-size: clamp(3.2rem, 16vw, 8.5rem);
+  line-height: 0.98;
+  text-transform: uppercase;
+  color: #ffd9ec;
+  /* halo du néon : seul effet lumineux de la page */
+  text-shadow: 0 0 6px var(--neon), 0 0 22px var(--neon);
+  max-width: 9ch;
+  animation: allumage 550ms steps(4, end) both;
+}
+.accroche {
+  margin-top: 1.4rem;
+  font-size: 1.2rem;
+  max-width: 34ch;
+}
+.statut {
+  display: inline-block;
+  margin-top: 1.3rem;
+  padding: 0.3rem 0.9rem;
+  border: 2px solid var(--neon);
+  border-radius: 999px;
+  font-weight: 700;
+}
+.statut[data-ouvert="oui"] { background: var(--neon); color: var(--nuit); }
+.happy { margin-top: 0.8rem; color: var(--creme-cible); }
+.actions { display: flex; flex-wrap: wrap; gap: 0.7rem; margin-top: 1.5rem; }
+
+/* Une seule animation : le néon qui grésille en s'allumant */
+@keyframes allumage {
+  0% { opacity: 0.2; }
+  40% { opacity: 1; }
+  60% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+/* ---------- Titres ---------- */
+.titre {
+  font-family: var(--titre);
+  font-weight: 400;
+  font-size: clamp(2rem, 8vw, 3.2rem);
+  line-height: 1.05;
+  margin-bottom: 1.2rem;
+}
+.sous-titre { font-family: var(--titre); font-weight: 400; font-size: 1.3rem; margin-bottom: 0.5rem; }
+
+/* ---------- Les jeux (mur violet) ---------- */
+.jeux {
+  background: var(--violet);
+  padding: 3rem 1rem;
+}
+.cible { width: min(70vw, 260px); margin: 0 auto 2rem; }
+.c-noir { fill: #121014; }
+.c-rouge { fill: var(--store); }
+.c-creme { fill: var(--creme-cible); }
+.c-vert { fill: var(--vert-cible); }
+.fleche line { stroke: var(--blanc); stroke-width: 4; stroke-linecap: round; }
+.fleche path { fill: var(--neon); }
+.liste-jeux { padding: 0; list-style: none; }
+.liste-jeux li { padding: 0.6rem 0; border-bottom: 1px dashed #8a5fa0; }
+.liste-jeux strong { color: #ffd9ec; }
+.agenda {
+  margin-top: 2rem;
+  padding: 1.2rem;
+  border: 2px solid var(--neon);
+  border-radius: 14px;
+}
+.agenda ul { padding: 0; list-style: none; }
+.agenda li + li { margin-top: 0.6rem; }
+.date { display: block; font-weight: 700; color: #ffd9ec; }
+
+/* ---------- La carte (briques) ---------- */
+.carte {
+  background: var(--brique);
+  padding: 3rem 1rem;
+}
+.carte-grille { display: grid; gap: 2.2rem; }
+.carte-titre {
+  font-family: var(--titre);
+  font-weight: 400;
+  font-size: 1.5rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 3px solid var(--blanc);
+  margin-bottom: 0.5rem;
+}
+.carte-note { font-size: 1rem; color: #ffe0d6; margin-bottom: 0.4rem; }
+.carte-ligne {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 1rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #9c4c3d;
+}
+.carte-nom { font-weight: 700; }
+.carte-prix { font-family: var(--titre); font-size: 1.15rem; text-align: right; white-space: nowrap; }
+.carte-desc { grid-column: 1 / -1; font-size: 1rem; color: #ffe0d6; }
+.mentions { margin-top: 2rem; font-size: 1rem; color: #ffe0d6; }
+
+/* ---------- Privatiser (store rouge) ---------- */
+.privatiser { background: var(--store); padding: 3rem 1rem; }
+.intro { max-width: 40ch; }
+.espaces { margin: 1.5rem 0; display: grid; gap: 0; }
+.espaces > div { padding: 0.9rem 0; border-top: 2px solid var(--blanc); }
+.espaces dt { font-family: var(--titre); font-size: 1.25rem; }
+.espaces dd { margin: 0.2rem 0 0; }
+.privatiser .bouton-rose { background: var(--blanc); color: var(--store); }
+
+/* ---------- Le lieu ---------- */
+.lieu { padding: 3rem 1rem; background: var(--nuit); }
+.lieu p { max-width: 40rem; }
+.photo-vide {
+  margin-top: 2rem;
+  aspect-ratio: 3 / 2;
+  max-width: 40rem;
+  display: grid;
+  place-items: center;
+  border: 2px dashed var(--neon);
+  border-radius: 14px;
+  color: #ffd9ec;
+}
+
+/* ---------- Infos pratiques ---------- */
+.infos { padding: 3rem 1rem; background: #241830; }
+.infos-grille { display: grid; gap: 2rem; }
+.horaires { padding: 0; list-style: none; }
+.horaire {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.55rem 0.7rem;
+  border-bottom: 1px solid #45304f;
+}
+.horaire.aujourdhui {
+  background: var(--neon);
+  color: var(--nuit);
+  font-weight: 700;
+  border-radius: 8px;
+}
+.adresse { font-family: var(--titre); font-size: 1.3rem; }
+.discret { color: #e2cfe6; margin-top: 0.4rem; }
+.services { margin-top: 1rem; padding-left: 1.2rem; list-style: disc; }
+.services li::marker { color: var(--neon); }
+
+/* ---------- Pied ---------- */
+.pied {
+  background: var(--store);
+  padding: 2.5rem 1rem 1.5rem;
+  text-align: center;
+}
+.pied p + p { margin-top: 0.7rem; }
+.pied a { color: var(--blanc); display: inline-block; padding: 0.6rem 0; }
+.pied-nom { font-family: var(--titre); font-size: 1.8rem; text-transform: uppercase; }
+.pied .maquette { margin-top: 1.8rem; font-size: 0.75rem; color: #ffd6dc; }
+
+/* ---------- Écrans plus larges ---------- */
+@media (min-width: 768px) {
+  .store-bande { padding: 0.55rem 2rem; }
+  .store-nav { display: flex; }
+  .accueil, .jeux, .carte, .privatiser, .lieu, .infos { padding-left: max(2rem, calc((100% - 70rem) / 2)); padding-right: max(2rem, calc((100% - 70rem) / 2)); }
+  .accueil { padding-top: 4rem; padding-bottom: 5rem; }
+  .jeux { display: grid; grid-template-columns: 320px 1fr; gap: 4rem; align-items: start; }
+  .cible { width: 100%; margin: 0; }
+  .carte-grille { grid-template-columns: repeat(3, 1fr); gap: 2.5rem; }
+  .espaces { grid-template-columns: 1fr 1fr; column-gap: 2.5rem; }
+  .infos-grille { grid-template-columns: 1fr 1fr; gap: 4rem; }
+}

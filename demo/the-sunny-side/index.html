@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>The Sunny Side · Café, 79 quai de Valmy, Paris 10e</title>
+  <meta name="description" content="Café au bord du canal Saint-Martin : bagnats, granola, cakes maison, latte à la datte et matcha. Ouvert tous les jours, 79 quai de Valmy.">
+  <meta property="og:title" content="The Sunny Side, café quai de Valmy">
+  <meta property="og:description" content="Bagnats, cakes maison et latte à la datte au bord du canal Saint-Martin.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="../../assets/commun/reset.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Motif réutilisé : carreau de ciment du comptoir (bleu marine, fleur crème, cœur moutarde) -->
+  <svg width="0" height="0" class="sr-only" aria-hidden="true" focusable="false">
+    <defs>
+      <pattern id="carreau" width="80" height="80" patternUnits="userSpaceOnUse">
+        <rect width="80" height="80" fill="#22305C"/>
+        <!-- quarts de losange moutarde dans les coins -->
+        <path d="M0 0h14L0 14zM80 0v14L66 0zM0 80v-14L14 80zM80 80H66L80 66z" fill="#E8AE3C"/>
+        <!-- anneau crème -->
+        <circle cx="40" cy="40" r="31" fill="none" stroke="#F7EEDB" stroke-width="3"/>
+        <!-- huit pétales -->
+        <g fill="#F7EEDB">
+          <ellipse cx="40" cy="22" rx="5" ry="12"/>
+          <ellipse cx="40" cy="58" rx="5" ry="12"/>
+          <ellipse cx="22" cy="40" rx="12" ry="5"/>
+          <ellipse cx="58" cy="40" rx="12" ry="5"/>
+          <ellipse cx="40" cy="22" rx="5" ry="12" transform="rotate(45 40 40)"/>
+          <ellipse cx="40" cy="22" rx="5" ry="12" transform="rotate(135 40 40)"/>
+          <ellipse cx="40" cy="22" rx="5" ry="12" transform="rotate(225 40 40)"/>
+          <ellipse cx="40" cy="22" rx="5" ry="12" transform="rotate(315 40 40)"/>
+        </g>
+        <circle cx="40" cy="40" r="6" fill="#E8AE3C"/>
+      </pattern>
+    </defs>
+  </svg>
+
+  <header class="entete">
+    <a class="entete-logo" href="#accueil" data-champ="nom">The Sunny Side</a>
+    <nav class="entete-nav" aria-label="Sections">
+      <a href="#carte">Carte</a>
+      <a href="#lieu">Le lieu</a>
+      <a href="#infos">Horaires</a>
+    </nav>
+    <!-- Pas de téléphone connu : le bouton Appeler reste masqué tant que config.js n'a pas de numéro -->
+    <a class="bouton bouton-petit" data-lien="tel" href="tel:" hidden>Appeler</a>
+    <a class="bouton bouton-petit entete-route" data-lien="itineraire"
+       href="https://www.google.com/maps/search/?api=1&amp;query=79%20quai%20de%20Valmy%2C%2075010%20Paris">Itinéraire</a>
+  </header>
+
+  <main>
+    <section class="accueil" id="accueil">
+      <div class="accueil-texte">
+        <p class="accueil-type">Café, quai de Valmy</p>
+        <h1 class="accueil-nom">
+          <span class="petit">the</span> Sunny Side
+        </h1>
+        <p class="accueil-accroche" data-champ="accroche">Bagnats, cakes maison et latte à la datte, au bord du canal Saint-Martin.</p>
+        <p class="statut" data-statut>Ouvert tous les jours, de 9h à 17h30 en semaine</p>
+        <div class="accueil-boutons">
+          <a class="bouton bouton-plein" data-lien="tel" href="tel:" hidden>Appeler</a>
+          <a class="bouton bouton-plein" data-lien="itineraire"
+             href="https://www.google.com/maps/search/?api=1&amp;query=79%20quai%20de%20Valmy%2C%2075010%20Paris">Itinéraire</a>
+          <a class="bouton bouton-ligne" href="#carte">Voir la carte</a>
+        </div>
+      </div>
+      <!-- Le soleil : reprend la soucoupe en forme de soleil posée sous les boissons -->
+      <svg class="soleil" viewBox="0 0 200 200" aria-hidden="true" focusable="false">
+        <g fill="#E8AE3C">
+          <circle cx="100" cy="100" r="58"/>
+          <g id="rayons">
+            <path d="M100 8l13 34h-26z"/>
+            <path d="M100 192l-13-34h26z"/>
+            <path d="M8 100l34-13v26z"/>
+            <path d="M192 100l-34 13v-26z"/>
+          </g>
+          <use href="#rayons" transform="rotate(30 100 100)"/>
+          <use href="#rayons" transform="rotate(60 100 100)"/>
+        </g>
+        <circle cx="100" cy="100" r="40" fill="#F4C766"/>
+      </svg>
+    </section>
+
+    <!-- Frise de carreaux de ciment, comme le devant du comptoir -->
+    <div class="frise" aria-hidden="true">
+      <svg width="100%" height="100%"><rect width="100%" height="100%" fill="url(#carreau)"/></svg>
+    </div>
+
+    <section class="carte" id="carte" aria-labelledby="titre-carte">
+      <div class="feuille">
+        <div class="feuille-entete">
+          <h2 id="titre-carte">La carte</h2>
+          <p class="feuille-note">Brunch servi toute la journée. Plats et prix relevés sur la carte du café, susceptibles d'évoluer. Boissons : prix d'exemple.</p>
+        </div>
+
+        <div class="carte-contenu" data-carte data-carte-titre="h3">
+          <section class="carte-section">
+            <h3 class="carte-titre">All the day brunch</h3>
+            <ul class="carte-liste">
+              <li class="carte-ligne"><span class="carte-nom">Granola</span><span class="carte-prix">10,50 €</span><span class="carte-desc">Fromage blanc, granola maison figues-chocolat, compotée de fraise, huile d'olive, réduction de balsamique. Yaourt soja ou coco +1 €</span></li>
+              <li class="carte-ligne"><span class="carte-nom">L'œuf qui chante</span><span class="carte-prix">6 €</span><span class="carte-desc">Œuf bio à la coque, pain aux céréales ou aux fruits secs, dukkah maison</span></li>
+              <li class="carte-ligne"><span class="carte-nom">La brioche bronzée</span><span class="carte-prix">11 €</span><span class="carte-desc">Brioche toastée croustillante, parfumée à la fleur d'oranger</span></li>
+            </ul>
+          </section>
+          <section class="carte-section">
+            <h3 class="carte-titre">Bagnats</h3>
+            <ul class="carte-liste">
+              <li class="carte-ligne"><span class="carte-nom">Bagnat du soleil</span><span class="carte-prix">13 €</span><span class="carte-desc">Omelette bio à la ciboulette et au parmesan, golden labneh, sweet harissa, oignons caramélisés, herbes fraîches, dukkah maison</span></li>
+              <li class="carte-ligne"><span class="carte-nom">Le Bournous</span><span class="carte-prix">prix sur place</span><span class="carte-desc">Le houmous habillé à la tunisienne</span></li>
+              <li class="carte-ligne"><span class="carte-nom">Le Bazness</span><span class="carte-prix">prix sur place</span><span class="carte-desc">Le bagnat qui donne envie de revenir</span></li>
+            </ul>
+          </section>
+          <section class="carte-section">
+            <h3 class="carte-titre">Dip</h3>
+            <p class="carte-note">Servi avec du pain</p>
+            <ul class="carte-liste">
+              <li class="carte-ligne"><span class="carte-nom">Labneh harissa à la rose</span><span class="carte-prix">prix sur place</span><span class="carte-desc">Labneh fouetté, harissa douce à la rose, pistaches, menthe fraîche, pétales de rose, huile d'olive</span></li>
+            </ul>
+          </section>
+          <section class="carte-section">
+            <h3 class="carte-titre">Cakes</h3>
+            <ul class="carte-liste">
+              <li class="carte-ligne"><span class="carte-nom">Banana chocolate bread</span><span class="carte-prix">5 €</span><span class="carte-desc">Caramel de dattes</span></li>
+              <li class="carte-ligne"><span class="carte-nom">Sorgho cake</span><span class="carte-prix">5 €</span><span class="carte-desc">Sorgho, noisette, amande, halva maison. Sans gluten</span></li>
+              <li class="carte-ligne"><span class="carte-nom">Cookies</span><span class="carte-prix">4 € / 4,50 €</span></li>
+            </ul>
+          </section>
+          <section class="carte-section">
+            <h3 class="carte-titre">À boire</h3>
+            <p class="carte-note">Prix d'exemple</p>
+            <ul class="carte-liste">
+              <li class="carte-ligne"><span class="carte-nom">Espresso</span><span class="carte-prix">2,50 €</span></li>
+              <li class="carte-ligne"><span class="carte-nom">Latte</span><span class="carte-prix">4,50 €</span></li>
+              <li class="carte-ligne"><span class="carte-nom">Latte à la datte</span><span class="carte-prix">5,50 €</span></li>
+              <li class="carte-ligne"><span class="carte-nom">Matcha latte</span><span class="carte-prix">5,50 €</span></li>
+            </ul>
+          </section>
+        </div>
+
+        <p class="feuille-pied">Informations sur les allergènes disponibles sur demande.</p>
+      </div>
+    </section>
+
+    <section class="lieu" id="lieu" aria-labelledby="titre-lieu">
+      <div class="lieu-texte">
+        <h2 id="titre-lieu">Le lieu</h2>
+        <p>Un comptoir habillé de carreaux de ciment bleu et moutarde, des tabourets orange, la lumière du canal qui entre par la vitrine. On vient pour un bagnat à midi, un cake et un latte l'après-midi.</p>
+        <p>La cuisine pioche du côté de la Méditerranée et de la Tunisie : labneh, harissa douce, dukkah et halva faits maison. Pots de dukkah, sweet harissa et granola à emporter.</p>
+      </div>
+      <figure class="photo-vide">
+        <svg viewBox="0 0 80 80" aria-hidden="true" focusable="false"><rect width="80" height="80" fill="url(#carreau)"/></svg>
+        <figcaption>Vos photos ici</figcaption>
+      </figure>
+    </section>
+
+    <section class="infos" id="infos" aria-labelledby="titre-infos">
+      <h2 id="titre-infos">Horaires et accès</h2>
+      <div class="infos-grille">
+        <div>
+          <h3>Horaires</h3>
+          <ul class="horaires" data-horaires>
+            <li class="horaire" data-jour="lundi"><span class="horaire-jour">Lundi</span><span class="horaire-heures">9h – 17h30</span></li>
+            <li class="horaire" data-jour="mardi"><span class="horaire-jour">Mardi</span><span class="horaire-heures">9h – 17h30</span></li>
+            <li class="horaire" data-jour="mercredi"><span class="horaire-jour">Mercredi</span><span class="horaire-heures">9h – 17h30</span></li>
+            <li class="horaire" data-jour="jeudi"><span class="horaire-jour">Jeudi</span><span class="horaire-heures">9h – 17h30</span></li>
+            <li class="horaire" data-jour="vendredi"><span class="horaire-jour">Vendredi</span><span class="horaire-heures">9h – 17h30</span></li>
+            <li class="horaire" data-jour="samedi"><span class="horaire-jour">Samedi</span><span class="horaire-heures">9h30 – 18h</span></li>
+            <li class="horaire" data-jour="dimanche"><span class="horaire-jour">Dimanche</span><span class="horaire-heures">9h30 – 18h</span></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Adresse</h3>
+          <p><span data-champ="adresse">79 quai de Valmy, 75010 Paris</span><br>
+             <span data-champ="acces">Métro Jacques Bonsergent (ligne 5), à 4 minutes à pied</span></p>
+          <p><a class="lien" data-lien="itineraire"
+             href="https://www.google.com/maps/search/?api=1&amp;query=79%20quai%20de%20Valmy%2C%2075010%20Paris">Ouvrir l'itinéraire</a></p>
+          <h3>Sur place</h3>
+          <ul class="services">
+            <li>Sur place ou à emporter</li>
+            <li>Options végétariennes et vegan</li>
+            <li>Cake sans gluten</li>
+            <li>LGBTQ+ friendly</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pied">
+    <p class="pied-nom" data-champ="nom">The Sunny Side</p>
+    <p>79 quai de Valmy, 75010 Paris</p>
+    <p><a class="lien" data-lien="instagram" href="https://www.instagram.com/thesunnysideparis/">Instagram @thesunnysideparis</a></p>
+    <p><a class="lien" data-lien="tel" href="tel:" hidden data-champ="telephone">Téléphone</a></p>
+    <p class="mention">Maquette, site non officiel</p>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="../../assets/commun/statut.js"></script>
+  <script src="../../assets/commun/remplir.js"></script>
+</body>
+</html>

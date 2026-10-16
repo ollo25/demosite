@@ -1,0 +1,60 @@
+{
+  "slug": "mana-leon",
+  "date_releve": "2026-10-16",
+  "nom": { "valeur": "Mana Léon", "source": "google_maps" },
+  "categorie": { "valeur": "Restaurant thaï", "source": "google_maps" },
+  "adresse": { "valeur": "21 Rue Sainte-Marthe, 75010 Paris", "source": "google_maps" },
+  "telephone": { "valeur": "06 12 67 28 21", "source": "google_maps" },
+  "note": { "valeur": "5,0", "nb_avis": 135, "repartition": "134 x 5 étoiles, 1 x 4 étoiles", "source": "google_maps" },
+  "prix_par_personne": { "valeur": "10–30 € selon les avis (10–20 € et 20–30 € cités)", "source": "avis" },
+  "statut": { "valeur": "ouvert (pas de mention Définitivement fermé)", "source": "google_maps" },
+  "site_web": { "valeur": "aucun (Google propose « Ajouter un site Web »)", "source": "google_maps" },
+  "reseaux": { "valeur": "aucun lien sur la fiche", "source": "google_maps" },
+  "horaires": {
+    "source": "google_maps",
+    "lundi": "19:00–22:15",
+    "mardi": "12:00–15:00, 19:00–22:30",
+    "mercredi": "12:00–15:00, 19:00–22:30",
+    "jeudi": "12:00–15:00, 19:00–23:00",
+    "vendredi": "12:00–15:00, 19:00–23:00",
+    "samedi": "12:00–15:00, 19:00–23:00",
+    "dimanche": "12:00–15:00, 19:00–22:00"
+  },
+  "acces": { "valeur": "Métro Belleville (lignes 2 et 11) ou Colonel Fabien (ligne 2)", "source": "deduit" },
+  "services": [
+    { "valeur": "Sur place", "source": "avis" },
+    { "valeur": "À emporter (la carte mentionne « soda à emporter 2 € »)", "source": "photo_carte" }
+  ],
+  "themes_avis": {
+    "source": "google_maps",
+    "liste": ["pad thaï (20)", "cuisine (11)", "salade (8)", "mangue (7)", "atmosphère (6)", "cantine (4)", "nems (4)", "patronne (3)", "bonheur (3)", "gérant de magasin (3)"],
+    "resume": "Pad thaï très souvent cité, salade de bœuf au citron vert, riz gluant à la mangue, nems. Ambiance de cantine familiale, joliment décorée, odeurs de cuisine, accueil chaleureux de la patronne. Aucun problème récurrent relevé (une seule note à 4, aucune note basse)."
+  },
+  "carte": {
+    "boissons": { "source": "photo_carte", "detail": "Page « Suppléments / Vins / Champagne / Bières / Softs / Boissons chaudes » photographiée (avril 2026). Prix repris dans config.js avec source « carte en ligne, à vérifier »." },
+    "plats": { "source": "avis + photos de plats", "detail": "Aucune page de plats lisible. Plats cités dans les avis ou visibles en photo (pad thaï, salade de bœuf, riz gluant à la mangue, nems, tom yum, bœuf grillé tranché, légumes sautés) avec prix d'exemple." }
+  },
+  "observations_visuelles": [
+    { "photo": "Façade (oct. 2026)", "vu": "Enseigne en bois verni brun avec lettres dorées en capitales « MANA LEON » (sans accent), cadre mouluré ; porte et volets en bois ; vitrine encadrée de rouge ; guirlande de fanions rouge/blanc/bleu ; affiches de plats et carte vitrée à droite.", "confiance": "élevée" },
+    { "photo": "Façade (autre angle, juin 2026)", "vu": "Même enseigne ; ardoise au sol devant la porte ; étoile décorative et fanions dans la vitrine.", "confiance": "élevée" },
+    { "photo": "Riz gluant à la mangue", "vu": "Mangue en lamelles sur riz gluant, sésame, menthe, assiette en verre ; table en bois.", "confiance": "élevée" },
+    { "photo": "Carte des boissons", "vu": "Carte imprimée sur fond blanc, intitulés en vert, prix lisibles. Mention « Merci de signaler toute allergie alimentaire au moment de la commande ».", "confiance": "élevée" },
+    { "photo": "Pad thaï", "vu": "Pad thaï avec cacahuètes concassées, piment, citron vert ; assiette blanche à liseré ; mur en briques derrière.", "confiance": "élevée" },
+    { "photo": "Tom yum", "vu": "Soupe aux crevettes, citron vert, piment rouge, cuillère en céladon ; table en loupe de bois (ou stratifié imitation).", "confiance": "moyenne" },
+    { "photo": "Nems", "vu": "Nems avec salade, carottes, deux bols de sauce à liseré bleu.", "confiance": "élevée" },
+    { "photo": "Plats partagés", "vu": "Bœuf grillé tranché sur salade, sautés de légumes, riz ; sauce pimentée.", "confiance": "moyenne" },
+    { "photo": "Plafond de la salle", "vu": "Grande ombrelle en papier huilé décorée fixée au plafond, suspensions en osier tressé, mur en pierre/briques.", "confiance": "élevée" }
+  ],
+  "direction_artistique": "Enseigne en bois brun et lettres dorées en capitales (Zilla Slab) en haut de page, guirlande de fanions rouge/blanc/bleu dessinée en SVG, carte présentée comme la carte imprimée (feuille blanche, intitulés verts), ombrelle en papier huilé dessinée en SVG dans « Le lieu ». Fond couleur osier.",
+  "argument_de_vente": "Note 5,0 sur 135 avis mais aucun site web ni réseau social : les clients ne trouvent ni la carte ni les horaires ailleurs que sur Google.",
+  "a_verifier": [
+    "Carte des plats et prix : les prix des plats sont des prix d'exemple (seule la page des boissons était lisible).",
+    "Noms exacts des plats (ex. « Tigre qui pleure », « Salade de bœuf ») et descriptions.",
+    "Prix des boissons relevés sur une photo d'avril 2026 : à confirmer.",
+    "Vente à emporter : déduite de la mention « soda à emporter » sur la carte.",
+    "Accès métro : déduit (Belleville / Colonel Fabien).",
+    "Instagram ou autre réseau éventuel non trouvé sur la fiche.",
+    "Réservation par téléphone possible ? (aucun lien de réservation)."
+  ],
+  "sources": ["https://www.google.com/maps?cid=13918565092476438861"]
+}

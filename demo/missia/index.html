@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Missià · Épicerie corse, Paris 9e</title>
+  <meta name="description" content="Missià, épicerie fine corse au 38 rue Marguerite-de-Rochechouart (Paris 9e) : charcuterie, fromages, vins, épicerie et sandwichs. Du mardi au samedi, 15h – 19h30.">
+  <meta property="og:title" content="Missià · Épicerie corse, Paris 9e">
+  <meta property="og:description" content="Charcuterie, fromages, vins et douceurs de Corse, et des sandwichs préparés au comptoir.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="../../assets/commun/reset.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a class="sr-only" href="#contenu">Aller au contenu</a>
+
+  <!-- En-tête collant : nom + ancres + bouton Appeler toujours visible -->
+  <header class="entete">
+    <a class="entete-nom" href="#haut" data-champ="nom">Missià</a>
+    <nav class="entete-nav" aria-label="Sections">
+      <a href="#comptoir">Le comptoir</a>
+      <a href="#boutique">La boutique</a>
+      <a href="#infos">Horaires</a>
+    </nav>
+    <a class="bouton bouton-plein entete-appel" data-lien="tel" href="tel:+33961605992">Appeler</a>
+  </header>
+
+  <main id="contenu">
+
+    <!-- Accueil : le mur bleu de la façade, avec la vitrine au centre -->
+    <section class="facade" id="haut" aria-labelledby="titre">
+      <svg class="brin" viewBox="0 0 120 70" aria-hidden="true">
+        <!-- brin d'immortelle dessiné à la main, comme au-dessus de l'enseigne -->
+        <path d="M8 58 C 40 50, 70 38, 112 14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+        <path d="M30 52 C 26 40, 30 32, 38 26 M30 52 C 40 46, 46 40, 48 30 M52 44 C 50 34, 56 24, 64 20 M52 44 C 62 40, 70 34, 72 24 M74 34 C 74 26, 80 18, 88 16 M74 34 C 84 32, 92 26, 94 18 M96 22 C 98 16, 104 12, 110 10" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+        <circle cx="38" cy="25" r="3.2" fill="currentColor"/><circle cx="48" cy="29" r="3" fill="currentColor"/>
+        <circle cx="64" cy="19" r="3.2" fill="currentColor"/><circle cx="72" cy="23" r="3" fill="currentColor"/>
+        <circle cx="88" cy="15" r="3" fill="currentColor"/><circle cx="94" cy="17" r="2.6" fill="currentColor"/>
+        <circle cx="110" cy="10" r="2.8" fill="currentColor"/>
+      </svg>
+      <h1 id="titre" class="enseigne" data-champ="nom">Missià</h1>
+
+      <div class="vitrine">
+        <!-- L'inscription de la vitrine, en arc autour d'une petite Corse dessinée -->
+        <svg class="vitrine-arc" viewBox="0 0 300 256" role="img" aria-label="Épicerie fine, produits corses">
+          <defs>
+            <path id="arc-haut" d="M50 128 A 100 100 0 0 1 250 128"/>
+            <path id="arc-bas" d="M30 128 A 120 120 0 0 0 270 128"/>
+          </defs>
+          <text><textPath href="#arc-haut" startOffset="50%" text-anchor="middle">Épicerie fine</textPath></text>
+          <text><textPath href="#arc-bas" startOffset="50%" text-anchor="middle">Produits corses</textPath></text>
+          <path class="ile" d="M34 2 L38 4 L39 16 L42 24 L44 34 L52 40 L54 52 L53 66 L50 78 L46 88 L40 98 L36 96 L33 90 L26 88 L22 82 L14 80 L16 74 L10 70 L12 62 L6 58 L10 52 L8 46 L14 42 L18 36 L24 32 L28 26 L30 30 L32 22 L31 10 Z" transform="translate(120 78)"/>
+        </svg>
+        <p class="accroche" data-champ="accroche">Charcuterie, fromages, vins et douceurs de Corse, et des sandwichs préparés au comptoir. Dans la petite boutique bleue de la rue Marguerite-de-Rochechouart.</p>
+        <p class="statut" data-statut>Du mardi au samedi, 15h – 19h30</p>
+        <div class="actions">
+          <a class="bouton bouton-clair" data-lien="tel" href="tel:+33961605992">Appeler</a>
+          <a class="bouton bouton-contour" data-lien="itineraire" href="https://www.google.com/maps/search/?api=1&amp;query=38%20rue%20Marguerite-de-Rochechouart%2C%2075009%20Paris" target="_blank" rel="noopener">Itinéraire</a>
+        </div>
+      </div>
+      <div class="seuil" aria-hidden="true"></div>
+    </section>
+
+    <!-- L'offre : les produits du comptoir -->
+    <section class="comptoir" id="comptoir" aria-labelledby="titre-comptoir">
+      <div class="comptoir-tete">
+        <h2 id="titre-comptoir">Au comptoir</h2>
+        <p class="comptoir-intro">Ce qu'on trouve sur les étagères et à la coupe. La sélection change avec les arrivages et les saisons : demandez, on vous fait goûter.</p>
+        <p class="mention-prix">Prix d'exemple</p>
+      </div>
+
+      <div class="carte" data-carte data-carte-titre="h3">
+        <section class="carte-section">
+          <h3 class="carte-titre">Charcuterie</h3>
+          <p class="carte-note">Prix au 100 g</p>
+          <ul class="carte-liste">
+            <li class="carte-ligne"><span class="carte-nom">Lonzu</span><span class="carte-prix">9,50 €</span><span class="carte-desc">Filet de porc séché</span></li>
+            <li class="carte-ligne"><span class="carte-nom">Coppa</span><span class="carte-prix">8,50 €</span><span class="carte-desc">Échine séchée, tranchée à la demande</span></li>
+            <li class="carte-ligne"><span class="carte-nom">Prisuttu</span><span class="carte-prix">11 €</span><span class="carte-desc">Jambon sec affiné</span></li>
+            <li class="carte-ligne"><span class="carte-nom">Saucisson de porc corse</span><span class="carte-prix">14 €</span><span class="carte-desc">La pièce, environ 250 g</span></li>
+          </ul>
+        </section>
+        <section class="carte-section">
+          <h3 class="carte-titre">Fromages</h3>
+          <ul class="carte-liste">
+            <li class="carte-ligne"><span class="carte-nom">Brocciu</span><span class="carte-prix">4,50 € les 100 g</span><span class="carte-desc">Frais, selon la saison</span></li>
+            <li class="carte-ligne"><span class="carte-nom">Tomme de brebis fumée à la myrte</span><span class="carte-prix">5,50 € les 100 g</span></li>
+            <li class="carte-ligne"><span class="carte-nom">Tomme de chèvre</span><span class="carte-prix">5 € les 100 g</span></li>
+          </ul>
+        </section>
+        <section class="carte-section">
+          <h3 class="carte-titre">Épicerie</h3>
+          <ul class="carte-liste">
+            <li class="carte-ligne"><span class="carte-nom">Farine de châtaigne</span><span class="carte-prix">9 €</span><span class="carte-desc">Le sachet de 500 g</span></li>
+            <li class="carte-ligne"><span class="carte-nom">Marrons confits</span><span class="carte-prix">12 €</span><span class="carte-desc">Le bocal</span></li>
+            <li class="carte-ligne"><span class="carte-nom">Herbes du maquis</span><span class="carte-prix">5,50 €</span><span class="carte-desc">Pour les daubes et les grillades</span></li>
+            <li class="carte-ligne"><span class="carte-nom">Miel de Corse</span><span class="carte-prix">11 €</span><span class="carte-desc">Le pot de 250 g</span></li>
+            <li class="carte-ligne"><span class="carte-nom">Biscuits secs (canistrelli)</span><span class="carte-prix">6,50 €</span><span class="carte-desc">Le sachet</span></li>
+          </ul>
+        </section>
+        <section class="carte-section">
+          <h3 class="carte-titre">Sandwichs</h3>
+          <p class="carte-note">Préparés au comptoir</p>
+          <ul class="carte-liste">
+            <li class="carte-ligne"><span class="carte-nom">Sandwich charcuterie corse</span><span class="carte-prix">9 €</span><span class="carte-desc">Coppa ou lonzu, fromage de brebis</span></li>
+            <li class="carte-ligne"><span class="carte-nom">Sandwich brocciu et herbes</span><span class="carte-prix">8 €</span></li>
+          </ul>
+        </section>
+        <section class="carte-section">
+          <h3 class="carte-titre">Vins et apéritifs</h3>
+          <ul class="carte-liste">
+            <li class="carte-ligne"><span class="carte-nom">Cap Corse Mattei, blanc ou rouge</span><span class="carte-prix">19 €</span><span class="carte-desc">Apéritif au vin, la bouteille</span></li>
+            <li class="carte-ligne"><span class="carte-nom">Vin de Corse (Patrimonio, Ajaccio…)</span><span class="carte-prix">15 €</span><span class="carte-desc">La bouteille, à partir de</span></li>
+          </ul>
+        </section>
+      </div>
+
+      <p class="mentions">L'abus d'alcool est dangereux pour la santé, à consommer avec modération.<br>
+      Informations sur les allergènes disponibles sur demande.</p>
+    </section>
+
+    <!-- Le lieu -->
+    <section class="boutique" id="boutique" aria-labelledby="titre-boutique">
+      <h2 id="titre-boutique">La boutique</h2>
+      <div class="boutique-texte">
+        <p>Un mur bleu, une grande vitrine, des étagères de bois chargées de bocaux, de bouteilles et de boîtes de biscuits. C'est petit, et tout est à portée de main.</p>
+        <p>On vient pour une coupe de lonzu ou un morceau de brocciu, on repart avec la farine de châtaigne pour le fiadone et une idée de recette. L'accueil et les conseils reviennent souvent dans les avis des clients.</p>
+      </div>
+      <figure class="photo-ici" aria-label="Emplacement pour une photo de la boutique">
+        <span>Vos photos ici</span>
+      </figure>
+    </section>
+
+    <!-- Infos pratiques -->
+    <section class="infos" id="infos" aria-labelledby="titre-infos">
+      <h2 id="titre-infos">Horaires et accès</h2>
+      <div class="infos-grille">
+        <div>
+          <h3>Horaires</h3>
+          <ul class="horaires" data-horaires>
+            <li class="horaire" data-jour="lundi"><span class="horaire-jour">Lundi</span><span class="horaire-heures">Fermé</span></li>
+            <li class="horaire" data-jour="mardi"><span class="horaire-jour">Mardi</span><span class="horaire-heures">15h – 19h30</span></li>
+            <li class="horaire" data-jour="mercredi"><span class="horaire-jour">Mercredi</span><span class="horaire-heures">15h – 19h30</span></li>
+            <li class="horaire" data-jour="jeudi"><span class="horaire-jour">Jeudi</span><span class="horaire-heures">15h – 19h30</span></li>
+            <li class="horaire" data-jour="vendredi"><span class="horaire-jour">Vendredi</span><span class="horaire-heures">15h – 19h30</span></li>
+            <li class="horaire" data-jour="samedi"><span class="horaire-jour">Samedi</span><span class="horaire-heures">15h – 19h30</span></li>
+            <li class="horaire" data-jour="dimanche"><span class="horaire-jour">Dimanche</span><span class="horaire-heures">Fermé</span></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Adresse</h3>
+          <p data-champ="adresse">38 rue Marguerite-de-Rochechouart, 75009 Paris</p>
+          <p class="acces" data-champ="acces">Métro Anvers (ligne 2) ou Poissonnière (ligne 7), à quelques minutes à pied.</p>
+          <p><a class="lien-tel" data-lien="tel" href="tel:+33961605992">09 61 60 59 92</a></p>
+          <h3>Sur place</h3>
+          <ul class="services">
+            <li>Vente à emporter</li>
+            <li>Sandwichs</li>
+            <li>Plateaux apéritifs sur demande</li>
+            <li>Conseils de préparation</li>
+          </ul>
+          <a class="bouton bouton-plein" data-lien="itineraire" href="https://www.google.com/maps/search/?api=1&amp;query=38%20rue%20Marguerite-de-Rochechouart%2C%2075009%20Paris" target="_blank" rel="noopener">Itinéraire</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pied">
+    <p class="pied-nom" data-champ="nom">Missià</p>
+    <p>38 rue Marguerite-de-Rochechouart, 75009 Paris · <a data-lien="tel" href="tel:+33961605992">09 61 60 59 92</a></p>
+    <p><a data-lien="instagram" href="https://www.instagram.com/missia_paris/" target="_blank" rel="noopener">Instagram @missia_paris</a></p>
+    <p class="maquette">Maquette, site non officiel</p>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="../../assets/commun/statut.js"></script>
+  <script src="../../assets/commun/remplir.js"></script>
+</body>
+</html>

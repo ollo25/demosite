@@ -1,0 +1,245 @@
+/*
+ * Symbiose — direction artistique
+ * ------------------------------------------------------------------
+ * Concept : le site se lit comme la carte imprimée du lieu : papier
+ * blanc, titres en serif épaisse brun chocolat dans des cadres aux coins
+ * creusés, plats et prix en caractères machine, petite feuille verte des
+ * plats végétariens. En haut, le bandeau anthracite de la devanture avec
+ * le nom en blanc.
+ *
+ * Palette (relevée sur la carte PDF et les photos de façade et de salle) :
+ *   --brun       #55330f  titres et cadres de la carte
+ *   --papier     #ffffff  fond de la carte
+ *   --anthracite #2e3135  store et bandeau de la devanture
+ *   --feuille    #3e7a1f  feuille verte (plats végétariens, accent)
+ *   --chene      #b7743d  bois clair des tables (filets décoratifs)
+ *   --happy      #b03a2e  rouge des prix happy hour sur la carte
+ *
+ * Polices (2) :
+ *   - Young Serif (400) : serif grasse et ronde, très proche du
+ *     « SYMBIOSE » et des intitulés de rubriques de la carte.
+ *   - IBM Plex Mono (400, 600) : la carte du lieu compose ses plats et
+ *     ses prix en caractères à chasse fixe ; on garde ce détail.
+ *
+ * Mise en page : une seule colonne de carte sur téléphone, deux colonnes
+ * comme sur le PDF à partir de la tablette. Barre basse Appeler /
+ * Réserver sur téléphone. Ton : direct, comme une ardoise de bistro.
+ */
+
+/* ---------- Polices ---------- */
+@font-face {
+  font-family: "Young Serif";
+  src: url("fonts/young-serif-latin-400-normal.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  src: url("fonts/ibm-plex-mono-latin-400-normal.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  src: url("fonts/ibm-plex-mono-latin-600-normal.woff2") format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+
+:root {
+  --brun: #55330f;
+  --papier: #ffffff;
+  --anthracite: #2e3135;
+  --feuille: #3e7a1f;
+  --chene: #b7743d;
+  --happy: #b03a2e;
+  --serif: "Young Serif", Georgia, serif;
+  --mono: "IBM Plex Mono", "Courier New", monospace;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 64px; }
+
+body {
+  font-family: var(--mono);
+  font-size: 1rem;          /* 16 px : Plex Mono est large, ça reste confortable */
+  line-height: 1.65;
+  color: #2b1a08;
+  background: var(--papier);
+  padding-bottom: 76px;     /* place pour la barre basse sur téléphone */
+}
+
+h1, h2, h3 { font-family: var(--serif); font-weight: 400; line-height: 1.15; color: var(--brun); }
+
+a:focus-visible, .bouton:focus-visible { outline: 3px solid var(--feuille); outline-offset: 3px; }
+
+/* ---------- Le cadre à coins creusés de la carte ----------
+   Un petit SVG (double trait brun, coins arrondis vers l'intérieur)
+   sert d'image de bordure : il s'étire à toutes les tailles. */
+.cadre {
+  border: 18px solid var(--brun);
+  border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60'%3E%3Cpath d='M12 2H48A10 10 0 0 0 58 12V48A10 10 0 0 0 48 58H12A10 10 0 0 0 2 48V12A10 10 0 0 0 12 2Z' fill='none' stroke='%2355330f' stroke-width='3'/%3E%3Cpath d='M14 7H46A7 7 0 0 0 53 14V46A7 7 0 0 0 46 53H14A7 7 0 0 0 7 46V14A7 7 0 0 0 14 7Z' fill='none' stroke='%2355330f' stroke-width='1.2'/%3E%3C/svg%3E") 18 stretch;
+  padding: 0.6rem 1rem;
+}
+
+/* ---------- Boutons ---------- */
+.bouton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 1.25rem;
+  font-family: var(--mono);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  border: 2px solid var(--brun);
+  border-radius: 3px;
+}
+.bouton-plein { background: var(--brun); color: var(--papier); }
+.bouton-plein:hover { background: #3d2409; }
+.bouton-trait { color: var(--brun); background: var(--papier); }
+.bouton-trait:hover { background: #f4ece3; }
+.bouton-vert { background: var(--feuille); border-color: var(--feuille); color: var(--papier); }
+
+/* ---------- Bandeau (devanture) ---------- */
+.bandeau {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--anthracite);
+  color: var(--papier);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem 1rem;
+  border-bottom: 4px solid var(--chene);
+}
+.bandeau-nom {
+  font-family: var(--serif);
+  font-size: 1.6rem;
+  text-decoration: none;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+}
+.bandeau-nav { display: none; }
+
+/* ---------- Accueil ---------- */
+.accueil { padding: 2.5rem 1rem 3rem; text-align: center; max-width: 46rem; margin: 0 auto; }
+.cadre-titre { display: inline-block; padding: 0.4rem 1.2rem 0.2rem; }
+.accueil h1 {
+  font-size: clamp(2.6rem, 13vw, 5.5rem);
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  animation: tampon 450ms ease-out both; /* seule animation : le titre se pose */
+}
+@keyframes tampon {
+  from { opacity: 0; transform: scale(1.04); }
+  to { opacity: 1; transform: none; }
+}
+.sous-titre { margin-top: 1rem; font-weight: 600; color: var(--brun); text-transform: uppercase; font-size: 0.95rem; }
+.accroche { margin: 1.25rem auto 1.5rem; max-width: 34rem; font-size: 1.05rem; }
+
+.statut {
+  display: inline-block;
+  padding: 0.3rem 0.9rem;
+  border: 2px dashed var(--brun);
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+.statut[data-ouvert="oui"] { border-style: solid; border-color: var(--feuille); color: var(--feuille); }
+
+.actions { display: flex; flex-wrap: wrap; gap: 0.6rem; justify-content: center; }
+
+/* ---------- La carte ---------- */
+.carte-zone { padding: 2.5rem 1rem 3rem; max-width: 70rem; margin: 0 auto; border-top: 2px solid var(--brun); }
+.cadre-section { display: inline-block; }
+.carte-zone h2, .soirees h2 { font-size: clamp(2rem, 9vw, 3rem); }
+.happy { margin: 1.25rem 0 2rem; color: var(--happy); font-weight: 600; }
+
+.carte-section { margin-bottom: 2.5rem; break-inside: avoid; }
+.carte-titre {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+}
+.carte-note { color: var(--happy); font-weight: 600; margin-bottom: 0.4rem; }
+.carte-ligne {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 1rem;
+  padding: 0.55rem 0;
+}
+.carte-nom { font-weight: 600; text-transform: uppercase; }
+.carte-prix { font-weight: 600; text-align: right; white-space: nowrap; }
+.carte-desc { grid-column: 1 / -1; color: #5a4632; font-size: 0.95rem; }
+
+.mentions { margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--chene); font-size: 0.95rem; }
+.feuille { display: inline-block; width: 18px; height: 18px; vertical-align: -3px; fill: none; stroke: var(--feuille); stroke-width: 2; }
+.source { margin-top: 0.5rem; font-size: 0.9rem; color: #5a4632; }
+
+/* ---------- Le lieu (fond anthracite comme la devanture) ---------- */
+.lieu { background: var(--anthracite); color: var(--papier); padding: 3rem 1rem; }
+.lieu > * { max-width: 46rem; margin-left: auto; margin-right: auto; }
+.lieu h2 { color: var(--papier); font-size: clamp(2rem, 9vw, 3rem); margin-bottom: 1rem; }
+.lieu p + p { margin-top: 1rem; }
+.photo-ici {
+  margin-top: 2rem;
+  aspect-ratio: 16 / 10;
+  border: 2px dashed var(--chene);
+  display: grid;
+  place-items: center;
+  color: #f0d9c2;
+  font-weight: 600;
+}
+
+/* ---------- Soirées privées ---------- */
+.soirees { padding: 3rem 1rem; max-width: 46rem; margin: 0 auto; }
+.soirees p { margin: 1.25rem 0 1rem; }
+.soirees-liste { padding-left: 1.2rem; margin-bottom: 1.5rem; }
+.soirees-liste li::marker { color: var(--feuille); }
+
+/* ---------- Infos ---------- */
+.infos { padding: 3rem 1rem; max-width: 70rem; margin: 0 auto; border-top: 2px solid var(--brun); }
+.infos h2 { font-size: clamp(2rem, 9vw, 3rem); margin-bottom: 1.5rem; }
+.horaire { display: flex; justify-content: space-between; padding: 0.5rem 0.6rem; border-bottom: 1px dotted var(--chene); }
+.horaire.aujourdhui { background: var(--brun); color: var(--papier); font-weight: 600; }
+.infos-adresse { margin-top: 2rem; }
+.adresse { font-family: var(--serif); font-size: 1.4rem; color: var(--brun); margin-bottom: 0.5rem; }
+.lien-fort { display: inline-block; padding: 0.6rem 0; font-weight: 600; }
+.services { padding-left: 1.2rem; margin-top: 0.5rem; }
+
+/* ---------- Pied ---------- */
+.pied { background: var(--anthracite); color: var(--papier); text-align: center; padding: 2.5rem 1rem 1.5rem; }
+.pied-nom { font-family: var(--serif); font-size: 2rem; }
+.pied a { display: inline-block; padding: 0.6rem 0.5rem; }
+.reseaux { display: flex; justify-content: center; gap: 1rem; }
+.maquette { font-size: 0.75rem; margin-top: 1.5rem; opacity: 0.8; }
+
+/* ---------- Barre basse (téléphone) ---------- */
+.barre-basse {
+  position: fixed;
+  left: 0; right: 0; bottom: 0;
+  z-index: 20;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  padding: 0.6rem 0.75rem;
+  background: var(--papier);
+  border-top: 3px double var(--brun);
+}
+
+/* ---------- Écrans plus larges ---------- */
+@media (min-width: 760px) {
+  body { padding-bottom: 0; font-size: 1.0625rem; }
+  .barre-basse { display: none; }
+  .bandeau { justify-content: space-between; padding: 0.5rem 2rem; }
+  .bandeau-nav { display: flex; gap: 1.5rem; }
+  .bandeau-nav a { text-decoration: none; padding: 0.7rem 0; }
+  .bandeau-nav a:hover { text-decoration: underline; }
+  .carte { columns: 2; column-gap: 4rem; }
+  .infos-grille { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; }
+  .infos-adresse { margin-top: 0; }
+  .accueil { padding-top: 4rem; }
+}

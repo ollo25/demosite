@@ -1,0 +1,302 @@
+/*
+ * Missià — direction artistique
+ * ------------------------------------------------------------------
+ * Concept : la page reprend la devanture : le mur peint bleu pervenche,
+ * le nom « Missià » en fines capitales espacées blanches, le petit brin
+ * d'immortelle dessiné au-dessus, et la grande vitrine encadrée de bleu
+ * foncé où l'inscription « Épicerie fine / Produits corses » s'arrondit
+ * en arc. Derrière la vitrine : le bleu nuit de la boutique.
+ *
+ * Palette (relevée sur les photos de la façade et des produits) :
+ *   --mur      #6d8fd6  bleu pervenche du mur de façade
+ *   --cadre    #3f62b8  bleu plus soutenu des montants de la vitrine
+ *   --nuit     #1f2f5c  intérieur sombre vu à travers la vitrine (texte)
+ *   --ciel     #e9eef9  bleu très pâle (fonds de sections)
+ *   --mattei   #a33a2e  rouge des étiquettes de Cap Corse en vitrine
+ *   --blanc    #ffffff  lettrage de l'enseigne
+ *
+ * Polices (2) :
+ *   - Quicksand (400, 600) : géométrique arrondie, proche du lettrage
+ *     blanc arrondi de la vitrine et du nom fin et espacé de l'enseigne.
+ *   - Alegreya (400, 700) : serif chaleureuse pour lire les textes et
+ *     les étiquettes de produits, comme une épicerie de village.
+ *
+ * Mise en page : une façade pleine largeur en accueil (mur, enseigne,
+ * vitrine), puis des étagères : la liste des produits en colonnes,
+ * prix alignés à droite. Ton : simple, concret, comme au comptoir.
+ */
+
+/* ---------- Polices ---------- */
+@font-face {
+  font-family: "Quicksand";
+  src: url("fonts/quicksand-latin-400-normal.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url("fonts/quicksand-latin-600-normal.woff2") format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Alegreya";
+  src: url("fonts/alegreya-latin-400-normal.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Alegreya";
+  src: url("fonts/alegreya-latin-700-normal.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+
+/* ---------- Couleurs ---------- */
+:root {
+  --mur: #6d8fd6;
+  --cadre: #3f62b8;
+  --nuit: #1f2f5c;
+  --ciel: #e9eef9;
+  --mattei: #a33a2e;
+  --blanc: #ffffff;
+  --titre: "Quicksand", system-ui, sans-serif;
+  --texte: "Alegreya", Georgia, serif;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+
+body {
+  font-family: var(--texte);
+  font-size: 1.125rem;          /* 18 px : lisible sur téléphone */
+  font-variant-numeric: lining-nums; /* chiffres alignés (horaires, prix) */
+  line-height: 1.6;
+  color: var(--nuit);
+  background: var(--blanc);
+}
+
+h2, h3 { font-family: var(--titre); font-weight: 600; line-height: 1.2; }
+
+a:focus-visible,
+.bouton:focus-visible {
+  outline: 3px solid var(--mattei);
+  outline-offset: 3px;
+}
+
+/* ---------- Boutons ---------- */
+.bouton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 1.4rem;
+  border-radius: 999px;          /* forme arrondie, comme le lettrage */
+  font-family: var(--titre);
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  border: 2px solid transparent;
+}
+.bouton-plein { background: var(--cadre); color: var(--blanc); }
+.bouton-plein:hover { background: var(--nuit); }
+.bouton-clair { background: var(--blanc); color: var(--nuit); }
+.bouton-clair:hover { background: var(--ciel); }
+.bouton-contour { border-color: var(--blanc); color: var(--blanc); }
+.bouton-contour:hover { background: var(--cadre); }
+
+/* ---------- En-tête collant ---------- */
+.entete {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.6rem 1rem;
+  background: var(--blanc);
+  border-bottom: 3px solid var(--cadre);
+}
+.entete-nom {
+  font-family: var(--titre);
+  font-size: 1.3rem;
+  letter-spacing: 0.25em;
+  text-decoration: none;
+  color: var(--cadre);
+  margin-right: auto;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+}
+.entete-nav { display: none; gap: 1.5rem; font-family: var(--titre); font-weight: 600; }
+.entete-nav a { text-decoration: none; padding: 0.6rem 0; }
+.entete-nav a:hover { color: var(--cadre); text-decoration: underline; }
+.entete-appel { min-height: 44px; padding: 0 1.1rem; }
+
+/* ---------- Accueil : la façade ---------- */
+.facade {
+  background: var(--mur);
+  color: var(--blanc);
+  text-align: center;
+  padding: 2.5rem 1rem 0;
+}
+.brin { width: 130px; margin: 0 auto 0.5rem; color: var(--blanc); }
+
+/* Le nom en grand : fin, espacé, blanc, comme peint sur le mur */
+.enseigne {
+  font-family: var(--titre);
+  font-weight: 400;
+  font-size: clamp(3.4rem, 16vw, 7.5rem);
+  letter-spacing: 0.22em;
+  line-height: 1;
+  margin: 0 0 2rem 0.22em;       /* compense l'espacement de la dernière lettre */
+  animation: apparition 500ms ease-out both; /* seule animation de la page */
+}
+@keyframes apparition {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: none; }
+}
+
+/* La vitrine : cadre bleu foncé, intérieur bleu nuit */
+.vitrine {
+  max-width: 40rem;
+  margin: 0 auto;
+  background: var(--nuit);
+  border: 12px solid var(--cadre);
+  border-bottom-width: 0;
+  padding: 1.25rem 1.25rem 2rem;
+}
+.vitrine-arc { width: min(260px, 100%); margin: 0 auto 1rem; }
+.vitrine-arc text {
+  font-family: var(--titre);
+  font-size: 26px;
+  font-weight: 600;
+  fill: var(--blanc);
+  letter-spacing: 0.06em;
+}
+.vitrine-arc .ile { fill: none; stroke: var(--blanc); stroke-width: 2; stroke-linejoin: round; }
+.accroche { font-size: 1.2rem; max-width: 30rem; margin: 0 auto 1.25rem; }
+
+/* Badge ouvert / fermé */
+.statut {
+  display: inline-block;
+  font-family: var(--titre);
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.35rem 1rem;
+  border-radius: 999px;
+  border: 2px solid var(--blanc);
+  margin-bottom: 1.5rem;
+}
+.statut[data-ouvert="oui"] { background: var(--blanc); color: var(--nuit); }
+
+.actions { display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center; }
+
+/* Le seuil gris sous la vitrine */
+.seuil { height: 14px; max-width: calc(40rem + 24px); margin: 0 auto; background: #2a2f3a; }
+
+/* ---------- Au comptoir (produits) ---------- */
+.comptoir { padding: 3.5rem 1rem 3rem; max-width: 68rem; margin: 0 auto; }
+.comptoir-tete { max-width: 38rem; margin-bottom: 2rem; }
+.comptoir h2, .boutique h2, .infos h2 {
+  font-size: clamp(2rem, 7vw, 2.8rem);
+  color: var(--cadre);
+  letter-spacing: 0.04em;
+  margin-bottom: 0.75rem;
+}
+.mention-prix {
+  display: inline-block;
+  margin-top: 0.75rem;
+  font-family: var(--titre);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--mattei);
+  border: 1.5px solid var(--mattei);
+  border-radius: 4px;
+  padding: 0.1rem 0.6rem;
+}
+
+/* Chaque rayon : titre souligné d'un trait bleu, comme une étagère */
+.carte-section { break-inside: avoid; margin-bottom: 2.25rem; }
+.carte-titre {
+  font-size: 1.35rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 4px solid var(--mur);
+  margin-bottom: 0.25rem;
+}
+.carte-note { font-style: italic; font-size: 1rem; color: var(--cadre); margin: 0.25rem 0 0.25rem; }
+.carte-ligne {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 1rem;
+  padding: 0.7rem 0;
+  border-bottom: 1px dashed #b9c7e8;
+}
+.carte-nom { font-weight: 700; }
+.carte-prix { font-variant-numeric: lining-nums; font-weight: 700; text-align: right; white-space: nowrap; color: var(--mattei); }
+.carte-desc { grid-column: 1 / -1; font-size: 1rem; color: #3b4a72; }
+
+.mentions { font-size: 1rem; color: #3b4a72; border-left: 4px solid var(--mur); padding-left: 0.9rem; }
+
+/* ---------- La boutique ---------- */
+.boutique { background: var(--ciel); padding: 3.5rem 1rem; }
+.boutique > * { max-width: 68rem; margin-left: auto; margin-right: auto; }
+.boutique-texte { max-width: 38rem; margin-left: 0; }
+.boutique-texte p + p { margin-top: 1rem; }
+.boutique h2 { max-width: 68rem; }
+.photo-ici {
+  margin-top: 2rem;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  max-width: 28rem;
+  border: 2px dashed var(--cadre);
+  border-radius: 6px;
+  display: grid;
+  place-items: center;
+  font-family: var(--titre);
+  font-weight: 600;
+  color: var(--cadre);
+}
+
+/* ---------- Infos pratiques ---------- */
+.infos { padding: 3.5rem 1rem; max-width: 68rem; margin: 0 auto; }
+.infos h3 { font-size: 1.2rem; margin: 1.5rem 0 0.6rem; }
+.infos-grille > div > h3:first-child { margin-top: 0.5rem; }
+.horaire {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.55rem 0.75rem;
+  border-bottom: 1px solid #d6dff2;
+}
+.horaire-heures { text-align: right; }
+.horaire.aujourdhui {
+  background: var(--cadre);
+  color: var(--blanc);
+  font-weight: 700;
+  border-radius: 4px;
+}
+.acces { font-size: 1rem; margin: 0.5rem 0; }
+.lien-tel { font-weight: 700; display: inline-block; padding: 0.6rem 0; }
+.services { padding-left: 1.2rem; margin-bottom: 1.5rem; }
+
+/* ---------- Pied de page ---------- */
+.pied { background: var(--nuit); color: var(--blanc); padding: 2.5rem 1rem 1.5rem; text-align: center; }
+.pied p + p { margin-top: 0.4rem; }
+.pied a { display: inline-block; padding: 0.5rem 0; }
+.pied-nom { font-family: var(--titre); font-size: 1.6rem; letter-spacing: 0.25em; }
+.maquette { font-size: 0.75rem; opacity: 0.8; margin-top: 1.5rem !important; }
+
+/* ---------- Écrans plus larges ---------- */
+@media (min-width: 760px) {
+  .entete { padding: 0.75rem 2rem; }
+  .entete-nav { display: flex; }
+  .facade { padding-top: 3.5rem; }
+  .carte { columns: 2; column-gap: 3.5rem; }
+  .infos-grille { display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem; }
+  .boutique { display: grid; grid-template-columns: 1.2fr 1fr; column-gap: 3rem; align-items: start; }
+  .boutique h2 { grid-column: 1 / -1; margin-left: 0; }
+  .photo-ici { margin-top: 0; }
+  .boutique > * { margin-left: 0; }
+}
+@media (min-width: 1100px) {
+  .boutique { padding-left: calc((100% - 68rem) / 2); padding-right: calc((100% - 68rem) / 2); }
+}
