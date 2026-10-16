@@ -1,0 +1,52 @@
+{
+  "slug": "di-giu",
+  "date_releve": "2026-10-16",
+  "nom": { "valeur": "Di Giú (fiche Google) ; « Di Giù Pasticceria » sur l'enseigne", "source": "google_maps / photo" },
+  "categorie": { "valeur": "Pâtisserie", "source": "google_maps" },
+  "adresse": { "valeur": "34 Rue des Vinaigriers, 75010 Paris", "source": "google_maps" },
+  "telephone": { "valeur": "", "source": "google_maps (« Ajouter le numéro de téléphone du lieu »)" },
+  "note": { "valeur": "4,8", "nb_avis": 116, "source": "google_maps" },
+  "statut_google": { "valeur": "Ouvert (aucune mention de fermeture)", "source": "google_maps" },
+  "horaires": {
+    "valeur": { "lundi": "fermé", "mardi": "fermé", "mercredi": "08:00-18:30", "jeudi": "08:00-18:30", "vendredi": "08:00-18:30", "samedi": "08:00-18:30", "dimanche": "08:00-18:30" },
+    "source": "google_maps (bloc principal « Di Giú » ; un second bloc indique mercredi 09:00, probablement « Petit-déjeuner » ou « Déjeuner »)"
+  },
+  "liens": { "instagram": "", "facebook": "", "site": "", "reservation": "", "source": "google_maps (aucun lien, « Ajouter un site Web »)" },
+  "plus_code": { "valeur": "V9F6+7R Paris", "source": "google_maps" },
+  "acces": { "valeur": "Métro Jacques Bonsergent (ligne 5), environ 4 min à pied", "source": "deduit (plan Google Maps)" },
+  "themes_avis": { "valeur": ["panettone (20)", "italienne (19)", "tiramisu (10)", "pain au chocolat (10)", "viennoiseries (8)", "prix (7)", "maritozzo (6)", "sucré (6)", "choix (6)", "vanille (5)"], "source": "google_maps" },
+  "synthese_avis": { "valeur": "Pâtisserie italienne très appréciée : panettone au levain, maritozzo, Paris-Turin, cannoli de bonne taille, tiramisu, pain au chocolat ; salé (focaccia barese, pizza à la part) ; glaces et sorbets l'été ; bon accueil.", "source": "avis" },
+  "carte": {
+    "source": "photo_carte (étiquettes de la vitrine)",
+    "releve": ["Maritozzo — pâte à brioche moelleuse, chantilly, crème pâtissière — 6,5 € (vidéo juil. 2026)", "Pasticciotto — spécialité apulienne, pâte sucrée, crème pâtissière — 4,90 € (déc. 2025)", "Paris-Turin — invention franco-italienne, chou au cacao, crème au gianduja, praliné croustillant maison — 6,90 € (déc. 2025)", "Tiramisu au four — frolla montata, crème au mascarpone, biscuit Sacher imbibé au café — 6,90 € (déc. 2025)", "Étiquette « …tron » (tarte au citron meringuée), prix non lisible"],
+    "prix_exemple": ["cannolo", "tarte au citron", "croissant", "pain au chocolat", "brioches", "focaccia barese", "pizza à la part", "glaces (cornet)"]
+  },
+  "observations_visuelles": [
+    { "photo": "Façade (client, fév. 2026)", "vu": "Bandeau crème avec « Di Giù » en lettres bleues géométriques et « Pasticceria » en petit ; store bleu vif ; menuiseries en chêne clair ; mosaïque de rosier en pot (roses rouges, feuillage vert, pot en treillage) sur le pilier gauche ; drapeau bleu ; portes rouges des voisins ; vélo rouge.", "confiance": "élevée" },
+    { "photo": "Intérieur vu de la rue (même photo)", "vu": "Murs de pierre brute, suspensions en verre ambré et rouge, étagère avec livres, vitrine réfrigérée, viennoiseries sur le comptoir.", "confiance": "moyenne" },
+    { "photo": "Maritozzi (vidéo, juil. 2026)", "vu": "Brioches fendues garnies de chantilly en rangées ; étiquette brune, serif blanc « Maritozzo », 6,5 €.", "confiance": "élevée" },
+    { "photo": "Tartes (nov. 2025)", "vu": "Tartelettes au citron meringuées, tartes à l'orange, maritozzi ; étiquette « …tron ».", "confiance": "élevée" },
+    { "photo": "Vitrine (déc. 2025)", "vu": "Pasticciotti dorés, Paris-Turin chocolat, tiramisu au four en barre, étiquettes rouge, verte et brune en serif crème avec prix.", "confiance": "élevée" },
+    { "photo": "Croissant (janv. 2026)", "vu": "Croissant bien feuilleté tenu à la main, neige.", "confiance": "élevée" },
+    { "photo": "Cornetti e brioche assortiti (sept. 2026)", "vu": "Plaques de croissants, pains au chocolat, roulés à la cannelle, brioches à la crème sur grilles ; mur de pierre.", "confiance": "élevée" },
+    { "photo": "Gâteau en boîte (fév. 2026)", "vu": "Part de gâteau chocolat-café en couches, boîte en carton blanc.", "confiance": "moyenne" },
+    { "photo": "Comptoir (vidéo fév. 2026)", "vu": "Comptoir de pierre, viennoiseries et gâteaux sous cloche, grande vitre sur la rue.", "confiance": "moyenne" },
+    { "photo": "Glaces (août 2026)", "vu": "Cornet sorbet orangé et crème glacée ; bacs de crème glacée artisanale.", "confiance": "élevée" }
+  ],
+  "direction_artistique": "Bandeau crème « Di Giù » en Jost bleu, store bleu vif, devanture chêne clair avec mosaïque de rosier en SVG ; la carte en liste où chaque nom est posé sur une étiquette rouge, verte ou brune en Gelasio gras, comme en vitrine.",
+  "argument_de_vente": "Aucun site, aucun téléphone, aucun réseau social sur Google ; 4,8 sur 116 avis.",
+  "a_verifier": [
+    "Téléphone : aucun sur Google, boutons Appeler masqués (Itinéraire à la place)",
+    "Orthographe : « Di Giú » sur Google, « Di Giù » sur l'enseigne (la démo suit l'enseigne)",
+    "Horaire du mercredi : 8h (bloc principal) ou 9h (bloc secondaire) ?",
+    "Prix des étiquettes relevés en déc. 2025 et juil. 2026",
+    "Prix d'exemple : cannolo, tarte au citron, viennoiseries, brioches, focaccia, pizza, glaces",
+    "Glaces et sorbets : l'été seulement (avis)",
+    "Panettone : période de vente à confirmer",
+    "Instagram éventuel non trouvé",
+    "Accès métro déduit du plan"
+  ],
+  "confiance": "photos nombreuses",
+  "carte_reelle": false,
+  "horaires_verifies": true
+}
