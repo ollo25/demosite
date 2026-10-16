@@ -1,0 +1,401 @@
+/*
+ * Cave Pétillance — direction artistique
+ *
+ * Concept : la devanture de nuit du 19 rue Condorcet (store anthracite bordé
+ * d'une ligne de petites lumières, vitrines orangées, lettrage blanc à
+ * empattements « Dégustation sur place / Vente à emporter » collé sur la vitre),
+ * puis le papier crème de la grande carte de la Champagne peinte au mur
+ * (vignobles jaunes, Marne bleue), et les étagères en bois chargées de bouteilles.
+ *
+ * Palette (relevée sur les photos Google Maps) :
+ *   --facade  #2A2B2E  devanture et store anthracite
+ *   --ambre   #F2B35B  lumière des vitrines le soir, suspensions boules
+ *   --papier  #F1EADB  fond crème de la carte de la Champagne au mur
+ *   --vigne   #E3B33C  parcelles de vignes sur la carte murale (décor)
+ *   --marne   #2F5D93  rivières bleues de la carte (liens, titres de section)
+ *   --bois    #8A5A2E  étagères et tables en bois (prix, filets d'étagère)
+ *
+ * Polices (2, licence SIL OFL) :
+ *   Bodoni Moda   — romain à fort contraste, proche du lettrage blanc de la
+ *                   vitrine ; italique pour les noms de producteurs.
+ *   Hanken Grotesk — sans sérif sobre pour la lecture (400 et 600).
+ *
+ * Mise en page : accueil sombre comme la façade de nuit, coiffé du store et de
+ * sa ligne de lumières ; la carte posée sur la carte de la Champagne dessinée en
+ * SVG ; les producteurs alignés en lignes sur des filets bois, comme en rayon.
+ * Ton : précis, sobre, celui d'un caviste qui conseille.
+ */
+
+/* ---------- Polices ---------- */
+@font-face {
+  font-family: "Bodoni Moda";
+  src: url("fonts/bodoni-moda-latin-500-normal.woff2") format("woff2");
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Bodoni Moda";
+  src: url("fonts/bodoni-moda-latin-400-italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url("fonts/hanken-grotesk-latin-400-normal.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url("fonts/hanken-grotesk-latin-600-normal.woff2") format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+
+/* ---------- Couleurs et réglages ---------- */
+:root {
+  --facade: #2A2B2E;
+  --facade-claire: #3A3B40;
+  --ambre: #F2B35B;
+  --papier: #F1EADB;
+  --papier-clair: #F8F3E8;
+  --vigne: #E3B33C;
+  --marne: #2F5D93;
+  --bois: #8A5A2E;
+  --encre: #26231F;
+  --gris: #5C554B;
+  --largeur: 66rem;
+  --serif: "Bodoni Moda", Didot, Georgia, serif;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 4.5rem; }
+
+body {
+  background: var(--papier);
+  color: var(--encre);
+  font-family: "Hanken Grotesk", system-ui, sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+}
+
+h1, h2, .entete-logo, .pied-nom {
+  font-family: var(--serif);
+  font-weight: 500;
+  line-height: 1.05;
+}
+h2 { font-size: clamp(2.1rem, 8vw, 3.2rem); margin-bottom: 1rem; }
+h3 { font-weight: 600; }
+
+a:focus-visible, .bouton:focus-visible {
+  outline: 3px solid var(--marne);
+  outline-offset: 3px;
+}
+.accueil a:focus-visible, .entete a:focus-visible, .pied a:focus-visible, .reserver a:focus-visible {
+  outline-color: var(--ambre);
+}
+
+/* ---------- Boutons ---------- */
+.bouton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 1.3rem;
+  border: 1.5px solid transparent;
+  border-radius: 2px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.bouton-plein { background: var(--ambre); color: var(--facade); }
+.bouton-plein:hover { background: #F7C985; }
+.bouton-ligne { border-color: rgba(241, 234, 219, 0.7); color: var(--papier); }
+.bouton-ligne:hover { background: var(--papier); color: var(--facade); }
+.bouton-petit { min-height: 44px; padding: 0 1rem; background: var(--ambre); color: var(--facade); }
+.lien { color: var(--marne); font-weight: 600; }
+
+/* ---------- En-tête collant ---------- */
+.entete {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  background: var(--facade);
+  color: var(--papier);
+}
+.entete-logo {
+  margin-right: auto;
+  font-size: 1.4rem;
+  color: var(--papier);
+  text-decoration: none;
+  padding: 0.65rem 0;
+}
+.entete-petit { font-style: italic; font-weight: 400; color: var(--ambre); }
+.entete-nav { display: none; gap: 1.6rem; }
+.entete-nav a { color: var(--papier); text-decoration: none; padding: 0.6rem 0; }
+.entete-nav a:hover { color: var(--ambre); }
+
+/* ---------- Accueil : la façade de nuit ---------- */
+.accueil {
+  background: var(--facade);
+  color: var(--papier);
+  padding: 0 1.25rem 3.5rem;
+}
+/* Store : bande gris foncé, ligne de petites lumières dessous */
+.store {
+  height: 2.4rem;
+  margin: 0 -1.25rem 2.75rem;
+  /* motif SVG : un point lumineux tous les 18 px, en bas du store */
+  background: var(--facade-claire) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='8'%3E%3Ccircle cx='9' cy='4' r='2' fill='%23F2B35B'/%3E%3C/svg%3E") 0 100% / 18px 8px repeat-x;
+  border-bottom: 1px solid #4A4B50;
+}
+.accueil-texte { max-width: var(--largeur); margin: 0 auto; }
+.accueil-type { color: var(--ambre); margin-bottom: 1rem; }
+.accueil-nom {
+  font-size: clamp(3.4rem, 17vw, 8.5rem);
+  line-height: 0.95;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.01em;
+  animation: allumage 500ms ease-out both;
+}
+.accueil-cave {
+  display: block;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 0.42em;
+  color: var(--ambre);
+}
+@keyframes allumage {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+/* Le lettrage de vitrine : deux lignes, romain italique blanc, décalées */
+.vitrine {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: clamp(1.3rem, 5.5vw, 2rem);
+  line-height: 1.25;
+  margin-bottom: 1.5rem;
+  color: #FFFFFF;
+}
+.vitrine span { display: block; white-space: nowrap; }
+.vitrine span + span { padding-left: 1.6em; }
+.accueil-accroche { max-width: 34ch; font-size: 1.15rem; margin-bottom: 1.25rem; color: #E4DDCD; }
+
+.statut {
+  display: inline-block;
+  padding: 0.35rem 0.85rem;
+  border: 1.5px solid #8C877C;
+  font-weight: 600;
+  margin-bottom: 1.75rem;
+}
+.statut[data-ouvert="oui"] { border-color: var(--ambre); color: var(--ambre); }
+.accueil-boutons { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+
+/* ---------- La carte, posée sur la carte de la Champagne ---------- */
+.carte { position: relative; padding: 0 1rem 3.5rem; }
+.champagne { display: block; width: calc(100% + 2rem); height: 11rem; margin: 0 -1rem; }
+.carte-cadre {
+  position: relative;
+  max-width: 44rem;
+  margin: -2.5rem auto 0;
+  background: var(--papier-clair);
+  border: 1px solid #D9CDB3;
+  padding: 2rem 1.25rem 1.5rem;
+}
+.carte-cadre h2 { color: var(--facade); }
+.carte-intro { color: var(--gris); margin-bottom: 2rem; max-width: 40ch; }
+.carte-section { margin-bottom: 2.25rem; }
+.carte-titre {
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: var(--marne);
+}
+.carte-note { font-size: 1rem; color: var(--gris); margin-bottom: 0.5rem; }
+.carte-liste { border-top: 1.5px solid var(--facade); }
+.carte-ligne {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 1rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #DED3BC;
+}
+.carte-nom { font-weight: 600; }
+.carte-prix {
+  font-family: var(--serif);
+  font-weight: 500;
+  color: var(--bois);
+  text-align: right;
+  white-space: nowrap;
+  font-variant-numeric: lining-nums tabular-nums;
+}
+.carte-desc { grid-column: 1 / -1; font-size: 1rem; color: var(--gris); }
+.carte-pied { font-size: 0.95rem; color: var(--gris); border-top: 1px solid #DED3BC; padding-top: 1rem; }
+
+/* ---------- Producteurs : lignes de noms sur filets bois ---------- */
+.producteurs {
+  max-width: var(--largeur);
+  margin: 0 auto;
+  padding: 1rem 1.25rem 3.5rem;
+}
+.producteurs h2 { color: var(--facade); }
+.producteurs-intro { max-width: 46ch; margin-bottom: 2rem; color: var(--gris); }
+.producteurs h3 { font-size: 1.05rem; color: var(--marne); margin: 1.5rem 0 0.25rem; }
+/* Chaque ligne de texte repose sur un filet bois, comme une étagère */
+.etagere {
+  --pas: 2.6rem;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.15rem;
+  line-height: var(--pas);
+  /* motif SVG : un filet bois de 4 px en bas de chaque ligne */
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 42' preserveAspectRatio='none'%3E%3Crect y='38' width='10' height='4' fill='%238A5A2E'/%3E%3C/svg%3E") 0 0 / 100% var(--pas);
+  padding-bottom: 0.1rem;
+}
+/* un nom ne se coupe jamais ; le point sépare deux noms et reste en fin de ligne */
+.etagere li { display: inline-block; white-space: nowrap; margin-right: 0.45em; }
+.etagere li:not(:last-child)::after { content: " ·"; color: var(--bois); font-style: normal; }
+
+/* ---------- La boutique ---------- */
+.lieu {
+  background: var(--facade);
+  color: var(--papier);
+  padding: 3.5rem 1.25rem;
+  display: grid;
+  gap: 2rem;
+}
+.lieu-texte { max-width: 38rem; }
+.lieu-texte p + p { margin-top: 1rem; }
+/* Emplacement photo : une vitrine éclairée */
+.photo-vide {
+  position: relative;
+  margin: 0;
+  aspect-ratio: 4 / 3;
+  background: #3B3227;
+  border: 10px solid var(--facade-claire);
+  display: grid;
+  place-items: center;
+}
+.photo-vide::before {
+  content: "";
+  position: absolute;
+  inset: 12% 30% 12% 30%;
+  background: var(--ambre);
+  opacity: 0.25;
+  border-radius: 50%;
+}
+.photo-vide figcaption {
+  position: relative;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.4rem;
+  color: #FFFFFF;
+}
+
+/* ---------- Horaires et accès ---------- */
+.infos { max-width: var(--largeur); margin: 0 auto; padding: 3.5rem 1.25rem; }
+.infos h2 { color: var(--facade); }
+.infos h3 { font-size: 1.05rem; color: var(--marne); margin: 0 0 0.6rem; }
+.infos-grille { display: grid; gap: 2rem; }
+.infos-grille p { margin-bottom: 1rem; }
+.horaire {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.6rem 0.75rem;
+  border-bottom: 1px solid #D9CDB3;
+}
+.horaire.aujourdhui { background: var(--facade); color: var(--papier); font-weight: 600; }
+.services { padding-left: 1.1rem; }
+.services li::marker { content: "– "; color: var(--bois); }
+
+/* ---------- Réserver ---------- */
+.reserver {
+  background: var(--marne);
+  color: #FFFFFF;
+  padding: 3rem 1.25rem;
+}
+.reserver p { margin-bottom: 1.5rem; max-width: 40ch; }
+.reserver .bouton-ligne { border-color: #FFFFFF; color: #FFFFFF; }
+.reserver .bouton-ligne:hover { background: #FFFFFF; color: var(--marne); }
+
+/* ---------- Pied de page ---------- */
+.pied {
+  background: var(--facade);
+  color: var(--papier);
+  text-align: center;
+  padding: 2.5rem 1.25rem 1.5rem;
+}
+.pied p { margin-bottom: 0.4rem; }
+.pied .lien { color: var(--ambre); display: inline-block; padding: 0.6rem 0.5rem; }
+.pied-nom { font-size: 2rem; }
+.mention { font-size: 0.75rem; opacity: 0.75; margin-top: 1.5rem; }
+
+/* ---------- Grand écran ---------- */
+@media (min-width: 768px) {
+  .entete { padding: 0.6rem 2rem; }
+  .entete-nav { display: flex; }
+  .accueil { padding: 0 3rem 5rem; }
+  .store { margin: 0 -3rem 4rem; height: 3rem; }
+  .champagne { height: 15rem; }
+  .carte-cadre { padding: 3rem 3rem 2rem; margin-top: -5rem; }
+  .lieu { grid-template-columns: 1.2fr 1fr; align-items: center; padding: 4.5rem max(3rem, calc((100vw - var(--largeur)) / 2)); }
+  .infos-grille { grid-template-columns: 1fr 1fr; gap: 4rem; }
+  .reserver { padding: 4rem max(3rem, calc((100vw - var(--largeur)) / 2)); }
+}
+@media (min-width: 1100px) {
+  /* Accueil : le lettrage passe dans une « vitrine » éclairée à droite */
+  .accueil-texte {
+    display: grid;
+    grid-template-columns: 1fr 22rem;
+    grid-template-areas: "type vitrine" "nom vitrine" "accroche vitrine" "statut vitrine" "boutons vitrine";
+    column-gap: 4rem;
+    align-items: start;
+  }
+  .accueil-type { grid-area: type; }
+  .accueil-nom { grid-area: nom; }
+  .accueil-accroche { grid-area: accroche; }
+  .statut { grid-area: statut; justify-self: start; }
+  .accueil-boutons { grid-area: boutons; }
+  .vitrine {
+    grid-area: vitrine;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 2rem;
+    background: #4A3624;
+    border: 12px solid var(--facade-claire);
+    font-size: 1.75rem;
+    position: relative;
+    min-height: 24rem;
+  }
+  /* la suspension boule allumée vue à travers la vitrine */
+  .vitrine::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 1px;
+    height: 6rem;
+    background: #8C7A62;
+  }
+  .vitrine::after {
+    content: "";
+    position: absolute;
+    top: 6rem;
+    left: calc(50% - 1.4rem);
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    background: var(--ambre);
+  }
+  .carte-cadre { max-width: 56rem; }
+  .carte-contenu { display: grid; grid-template-columns: 1.2fr 1fr; gap: 3rem; }
+}

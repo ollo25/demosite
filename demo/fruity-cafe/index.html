@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Fruity Café · Matcha et cookies maison, 69 rue de Chabrol, Paris 10e</title>
+  <meta name="description" content="Café rue de Chabrol, près de la gare du Nord : matcha latte, black sesame latte, chai, smoothies, cookies et fondants faits maison. Sur place, en terrasse ou à emporter.">
+  <meta property="og:title" content="Fruity Café, rue de Chabrol">
+  <meta property="og:description" content="Matcha, black sesame latte, smoothies et cookies faits maison, à deux pas de la gare du Nord.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="../../assets/commun/reset.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Guirlande d'eucalyptus et de petites oranges, comme au-dessus de la vitrine -->
+  <svg width="0" height="0" class="sr-only" aria-hidden="true" focusable="false">
+    <defs>
+      <pattern id="guirlande" width="120" height="44" patternUnits="userSpaceOnUse">
+        <path d="M0 18c20 6 40 6 60 0s40-6 60 0" fill="none" stroke="#4F6B5A" stroke-width="1.6"/>
+        <g fill="#7C9B88">
+          <ellipse cx="10" cy="22" rx="7" ry="4" transform="rotate(25 10 22)"/>
+          <ellipse cx="26" cy="14" rx="7" ry="4" transform="rotate(-20 26 14)"/>
+          <ellipse cx="42" cy="26" rx="7" ry="4" transform="rotate(35 42 26)"/>
+          <ellipse cx="70" cy="12" rx="7" ry="4" transform="rotate(-30 70 12)"/>
+          <ellipse cx="86" cy="24" rx="7" ry="4" transform="rotate(20 86 24)"/>
+          <ellipse cx="104" cy="14" rx="7" ry="4" transform="rotate(-15 104 14)"/>
+        </g>
+        <g fill="#5E7F6A">
+          <ellipse cx="18" cy="30" rx="6" ry="3.5" transform="rotate(60 18 30)"/>
+          <ellipse cx="56" cy="8" rx="6" ry="3.5" transform="rotate(-50 56 8)"/>
+          <ellipse cx="96" cy="32" rx="6" ry="3.5" transform="rotate(55 96 32)"/>
+        </g>
+        <circle cx="34" cy="31" r="4.5" fill="#E8742A"/>
+        <circle cx="78" cy="30" r="4" fill="#E8742A"/>
+      </pattern>
+    </defs>
+  </svg>
+
+  <header class="entete">
+    <a class="entete-logo" href="#accueil" data-champ="nom">Fruity Café</a>
+    <nav class="entete-nav" aria-label="Sections">
+      <a href="#carte">La carte</a>
+      <a href="#lieu">Le café</a>
+      <a href="#infos">Horaires</a>
+    </nav>
+    <!-- Pas de téléphone connu : le bouton Appeler reste masqué tant que config.js n'a pas de numéro -->
+    <a class="bouton bouton-petit" data-lien="tel" href="tel:" hidden>Appeler</a>
+    <a class="bouton bouton-petit" data-lien="itineraire"
+       href="https://www.google.com/maps/search/?api=1&amp;query=69%20rue%20de%20Chabrol%2C%2075010%20Paris">Itinéraire</a>
+  </header>
+
+  <main>
+    <section class="accueil" id="accueil">
+      <div class="guirlande" aria-hidden="true">
+        <svg width="100%" height="100%"><rect width="100%" height="100%" fill="url(#guirlande)"/></svg>
+      </div>
+      <!-- La vitrine : cadre vert pistache, lanternes boules, nom en script blanc sur la vitre -->
+      <div class="vitrine">
+        <svg class="lanternes" viewBox="0 0 300 120" preserveAspectRatio="xMaxYMin meet" aria-hidden="true" focusable="false">
+          <g stroke="#8A7A5C" stroke-width="1">
+            <path d="M60 0v34M110 0v58M150 0v22M235 0v44M268 0v74"/>
+          </g>
+          <g fill="#F6C35B">
+            <circle cx="60" cy="48" r="15"/>
+            <circle cx="110" cy="72" r="14"/>
+            <circle cx="150" cy="36" r="14"/>
+            <circle cx="235" cy="58" r="15"/>
+            <circle cx="268" cy="88" r="14"/>
+          </g>
+        </svg>
+        <h1 class="accueil-nom">Fruity <span>café</span></h1>
+      </div>
+
+      <div class="accueil-texte">
+        <p class="accueil-accroche" data-champ="accroche">Matcha, black sesame latte, smoothies et cookies faits maison, à deux pas de la gare du Nord.</p>
+        <p class="statut" data-statut>Ouvert en journée, 69 rue de Chabrol</p>
+        <div class="accueil-boutons">
+          <a class="bouton bouton-plein" data-lien="tel" href="tel:" hidden>Appeler</a>
+          <a class="bouton bouton-plein" data-lien="itineraire"
+             href="https://www.google.com/maps/search/?api=1&amp;query=69%20rue%20de%20Chabrol%2C%2075010%20Paris">Itinéraire</a>
+          <a class="bouton bouton-ligne" href="#carte">Voir la carte</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- La carte : la feuille « À boire » encadrée de bois clair -->
+    <section class="carte" id="carte" aria-labelledby="titre-carte">
+      <div class="cadre">
+        <div class="feuille">
+          <div class="feuille-entete">
+            <p class="feuille-script" aria-hidden="true">Fruity</p>
+            <h2 id="titre-carte">À boire, à croquer</h2>
+          </div>
+
+          <div class="carte-contenu" data-carte data-carte-titre="h3">
+            <section class="carte-section">
+              <h3 class="carte-titre">Cafés</h3>
+              <ul class="carte-liste">
+                <li class="carte-ligne"><span class="carte-nom">Expresso</span><span class="carte-prix">1,50 €</span></li>
+                <li class="carte-ligne"><span class="carte-nom">Allongé</span><span class="carte-prix">1,50 €</span></li>
+                <li class="carte-ligne"><span class="carte-nom">Americano</span><span class="carte-prix">1,50 €</span></li>
+                <li class="carte-ligne"><span class="carte-nom">Double dose</span><span class="carte-prix">2,80 €</span></li>
+                <li class="carte-ligne"><span class="carte-nom">Cappuccino</span><span class="carte-prix">3,50 €</span></li>
+                <li class="carte-ligne"><span class="carte-nom">Latte</span><span class="carte-prix">4 €</span></li>
+                <li class="carte-ligne"><span class="carte-nom">Flat white</span><span class="carte-prix">5 €</span></li>
+              </ul>
+            </section>
+            <section class="carte-section">
+              <h3 class="carte-titre">Boissons au lait</h3>
+              <p class="carte-note">Lait de vache ou végétal. 30 cl / 60 cl.</p>
+              <ul class="carte-liste">
+                <li class="carte-ligne"><span class="carte-nom">Matcha latte</span><span class="carte-prix">5 € / 8 €</span></li>
+                <li class="carte-ligne"><span class="carte-nom">Matcha latte aromatisé</span><span class="carte-prix">6 € / 9 €</span></li>
+                <li class="carte-ligne"><span class="carte-nom">Dirty matcha</span><span class="carte-prix">6 € / 9 €</span></li>
+                <li class="carte-ligne"><span class="carte-nom">Black sesame latte</span><span class="carte-prix">5 € / 8 €</span></li>
+                <li class="carte-ligne"><span class="carte-nom">Sweet potato latte</span><span class="carte-prix">5 € / 8 €</span></li>
+                <li class="carte-ligne"><span class="carte-nom">Golden latte</span><span class="carte-prix">5 € / 8 €</span><span class="carte-desc">Curcuma, gingembre, poivre, lait</span></li>
+                <li class="carte-ligne"><span class="carte-nom">Chai latte</span><span class="carte-prix">5 € / 8 €</span><span class="carte-desc">Thé noir, cardamome, cannelle, gingembre, lait</span></li>
+                <li class="carte-ligne"><span class="carte-nom">Dirty chai</span><span class="carte-prix">6 € / 9 €</span></li>
+                <li class="carte-ligne"><span class="carte-nom">Latte aromatisé</span><span class="carte-prix">5 € / 8 €</span></li>
+                <li class="carte-ligne"><span class="carte-nom">Chocolat</span><span class="carte-prix">4 € / 7 €</span></li>
+                <li class="carte-ligne"><span class="carte-nom">Chocolat viennois</span><span class="carte-prix">4,50 € / 7,50 €</span></li>
+              </ul>
+            </section>
+            <section class="carte-section">
+              <h3 class="carte-titre">Infusions</h3>
+              <p class="carte-note">30 cl / 60 cl.</p>
+              <ul class="carte-liste">
+                <li class="carte-ligne"><span class="carte-nom">Thé, infusion, rooibos</span><span class="carte-prix">3 € / 6 €</span></li>
+                <li class="carte-ligne"><span class="carte-nom">Thé glacé maison</span><span class="carte-prix">4 € / 7 €</span></li>
+                <li class="carte-ligne"><span class="carte-nom">Carcadet</span><span class="carte-prix">4 €</span></li>
+              </ul>
+            </section>
+            <section class="carte-section">
+              <h3 class="carte-titre">Fait maison</h3>
+              <p class="carte-note">Prix d'exemple</p>
+              <ul class="carte-liste">
+                <li class="carte-ligne"><span class="carte-nom">Cookie</span><span class="carte-prix">3,50 €</span></li>
+                <li class="carte-ligne"><span class="carte-nom">Fondant au chocolat</span><span class="carte-prix">4 €</span><span class="carte-desc">Existe sans gluten</span></li>
+                <li class="carte-ligne"><span class="carte-nom">Muffin</span><span class="carte-prix">3,50 €</span></li>
+                <li class="carte-ligne"><span class="carte-nom">Smoothie</span><span class="carte-prix">6,50 €</span><span class="carte-desc">Selon les fruits du jour</span></li>
+                <li class="carte-ligne"><span class="carte-nom">Jus frais à l'extracteur</span><span class="carte-prix">6 €</span></li>
+              </ul>
+            </section>
+          </div>
+
+          <p class="feuille-pied">Informations sur les allergènes disponibles sur demande.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="lieu" id="lieu" aria-labelledby="titre-lieu">
+      <div class="lieu-texte">
+        <h2 id="titre-lieu">Le café</h2>
+        <p>Une petite salle derrière une devanture vert pistache, avec un étal de fruits, des gâteaux sous cloche près de la vitrine et des lanternes jaunes au plafond. Dehors, une table et deux chaises en corde rose.</p>
+        <p>Les boissons et les gâteaux s'inspirent de voyages : matcha, sésame noir, patate douce, chai. Les cookies et les fondants sont faits maison, à manger là ou à emporter avant un train.</p>
+      </div>
+      <figure class="photo-vide">
+        <figcaption>Vos photos ici</figcaption>
+      </figure>
+    </section>
+
+    <section class="infos" id="infos" aria-labelledby="titre-infos">
+      <h2 id="titre-infos">Horaires et accès</h2>
+      <div class="infos-grille">
+        <div>
+          <h3>Horaires</h3>
+          <ul class="horaires" data-horaires>
+            <li class="horaire" data-jour="lundi"><span class="horaire-jour">Lundi</span><span class="horaire-heures">8h – 18h</span></li>
+            <li class="horaire" data-jour="mardi"><span class="horaire-jour">Mardi</span><span class="horaire-heures">8h – 18h</span></li>
+            <li class="horaire" data-jour="mercredi"><span class="horaire-jour">Mercredi</span><span class="horaire-heures">8h – 18h</span></li>
+            <li class="horaire" data-jour="jeudi"><span class="horaire-jour">Jeudi</span><span class="horaire-heures">8h – 18h</span></li>
+            <li class="horaire" data-jour="vendredi"><span class="horaire-jour">Vendredi</span><span class="horaire-heures">8h – 18h</span></li>
+            <li class="horaire" data-jour="samedi"><span class="horaire-jour">Samedi</span><span class="horaire-heures">8h30 – 18h</span></li>
+            <li class="horaire" data-jour="dimanche"><span class="horaire-jour">Dimanche</span><span class="horaire-heures">8h30 – 18h</span></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Adresse</h3>
+          <p><span data-champ="adresse">69 rue de Chabrol, 75010 Paris</span><br>
+             <span data-champ="acces">Métro Poissonnière (ligne 7), à 2 minutes ; gare du Nord et gare de l'Est à pied</span></p>
+          <p><a class="lien" data-lien="itineraire"
+             href="https://www.google.com/maps/search/?api=1&amp;query=69%20rue%20de%20Chabrol%2C%2075010%20Paris">Ouvrir l'itinéraire</a></p>
+          <h3>Sur place</h3>
+          <ul class="services">
+            <li>Sur place ou à emporter</li>
+            <li>Petite terrasse</li>
+            <li>Lait de vache ou végétal</li>
+            <li>Fondant sans gluten</li>
+            <li>Wifi</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pied">
+    <p class="pied-nom" data-champ="nom">Fruity Café</p>
+    <p data-champ="adresse">69 rue de Chabrol, 75010 Paris</p>
+    <p><a class="lien" data-lien="instagram" href="https://instagram.com/fruitycafe.paris">Instagram @fruitycafe.paris</a></p>
+    <p><a class="lien" data-lien="tel" href="tel:" hidden data-champ="telephone">Téléphone</a></p>
+    <p class="mention">Maquette, site non officiel</p>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="../../assets/commun/statut.js"></script>
+  <script src="../../assets/commun/remplir.js"></script>
+</body>
+</html>

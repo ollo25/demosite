@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Cave Pétillance · Champagnes et vins fins, 19 rue Condorcet, Paris 9e</title>
+  <meta name="description" content="Caviste et bar à vins rue Condorcet : champagnes de vignerons, Bourgognes, planches de fromages et de charcuterie. Sur place ou à emporter, du mardi au dimanche.">
+  <meta property="og:title" content="Cave Pétillance, champagnes et vins fins rue Condorcet">
+  <meta property="og:description" content="Champagnes de vignerons et Bourgognes, sur place avec une planche ou à emporter.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="../../assets/commun/reset.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="entete">
+    <a class="entete-logo" href="#accueil"><span class="entete-petit">Cave</span> Pétillance</a>
+    <nav class="entete-nav" aria-label="Sections">
+      <a href="#carte">La carte</a>
+      <a href="#producteurs">Producteurs</a>
+      <a href="#infos">Horaires</a>
+      <a href="#reserver">Réserver</a>
+    </nav>
+    <a class="bouton bouton-petit" data-lien="tel" href="tel:+33142005680">Appeler</a>
+  </header>
+
+  <main>
+    <section class="accueil" id="accueil">
+      <!-- Le store anthracite de la devanture, bordé de sa ligne de petites lumières -->
+      <div class="store" aria-hidden="true"></div>
+      <div class="accueil-texte">
+        <p class="accueil-type">Caviste et bar à vins, rue Condorcet</p>
+        <h1 class="accueil-nom"><span class="accueil-cave">Cave</span> Pétillance</h1>
+        <!-- Comme le lettrage blanc collé sur la vitrine -->
+        <p class="vitrine" aria-hidden="true"><span>Dégustation sur place</span><span>Vente à emporter</span></p>
+        <p class="accueil-accroche" data-champ="accroche">Champagnes de vignerons et vins de Bourgogne, à boire sur place avec une planche ou à emporter.</p>
+        <p class="statut" data-statut>Du mardi au dimanche, dès 16h (11h le samedi)</p>
+        <div class="accueil-boutons">
+          <a class="bouton bouton-plein" data-lien="tel" href="tel:+33142005680">Appeler</a>
+          <a class="bouton bouton-ligne" data-lien="itineraire"
+             href="https://www.google.com/maps/search/?api=1&amp;query=19%20rue%20Condorcet%2C%2075009%20Paris">Itinéraire</a>
+          <a class="bouton bouton-ligne" data-lien="reservation"
+             href="https://www.google.com/maps/reserve/v/dine/c/EHjVipIXmMs?source=pa&amp;hl=fr-FR">Réserver</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- La carte : sur le papier crème de la carte de la Champagne peinte au mur -->
+    <section class="carte" id="carte" aria-labelledby="titre-carte">
+      <svg class="champagne" viewBox="0 0 900 220" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+        <!-- parcelles de vignes, en jaune comme sur la carte murale -->
+        <g fill="#E3B33C" opacity="0.85">
+          <path d="M40 150c14-10 38-8 46 4s-6 22-22 20c-18-2-36-14-24-24z"/>
+          <path d="M150 50c12-8 30-6 36 3 5 8-4 15-16 14-14-1-28-10-20-17z"/>
+          <path d="M290 40c18-14 46-10 58 4 10 12-2 26-20 28-22 2-50-14-38-32z"/>
+          <path d="M370 96c14-10 40-8 50 6s-6 24-24 22c-20-2-38-16-26-28z"/>
+          <path d="M455 70c10-8 30-6 36 4 6 9-4 18-18 17-15-1-26-12-18-21z"/>
+          <path d="M512 132c16-9 40-4 46 8 5 11-10 19-26 17-18-2-32-15-20-25z"/>
+          <path d="M568 40c12-6 30-2 34 7 3 8-8 14-20 12-13-2-24-12-14-19z"/>
+          <path d="M320 160c12-8 32-6 38 3 5 8-6 15-19 14-14-1-27-9-19-17z"/>
+          <path d="M690 150c16-10 42-6 50 6 6 11-8 20-26 18-20-2-36-14-24-24z"/>
+          <path d="M790 60c12-8 32-6 38 4 4 8-6 14-19 13-14-1-27-10-19-17z"/>
+        </g>
+        <!-- la Marne et ses affluents -->
+        <g fill="none" stroke="#3E6FA8" stroke-linecap="round">
+          <path d="M-10 100c60-10 110 26 170 18s80-6 110 0c40 6 62 12 96 6s52-30 92-24 46 34 86 32 58-28 92-26 40 10 70 8 60-24 110-20 60 14 90 10" stroke-width="3"/>
+          <path d="M400 104c6-24 2-48 14-70" stroke-width="1.6"/>
+          <path d="M498 128c10 22 6 46 22 70" stroke-width="1.6"/>
+          <path d="M120 116c-10 30-4 60-20 104" stroke-width="1.6"/>
+          <path d="M760 96c8-30 30-50 40-96" stroke-width="1.6"/>
+        </g>
+        <!-- routes fines -->
+        <g fill="none" stroke="#B9AE97" stroke-width="1" stroke-dasharray="3 3">
+          <path d="M0 60c120 0 200-10 250 0s140-20 220 0 120 30 180 10 160-20 250-6"/>
+          <path d="M310 220c30-60 50-120 120-160"/>
+        </g>
+        <g font-family="Bodoni Moda, Georgia, serif" font-style="italic" font-size="11" fill="#5A4F3F">
+          <text x="308" y="34">Reims</text>
+          <text x="428" y="92">Épernay</text>
+          <text x="550" y="170">Côte des Bar</text>
+          <text x="700" y="140">Troyes</text>
+        </g>
+      </svg>
+
+      <div class="carte-cadre">
+        <h2 id="titre-carte">La carte</h2>
+        <p class="carte-intro">Planches et assiettes à partager, à accompagner d'un verre ou d'une bouteille prise dans les rayons.</p>
+
+        <div class="carte-contenu" data-carte data-carte-titre="h3">
+          <section class="carte-section">
+            <h3 class="carte-titre">À grignoter</h3>
+            <p class="carte-note">Exemple de carte : elle change selon les arrivages.</p>
+            <ul class="carte-liste">
+              <li class="carte-ligne"><span class="carte-nom">Planche de fromages</span><span class="carte-prix">19 €</span></li>
+              <li class="carte-ligne"><span class="carte-nom">Demi saucisson</span><span class="carte-prix">7 €</span></li>
+              <li class="carte-ligne"><span class="carte-nom">Jambon ibérique</span><span class="carte-prix">23 €</span></li>
+              <li class="carte-ligne"><span class="carte-nom">Rillettes d'oie</span><span class="carte-prix">14 €</span></li>
+              <li class="carte-ligne"><span class="carte-nom">Saumon fumé</span><span class="carte-prix">16 €</span></li>
+              <li class="carte-ligne"><span class="carte-nom">Pinsa du chef</span><span class="carte-prix">13 €</span></li>
+              <li class="carte-ligne"><span class="carte-nom">Faux-filet de wagyu</span><span class="carte-prix">24 €</span><span class="carte-desc">Prix aux 100 grammes</span></li>
+              <li class="carte-ligne"><span class="carte-nom">Caviar iranien Beluga</span><span class="carte-prix">150 €</span><span class="carte-desc">30 grammes</span></li>
+            </ul>
+          </section>
+          <section class="carte-section">
+            <h3 class="carte-titre">À boire</h3>
+            <p class="carte-note">Au verre selon les bouteilles ouvertes du jour, ou à la bouteille.</p>
+            <ul class="carte-liste">
+              <li class="carte-ligne"><span class="carte-nom">Champagnes de vignerons</span><span class="carte-prix">prix sur place</span><span class="carte-desc">Une soixantaine de maisons de vignerons</span></li>
+              <li class="carte-ligne"><span class="carte-nom">Bourgognes</span><span class="carte-prix">prix sur place</span><span class="carte-desc">Blancs et rouges, de Chablis à la Côte de Nuits</span></li>
+              <li class="carte-ligne"><span class="carte-nom">Jura, Piémont, Valais…</span><span class="carte-prix">prix sur place</span><span class="carte-desc">Une sélection de vins fins d'autres régions</span></li>
+            </ul>
+          </section>
+        </div>
+
+        <p class="carte-pied">Informations sur les allergènes disponibles sur demande.<br>
+          L'abus d'alcool est dangereux pour la santé, à consommer avec modération.</p>
+      </div>
+    </section>
+
+    <!-- Les producteurs, rangés comme les bouteilles sur les étagères en bois -->
+    <section class="producteurs" id="producteurs" aria-labelledby="titre-producteurs">
+      <h2 id="titre-producteurs">Sur les étagères</h2>
+      <p class="producteurs-intro">Quelques-uns des vignerons présents en rayon. Certaines références sont rares : demandez au comptoir ce qui est disponible.</p>
+
+      <h3>Champagne</h3>
+      <ul class="etagere">
+        <li>Bérêche</li><li>Savart</li><li>Suenen</li><li>Selosse</li><li>Lamblot</li><li>Rodez</li><li>Bedel</li><li>Leconte</li><li>Grimée</li><li>Prévost</li><li>Cuiller</li><li>Lequeux-Mercier</li><li>Copinet</li><li>Godmé</li><li>Guillaume Lelièvre</li><li>Horiot</li><li>Huré</li><li>Péters</li><li>Egly-Ouriet</li><li>Nowack</li><li>Alexis Ullens</li><li>Salomon</li><li>Pouillon</li><li>Legrand</li><li>Faivre</li><li>Bonville</li><li>Dosnon</li><li>Charbaut</li><li>Salot</li><li>Dehours</li><li>Chartogne-Taillet</li><li>Boulard</li><li>Servagnat</li><li>Léon Girard</li><li>Bonnet</li><li>Renoir</li><li>Calsac</li><li>Pertois-Moriset</li><li>Vauversin</li><li>Gaspard Brochet</li><li>Emmanuel Brochet</li><li>Clandestin</li><li>Vouette et Sorbée</li><li>Moutard</li><li>Mea</li><li>Vilmart</li><li>Leclerc</li><li>Minart</li><li>Dhondt-Grellet</li><li>Ruppert-Leroy</li><li>Petit</li><li>Collino</li><li>Coessens</li><li>Collard</li><li>Laval</li><li>Munier</li><li>Chavost</li>
+      </ul>
+
+      <h3>Vins fins</h3>
+      <ul class="etagere">
+        <li>Arnoux-Lachaux</li><li>Charles Lachaux</li><li>Prieuré Roch</li><li>Pierre-Henri Rougeot</li><li>Dauvissat</li><li>Bernard Bonin</li><li>Vincent Dancer</li><li>Rémi Jobard</li><li>Bizot</li><li>Egon Müller</li><li>Mugneret-Gibourg</li><li>Raphaël Corcia</li><li>Jean Dauvissat</li><li>Stellaire</li><li>Puy de l'Ours</li><li>Clair Obscur</li><li>Ganevat</li><li>Cellier Saint-Benoît</li><li>Bruno Bienaimé</li><li>Benoît Ente</li><li>Arnaud Ente</li><li>Dorbon</li><li>Martinière</li><li>Quari</li><li>Hodgson</li><li>Marnes Blanches</li><li>Chacra</li><li>Rinaldi</li><li>Burlotto</li><li>Mascarello</li><li>Jessiaume</li><li>De Moor</li><li>Girardin</li><li>Geantet-Pansiot</li><li>Rivetto</li><li>Courbet</li><li>Racines</li><li>Giacometti</li><li>Closerie des Moussis</li><li>Austral</li><li>Besson</li><li>Strasser</li><li>François Rousset-Martin</li><li>Maison Valette</li><li>Chantal Lescure</li><li>Antoine Lienhardt</li><li>Pierre-Olivier Garcia</li><li>Takahiko</li><li>Canonica</li><li>Chappaz</li><li>Groffier</li><li>Bott</li><li>Peromino</li><li>Sylvain Pataille</li><li>Anne Boisson</li>
+      </ul>
+    </section>
+
+    <section class="lieu" id="lieu" aria-labelledby="titre-lieu">
+      <div class="lieu-texte">
+        <h2 id="titre-lieu">La boutique</h2>
+        <p>Une boutique tout en longueur, des étagères en bois chargées de bouteilles jusqu'au plafond et, au fond, la carte de la Champagne peinte au mur. On s'installe au comptoir, à une table haute ou en terrasse sur le trottoir de la rue Condorcet.</p>
+        <p>On peut passer chercher une bouteille sur conseil ou rester boire un verre avec une planche de fromages. Certains soirs, des flacons plus rares sont ouverts au verre.</p>
+      </div>
+      <figure class="photo-vide">
+        <figcaption>Vos photos ici</figcaption>
+      </figure>
+    </section>
+
+    <section class="infos" id="infos" aria-labelledby="titre-infos">
+      <h2 id="titre-infos">Horaires et accès</h2>
+      <div class="infos-grille">
+        <div>
+          <h3>Horaires</h3>
+          <ul class="horaires" data-horaires>
+            <li class="horaire" data-jour="lundi"><span class="horaire-jour">Lundi</span><span class="horaire-heures">Fermé</span></li>
+            <li class="horaire" data-jour="mardi"><span class="horaire-jour">Mardi</span><span class="horaire-heures">16h – 23h</span></li>
+            <li class="horaire" data-jour="mercredi"><span class="horaire-jour">Mercredi</span><span class="horaire-heures">16h – 23h</span></li>
+            <li class="horaire" data-jour="jeudi"><span class="horaire-jour">Jeudi</span><span class="horaire-heures">16h – 23h</span></li>
+            <li class="horaire" data-jour="vendredi"><span class="horaire-jour">Vendredi</span><span class="horaire-heures">16h – 23h</span></li>
+            <li class="horaire" data-jour="samedi"><span class="horaire-jour">Samedi</span><span class="horaire-heures">11h – 23h</span></li>
+            <li class="horaire" data-jour="dimanche"><span class="horaire-jour">Dimanche</span><span class="horaire-heures">16h – 21h</span></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Adresse</h3>
+          <p><span data-champ="adresse">19 rue Condorcet, 75009 Paris</span><br>
+             <span data-champ="acces">Métro Poissonnière (ligne 7), à 5 minutes à pied</span></p>
+          <p><a class="lien" data-lien="itineraire"
+             href="https://www.google.com/maps/search/?api=1&amp;query=19%20rue%20Condorcet%2C%2075009%20Paris">Ouvrir l'itinéraire</a></p>
+          <h3>Sur place</h3>
+          <ul class="services">
+            <li>Comptoir, tables et terrasse</li>
+            <li>Vente à emporter</li>
+            <li>Privatisation possible</li>
+            <li>Cartes, sans contact et espèces</li>
+            <li>Toilettes accessibles en fauteuil roulant</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="reserver" id="reserver" aria-labelledby="titre-reserver">
+      <h2 id="titre-reserver">Réserver une place</h2>
+      <p>Au comptoir, à une table ou en terrasse. Pour un groupe ou une privatisation, appelez la cave.</p>
+      <div class="accueil-boutons">
+        <a class="bouton bouton-plein" data-lien="reservation"
+           href="https://www.google.com/maps/reserve/v/dine/c/EHjVipIXmMs?source=pa&amp;hl=fr-FR">Réserver en ligne</a>
+        <a class="bouton bouton-ligne" data-lien="tel" href="tel:+33142005680">01 42 00 56 80</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pied">
+    <p class="pied-nom" data-champ="nom">Cave Pétillance</p>
+    <p data-champ="adresse">19 rue Condorcet, 75009 Paris</p>
+    <p><a class="lien" data-lien="tel" href="tel:+33142005680" data-champ="telephone">01 42 00 56 80</a></p>
+    <p class="pied-reseaux">
+      <a class="lien" data-lien="instagram" href="https://www.instagram.com/cavepetillance">Instagram</a>
+      <a class="lien" data-lien="facebook" href="https://www.facebook.com/CavePetillance/">Facebook</a>
+    </p>
+    <p class="mention">Maquette, site non officiel</p>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="../../assets/commun/statut.js"></script>
+  <script src="../../assets/commun/remplir.js"></script>
+</body>
+</html>

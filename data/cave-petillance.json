@@ -1,0 +1,190 @@
+{
+  "slug": "cave-petillance",
+  "date_releve": "2026-10-16",
+  "nom": {
+    "valeur": "Cave Pétillance - Champagne et vins fins",
+    "source": "google_maps"
+  },
+  "categorie": {
+    "valeur": "Caviste (et bar à vins)",
+    "source": "google_maps ; web:https://www.cavepetillance.fr/"
+  },
+  "adresse": {
+    "valeur": "19 Rue Condorcet, 75009 Paris",
+    "source": "google_maps"
+  },
+  "telephone": {
+    "valeur": "01 42 00 56 80",
+    "source": "google_maps"
+  },
+  "note": {
+    "valeur": "4,8",
+    "nb_avis": 287,
+    "source": "google_maps (non affichée sur la démo)"
+  },
+  "statut_google": {
+    "valeur": "Ouvert, aucune mention de fermeture",
+    "source": "google_maps"
+  },
+  "fourchette_prix": {
+    "valeur": "non indiquée sur la fiche",
+    "source": "google_maps"
+  },
+  "horaires": {
+    "valeur": {
+      "lundi": "fermé",
+      "mardi": "16:00-23:00",
+      "mercredi": "16:00-23:00",
+      "jeudi": "16:00-23:00",
+      "vendredi": "16:00-23:00",
+      "samedi": "11:00-23:00",
+      "dimanche": "16:00-21:00"
+    },
+    "source": "google_maps (panneau Horaires) ; identiques sur web:https://www.cavepetillance.fr/ et la bio Instagram",
+    "note": "Google affiche aussi des horaires « Vente à emporter » légèrement différents (jeudi 15:00-23:00, samedi 11:00-23:30)"
+  },
+  "attributs": {
+    "valeur": [
+      "Toilettes accessibles en fauteuil roulant",
+      "Parking accessible en fauteuil roulant",
+      "Réservation (Comptoir, Tables classiques, Terrasse) via Zenchef"
+    ],
+    "source": "google_maps"
+  },
+  "services_site": {
+    "valeur": [
+      "Climatisation",
+      "Privatisation",
+      "Terrasse",
+      "Wifi",
+      "Paiement : sans contact, Apple Pay, Mastercard, Visa, American Express, Carte Bleue, espèces"
+    ],
+    "source": "web:https://www.cavepetillance.fr/"
+  },
+  "liens": {
+    "instagram": "https://www.instagram.com/cavepetillance",
+    "facebook": "https://www.facebook.com/CavePetillance/",
+    "reservation": "https://www.google.com/maps/reserve/v/dine/c/EHjVipIXmMs?source=pa&hl=fr-FR",
+    "site": "https://www.cavepetillance.fr/ (site Zenchef, NON relié à la fiche Google, qui pointe vers Instagram)",
+    "source": "google_maps ; web:html.duckduckgo.com (recherche nom + adresse)"
+  },
+  "plus_code": {
+    "valeur": "V8HW+RJ Paris",
+    "source": "google_maps"
+  },
+  "acces": {
+    "valeur": "Métro Poissonnière (ligne 7), environ 5 min à pied",
+    "source": "deduit (plan Google Maps)"
+  },
+  "description": {
+    "valeur": "Caviste et bar à vins, spécialiste des champagnes de vignerons et des vins de Bourgogne, planches et assiettes à partager.",
+    "source": "web:https://www.cavepetillance.fr/"
+  },
+  "themes_avis": {
+    "valeur": [
+      "prix (18)",
+      "fromage (14)",
+      "bar à vin (9)",
+      "vins naturels (8)",
+      "connaissance (7)",
+      "charcuteries (6)",
+      "atmosphère (6)",
+      "vignerons (5)",
+      "voyager (5)",
+      "assiette (5)"
+    ],
+    "source": "google_maps"
+  },
+  "synthese_avis": {
+    "valeur": "Choix de champagnes et de Bourgognes très apprécié, conseils précis de l'équipe, prix jugés raisonnables, planches de fromages et charcuteries, ambiance conviviale ; des bouteilles rares ouvertes au verre certains jours.",
+    "source": "avis"
+  },
+  "carte": {
+    "source": "web:https://www.cavepetillance.fr/menus-carte/ (« exemple de menu, change selon arrivages »)",
+    "releve": [
+      "Saumon fumé 16,00",
+      "Pinsa du chef 13,00",
+      "Demi saucisson 7,00",
+      "Jambon ibérique 23,00",
+      "Caviar iranien Beluga 30 g 150,00",
+      "Rillettes d'oie 14,00",
+      "Faux filet de Wagyu, prix aux 100 g 24,00",
+      "Planches de fromages 19,00",
+      "Producteurs de champagne et de vins fins : liste complète relevée sur la même page (certaines références rares peuvent manquer)",
+      "Prix des vins au verre et à la bouteille : non publiés -> « prix sur place »"
+    ]
+  },
+  "observations_visuelles": [
+    {
+      "photo": "Façade de nuit (oct. 2026)",
+      "vu": "Immeuble haussmannien en pierre, n° 19 ; devanture anthracite, store gris foncé bordé d'une ligne de petites lumières ; deux vitrines éclairées orangé, suspensions boules, étagères de bouteilles ; tables et chaises en terrasse sur le trottoir.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "Ardoise en façade (même photo, zoom)",
+      "vu": "Ardoise noire entre les vitrines, écrit à la craie en capitales « CAVE-BAR PÉTILLANCE ».",
+      "confiance": "moyenne"
+    },
+    {
+      "photo": "Vitrine, intérieur (oct. 2026)",
+      "vu": "Lettrage adhésif blanc en romain à empattements sur la vitre : « champagne », « Dégustation sur place », « Vente à emporter » ; tables hautes en bois, ampoule nue suspendue, carte encadrée au mur.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "Rayonnages (mai 2026)",
+      "vu": "Étagères en bois clair inclinées, bouteilles de Bourgogne et du Jura serrées, étiquettes de prix manuscrites en noir sur le col.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "Deux bouteilles (mars 2026)",
+      "vu": "Arbois Pupillin (Overnoy-Houillon) et une étiquette bleu ciel, sur comptoir bois ; casiers en losange au fond.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "Deux champagnes (mars 2026)",
+      "vu": "Gaspard Brochet Brut Nature et Jules Brochet « Premices » extra brut.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "Coupes (mai 2023)",
+      "vu": "Six verres de champagne sur une table en bois, rayonnages en fond, mur bleu nuit.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "Mur carte de la Champagne (mai 2026)",
+      "vu": "Grande carte peinte crème : vignobles en jaune moutarde, rivières bleues, noms Épernay, Troyes, Côte des Bar ; deux étagères de champagnes devant, cartons de bouteilles au sol.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "Planche (mars 2026)",
+      "vu": "Planche de fromages (tomme aux herbes, pâte molle, brebis) sur bois, bouteille de vin du Jura, verre de blanc.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "Comptoir (mars 2024, plusieurs vues)",
+      "vu": "Comptoir en bois foncé en angle, suspensions noires industrielles, murs blancs teintés de rose, affiche illustrée « Il n'y a de Champagne qu'en Champagne » (vigne, pressoir, dosage) ; caisses rouges sur étagère.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "Vidéo du propriétaire (mai 2022)",
+      "vu": "Homme en tablier cuir jouant d'un piano dans la boutique, rayonnages de bouteilles derrière.",
+      "confiance": "moyenne (ancien)"
+    }
+  ],
+  "direction_artistique": "Devanture anthracite de nuit avec la ligne de lumières du store, lettrage de vitrine en romain blanc (Bodoni Moda), puis le papier crème de la carte de la Champagne peinte au mur, avec vignobles jaunes et Marne bleue dessinés en SVG ; les producteurs alignés comme sur des étagères en bois.",
+  "argument_de_vente": "La fiche Google (4,8 sur 287 avis) ne renvoie qu'à Instagram ; il existe un site Zenchef générique (cavepetillance.fr) que Google ne connaît pas. Une page à leur image, avec la carte des grignotages, les producteurs et la réservation, pourrait devenir le lien de la fiche.",
+  "a_verifier": [
+    "Site existant cavepetillance.fr (Zenchef) non relié à Google : savoir s'ils veulent le remplacer ou le garder",
+    "Lien de réservation : celui de la fiche Google (Zenchef) ; préférer leur lien Zenchef direct",
+    "Carte des grignotages : « exemple de menu » publié sur leur site, change selon les arrivages",
+    "Prix des vins et champagnes au verre et à la bouteille : non publiés, « prix sur place »",
+    "Liste des producteurs reprise du site : certaines références rares peuvent ne plus être disponibles",
+    "Horaires vente à emporter légèrement différents sur Google (jeudi dès 15h, samedi jusqu'à 23h30)",
+    "Accès métro déduit du plan",
+    "Facebook trouvé par recherche web (même nom, publications « Rue Condorcet ») : confirmer",
+    "Noms des producteurs : relevés en capitales sans accents sur leur site, orthographe harmonisée (accents, traits d'union, ex. Clandestin, Pertois-Moriset, Rémi Jobard) : à relire avec la cave"
+  ],
+  "confiance": "photos nombreuses",
+  "carte_reelle": true,
+  "horaires_verifies": true
+}

@@ -1,0 +1,261 @@
+/*
+ * Fruity Café — direction artistique
+ *
+ * Concept : la vitrine du 69 rue de Chabrol. Cadre peint vert pistache patiné,
+ * guirlande d'eucalyptus piquée de petites oranges, lanternes boules jaunes
+ * derrière la vitre et « Fruity » écrit en script blanc fin sur le verre ;
+ * puis la carte « À boire » encadrée de bois clair : papier crème, titres brun
+ * rosé, intitulés en capitales espacées, prix 30 cl / 60 cl.
+ *
+ * Palette (relevée sur les photos Google Maps) :
+ *   --pistache #DCE3A8  peinture de la devanture
+ *   --vitre    #2F2A25  intérieur sombre vu à travers la vitre
+ *   --lanterne #F6C35B  lanternes boules jaune orangé
+ *   --eucalyptus #4F6B5A feuillage de la guirlande (textes d'accent)
+ *   --orange   #E8742A  petites oranges de la guirlande (décor uniquement)
+ *   --mauve    #74484A  titres brun rosé de la carte imprimée
+ *   --papier   #F7F3EA  papier de la carte
+ *   --bois     #D9BC8E  cadre en bois clair de la carte
+ *
+ * Polices (2, licence SIL OFL) :
+ *   Sacramento — script monoligne fine, proche du « Fruity » collé sur la vitre
+ *                et en tête de la carte.
+ *   Karla      — sans sérif simple pour le texte (400) et les intitulés en
+ *                capitales espacées de la carte (700).
+ *
+ * Mise en page : accueil = la vitrine (cadre pistache, vitre sombre, lanternes),
+ * guirlande en SVG au-dessus ; carte dans un cadre bois ; infos sur fond pistache.
+ * Ton : doux, simple, gourmand sans en faire trop.
+ */
+
+/* ---------- Polices ---------- */
+@font-face {
+  font-family: "Sacramento";
+  src: url("fonts/sacramento-latin-400-normal.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Karla";
+  src: url("fonts/karla-latin-400-normal.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Karla";
+  src: url("fonts/karla-latin-700-normal.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+
+/* ---------- Couleurs et réglages ---------- */
+:root {
+  --pistache: #DCE3A8;
+  --pistache-pale: #EEF1D3;
+  --vitre: #2F2A25;
+  --lanterne: #F6C35B;
+  --eucalyptus: #4F6B5A;
+  --orange: #E8742A;
+  --mauve: #74484A;
+  --papier: #F7F3EA;
+  --bois: #D9BC8E;
+  --encre: #2E2A26;
+  --largeur: 64rem;
+  --script: "Sacramento", "Snell Roundhand", cursive;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 4.5rem; }
+
+body {
+  background: var(--papier);
+  color: var(--encre);
+  font-family: "Karla", system-ui, sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+}
+
+h2 { font-size: clamp(1.8rem, 6.5vw, 2.6rem); font-weight: 700; line-height: 1.15; color: var(--mauve); margin-bottom: 1.25rem; }
+h3 { font-weight: 700; }
+
+a:focus-visible, .bouton:focus-visible { outline: 3px solid var(--orange); outline-offset: 3px; }
+
+/* ---------- Boutons ---------- */
+.bouton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 1.3rem;
+  border-radius: 999px;
+  border: 2px solid transparent;
+  font-weight: 700;
+  text-decoration: none;
+}
+.bouton-plein { background: var(--lanterne); color: var(--vitre); }
+.bouton-plein:hover { background: #F9D486; }
+.bouton-ligne { border-color: var(--eucalyptus); color: var(--eucalyptus); }
+.bouton-ligne:hover { background: var(--eucalyptus); color: var(--papier); }
+.bouton-petit { min-height: 44px; padding: 0 1rem; background: var(--eucalyptus); color: #FFFFFF; }
+.lien { color: var(--eucalyptus); font-weight: 700; }
+
+/* ---------- En-tête collant ---------- */
+.entete {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  background: var(--pistache);
+  border-bottom: 1px solid #C5CD8C;
+}
+.entete-logo {
+  margin-right: auto;
+  padding: 0.2rem 0;
+  font-family: var(--script);
+  font-size: 2.1rem;
+  line-height: 1.2;
+  color: var(--vitre);
+  text-decoration: none;
+}
+.entete-nav { display: none; gap: 1.5rem; }
+.entete-nav a { color: var(--vitre); text-decoration: none; font-weight: 700; padding: 0.6rem 0; }
+.entete-nav a:hover { color: var(--eucalyptus); }
+
+/* ---------- Accueil : la vitrine ---------- */
+.accueil { background: var(--pistache); padding: 0 1rem 3rem; }
+.guirlande { height: 44px; margin: 0 -1rem 1rem; }
+.guirlande svg { display: block; }
+.vitrine {
+  position: relative;
+  max-width: var(--largeur);
+  margin: 0 auto 2rem;
+  min-height: 18rem;
+  background: var(--vitre);
+  border: 12px solid var(--pistache-pale);
+  outline: 1px solid #C5CD8C;
+  display: flex;
+  align-items: flex-end;
+  padding: 1.5rem;
+  overflow: hidden;
+}
+.lanternes { position: absolute; top: 0; right: 0; width: 80%; max-width: 30rem; height: auto; }
+.accueil-nom {
+  position: relative;
+  font-family: var(--script);
+  font-weight: 400;
+  font-size: clamp(5rem, 26vw, 10rem);
+  line-height: 0.9;
+  color: #FFFFFF;
+  animation: buee 550ms ease-out both;
+}
+/* « CAFE » en petites capitales espacées sous le script, comme sur la vitre */
+.accueil-nom span {
+  display: block;
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  line-height: 1;
+  margin: 0.4rem 0 0 0.3rem;
+}
+@keyframes buee {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: none; }
+}
+
+.accueil-texte { max-width: var(--largeur); margin: 0 auto; }
+.accueil-accroche { font-size: 1.25rem; max-width: 30ch; margin-bottom: 1.25rem; }
+.statut {
+  display: inline-block;
+  padding: 0.3rem 0.9rem;
+  border-radius: 999px;
+  border: 2px solid var(--vitre);
+  font-weight: 700;
+  margin-bottom: 1.75rem;
+}
+.statut[data-ouvert="oui"] { background: var(--eucalyptus); border-color: var(--eucalyptus); color: #FFFFFF; }
+.accueil-boutons { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+
+/* ---------- La carte : feuille dans un cadre bois clair ---------- */
+.carte { padding: 3rem 1rem; }
+.cadre {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 12px;
+  background: var(--bois);
+  border-radius: 3px;
+}
+.feuille { background: #FBF9F4; padding: 2rem 1.25rem 1.5rem; }
+.feuille-entete { margin-bottom: 1.5rem; }
+.feuille-script { font-family: var(--script); font-size: 3.6rem; line-height: 1.1; color: var(--mauve); margin-bottom: 0.6rem; }
+.feuille-entete h2 { margin-bottom: 0; }
+
+.carte-section { margin-bottom: 2rem; }
+.carte-titre { font-size: 1.5rem; color: var(--mauve); margin-bottom: 0.3rem; }
+.carte-note { font-size: 1rem; color: #6A625A; margin-bottom: 0.4rem; }
+.carte-ligne {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 1rem;
+  padding: 0.55rem 0;
+  border-bottom: 1px solid #E8E0D2;
+}
+/* Intitulés en capitales espacées, comme sur la carte du café */
+.carte-nom { font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; font-size: 1rem; }
+.carte-prix { font-weight: 700; text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; color: var(--mauve); }
+.carte-desc { grid-column: 1 / -1; font-size: 1rem; color: #6A625A; }
+.feuille-pied { font-size: 1rem; color: #6A625A; }
+
+/* ---------- Le café ---------- */
+.lieu { background: var(--pistache-pale); padding: 3.5rem 1.25rem; display: grid; gap: 2rem; }
+.lieu-texte { max-width: 38rem; }
+.lieu-texte p + p { margin-top: 1rem; }
+.photo-vide {
+  margin: 0;
+  aspect-ratio: 4 / 3;
+  display: grid;
+  place-items: center;
+  background: var(--vitre);
+  border: 12px solid var(--pistache);
+}
+.photo-vide figcaption { font-family: var(--script); font-size: 2.4rem; color: #FFFFFF; }
+
+/* ---------- Horaires et accès ---------- */
+.infos { max-width: var(--largeur); margin: 0 auto; padding: 3.5rem 1.25rem; }
+.infos h3 { color: var(--eucalyptus); font-size: 1.1rem; margin-bottom: 0.6rem; }
+.infos-grille { display: grid; gap: 2rem; }
+.infos-grille p { margin-bottom: 1rem; }
+.horaire { display: flex; justify-content: space-between; gap: 1rem; padding: 0.55rem 0.8rem; border-bottom: 1px solid #E8E0D2; }
+.horaire.aujourdhui { background: var(--pistache); font-weight: 700; border-radius: 999px; border-bottom-color: transparent; }
+.services { padding-left: 1.1rem; }
+.services li::marker { color: var(--orange); }
+
+/* ---------- Pied de page ---------- */
+.pied { background: var(--vitre); color: var(--papier); text-align: center; padding: 2.5rem 1.25rem 1.5rem; }
+.pied p { margin-bottom: 0.4rem; }
+.pied .lien { color: var(--lanterne); display: inline-block; padding: 0.6rem 0; }
+.pied-nom { font-family: var(--script); font-size: 2.8rem; line-height: 1.2; }
+.mention { font-size: 0.75rem; opacity: 0.75; margin-top: 1.5rem; }
+
+/* ---------- Grand écran ---------- */
+@media (min-width: 768px) {
+  .entete { padding: 0.6rem 2rem; }
+  .entete-nav { display: flex; }
+  .accueil { padding: 0 2rem 4rem; }
+  .guirlande { margin: 0 -2rem 1.5rem; }
+  .vitrine { min-height: 24rem; padding: 2.5rem; border-width: 18px; }
+  .feuille { padding: 3rem 3rem 2rem; }
+  .lieu { grid-template-columns: 1.2fr 1fr; align-items: center; padding: 4.5rem max(3rem, calc((100vw - var(--largeur)) / 2)); }
+  .infos-grille { grid-template-columns: 1fr 1fr; gap: 4rem; }
+}
+@media (min-width: 1100px) {
+  .accueil { display: grid; grid-template-columns: 1.5fr 1fr; gap: 3rem; align-items: end; padding: 0 max(3rem, calc((100vw - 76rem) / 2)) 4rem; }
+  .guirlande { grid-column: 1 / -1; margin: 0 calc(-1 * max(3rem, calc((100vw - 76rem) / 2))) 0; }
+  .vitrine { margin: 0; }
+  .cadre { max-width: 62rem; }
+  .carte-contenu { columns: 2; column-gap: 3rem; }
+  .carte-section { break-inside: avoid; }
+}
