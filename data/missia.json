@@ -1,29 +1,96 @@
 {
   "slug": "missia",
   "date_releve": "2026-10-16",
-  "nom": { "valeur": "Missià, l’épicerie corse à Paris", "source": "google_maps", "note": "Enseigne de façade : « Missià »" },
-  "categorie": { "valeur": "Épicerie fine", "source": "google_maps" },
-  "adresse": { "valeur": "38 Rue Marguerite de Rochechouart, 75009 Paris", "source": "google_maps" },
-  "telephone": { "valeur": "09 61 60 59 92", "source": "google_maps" },
-  "note_google": { "valeur": "4,9", "nb_avis": 56, "repartition": "52×5, 3×4, 1×3", "source": "google_maps" },
-  "statut_google": "Ouvert (pas de mention de fermeture définitive) ; le 16/10 à 14h : « Fermé · Ouvre à 15:00 »",
-  "horaires": {
-    "valeur": { "lundi": "Fermé", "mardi": "15:00–19:30", "mercredi": "15:00–19:30", "jeudi": "15:00–19:30", "vendredi": "15:00–19:30", "samedi": "15:00–19:30", "dimanche": "Fermé" },
+  "nom": {
+    "valeur": "Missià, l’épicerie corse à Paris",
+    "source": "google_maps",
+    "note": "Enseigne de façade : « Missià »"
+  },
+  "categorie": {
+    "valeur": "Épicerie fine",
     "source": "google_maps"
   },
-  "liens": { "instagram": "https://www.instagram.com/missia_paris/", "site": "aucun", "reservation": "aucune", "source": "google_maps" },
-  "acces": { "valeur": "Métro Anvers (ligne 2) ou Poissonnière (ligne 7)", "source": "deduit (position sur la carte)" },
-  "themes_avis": { "valeur": ["charcuterie (9)", "sandwichs (4)", "lonzu (3)", "corses (3)", "commerçant (3)", "brocciu (2)", "terroir (2)", "herbes (2)", "sucrés (2)", "apéritif (2)"], "source": "avis" },
+  "adresse": {
+    "valeur": "38 Rue Marguerite de Rochechouart, 75009 Paris",
+    "source": "google_maps"
+  },
+  "telephone": {
+    "valeur": "09 61 60 59 92",
+    "source": "google_maps"
+  },
+  "note_google": {
+    "valeur": "4,9",
+    "nb_avis": 56,
+    "repartition": "52×5, 3×4, 1×3",
+    "source": "google_maps"
+  },
+  "statut_google": "Ouvert (pas de mention de fermeture définitive) ; le 16/10 à 14h : « Fermé · Ouvre à 15:00 »",
+  "horaires": {
+    "valeur": {
+      "lundi": "Fermé",
+      "mardi": "15:00–19:30",
+      "mercredi": "15:00–19:30",
+      "jeudi": "15:00–19:30",
+      "vendredi": "15:00–19:30",
+      "samedi": "15:00–19:30",
+      "dimanche": "Fermé"
+    },
+    "source": "google_maps"
+  },
+  "liens": {
+    "instagram": "https://www.instagram.com/missia_paris/",
+    "site": "aucun",
+    "reservation": "aucune",
+    "source": "google_maps"
+  },
+  "acces": {
+    "valeur": "Métro Anvers (ligne 2) ou Poissonnière (ligne 7)",
+    "source": "deduit (position sur la carte)"
+  },
+  "themes_avis": {
+    "valeur": [
+      "charcuterie (9)",
+      "sandwichs (4)",
+      "lonzu (3)",
+      "corses (3)",
+      "commerçant (3)",
+      "brocciu (2)",
+      "terroir (2)",
+      "herbes (2)",
+      "sucrés (2)",
+      "apéritif (2)"
+    ],
+    "source": "avis"
+  },
   "observations_avis": {
     "valeur": "Produits corses de petits producteurs (charcuterie, fromages, vins), accueil passionné et conseils, prix jugés raisonnables pour la qualité. Produits cités : brocciu, tomme de brebis fumée à la myrte, marrons confits, farine de châtaigne, herbes d'assaisonnement, lonzu, charcuterie. Une cliente décrit « une petite boutique bleue ». Le prénom du gérant apparaît dans un avis : non repris sur le site.",
     "source": "avis"
   },
-  "carte": { "valeur": "Aucune carte ni tarif lisible. Produits tirés des avis et de la vitrine, prix d'exemple.", "source": "deduit" },
+  "carte": {
+    "valeur": "Aucune carte ni tarif lisible. Produits tirés des avis et de la vitrine, prix d'exemple.",
+    "source": "deduit"
+  },
   "observations_visuelles": [
-    { "photo": "Façade (propriétaire)", "vu": "Mur peint bleu pervenche, menuiseries bleu plus soutenu, grande vitrine. Au-dessus : petit brin végétal (immortelle) dessiné en blanc et le nom « Missià » en fines lettres blanches très espacées. Sur la vitrine, en lettres blanches arrondies disposées en arc : « Epicerie fine » / « Produits corses » autour d'une tête de Maure. En vitrine : bouteilles, boîtes Mattei Cap Corse (étiquettes rouge et bleu-vert), bocaux, cagettes en bois.", "confiance": "élevée" },
-    { "photo": "Façade, version plus ancienne", "vu": "Même vitrine avec « Epicerie fine / Sandwicherie » en arc. Intérieur sombre, étagères à bouteilles.", "confiance": "élevée" },
-    { "photo": "Bouteilles Casanova Isula d'Amore + pot tête de Maure en céramique", "vu": "Mousseux corse doré, céramique brune.", "confiance": "moyenne" },
-    { "photo": "Photos d'une cliente (table dressée, planche, tarte aux blettes, fondant)", "vu": "Repas corse préparé à la maison avec des produits de la boutique : coppa, fromage en dés, figues, canistrelli, pot de confiture. Pas la boutique elle-même.", "confiance": "élevée (hors lieu)" }
+    {
+      "photo": "Façade (propriétaire)",
+      "vu": "Mur peint bleu pervenche, menuiseries bleu plus soutenu, grande vitrine. Au-dessus : petit brin végétal (immortelle) dessiné en blanc et le nom « Missià » en fines lettres blanches très espacées. Sur la vitrine, en lettres blanches arrondies disposées en arc : « Epicerie fine » / « Produits corses » autour d'une tête de Maure. En vitrine : bouteilles, boîtes Mattei Cap Corse (étiquettes rouge et bleu-vert), bocaux, cagettes en bois.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "Façade, version plus ancienne",
+      "vu": "Même vitrine avec « Epicerie fine / Sandwicherie » en arc. Intérieur sombre, étagères à bouteilles.",
+      "confiance": "élevée"
+    },
+    {
+      "photo": "Bouteilles Casanova Isula d'Amore + pot tête de Maure en céramique",
+      "vu": "Mousseux corse doré, céramique brune.",
+      "confiance": "moyenne"
+    },
+    {
+      "photo": "Photos d'une cliente (table dressée, planche, tarte aux blettes, fondant)",
+      "vu": "Repas corse préparé à la maison avec des produits de la boutique : coppa, fromage en dés, figues, canistrelli, pot de confiture. Pas la boutique elle-même.",
+      "confiance": "élevée (hors lieu)"
+    }
   ],
   "direction_artistique": "La façade en page : mur bleu pervenche (#6d8fd6), nom fin et espacé en blanc (Quicksand 400), brin d'immortelle dessiné, vitrine encadrée de bleu (#3f62b8) à fond bleu nuit (#1f2f5c) avec l'inscription en arc « Épicerie fine / Produits corses » autour d'une silhouette de la Corse (la tête de Maure, élément de logo, n'est pas reprise). Rouge des étiquettes Mattei (#a33a2e) pour les prix. Textes en Alegreya.",
   "argument_de_vente": "Instagram seulement, aucun site : pas de liste de produits ni d'horaires lisibles hors Google.",
@@ -33,6 +100,7 @@
     "Les sandwichs sont-ils toujours proposés ? (vitrine récente : « Produits corses » à la place de « Sandwicherie »).",
     "Plateaux apéritifs sur demande : à confirmer.",
     "Accès métro déduit de la position (Anvers / Poissonnière).",
-    "Le patron souhaite-t-il afficher la tête de Maure ou son logo ?"
+    "Le patron souhaite-t-il afficher la tête de Maure ou son logo ?",
+    "Vendredi : un relevé Google du 16 octobre 2026 affichait 16h30–19h30 (au lieu de 15h–19h30) ; horaire exceptionnel probable, à confirmer avec le patron."
   ]
 }
